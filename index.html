@@ -32,9 +32,9 @@
   }
   th:hover { background: #34495e; }
   th .arrow { font-size: 0.7rem; margin-left: 4px; }
-  td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #eee; vertical-align: top; }
+  td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #e4e4e4; vertical-align: top; }
   tbody tr { cursor: pointer; }
-  tr:hover td { background: #f0f7ff; }
+  tbody tr:hover td { background: #e3edfa !important; }
   .col-version { width: 100px; }
   .col-category { width: 130px; }
   .col-dsof { width: 130px; font-family: monospace; font-size: 0.82rem; }
@@ -135,13 +135,32 @@
     render();
   }
 
+  // Neutral palette for alternating version groups
+  const VERSION_COLORS = [
+    "#ffffff", "#f7f7f7", "#f0f4f8", "#f8f6f0",
+    "#f4f0f8", "#f0f8f4", "#f8f0f0", "#f0f0f8",
+  ];
+  const versionColorMap = {};
+  let nextColorIdx = 0;
+
+  function versionColor(version) {
+    if (!version) return VERSION_COLORS[0];
+    if (!(version in versionColorMap)) {
+      versionColorMap[version] = VERSION_COLORS[nextColorIdx % VERSION_COLORS.length];
+      nextColorIdx++;
+    }
+    return versionColorMap[version];
+  }
+
   function render() {
     statusEl.textContent = `${filtered.length} of ${allData.length} entries`;
     // Build HTML in chunks for performance
     const parts = [];
     for (const row of filtered) {
       parts.push(
-        '<tr data-url="', esc(row.url || ""), '"><td>', esc(row.version),
+        '<tr data-url="', esc(row.url || ""),
+        '" style="background:', versionColor(row.version),
+        '"><td>', esc(row.version),
         "</td><td>", esc(row.category),
         "</td><td>", esc(row.dsof),
         "</td><td>", esc(row.description),
