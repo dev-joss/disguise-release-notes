@@ -4231,7 +4231,7 @@
     "version": "r30.1.2",
     "category": "Fixes",
     "dsof": "DSOF-28912",
-    "description": "Layers with Square Brackets [ ] in their names can now we used in Expressions again with the same syntax as normal",
+    "description": "Layers with Square Brackets  in their names can now we used in Expressions again with the same syntax as normal",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3012---hotfixes"
   },
   {
@@ -11861,2338 +11861,2338 @@
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-6288",
-    "description": "[] - Image sequences become a Gold feature",
+    "description": "Image sequences become a Gold feature",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-8092",
-    "description": "[] - Sockpuppet over OSC",
+    "description": "Sockpuppet over OSC",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-8373",
-    "description": "[] - OmniCal Multipose QuickAlign",
+    "description": "OmniCal Multipose QuickAlign",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-9353",
-    "description": "[] - OmniCal Rig Check improvements",
+    "description": "OmniCal Rig Check improvements",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10237",
-    "description": "[] - Cue List - Redesign",
+    "description": "Cue List - Redesign",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10609",
-    "description": "[] - vx 4 playback performance",
+    "description": "vx 4 playback performance",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10623",
-    "description": "[] - Projector Yoke Control",
+    "description": "Projector Yoke Control",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10650",
-    "description": "[] - NotchLC support",
+    "description": "NotchLC support",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10679",
-    "description": "[] - ObjectTrackingSource for controlling object positions",
+    "description": "ObjectTrackingSource for controlling object positions",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10757",
-    "description": "[] - Cue Set List Beta Process",
+    "description": "Cue Set List Beta Process",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10897",
-    "description": "[] - Full 10-bit pipeline introduction support",
+    "description": "Full 10-bit pipeline introduction support",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-6289",
-    "description": "[] - Indirection support for DMX Banks",
+    "description": "Indirection support for DMX Banks",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-6543",
-    "description": "[] - External way to create projector information and import (via CSV/Table)",
+    "description": "External way to create projector information and import (via CSV/Table)",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-8426",
-    "description": "[] - OptiCal: BlobDetection UI that shows effect of settings, masks etc",
+    "description": "OptiCal: BlobDetection UI that shows effect of settings, masks etc",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-8469",
-    "description": "[] - Update ScreenPositionModule Configurations from referenced Screen’s position",
+    "description": "Update ScreenPositionModule Configurations from referenced Screen’s position",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-9575",
-    "description": "[] - OmniCal: Add multi-pose to Quick Align",
+    "description": "OmniCal: Add multi-pose to Quick Align",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-9576",
-    "description": "[] - OmniCal: Automatically disengage SPR device when alignment is in progress and add switch for disabling Screen Position Module interference with SPR device",
+    "description": "OmniCal: Automatically disengage SPR device when alignment is in progress and add switch for disabling Screen Position Module interference with SPR device",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-9577",
-    "description": "[] - OmniCal: UI in QuickAlign window to copy position to min/max values in screen position axis",
+    "description": "OmniCal: UI in QuickAlign window to copy position to min/max values in screen position axis",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10152",
-    "description": "[] - Add ncam support to ScreenPositionReceiver",
+    "description": "Add ncam support to ScreenPositionReceiver",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10307",
-    "description": "[] - Add ability to export (parts of) the current Stage as a 3D file format",
+    "description": "Add ability to export (parts of) the current Stage as a 3D file format",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10311",
-    "description": "[] - Omnical: Load blob detection masks from file",
+    "description": "Omnical: Load blob detection masks from file",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10471",
-    "description": "[] - ProjectorControl: a layer that moves physical projectors and changes their configurations",
+    "description": "ProjectorControl: a layer that moves physical projectors and changes their configurations",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10491",
-    "description": "[] - Canon CLog2, CLog3 Log video, Canon Cinema Gamut support",
+    "description": "Canon CLog2, CLog3 Log video, Canon Cinema Gamut support",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10524",
-    "description": "[] - Auto Scroll option within Cue Set List",
+    "description": "Auto Scroll option within Cue Set List",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10683",
-    "description": "[] - Define and test ImageSequenceFormat::extractFrameNumber",
+    "description": "Define and test ImageSequenceFormat::extractFrameNumber",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-10736",
-    "description": "[] - Image Sequences: Add gold support for .dpx files",
+    "description": "Image Sequences: Add gold support for .dpx files",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-11099",
-    "description": "[] - Notify user on use of the same ‘Tag’ number",
+    "description": "Notify user on use of the same ‘Tag’ number",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-11273",
-    "description": "[] - Add Camera Tracking drivers (stype & mo-sys) which affect Camera lens",
+    "description": "Add Camera Tracking drivers (stype & mo-sys) which affect Camera lens",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "New Features",
     "dsof": "DSOF-11453",
-    "description": "[] - Expanded support for further versions of SDI firmware",
+    "description": "Expanded support for further versions of SDI firmware",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-753",
-    "description": "[] - Some form of communication to inform when checkpointing",
+    "description": "Some form of communication to inform when checkpointing",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-883",
-    "description": "[] - Zoom to object",
+    "description": "Zoom to object",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-971",
-    "description": "[] - “Force quit all” should give a pop-up notification or warning",
+    "description": "“Force quit all” should give a pop-up notification or warning",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-1397",
-    "description": "[] - OSC event transport: osc expression for “hold”",
+    "description": "OSC event transport: osc expression for “hold”",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-2630",
-    "description": "[] - User experience: Enable the preferred tag to persist after project restart",
+    "description": "User experience: Enable the preferred tag to persist after project restart",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-2745",
-    "description": "[] - Keyboard shortcut for splitting layers",
+    "description": "Keyboard shortcut for splitting layers",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-2987",
-    "description": "[] - OmniCal: use faster and more flexible iOS logging framework",
+    "description": "OmniCal: use faster and more flexible iOS logging framework",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-4387",
-    "description": "[] - Shortcut to minimise track",
+    "description": "Shortcut to minimise track",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-5009",
-    "description": "[] - Other method to bring up Cue Set List",
+    "description": "Other method to bring up Cue Set List",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-5393",
-    "description": "[] - Cue list per Track",
+    "description": "Cue list per Track",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-6844",
-    "description": "[] - OmniCal: button to rotate input camera images in CaptureSetup",
+    "description": "OmniCal: button to rotate input camera images in CaptureSetup",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-6940",
-    "description": "[] - Add Weston 3-field deinterlace method",
+    "description": "Add Weston 3-field deinterlace method",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-7920",
-    "description": "[] - Optical: Single Click an Alignment point to confirm placement",
+    "description": "Optical: Single Click an Alignment point to confirm placement",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-7926",
-    "description": "[] - Optical: Ability to Hold an alignment point and use scroll wheel at the same time",
+    "description": "Optical: Ability to Hold an alignment point and use scroll wheel at the same time",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-8777",
-    "description": "[] - Allow selection of reduced blanking level when generating EDID",
+    "description": "Allow selection of reduced blanking level when generating EDID",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-8892",
-    "description": "[] - OptiCal: Update displayed blobs in capture setup when changing blob filter settings",
+    "description": "OptiCal: Update displayed blobs in capture setup when changing blob filter settings",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9037",
-    "description": "[] - OptiCal: Alignment doesn’t work when resolutions of cameras are different",
+    "description": "OptiCal: Alignment doesn’t work when resolutions of cameras are different",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9041",
-    "description": "[] - OptiCal: Rig check should not be dependent on an alignment first",
+    "description": "OptiCal: Rig check should not be dependent on an alignment first",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9081",
-    "description": "[] - OptiCal: View capture blobs always outputs every projector",
+    "description": "OptiCal: View capture blobs always outputs every projector",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9090",
-    "description": "[] - Identify Notch license expiry date via d3manager (including networked machines)",
+    "description": "Identify Notch license expiry date via d3manager (including networked machines)",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9178",
-    "description": "[] - OptiCal: Rig check should support mesh deform as part of the workflow",
+    "description": "OptiCal: Rig check should support mesh deform as part of the workflow",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9179",
-    "description": "[] - OptiCal: Rig check doesn’t utilise screen space well with 10+ cameras",
+    "description": "OptiCal: Rig check doesn’t utilise screen space well with 10+ cameras",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9338",
-    "description": "[] - Camera labels should have their own visibility option",
+    "description": "Camera labels should have their own visibility option",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9402",
-    "description": "[] - ScreenPosition: Rename to ObjectPosition",
+    "description": "ScreenPosition: Rename to ObjectPosition",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9491",
-    "description": "[] - OmniCal: Show un-cropped camera view in iOS camera app",
+    "description": "OmniCal: Show un-cropped camera view in iOS camera app",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9529",
-    "description": "[] - Active projector list needs a vertical scroller in capture setup window",
+    "description": "Active projector list needs a vertical scroller in capture setup window",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9623",
-    "description": "[] - OmniCal: iOS app should display Auto/Locked state for Exp/WB/Focus",
+    "description": "OmniCal: iOS app should display Auto/Locked state for Exp/WB/Focus",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9642",
-    "description": "[] - OmniCal: Allow naming and duplication of alignment poses",
+    "description": "OmniCal: Allow naming and duplication of alignment poses",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9706",
-    "description": "[] - OmniCal: Allow Rig Check of cameras with different names",
+    "description": "OmniCal: Allow Rig Check of cameras with different names",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9758",
-    "description": "[] - Remember State for SPR Device’s Engaged Status When Using QuickAlign",
+    "description": "Remember State for SPR Device’s Engaged Status When Using QuickAlign",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9764",
-    "description": "[] - OmniCal: iOS app UI updates very slowly for changes in focus, ISO etc",
+    "description": "OmniCal: iOS app UI updates very slowly for changes in focus, ISO etc",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9780",
-    "description": "[] - OmniCal: Automatically override SP Module when alignment is in progress and vice versa, remembering original state",
+    "description": "OmniCal: Automatically override SP Module when alignment is in progress and vice versa, remembering original state",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9781",
-    "description": "[] - OmniCal: Add ability to select SPR device in Quick Align’s Automation Section",
+    "description": "OmniCal: Add ability to select SPR device in Quick Align’s Automation Section",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9819",
-    "description": "[] - OmniCal: Selecting or changing automation device should automatically disengage and remember state",
+    "description": "OmniCal: Selecting or changing automation device should automatically disengage and remember state",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9866",
-    "description": "[] - OmniCal: Persist Quick Align Settings",
+    "description": "OmniCal: Persist Quick Align Settings",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9868",
-    "description": "[] - OmniCal: All screens in pose which have automation axes assigned should participate in set max/ min workflow",
+    "description": "OmniCal: All screens in pose which have automation axes assigned should participate in set max/ min workflow",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9869",
-    "description": "[] - OmniCal: Programmatically call Align to Alignment Points when setting max/ min",
+    "description": "OmniCal: Programmatically call Align to Alignment Points when setting max/ min",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9880",
-    "description": "[] - OmniCal: When duplicating a plan also copy its capture and results",
+    "description": "OmniCal: When duplicating a plan also copy its capture and results",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9896",
-    "description": "[] - Ability to set Min and Max for all Screens in the Current Pose",
+    "description": "Ability to set Min and Max for all Screens in the Current Pose",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9901",
-    "description": "[] - OmniCal: Ability to use props (or any Objects) as alignment surfaces in quick align",
+    "description": "OmniCal: Ability to use props (or any Objects) as alignment surfaces in quick align",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9903",
-    "description": "[] - OmniCal Rig Check Aligner: Display the current screen being Rig Checked for Alignment",
+    "description": "OmniCal Rig Check Aligner: Display the current screen being Rig Checked for Alignment",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9909",
-    "description": "[] - OmniCal: Improve disabling of screen position modules when quick align is open",
+    "description": "OmniCal: Improve disabling of screen position modules when quick align is open",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9914",
-    "description": "[] - OmniCal: Allow user to adjust opacity of alignment points",
+    "description": "OmniCal: Allow user to adjust opacity of alignment points",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9915",
-    "description": "[] - OmniCal: Respect locked flag in OmniCal Stage Plan editor",
+    "description": "OmniCal: Respect locked flag in OmniCal Stage Plan editor",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9955",
-    "description": "[] - OmniCal: warn before changing the master screen",
+    "description": "OmniCal: warn before changing the master screen",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9962",
-    "description": "[] - OmniCal: AlignmentPoints should have default names (labels)",
+    "description": "OmniCal: AlignmentPoints should have default names (labels)",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9968",
-    "description": "[] - Bring back the zoom in the timeline without pressing alt (option switch)",
+    "description": "Bring back the zoom in the timeline without pressing alt (option switch)",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9988",
-    "description": "[] - Tooltip for TC adjust",
+    "description": "Tooltip for TC adjust",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-9992",
-    "description": "[] - OmniCal: Remember the discovery adapter",
+    "description": "OmniCal: Remember the discovery adapter",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10050",
-    "description": "[] - OmniCal QuickAlign: import reference points does not import all points",
+    "description": "OmniCal QuickAlign: import reference points does not import all points",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10057",
-    "description": "[] - OmniCal: Rename “camera #” in QuickAlign to “view #” to avoid confusion with actual cameras",
+    "description": "OmniCal: Rename “camera #” in QuickAlign to “view #” to avoid confusion with actual cameras",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10058",
-    "description": "[] - OmniCal: make MobileCam UI read-only, so that changes always go through Plan workflow",
+    "description": "OmniCal: make MobileCam UI read-only, so that changes always go through Plan workflow",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10067",
-    "description": "[] - OmniCal: warn about dubious aspect ratio calculation for projectors",
+    "description": "OmniCal: warn about dubious aspect ratio calculation for projectors",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10104",
-    "description": "[] - OmniCal: make CaptureSetup options widget scrollable",
+    "description": "OmniCal: make CaptureSetup options widget scrollable",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10129",
-    "description": "[] - Integrate the options switch omniCalRenderFrameDelay into omniCal UI",
+    "description": "Integrate the options switch omniCalRenderFrameDelay into omniCal UI",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10151",
-    "description": "[] - OmniCal: Allow opening Capture Setup even with no cameras or projectors",
+    "description": "OmniCal: Allow opening Capture Setup even with no cameras or projectors",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10309",
-    "description": "[] - Add support for 25mm Lens Intrinsics for MV Cameras (for future implementation)",
+    "description": "Add support for 25mm Lens Intrinsics for MV Cameras (for future implementation)",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10360",
-    "description": "[] - Upload 24-bit RGB as packed textures and decode on the GPU",
+    "description": "Upload 24-bit RGB as packed textures and decode on the GPU",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10375",
-    "description": "[] - LivePP is not using a parameter for conan path, instead it is hardcoded",
+    "description": "LivePP is not using a parameter for conan path, instead it is hardcoded",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10410",
-    "description": "[] - 10-bit support on the gx 2c",
+    "description": "10-bit support on the gx 2c",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10451",
-    "description": "[] - Tooltips for everything in clip properties",
+    "description": "Tooltips for everything in clip properties",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10465",
-    "description": "[] - Add the ability to query the list of active transports from multi-transport event transport",
+    "description": "Add the ability to query the list of active transports from multi-transport event transport",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10467",
-    "description": "[] - OmniCal: Allow mix of iPods and machine vision cameras in same plan",
+    "description": "OmniCal: Allow mix of iPods and machine vision cameras in same plan",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10469",
-    "description": "[] - ListEditor: copy-paste rows",
+    "description": "ListEditor: copy-paste rows",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10494",
-    "description": "[] - HDR: d3 isn’t handling scene linear values well (sRGB looks incorrect)",
+    "description": "HDR: d3 isn’t handling scene linear values well (sRGB looks incorrect)",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10510",
-    "description": "[] - Strategically add margin to cue set list to improve clarity",
+    "description": "Strategically add margin to cue set list to improve clarity",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10517",
-    "description": "[] - OmniCal: Don’t request images from mobile cameras which are not in a plan",
+    "description": "OmniCal: Don’t request images from mobile cameras which are not in a plan",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10536",
-    "description": "[] - OmniCal: Persist camera image orientation",
+    "description": "OmniCal: Persist camera image orientation",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10541",
-    "description": "[] - OmniCal: Make View Capture only show blobs from selected projectors",
+    "description": "OmniCal: Make View Capture only show blobs from selected projectors",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10543",
-    "description": "[] - OmniCal: Add confirmation dialog before executing plan",
+    "description": "OmniCal: Add confirmation dialog before executing plan",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10547",
-    "description": "[] - GVG Matrix should notify when errors are returned by the device",
+    "description": "GVG Matrix should notify when errors are returned by the device",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10549",
-    "description": "[] - OmniCal: Add plan name to camera study report",
+    "description": "OmniCal: Add plan name to camera study report",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10574",
-    "description": "[] - OmniCal: Don’t crop images in UI when they are un-distorted",
+    "description": "OmniCal: Don’t crop images in UI when they are un-distorted",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10579",
-    "description": "[] - OmniCal: Limit camera gain settings in UI",
+    "description": "OmniCal: Limit camera gain settings in UI",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10580",
-    "description": "[] - Give specific error when selected network adaptor is unavailable on d3 start",
+    "description": "Give specific error when selected network adaptor is unavailable on d3 start",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10583",
-    "description": "[] - Ability to Add Reference points on LED surfaces",
+    "description": "Ability to Add Reference points on LED surfaces",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10585",
-    "description": "[] - Simulate pitch/tilt/zoom projector control in visualiser",
+    "description": "Simulate pitch/tilt/zoom projector control in visualiser",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10592",
-    "description": "[] - Standardize camera omnical white balance gain values to be in dB",
+    "description": "Standardize camera omnical white balance gain values to be in dB",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10593",
-    "description": "[] - OmniCal: handle user abort appropriately, don’t treat as error",
+    "description": "OmniCal: handle user abort appropriately, don’t treat as error",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10625",
-    "description": "[] - OmniCal: make aspect ratio calculation from DLT even clearer in Report",
+    "description": "OmniCal: make aspect ratio calculation from DLT even clearer in Report",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10634",
-    "description": "[] - OmniCal: Rig Check Aligner UI should be consistent with Quick Align",
+    "description": "OmniCal: Rig Check Aligner UI should be consistent with Quick Align",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10642",
-    "description": "[] - Change Default Brightness of LED",
+    "description": "Change Default Brightness of LED",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10653",
-    "description": "[] - Import Projector: support new MappingMatter CSV that contains UUIDs",
+    "description": "Import Projector: support new MappingMatter CSV that contains UUIDs",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10707",
-    "description": "[] - OmniCal: Remove reference to ScreenPositionAxis in alignment poses",
+    "description": "OmniCal: Remove reference to ScreenPositionAxis in alignment poses",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10719",
-    "description": "[] - Automation: Add support for latest simotion driver",
+    "description": "Automation: Add support for latest simotion driver",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10728",
-    "description": "[] - Notify user when projection surface has more than 12 (Dynamic soft edge limit) projectors assigned",
+    "description": "Notify user when projection surface has more than 12 (Dynamic soft edge limit) projectors assigned",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10734",
-    "description": "[] - Add re-image logs to system diag",
+    "description": "Add re-image logs to system diag",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10738",
-    "description": "[] - Ignore Timecode Module still shows ‘Chasing Timecode’ in transport widget",
+    "description": "Ignore Timecode Module still shows ‘Chasing Timecode’ in transport widget",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10745",
-    "description": "[] - Change word Clear for Colour in Head Configuration widget",
+    "description": "Change word Clear for Colour in Head Configuration widget",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10752",
-    "description": "[] - The name IgnoreTimecode is misleading for the layer’s actual function",
+    "description": "The name IgnoreTimecode is misleading for the layer’s actual function",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10761",
-    "description": "[] - Warn user when an image sequence has gaps",
+    "description": "Warn user when an image sequence has gaps",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10832",
-    "description": "[] - Update Movecat protocol to version 3",
+    "description": "Update Movecat protocol to version 3",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10842",
-    "description": "[] - Projector Control: Allow user to show/ hide columns",
+    "description": "Projector Control: Allow user to show/ hide columns",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10843",
-    "description": "[] - Projector Control: Allow user to display multiple projector control editors which can be configured differently",
+    "description": "Projector Control: Allow user to display multiple projector control editors which can be configured differently",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10848",
-    "description": "[] - List Editor: show/hide columns",
+    "description": "List Editor: show/hide columns",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10851",
-    "description": "[] - OmniCal: Add option to keep showing content on displays which are not part of a capture",
+    "description": "OmniCal: Add option to keep showing content on displays which are not part of a capture",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10905",
-    "description": "[] - Optimise CONTEXTN usage in Widget update/render functions",
+    "description": "Optimise CONTEXTN usage in Widget update/render functions",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10913",
-    "description": "[] - GradientTexture: generate gradient in 10-bit if in 10-bit mode",
+    "description": "GradientTexture: generate gradient in 10-bit if in 10-bit mode",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10914",
-    "description": "[] - SoftEdgeTexture: generate gradient in 10-bit if in 10-bit mode",
+    "description": "SoftEdgeTexture: generate gradient in 10-bit if in 10-bit mode",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10922",
-    "description": "[] - DSE: generate a 10-bit gradient in 10-bit mode",
+    "description": "DSE: generate a 10-bit gradient in 10-bit mode",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10954",
-    "description": "[] - OmniCal: camera bandwidth limit should ignore non-MV cameras (e.g. iPods)",
+    "description": "OmniCal: camera bandwidth limit should ignore non-MV cameras (e.g. iPods)",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10965",
-    "description": "[] - List Editor: Review short-term changes made to some list editor in r15.2",
+    "description": "List Editor: Review short-term changes made to some list editor in r15.2",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10975",
-    "description": "[] - OmniCal: Add ability to apply plan and result alignments from open module",
+    "description": "OmniCal: Add ability to apply plan and result alignments from open module",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-10994",
-    "description": "[] - Change behaviour of Cue Set List “Go” button from double click to one click",
+    "description": "Change behaviour of Cue Set List “Go” button from double click to one click",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11017",
-    "description": "[] - Rename CueSetList",
+    "description": "Rename CueSetList",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11039",
-    "description": "[] - OmniCal: Improve UI for pose editor",
+    "description": "OmniCal: Improve UI for pose editor",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11042",
-    "description": "[] - OmniCal: Allow correction of focal lengths without having to redo capture",
+    "description": "OmniCal: Allow correction of focal lengths without having to redo capture",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11049",
-    "description": "[] - Fix build dependency for auto-generated RC files",
+    "description": "Fix build dependency for auto-generated RC files",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11051",
-    "description": "[] - Trial license Product Code should be set automatically",
+    "description": "Trial license Product Code should be set automatically",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11077",
-    "description": "[] - minor Build System improvements around inconsistencies and dependencies",
+    "description": "minor Build System improvements around inconsistencies and dependencies",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11079",
-    "description": "[] - Explicitly mark tests that involve throwing (expected) exceptions with a Catch tag",
+    "description": "Explicitly mark tests that involve throwing (expected) exceptions with a Catch tag",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11081",
-    "description": "[] - OSC sockpuppet Address and strings Export and visualize",
+    "description": "OSC sockpuppet Address and strings Export and visualize",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11098",
-    "description": "[] - d3_test: load test DLLs via explicit names, rather than wildcard *_test.dll to avoid branch conflicts",
+    "description": "d3_test: load test DLLs via explicit names, rather than wildcard *_test.dll to avoid branch conflicts",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11116",
-    "description": "[] - build: reduce unused 3rd party dependencies in conanfile",
+    "description": "build: reduce unused 3rd party dependencies in conanfile",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11126",
-    "description": "[] - OmniCal: add advanced option for Auto/Manual bandwidth management to vmap",
+    "description": "OmniCal: add advanced option for Auto/Manual bandwidth management to vmap",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11184",
-    "description": "[] - build: “install” project does not re-run, even if output folder is deleted",
+    "description": "build: “install” project does not re-run, even if output folder is deleted",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11326",
-    "description": "[] - Log file and line number when exceptions are thrown by NVAPI and ADL",
+    "description": "Log file and line number when exceptions are thrown by NVAPI and ADL",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11459",
-    "description": "[] - OmniCal: “Check Cameras” window opens far top left of the screen",
+    "description": "OmniCal: “Check Cameras” window opens far top left of the screen",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11483",
-    "description": "[] - ListEditor: use Resource description for popup menu title",
+    "description": "ListEditor: use Resource description for popup menu title",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11488",
-    "description": "[] - OmniCal: “Execute plan” throws “master screen not set” error if QuickAlign was never done",
+    "description": "OmniCal: “Execute plan” throws “master screen not set” error if QuickAlign was never done",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Improvements",
     "dsof": "DSOF-11575",
-    "description": "[] - Expose m_updateNumber to python - allowing for easier programmatic detection of when machines have finished applying feed settings",
+    "description": "Expose m_updateNumber to python - allowing for easier programmatic detection of when machines have finished applying feed settings",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-1475",
-    "description": "[] - Per projector output mode GUI problem",
+    "description": "Per projector output mode GUI problem",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-1579",
-    "description": "[] - BMP, TIFF screenshot formats don’t work",
+    "description": "BMP, TIFF screenshot formats don’t work",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-5932",
-    "description": "[] - Cue Set List show wrong information for TC Tags",
+    "description": "Cue Set List show wrong information for TC Tags",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-9082",
-    "description": "[] - Introducing earlier frames to an already ingested image sequence can cause access violations",
+    "description": "Introducing earlier frames to an already ingested image sequence can cause access violations",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-9442",
-    "description": "[] - OmniCal: Uncaught exception when exiting d3 whilst blob is been detected",
+    "description": "OmniCal: Uncaught exception when exiting d3 whilst blob is been detected",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-9505",
-    "description": "[] - OmniCal: Remove legacy code in editor_aligner.py",
+    "description": "OmniCal: Remove legacy code in editor_aligner.py",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-9582",
-    "description": "[] - Can not delete capture plans",
+    "description": "Can not delete capture plans",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-9770",
-    "description": "[] - OmniCal: multi-pose automation only works when input values are in metres",
+    "description": "OmniCal: multi-pose automation only works when input values are in metres",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-9775",
-    "description": "[] - OmniCal: screen positions set by automation are inconsistent with alignment poses",
+    "description": "OmniCal: screen positions set by automation are inconsistent with alignment poses",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-9870",
-    "description": "[] - OmniCal: Master Screen is still selected as the current screen when creating poses",
+    "description": "OmniCal: Master Screen is still selected as the current screen when creating poses",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-9879",
-    "description": "[] - OmniCal: Don’t show notification when creating poses without automation device selected",
+    "description": "OmniCal: Don’t show notification when creating poses without automation device selected",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-9906",
-    "description": "[] - QuickAlign: changing camera removes pose-specific label",
+    "description": "QuickAlign: changing camera removes pose-specific label",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-9965",
-    "description": "[] - OmniCal: Setting Min and Max Output using MultiPose can cause unexpected rotation",
+    "description": "OmniCal: Setting Min and Max Output using MultiPose can cause unexpected rotation",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10011",
-    "description": "[] - d3 start is delayed if image sequences are present in videoFile folder",
+    "description": "d3 start is delayed if image sequences are present in videoFile folder",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10039",
-    "description": "[] - OmniCal QuickAlign: disallow reshape tools when not in base pose",
+    "description": "OmniCal QuickAlign: disallow reshape tools when not in base pose",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10106",
-    "description": "[] - Widget inconsistencies with maxSize and pos",
+    "description": "Widget inconsistencies with maxSize and pos",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10122",
-    "description": "[] - Removing camera from OmniCal list requires a restart to take effect",
+    "description": "Removing camera from OmniCal list requires a restart to take effect",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10162",
-    "description": "[] - d3module.dll not running",
+    "description": "d3module.dll not running",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10206",
-    "description": "[] - Changing between different Drivers will make all ASIO outputs go “Unknown”",
+    "description": "Changing between different Drivers will make all ASIO outputs go “Unknown”",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10243",
-    "description": "[] - QuickCal correspondence point rendering doesn’t work with feed-proxied Projectors",
+    "description": "QuickCal correspondence point rendering doesn’t work with feed-proxied Projectors",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10269",
-    "description": "[] - List Editor: Fix scrolling",
+    "description": "List Editor: Fix scrolling",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10295",
-    "description": "[] - Changing bit depth via NvAPI fails occasionally depending on current display mode",
+    "description": "Changing bit depth via NvAPI fails occasionally depending on current display mode",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10323",
-    "description": "[] - Video in 5 to 16 get lost forever after send them to the trash until project restart",
+    "description": "Video in 5 to 16 get lost forever after send them to the trash until project restart",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10332",
-    "description": "[] - ObjectView items remain at previous size after deleting long text",
+    "description": "ObjectView items remain at previous size after deleting long text",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10339",
-    "description": "[] - OmniCal: VimabCamServer writes temp files to project directory",
+    "description": "OmniCal: VimabCamServer writes temp files to project directory",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10365",
-    "description": "[] - Root cause vx 4 stall on quit",
+    "description": "Root cause vx 4 stall on quit",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10371",
-    "description": "[] - Omnical. Enable discovering mobile cameras stops working after changing several times from yes to no",
+    "description": "Omnical. Enable discovering mobile cameras stops working after changing several times from yes to no",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10386",
-    "description": "[] - ‘Audio Error in createSound’ notification when audio file is missing on slave",
+    "description": "‘Audio Error in createSound’ notification when audio file is missing on slave",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10405",
-    "description": "[] - Excessive console spam, input does not display when coupled input signal is lost/stopped",
+    "description": "Excessive console spam, input does not display when coupled input signal is lost/stopped",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10423",
-    "description": "[] - OmniCal: Reshape Scaling and Screen Scaling options in QuickAlign not saved as json",
+    "description": "OmniCal: Reshape Scaling and Screen Scaling options in QuickAlign not saved as json",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10436",
-    "description": "[] - When a video layer’s speed is linked with an expression to another video layer’s speed, the speed of the controlled video layer is doubles when it hits an intersection",
+    "description": "When a video layer’s speed is linked with an expression to another video layer’s speed, the speed of the controlled video layer is doubles when it hits an intersection",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10437",
-    "description": "[] - Screen Position Receiver. DMX channels of axis created with a DMX screen position receiver driver overlaps",
+    "description": "Screen Position Receiver. DMX channels of axis created with a DMX screen position receiver driver overlaps",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10446",
-    "description": "[] - Audio will stop and Video skips frames if the mode is changed from timecode to normal via sockpuppet",
+    "description": "Audio will stop and Video skips frames if the mode is changed from timecode to normal via sockpuppet",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10454",
-    "description": "[] - Asio Driver will not live update",
+    "description": "Asio Driver will not live update",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10456",
-    "description": "[] - Blend Gamma and Sharpness doesn’t grey out when opening Omnical",
+    "description": "Blend Gamma and Sharpness doesn’t grey out when opening Omnical",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10462",
-    "description": "[] - VR Camera rotation incorrect",
+    "description": "VR Camera rotation incorrect",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10484",
-    "description": "[] - ListEditor: cannot undo an edit of multiple rows",
+    "description": "ListEditor: cannot undo an edit of multiple rows",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10488",
-    "description": "[] - Notch License Distributor is not responding to requests sent via d3manager",
+    "description": "Notch License Distributor is not responding to requests sent via d3manager",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10498",
-    "description": "[] - Projector names don’t get updated in OmniCal studies after renaming in the stage",
+    "description": "Projector names don’t get updated in OmniCal studies after renaming in the stage",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10504",
-    "description": "[] - Video: Changing ‘at the end point’ from Ping-Pong to Loop doesn’t work",
+    "description": "Video: Changing ‘at the end point’ from Ping-Pong to Loop doesn’t work",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10509",
-    "description": "[] - Adding or deleting long strings of text in Notes column breaks rendering of CueSetList editor",
+    "description": "Adding or deleting long strings of text in Notes column breaks rendering of CueSetList editor",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10512",
-    "description": "[] - Investigate why Cue Set List editor’s performance is low",
+    "description": "Investigate why Cue Set List editor’s performance is low",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10516",
-    "description": "[] - Selecting a row in a ListEditor then pressing up or down raises an exception",
+    "description": "Selecting a row in a ListEditor then pressing up or down raises an exception",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10519",
-    "description": "[] - Cue Set List cannot be locked open",
+    "description": "Cue Set List cannot be locked open",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10525",
-    "description": "[] - Horizontal Scroll Bar Appears in Cue Set List",
+    "description": "Horizontal Scroll Bar Appears in Cue Set List",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10535",
-    "description": "[] - List Editor in Feed cannot properly toggle test pattern",
+    "description": "List Editor in Feed cannot properly toggle test pattern",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10546",
-    "description": "[] - Regression - Unable to Multiselect then duplicate feed rectangles",
+    "description": "Regression - Unable to Multiselect then duplicate feed rectangles",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10554",
-    "description": "[] - strobe: Doesn’t work as an arrow source into other layer types",
+    "description": "strobe: Doesn’t work as an arrow source into other layer types",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10564",
-    "description": "[] - ListEditor: use field name instead of display name when looking up columns",
+    "description": "ListEditor: use field name instead of display name when looking up columns",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10568",
-    "description": "[] - log useful error when d3 crashes; due to free disk space alert",
+    "description": "log useful error when d3 crashes; due to free disk space alert",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10573",
-    "description": "[] - Error trying to use Realtek ASIO device due to incorrect buffer size",
+    "description": "Error trying to use Realtek ASIO device due to incorrect buffer size",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10582",
-    "description": "[] - d3 fails to start on designer machine when opening some projects",
+    "description": "d3 fails to start on designer machine when opening some projects",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10587",
-    "description": "[] - List Editor: Unable to duplicate multiple feed rectangle via list editor",
+    "description": "List Editor: Unable to duplicate multiple feed rectangle via list editor",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10591",
-    "description": "[] - NDI® BirdDog is causing d3/NDI® applications to crash",
+    "description": "NDI® BirdDog is causing d3/NDI® applications to crash",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10594",
-    "description": "[] - OmniCal: silently ignoring potential errors during Capture (e.g. file handling)",
+    "description": "OmniCal: silently ignoring potential errors during Capture (e.g. file handling)",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10595",
-    "description": "[] - OmniCal - When OmniCal not setup, ‘NoneType’ notification when user clicks “Resets plan projectors”",
+    "description": "OmniCal - When OmniCal not setup, ‘NoneType’ notification when user clicks “Resets plan projectors”",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10599",
-    "description": "[] - EDID emulation control on GUI and non-VFC heads is error prone and difficult to find",
+    "description": "EDID emulation control on GUI and non-VFC heads is error prone and difficult to find",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10601",
-    "description": "[] - Multi Transport Track selection doesn’t work in 15.2",
+    "description": "Multi Transport Track selection doesn’t work in 15.2",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10603",
-    "description": "[] - Broken UI for “Export Current Camera View”",
+    "description": "Broken UI for “Export Current Camera View”",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10626",
-    "description": "[] - Changing tracks via track bin causes GUI errors when pinned",
+    "description": "Changing tracks via track bin causes GUI errors when pinned",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10682",
-    "description": "[] - Projectors controlled by a projector device controller sometimes do not send DMX commands on input",
+    "description": "Projectors controlled by a projector device controller sometimes do not send DMX commands on input",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10686",
-    "description": "[] - When a layer crashes, we have to restart d3 to retry running the layer",
+    "description": "When a layer crashes, we have to restart d3 to retry running the layer",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10696",
-    "description": "[] - OmniCal: Mesh deform changes surface to use subdivided mesh even if no deform is performed",
+    "description": "OmniCal: Mesh deform changes surface to use subdivided mesh even if no deform is performed",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10726",
-    "description": "[] - MultiTransport: ‘NoneType’ object has no attribute ‘findWidgetByName’",
+    "description": "MultiTransport: ‘NoneType’ object has no attribute ‘findWidgetByName’",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10732",
-    "description": "[] - Project upgrade from r15.x to r15.4 causes corruption",
+    "description": "Project upgrade from r15.x to r15.4 causes corruption",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10737",
-    "description": "[] - Audio Lock mode doesn’t behave as expected when using ‘loop section’ play mode",
+    "description": "Audio Lock mode doesn’t behave as expected when using ‘loop section’ play mode",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10746",
-    "description": "[] - Upgrade of Buckingham palace project fails",
+    "description": "Upgrade of Buckingham palace project fails",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10750",
-    "description": "[] - Bounds check notifications after upgrading EdSheeran_MultiplyWorldTour2014 project",
+    "description": "Bounds check notifications after upgrading EdSheeran_MultiplyWorldTour2014 project",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10774",
-    "description": "[] - 10-bit DPX screenshot generated from d3 cannot be loaded in d3",
+    "description": "10-bit DPX screenshot generated from d3 cannot be loaded in d3",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10797",
-    "description": "[] - Errors while playing back an image sequence while its gaining extra frames",
+    "description": "Errors while playing back an image sequence while its gaining extra frames",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10799",
-    "description": "[] - List Editor: Display on Feed rectangle is editable",
+    "description": "List Editor: Display on Feed rectangle is editable",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10800",
-    "description": "[] - Unable to open DMX Patch Editor",
+    "description": "Unable to open DMX Patch Editor",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10804",
-    "description": "[] - DxShaderHeaderCompiler: cannot parse cs_5_0 shaders",
+    "description": "DxShaderHeaderCompiler: cannot parse cs_5_0 shaders",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10805",
-    "description": "[] - OmniCal: Visualise Calibration draws points in red most of the time, even for good calibrations",
+    "description": "OmniCal: Visualise Calibration draws points in red most of the time, even for good calibrations",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10813",
-    "description": "[] - moveColumn failed. No column exists for “Name” error for Projector multi-selection",
+    "description": "moveColumn failed. No column exists for “Name” error for Projector multi-selection",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10839",
-    "description": "[] - ListEditor: primary selection row does not support multi-row actions when selected using keyboard",
+    "description": "ListEditor: primary selection row does not support multi-row actions when selected using keyboard",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10856",
-    "description": "[] - Audio crackles and pops with multiple multichannel files and audio layer",
+    "description": "Audio crackles and pops with multiple multichannel files and audio layer",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10857",
-    "description": "[] - OmniCal: View capture can only show white level and grid images of first projector in list",
+    "description": "OmniCal: View capture can only show white level and grid images of first projector in list",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10862",
-    "description": "[] - Access violation when updating projector control device when using simulation config",
+    "description": "Access violation when updating projector control device when using simulation config",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10864",
-    "description": "[] - List Editor: Unable to lock multiple camera bookmark by clicking the first selected camera bookmark",
+    "description": "List Editor: Unable to lock multiple camera bookmark by clicking the first selected camera bookmark",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10865",
-    "description": "[] - List Editor: Multi-select and multi-edit does not work with MultiTransport Manager",
+    "description": "List Editor: Multi-select and multi-edit does not work with MultiTransport Manager",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10870",
-    "description": "[] - Cue set list: Long Cue set list severely degrades frame rate",
+    "description": "Cue set list: Long Cue set list severely degrades frame rate",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10872",
-    "description": "[] - OmniCal: RigCheck fails to open if original plan data is not available",
+    "description": "OmniCal: RigCheck fails to open if original plan data is not available",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10873",
-    "description": "[] - installer: include VimbaCamServer.exe in ‘minimal’ installer",
+    "description": "installer: include VimbaCamServer.exe in ‘minimal’ installer",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10880",
-    "description": "[] - video in Inputs are auto assigned in swapped order",
+    "description": "video in Inputs are auto assigned in swapped order",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10881",
-    "description": "[] - gx 2c can only use 5 video inputs at a time",
+    "description": "gx 2c can only use 5 video inputs at a time",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10886",
-    "description": "[] - Cue Set List: Adding a track to a new setlist gives ACCESS VIOLATION",
+    "description": "Cue Set List: Adding a track to a new setlist gives ACCESS VIOLATION",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10889",
-    "description": "[] - Weston 3-field deinterlacing method produces bobbing",
+    "description": "Weston 3-field deinterlacing method produces bobbing",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10890",
-    "description": "[] - Cue Set List: Adding a track to a new setlist gives Pure Function call",
+    "description": "Cue Set List: Adding a track to a new setlist gives Pure Function call",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10901",
-    "description": "[] - Weave deinterlace method causes bobbing",
+    "description": "Weave deinterlace method causes bobbing",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10906",
-    "description": "[] - OmniCal: camera thumbnails show question mark after a capture",
+    "description": "OmniCal: camera thumbnails show question mark after a capture",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10909",
-    "description": "[] - List Editor: Double-clicking Projector under Display in Feed rectangle List Editor gives ‘NoneType’ notification",
+    "description": "List Editor: Double-clicking Projector under Display in Feed rectangle List Editor gives ‘NoneType’ notification",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10910",
-    "description": "[] - Projector FXAA downgrades output to 8-bit",
+    "description": "Projector FXAA downgrades output to 8-bit",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10911",
-    "description": "[] - Blur and MotionBlur layers downgrade content to 8-bit",
+    "description": "Blur and MotionBlur layers downgrade content to 8-bit",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10912",
-    "description": "[] - Notch: Using Input processing size or notchRenderInterval downgrades image to 8-bit",
+    "description": "Notch: Using Input processing size or notchRenderInterval downgrades image to 8-bit",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10916",
-    "description": "[] - Adding latency to a feed head downgrades output to 8-bit",
+    "description": "Adding latency to a feed head downgrades output to 8-bit",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10917",
-    "description": "[] - Hold downgrades output to 8-bit",
+    "description": "Hold downgrades output to 8-bit",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10921",
-    "description": "[] - ImageSequences: 16-bit TIFFs cause access violations",
+    "description": "ImageSequences: 16-bit TIFFs cause access violations",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10926",
-    "description": "[] - Regression: Starting project with all video inputs connected and assigned causes OS-level hang",
+    "description": "Regression: Starting project with all video inputs connected and assigned causes OS-level hang",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10934",
-    "description": "[] - DeviceRecording: Using restricted filename characters in section notes breaks recording",
+    "description": "DeviceRecording: Using restricted filename characters in section notes breaks recording",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10936",
-    "description": "[] - OmniCal: OpticalCalibrator::activate fails due to SlaveManSystem not being initialised",
+    "description": "OmniCal: OpticalCalibrator::activate fails due to SlaveManSystem not being initialised",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10938",
-    "description": "[] - List Editor: d3 freezes when trying to hide the last visible column",
+    "description": "List Editor: d3 freezes when trying to hide the last visible column",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10944",
-    "description": "[] - OmniCal: QuickAlign shows old base pose alignment images after doing a new full capture",
+    "description": "OmniCal: QuickAlign shows old base pose alignment images after doing a new full capture",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10946",
-    "description": "[] - OmniCal: unsupported camera commands crash iPods",
+    "description": "OmniCal: unsupported camera commands crash iPods",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10948",
-    "description": "[] - OmniCal: Access violation when attempting to open module the currently selected plan",
+    "description": "OmniCal: Access violation when attempting to open module the currently selected plan",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10949",
-    "description": "[] - Error message on OSC sockpuppet (Type mismatch - can’t assign from ‘Resource::RP’ to ‘VideoClip::RP’)",
+    "description": "Error message on OSC sockpuppet (Type mismatch - can’t assign from ‘Resource::RP’ to ‘VideoClip::RP’)",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10959",
-    "description": "[] - OmniCal: bring back vmap changes after machinevision_fixes merge (in r15.4)",
+    "description": "OmniCal: bring back vmap changes after machinevision_fixes merge (in r15.4)",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10995",
-    "description": "[] - Display re-ordering may be incorrect on vx 4",
+    "description": "Display re-ordering may be incorrect on vx 4",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-10998",
-    "description": "[] - Embedded audio can pop when jumping to a new location in the same clip in locked mode, or changing clip",
+    "description": "Embedded audio can pop when jumping to a new location in the same clip in locked mode, or changing clip",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11027",
-    "description": "[] - OmniCal: Projector lens distortion lookup calculation stalls main thread",
+    "description": "OmniCal: Projector lens distortion lookup calculation stalls main thread",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11029",
-    "description": "[] - List Editor: d3 freezes when sorting on certain columns in list editor",
+    "description": "List Editor: d3 freezes when sorting on certain columns in list editor",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11033",
-    "description": "[] - Cannot export DPX screenshot while in 8-bit mode",
+    "description": "Cannot export DPX screenshot while in 8-bit mode",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11040",
-    "description": "[] - OmniCal: Focal lengths not set correctly in a plan when creating it from a folder",
+    "description": "OmniCal: Focal lengths not set correctly in a plan when creating it from a folder",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11059",
-    "description": "[] - BlueFish: capture group downgrades 10-bit capture to 8-bit",
+    "description": "BlueFish: capture group downgrades 10-bit capture to 8-bit",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11063",
-    "description": "[] - Content from previous section is visible for first frame of new section",
+    "description": "Content from previous section is visible for first frame of new section",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11076",
-    "description": "[] - Error when selecting a mapping through sockpuppet osc",
+    "description": "Error when selecting a mapping through sockpuppet osc",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11078",
-    "description": "[] - various unit/integration test fixes and improvements for r15.4",
+    "description": "various unit/integration test fixes and improvements for r15.4",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11080",
-    "description": "[] - Image constructor overwrites adjacent memory",
+    "description": "Image constructor overwrites adjacent memory",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11082",
-    "description": "[] - OmniCal: Error finding camera plan during simulated calibration when no mobile device is set",
+    "description": "OmniCal: Error finding camera plan during simulated calibration when no mobile device is set",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11109",
-    "description": "[] - ListEditor: Incorrect number of arguments to call when sorting",
+    "description": "ListEditor: Incorrect number of arguments to call when sorting",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11112",
-    "description": "[] - OmniCal: Auto reset of screen meshes when opening Quick Align UI should revert to reshaped meshes if they exist",
+    "description": "OmniCal: Auto reset of screen meshes when opening Quick Align UI should revert to reshaped meshes if they exist",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11121",
-    "description": "[] - ACCESS_VIOLATION using OSC",
+    "description": "ACCESS_VIOLATION using OSC",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11122",
-    "description": "[] - ACCESS_VIOLATION: user-mode DEP violation",
+    "description": "ACCESS_VIOLATION: user-mode DEP violation",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11155",
-    "description": "[] - Undoing a full drag instead of individual moves",
+    "description": "Undoing a full drag instead of individual moves",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11158",
-    "description": "[] - Timeline widget sizing breaks when expanding groups of layers, when it’s height reaches the top of the bounds of screen",
+    "description": "Timeline widget sizing breaks when expanding groups of layers, when it’s height reaches the top of the bounds of screen",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11174",
-    "description": "[] - Broken layer overlap and contains logic",
+    "description": "Broken layer overlap and contains logic",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11183",
-    "description": "[] - OmniCal: Renaming a pose makes it disappear from list of poses in QuickAlign",
+    "description": "OmniCal: Renaming a pose makes it disappear from list of poses in QuickAlign",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11194",
-    "description": "[] - build: PCH compilation wrongly use blip_base precompiled header in several projects",
+    "description": "build: PCH compilation wrongly use blip_base precompiled header in several projects",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11211",
-    "description": "[] - OmniCal: duplicate camera plan names are allowed",
+    "description": "OmniCal: duplicate camera plan names are allowed",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11212",
-    "description": "[] - clicking ‘quit all’ causes notification, machines do not quit all",
+    "description": "clicking ‘quit all’ causes notification, machines do not quit all",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11222",
-    "description": "[] - Exclude vx 4 MGMT network interface from being used by session",
+    "description": "Exclude vx 4 MGMT network interface from being used by session",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11232",
-    "description": "[] - OmniCal - Cannot perform capture due to file “being used by another process”",
+    "description": "OmniCal - Cannot perform capture due to file “being used by another process”",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11238",
-    "description": "[] - GUI never appears on d3 start",
+    "description": "GUI never appears on d3 start",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11250",
-    "description": "[] - OmniCal: Cannot toggle guidelines in Rig Check Alignment UI due to python error",
+    "description": "OmniCal: Cannot toggle guidelines in Rig Check Alignment UI due to python error",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11251",
-    "description": "[] - OmniCal: Arrow key controls don’t work for moving points in Rig Check UI",
+    "description": "OmniCal: Arrow key controls don’t work for moving points in Rig Check UI",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11261",
-    "description": "[] - Undo can drop frame rate significantly",
+    "description": "Undo can drop frame rate significantly",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11270",
-    "description": "[] - ObjectView doesn’t work in List Editor",
+    "description": "ObjectView doesn’t work in List Editor",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11274",
-    "description": "[] - Multitransport bounds check",
+    "description": "Multitransport bounds check",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11280",
-    "description": "[] - Multitransport bounds check",
+    "description": "Multitransport bounds check",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11311",
-    "description": "[] - Sockpuppet: OSC-controlled layers don’t go dormant",
+    "description": "Sockpuppet: OSC-controlled layers don’t go dormant",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11322",
-    "description": "[] - Sockpuppet: OSC input isn’t restricted by limits or number of options",
+    "description": "Sockpuppet: OSC input isn’t restricted by limits or number of options",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11330",
-    "description": "[] - Cue List re-sizes itself larger after pinning and project restart",
+    "description": "Cue List re-sizes itself larger after pinning and project restart",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11346",
-    "description": "[] - OmniCal: Calibrator does not send BW setting to cameras when changing BW value",
+    "description": "OmniCal: Calibrator does not send BW setting to cameras when changing BW value",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11348",
-    "description": "[] - OmniCal: Stage Plan should use cameras in the current plan in order to determine nAliveMVCameras",
+    "description": "OmniCal: Stage Plan should use cameras in the current plan in order to determine nAliveMVCameras",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11351",
-    "description": "[] - GPU memory occupied by NotchLC videos is never released",
+    "description": "GPU memory occupied by NotchLC videos is never released",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11357",
-    "description": "[] - Large surge in GPU memory usage if system starts regularly dropping frames on GPU while playing NotchLC videos",
+    "description": "Large surge in GPU memory usage if system starts regularly dropping frames on GPU while playing NotchLC videos",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11358",
-    "description": "[] - Unable to open ‘Check Camera…’ in the attached project",
+    "description": "Unable to open ‘Check Camera…’ in the attached project",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11363",
-    "description": "[] - Error in zip_d3_project_for_debug.py",
+    "description": "Error in zip_d3_project_for_debug.py",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11385",
-    "description": "[] - Tracking: MoSysF4 driver displays name twice in data monitor",
+    "description": "Tracking: MoSysF4 driver displays name twice in data monitor",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11386",
-    "description": "[] - Tracking: MoSysF4 driver only updates tracking sources for camera 0",
+    "description": "Tracking: MoSysF4 driver only updates tracking sources for camera 0",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11420",
-    "description": "[] - Changing screen type while in the feed view produces an error",
+    "description": "Changing screen type while in the feed view produces an error",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11421",
-    "description": "[] - Fullscreen switching causes genlock to be dropped on vx4",
+    "description": "Fullscreen switching causes genlock to be dropped on vx4",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11425",
-    "description": "[] - Trial version installer fails due to missing license file",
+    "description": "Trial version installer fails due to missing license file",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11430",
-    "description": "[] - Cue list: Remaining timestamps get compressed if cue list is not it its widest",
+    "description": "Cue list: Remaining timestamps get compressed if cue list is not it its widest",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11433",
-    "description": "[] - Slowly horizontally decreasing the window size of a ResizableWidget causes the window contents to shudder",
+    "description": "Slowly horizontally decreasing the window size of a ResizableWidget causes the window contents to shudder",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11434",
-    "description": "[] - OSC sockpuppet: editing patch multiple times causes UI glitch",
+    "description": "OSC sockpuppet: editing patch multiple times causes UI glitch",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11441",
-    "description": "[] - OmniCal: Multi-Pose rotations are not normalised automatically",
+    "description": "OmniCal: Multi-Pose rotations are not normalised automatically",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11442",
-    "description": "[] - AR camera drivers with no lens file loaded set camera FOV to 0",
+    "description": "AR camera drivers with no lens file loaded set camera FOV to 0",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11445",
-    "description": "[] - Cue list: Double colon after a search tag returns no results",
+    "description": "Cue list: Double colon after a search tag returns no results",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11451",
-    "description": "[] - Cue list: Tag column gets shortened when resizing cue list",
+    "description": "Cue list: Tag column gets shortened when resizing cue list",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11458",
-    "description": "[] - OmniCal: Cameras and pose names do not get updated on the QuickAlign window when creating a new pose",
+    "description": "OmniCal: Cameras and pose names do not get updated on the QuickAlign window when creating a new pose",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11468",
-    "description": "[] - Unable to set 10-bit mode on gx 2c with d3 EDIDs",
+    "description": "Unable to set 10-bit mode on gx 2c with d3 EDIDs",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11469",
-    "description": "[] - OmniCal: Validation messages need to be swapped when clicking the “Check Cameras” button for simulated and live cameras capture plan",
+    "description": "OmniCal: Validation messages need to be swapped when clicking the “Check Cameras” button for simulated and live cameras capture plan",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11475",
-    "description": "[] - Audio does not playback in the audio layer using sockpuppet OSC",
+    "description": "Audio does not playback in the audio layer using sockpuppet OSC",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11482",
-    "description": "[] - OmniCal: Camera settings not applied to cameras when opening the Rig Check / Camera Check window",
+    "description": "OmniCal: Camera settings not applied to cameras when opening the Rig Check / Camera Check window",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11485",
-    "description": "[] - Omnical: blob detection masks lock up capture when images mismatch in resolution to the camera",
+    "description": "Omnical: blob detection masks lock up capture when images mismatch in resolution to the camera",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11489",
-    "description": "[] - Stringify EEPROM data when logging it to console",
+    "description": "Stringify EEPROM data when logging it to console",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11490",
-    "description": "[] - d3service does not correctly handle HDMI cards with invalid EEPROM data or data that can’t be read",
+    "description": "d3service does not correctly handle HDMI cards with invalid EEPROM data or data that can’t be read",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11498",
-    "description": "[] - OmniCal: Renaming a pose does not update camera image text in QuickAlign",
+    "description": "OmniCal: Renaming a pose does not update camera image text in QuickAlign",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11499",
-    "description": "[] - OmniCal: Device name mismatch error when opening Check Cameras UI",
+    "description": "OmniCal: Device name mismatch error when opening Check Cameras UI",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11500",
-    "description": "[] - Tag type changes to Midi when changing the tag entry in Cue List",
+    "description": "Tag type changes to Midi when changing the tag entry in Cue List",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11518",
-    "description": "[] - OSC Patch editor fields does not have user friendly display name or tooltips",
+    "description": "OSC Patch editor fields does not have user friendly display name or tooltips",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11521",
-    "description": "[] - ListEditor - removing all columns and then re-adding them breaks the window",
+    "description": "ListEditor - removing all columns and then re-adding them breaks the window",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11530",
-    "description": "[] - Error when Test route button is pressed and test input or test output field is empty",
+    "description": "Error when Test route button is pressed and test input or test output field is empty",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11534",
-    "description": "[] - Access violation on shutdown when closing all widgets / GuiSystem",
+    "description": "Access violation on shutdown when closing all widgets / GuiSystem",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11548",
-    "description": "[] - TelnetConsole: Some commands are not properly propagated through resource Transport",
+    "description": "TelnetConsole: Some commands are not properly propagated through resource Transport",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11549",
-    "description": "[] - PQ colour space outputs incorrectly low values",
+    "description": "PQ colour space outputs incorrectly low values",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11550",
-    "description": "[] - Mosys lens data reports incorrect PA width",
+    "description": "Mosys lens data reports incorrect PA width",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11565",
-    "description": "[] - Venue contains Tracking Source field",
+    "description": "Venue contains Tracking Source field",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11572",
-    "description": "[] - Setting a 10-bit EDID for SDI VFC on a vx4 crashes d3service",
+    "description": "Setting a 10-bit EDID for SDI VFC on a vx4 crashes d3service",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11578",
-    "description": "[] - vx4: d3service and d3buddy intermittent crash due to remora HTTP post error",
+    "description": "vx4: d3service and d3buddy intermittent crash due to remora HTTP post error",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Bugs",
     "dsof": "DSOF-11613",
-    "description": "[] - Unable to set 10-bit mode on gx 2c with d3 EDIDs",
+    "description": "Unable to set 10-bit mode on gx 2c with d3 EDIDs",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Other",
     "dsof": "DSOF-11195",
-    "description": "[] - Revised T&Cs for Trial only",
+    "description": "Revised T&Cs for Trial only",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
     "category": "Other",
     "dsof": "DSOF-11507",
-    "description": "[] - Update default test pattern images",
+    "description": "Update default test pattern images",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {

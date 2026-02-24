@@ -135,6 +135,7 @@ function parseReleasePage(html, pagePath) {
       // Description: remove DSOF references and separators between them, then clean up
       let description = text
         .replace(/DSOF-\d+/g, "")
+        .replace(/\[\s*\]/g, "")
         .replace(/^\s*[-–—:,.&/\s]+/, "")
         .replace(/\s*[-–—:,.&/\s]+$/, "")
         .trim();
