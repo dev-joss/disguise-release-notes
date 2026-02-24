@@ -79,6 +79,7 @@ function extractTopLevelLis(html) {
 
 function parseReleasePage(html, pagePath) {
   const entries = [];
+  const seen = new Set(); // deduplicate entries with identical version + description
 
   // Extract <main> content if present, otherwise use full HTML
   const mainMatch = html.match(/<main[^>]*>([\s\S]*?)<\/main>/i);
@@ -172,6 +173,10 @@ function parseReleasePage(html, pagePath) {
 
       // If description is empty, use full text
       if (!description) description = text;
+
+      const dedupeKey = `${currentVersion}\t${dsof}\t${description}`;
+      if (seen.has(dedupeKey)) continue;
+      seen.add(dedupeKey);
 
       entries.push({
         version: currentVersion,
