@@ -39,6 +39,7 @@
   .col-category { width: 130px; }
   .col-dsof { width: 130px; font-family: monospace; font-size: 0.82rem; }
   .col-desc { }
+  mark { background: #fff3a8; padding: 0 1px; border-radius: 2px; }
   .loading { text-align: center; padding: 3rem; color: #999; }
   .error { text-align: center; padding: 3rem; color: #c0392b; }
   @media (max-width: 700px) {
@@ -153,6 +154,7 @@
   }
 
   function render() {
+    const q = searchEl.value;
     statusEl.textContent = `${filtered.length} of ${allData.length} entries`;
     // Build HTML in chunks for performance
     const parts = [];
@@ -160,10 +162,10 @@
       parts.push(
         '<tr data-url="', esc(row.url || ""),
         '" style="background:', versionColor(row.version),
-        '"><td>', esc(row.version),
-        "</td><td>", esc(row.category),
-        "</td><td>", esc(row.dsof),
-        "</td><td>", esc(row.description),
+        '"><td>', highlight(row.version, q),
+        "</td><td>", highlight(row.category, q),
+        "</td><td>", highlight(row.dsof, q),
+        "</td><td>", highlight(row.description, q),
         "</td></tr>"
       );
     }
@@ -173,6 +175,13 @@
   function esc(s) {
     if (!s) return "";
     return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  function highlight(s, q) {
+    if (!q || !s) return esc(s);
+    const escaped = esc(s);
+    const qEsc = esc(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return escaped.replace(new RegExp(qEsc, "gi"), m => `<mark>${m}</mark>`);
   }
 
   function populateFilters() {
