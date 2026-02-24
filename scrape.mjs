@@ -122,9 +122,28 @@ function parseReleasePage(html, pagePath) {
       currentCategory = decodeEntities(h3Match[1].replace(/<[^>]+>/g, "")).trim();
     }
 
+    // Collect raw HTML snippets to parse into entries
+    const rawSnippets = [];
+
     // Extract top-level list items (skip nested <li> inside sub-lists)
     const topLevelLis = extractTopLevelLis(part);
     for (const raw of topLevelLis) {
+      rawSnippets.push(raw);
+    }
+
+    // Extract <p> tags that contain DSOF references (some pages use paragraphs instead of lists)
+    // Strip anchor/sr-only noise first to avoid spanning across tags
+    const cleanedPart = part.replace(/<a class="sl-anchor-link"[\s\S]*?<\/a>/gi, "");
+    const pTagRe = /<p[^>]*>([\s\S]*?)<\/p>/gi;
+    let pMatch;
+    while ((pMatch = pTagRe.exec(cleanedPart))) {
+      const inner = pMatch[1];
+      if (/DSOF-\d+/.test(inner)) {
+        rawSnippets.push(inner);
+      }
+    }
+
+    for (const raw of rawSnippets) {
       const text = decodeEntities(raw.replace(/<[^>]+>/g, "")).trim();
       if (!text) continue;
 
