@@ -5966,41 +5966,6 @@
   {
     "version": "r27.10",
     "category": "Improvements",
-    "dsof": "",
-    "description": "failover/applydefaultrouting",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
-  },
-  {
-    "version": "r27.10",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "failover/restoremachine",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
-  },
-  {
-    "version": "r27.10",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "failover/failovermachine",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
-  },
-  {
-    "version": "r27.10",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "failover/settings",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
-  },
-  {
-    "version": "r27.10",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "failover/understudytargets",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
-  },
-  {
-    "version": "r27.10",
-    "category": "Improvements",
     "dsof": "DSOF-23702",
     "description": "API - Failover API for Understudies",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
@@ -16566,13 +16531,6 @@
     "category": "Fixes",
     "dsof": "",
     "description": "Audio does not start again when encountering a new keyframe of the same audio track",
-    "url": "https://help.disguise.one/designer/release-notes/r15#r1535"
-  },
-  {
-    "version": "r15.3.5",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "when the same audio track is sequenced multiple times in the audio layer, it does not start again on the new keyframe as the video layer does",
     "url": "https://help.disguise.one/designer/release-notes/r15#r1535"
   },
   {

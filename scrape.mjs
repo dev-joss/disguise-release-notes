@@ -128,6 +128,9 @@ function parseReleasePage(html, pagePath) {
     // Extract top-level list items (skip nested <li> inside sub-lists)
     const topLevelLis = extractTopLevelLis(part);
     for (const raw of topLevelLis) {
+      // Skip items that are purely code snippets (e.g. API endpoint paths)
+      const withoutCode = raw.replace(/<code[^>]*>[\s\S]*?<\/code>/gi, "").replace(/<[^>]+>/g, "").trim();
+      if (!withoutCode) continue;
       rawSnippets.push(raw);
     }
 
