@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disguise Release Notes</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #f5f5f5; color: #222; line-height: 1.5;
+  }
+  .container { max-width: 1400px; margin: 0 auto; padding: 1rem; }
+  h1 { font-size: 1.5rem; margin-bottom: 1rem; }
+  .controls {
+    display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;
+    margin-bottom: 1rem;
+  }
+  .controls input, .controls select {
+    padding: 0.4rem 0.6rem; border: 1px solid #ccc; border-radius: 4px;
+    font-size: 0.9rem; background: #fff;
+  }
+  .controls input { flex: 1 1 250px; min-width: 200px; }
+  .controls select { min-width: 140px; }
+  .status { font-size: 0.85rem; color: #666; margin-left: auto; white-space: nowrap; }
+  .table-wrap { overflow-x: auto; background: #fff; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+  thead { position: sticky; top: 0; z-index: 1; }
+  th {
+    background: #2c3e50; color: #fff; padding: 0.6rem 0.8rem;
+    text-align: left; cursor: pointer; user-select: none; white-space: nowrap;
+  }
+  th:hover { background: #34495e; }
+  th .arrow { font-size: 0.7rem; margin-left: 4px; }
+  td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #eee; vertical-align: top; }
+  tbody tr { cursor: pointer; }
+  tr:hover td { background: #f0f7ff; }
+  .col-version { width: 100px; }
+  .col-category { width: 130px; }
+  .col-dsof { width: 130px; font-family: monospace; font-size: 0.82rem; }
+  .col-desc { }
+  .loading { text-align: center; padding: 3rem; color: #999; }
+  .error { text-align: center; padding: 3rem; color: #c0392b; }
+  @media (max-width: 700px) {
+    .controls { flex-direction: column; }
+    .controls input, .controls select { width: 100%; }
+    .status { margin-left: 0; }
+    td, th { padding: 0.4rem; font-size: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Disguise Designer Release Notes</h1>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search across all columns...">
+    <select id="versionFilter"><option value="">All Versions</option></select>
+    <select id="categoryFilter"><option value="">All Categories</option></select>
+    <span class="status" id="status"></span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="col-version" data-col="version">Version <span class="arrow"></span></th>
+          <th class="col-category" data-col="category">Category <span class="arrow"></span></th>
+          <th class="col-dsof" data-col="dsof">DSOF <span class="arrow"></span></th>
+          <th class="col-desc" data-col="description">Description <span class="arrow"></span></th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+  <div class="loading" id="loading">Loading release data...</div>
+  <div class="error" id="error" hidden></div>
+</div>
+<script>
+(function () {
+  let allData = [];
+  let filtered = [];
+  let sortCol = "version";
+  let sortAsc = false;
+
+  const tbody = document.getElementById("tbody");
+  const searchEl = document.getElementById("search");
+  const versionEl = document.getElementById("versionFilter");
+  const categoryEl = document.getElementById("categoryFilter");
+  const statusEl = document.getElementById("status");
+  const loadingEl = document.getElementById("loading");
+  const errorEl = document.getElementById("error");
+
+  // Version comparison for sorting (r32.3.2 > r32.3.1 > r32 > r31)
+  function parseVersion(v) {
+    const m = v.match(/r?(\d+(?:\.\d+)*)/i);
+    if (!m) return [0];
+    return m[1].split(".").map(Number);
+  }
+
+  function cmpVersion(a, b) {
+    const pa = parseVersion(a), pb = parseVersion(b);
+    for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+      const na = pa[i] || 0, nb = pb[i] || 0;
+      if (na !== nb) return na - nb;
+    }
+    return 0;
+  }
+
+  function compare(a, b) {
+    const va = a[sortCol] || "", vb = b[sortCol] || "";
+    let c;
+    if (sortCol === "version") {
+      c = cmpVersion(va, vb);
+    } else {
+      c = va.localeCompare(vb, undefined, { sensitivity: "base" });
+    }
+    return sortAsc ? c : -c;
+  }
+
+  function applyFilters() {
+    const q = searchEl.value.toLowerCase();
+    const vf = versionEl.value;
+    const cf = categoryEl.value;
+
+    filtered = allData.filter(row => {
+      if (vf && row.version !== vf) return false;
+      if (cf && row.category !== cf) return false;
+      if (q) {
+        const hay = `${row.version} ${row.category} ${row.dsof} ${row.description}`.toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+
+    filtered.sort(compare);
+    render();
+  }
+
+  function render() {
+    statusEl.textContent = `${filtered.length} of ${allData.length} entries`;
+    // Build HTML in chunks for performance
+    const parts = [];
+    for (const row of filtered) {
+      parts.push(
+        '<tr data-url="', esc(row.url || ""), '"><td>', esc(row.version),
+        "</td><td>", esc(row.category),
+        "</td><td>", esc(row.dsof),
+        "</td><td>", esc(row.description),
+        "</td></tr>"
+      );
+    }
+    tbody.innerHTML = parts.join("");
+  }
+
+  function esc(s) {
+    if (!s) return "";
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  function populateFilters() {
+    const versions = [...new Set(allData.map(r => r.version))].filter(Boolean);
+    versions.sort(cmpVersion).reverse();
+    for (const v of versions) {
+      const opt = document.createElement("option");
+      opt.value = v; opt.textContent = v;
+      versionEl.appendChild(opt);
+    }
+
+    const categories = [...new Set(allData.map(r => r.category))].filter(Boolean).sort();
+    for (const c of categories) {
+      const opt = document.createElement("option");
+      opt.value = c; opt.textContent = c;
+      categoryEl.appendChild(opt);
+    }
+  }
+
+  function updateSortArrows() {
+    document.querySelectorAll("th .arrow").forEach(el => el.textContent = "");
+    const th = document.querySelector(`th[data-col="${sortCol}"] .arrow`);
+    if (th) th.textContent = sortAsc ? " \u25B2" : " \u25BC";
+  }
+
+  // Event listeners
+  searchEl.addEventListener("input", applyFilters);
+  versionEl.addEventListener("change", applyFilters);
+  categoryEl.addEventListener("change", applyFilters);
+
+  document.querySelectorAll("th[data-col]").forEach(th => {
+    th.addEventListener("click", () => {
+      const col = th.dataset.col;
+      if (sortCol === col) { sortAsc = !sortAsc; }
+      else { sortCol = col; sortAsc = true; }
+      updateSortArrows();
+      applyFilters();
+    });
+  });
+
+  tbody.addEventListener("click", (e) => {
+    const tr = e.target.closest("tr[data-url]");
+    if (tr && tr.dataset.url) window.open(tr.dataset.url, "_blank");
+  });
+
+  // Load data
+  fetch("data/releases.json")
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+    .then(data => {
+      loadingEl.hidden = true;
+      allData = data;
+      populateFilters();
+      updateSortArrows();
+      applyFilters();
+    })
+    .catch(err => {
+      loadingEl.hidden = true;
+      errorEl.hidden = false;
+      errorEl.textContent = `Failed to load data: ${err.message}`;
+    });
+})();
+</script>
+</body>
+</html>
