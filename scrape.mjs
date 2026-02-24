@@ -178,9 +178,12 @@ function parseReleasePage(html, pagePath) {
       if (seen.has(dedupeKey)) continue;
       seen.add(dedupeKey);
 
+      // Default empty category to "Fixes" for hotfix releases (e.g. r30.0.1)
+      const category = currentCategory || (currentVersion.includes(".") ? "Fixes" : "");
+
       entries.push({
         version: currentVersion,
-        category: currentCategory,
+        category,
         dsof,
         description,
         url: `${BASE_URL}${pagePath}${currentAnchor ? "#" + currentAnchor : ""}`,
