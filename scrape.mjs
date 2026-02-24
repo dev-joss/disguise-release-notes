@@ -55,12 +55,6 @@ function parseReleasePage(html, pagePath) {
   let currentCategory = "";
   let currentAnchor = "";
 
-  // Slugify heading text to match the site's anchor generation
-  // e.g. "r32.3.2 - Hotfixes" → "r3232---hotfixes"
-  function slugify(text) {
-    return text.toLowerCase().replace(/\./g, "").replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
-  }
-
   // Split content by heading tags to process sequentially
   const parts = content.split(/(?=<h[23][^>]*>)/i);
 
@@ -69,11 +63,13 @@ function parseReleasePage(html, pagePath) {
     const h2Match = part.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i);
     if (h2Match) {
       const rawText = decodeEntities(h2Match[1].replace(/<[^>]+>/g, "")).trim();
+      // Extract the id attribute directly from the h2 tag
+      const idMatch = h2Match[0].match(/<h2[^>]*\bid="([^"]+)"/i);
       // Extract version like "r32.3.2" from "r32.3.2 - Hotfixes"
       const vMatch = rawText.match(/(r\d+(?:\.\d+)*)/i);
       if (vMatch) {
         currentVersion = vMatch[1];
-        currentAnchor = slugify(rawText);
+        currentAnchor = idMatch ? idMatch[1] : "";
         currentCategory = ""; // reset category under new version
       } else {
         // h2 doesn't contain a version — treat it as a category heading

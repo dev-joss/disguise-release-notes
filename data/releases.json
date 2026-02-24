@@ -1054,70 +1054,70 @@
     "category": "Fixes",
     "dsof": "DSOF-31635",
     "description": "Selecting a MIDI device in an MTC layer no longer reports an error on X1 machines",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes"
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes-1"
   },
   {
     "version": "r32.1.3",
     "category": "Fixes",
     "dsof": "DSOF-31439",
     "description": "Video is now correctly prefetched before the start of a layer which should stop rogue black flashes when jumping the playhead or playing in to layers",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes"
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes-1"
   },
   {
     "version": "r32.1.3",
     "category": "Fixes",
     "dsof": "DSOF-31643",
     "description": "A new option “No Clamp” has been added to the Tonemapping field of the Colour Profile object which allows for users to disable clamping in the colour pipeline when using Gamma Space colour management. Please note that if you set this option in r32.1.3 and roll back to r32.1.2 or below it will revert to “Filmic Grain” in the tone mapping field and you will need to manually set it again upon rolling back up to r32.1.3 or above",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes"
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes-1"
   },
   {
     "version": "r32.1.3",
     "category": "Fixes",
     "dsof": "DSOF-31550",
     "description": "Telnet transport commands now respect the transition field again and will fade over that transition period instead of snapping",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes"
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes-1"
   },
   {
     "version": "r32.1.3",
     "category": "Fixes",
     "dsof": "DSOF-31516",
     "description": "RenderStream, Video and Legacy Video layers with certain fields patched to Sockpuppet will no longer fail to populate their Sockpuppet personality editors properly when upgraded from older versions of Designer before r23.1",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes"
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes-1"
   },
   {
     "version": "r32.1.3",
     "category": "Fixes",
     "dsof": "DSOF-31664",
     "description": "Using the POST /media/provision API now returns a correct matching UID so you can subscribe to the task progress",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes"
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes-1"
   },
   {
     "version": "r32.1.3",
     "category": "Fixes",
     "dsof": "DSOF-31606",
     "description": "Designer now reads OSC messages even when the address omits the null-terminator (which is non-standard OSC)",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes"
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes-1"
   },
   {
     "version": "r32.1.3",
     "category": "Fixes",
     "dsof": "DSOF-29913",
     "description": "Sending an MSC command to jump to a cue that does not exist will no longer report an unhelpful error",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes"
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes-1"
   },
   {
     "version": "r32.1.3",
     "category": "Fixes",
     "dsof": "DSOF-31353",
     "description": "Certain API endpoints will no longer fail if there is a mixture of d3 machines from before and after r26.0 on the network",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes"
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes-1"
   },
   {
     "version": "r32.1.3",
     "category": "Fixes",
     "dsof": "DSOF-31260",
     "description": "HDR Textures sent as texture parameters to RS workloads where the working space is ACEScg are no longer clipped and now properly reflect the full HDR range",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes"
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes-1"
   },
   {
     "version": "r32.1.2",
@@ -6080,98 +6080,98 @@
     "category": "New Features",
     "dsof": "",
     "description": "EX 2, EX 2C, and EX 3+ Product Support. (Read more about the EX Range here",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Improvements",
     "dsof": "DSOF-24180",
     "description": "Added conﬁrmation dialogue to global apply feed settings button",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Improvements",
     "dsof": "DSOF-26244",
     "description": "Right-clicking on a projector from the projector list view now opens the projector editor. This now behaves the same as other right-click behaviour",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Improvements",
     "dsof": "DSOF-26719",
     "description": "When dropping frames, outputs between machines, and on the same machine will now re-synchronize faster. This also means the output will no longer stutter intermittently on VX 3 and VX 2+ machines",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Improvements",
     "dsof": "DSOF-26937",
     "description": "EX range: Outputs in the feed view are no longer labelled as “No VFC”",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Improvements",
     "dsof": "DSOF-27365",
     "description": "Improved performance when using multiple HTTP Sockpuppet video layers",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Improvements",
     "dsof": "DSOF-27908",
     "description": "OSC SockPuppet: Text ﬁelds now have examples in their personality viewer",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Fixes",
     "dsof": "DSOF-24265",
     "description": "Fixed an issue where multiple feed rectangles in the same output feed could misalign by 1 pixel in certain scenarios",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Fixes",
     "dsof": "DSOF-25102",
     "description": "Fixed an issue where LUTs applied to DMX Screens did not apply to DMX output",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Fixes",
     "dsof": "DSOF-25165",
     "description": "Fixed an issue where d3manager could sometimes report understudy machines are still in session after they were quit remotely from Designer",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Fixes",
     "dsof": "DSOF-25217",
     "description": "EX3/Solo: Fixed an issue where EDID emulation set to ‘always’ did not work unless displays were connected",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Fixes",
     "dsof": "DSOF-26788",
     "description": "Fixed an issue where projector config from projector list editor could not be changed",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Fixes",
     "dsof": "DSOF-27209",
     "description": "Fixed an issue where FPS in the network status widget does not match FPS in the HUD",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
     "category": "Fixes",
     "dsof": "DSOF-27801",
     "description": "Fixed an issue where Windows 11 reported as Windows 10 22631 in Disguise Manager",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c-ex-3-support"
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r27.10.3",
@@ -6612,259 +6612,259 @@
     "category": "",
     "dsof": "DSOF-27010",
     "description": "Add a link to learn.disguise.one in d3manager",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-22053",
     "description": "Upgrade to Vimba X SDK for OmniCal",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-25066",
     "description": "Custom colour primaries in Gamma Space mode",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-25138",
     "description": "Designer will now respect the clipping planes defined in notch blocks. Note: Notch blocks which do not define a clipping plane will have a default one set by Designer",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-25646",
     "description": "OmniCal will check and notify the user if the wrong Vimba SDK is installed for use with the latest version of Designer",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-26353",
     "description": "Implement colour management interface with Notch version 1.0",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-26356",
     "description": "Raise warning about Notch version 1.0 compatibility on unsupported servers",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-26694",
     "description": "Upgrade nsis to 3.10",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-27009",
     "description": "Prewarm notch instances",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-27056",
     "description": "Add support for double to rational conversion",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-27095",
     "description": "Update to latest FastBuild version v1.13",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-27152",
     "description": "Update NDI® SDK to NDI® 6",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-27247",
     "description": "Add pagination for Porta and the media API",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-27306",
     "description": "Include AudioFiles in the media/get api",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-24822",
     "description": "Fixed an issue where VideoAsset SLC Region Regex checked full path instead of just the filename, causing a blue screen of death",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-25043",
     "description": "Fixed an issue where VimbaCamServer used the incorrect ID for non-GigEVision cameras",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-25481",
     "description": "Fixed an issue where “display as” was broken for all unit types",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-25571",
     "description": "Fixed an issue where a ‘NoneType’ object had no attribute ‘positionNear’ when clicking on MIDI Personality names in Event Transport MIDI Note",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-26367",
     "description": "Fixed an issue where Notch pass-through blocks gave a black texture when transforming with Gamma2.2 curve",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-26589",
     "description": "Fixed an issue where there was no anti-aliasing on a set extension when feather is under 10",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-26595",
     "description": "Designer now proiles automatically when performance is low",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-26633",
     "description": "Improve Actor performance drops when running RenderStream",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-26648",
     "description": "Fixed an issue where RenderStream error notifications caused network spam",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-26650",
     "description": "Fixed an issue where bringing the brightness up on Renderstream layers caused unsynchronised pop-in across Actors",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-26897",
     "description": "Fixed and issue where d3killer failed to kill nginx",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-27006",
     "description": "Fixed an Access Violation in QuickProiler subsystem when shutting down Designer",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-27034",
     "description": "Fixed an issue where setting centre shift turned overscan red with zero distortion",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-27047",
     "description": "Standardised HTTP sockpuppet API endpoints are in /experimental/ namespaces",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-27064",
     "description": "Fixed an issue where Protoc router plugin was not generated at build time",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-27131",
     "description": "Fixed an issue where removing all keyframes on a RenderStream custom event displayed a long value number",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-27153",
     "description": "Fixed an issue where corrupt stage objects causes visualiser to fail to render anything",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-27244",
     "description": "Fixed an issue where Undo / Redo of measurements resulted in NULL objects and drop to 2 FPS",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-27245",
     "description": "API: Fixed an issue where a session did not return director status when in solo mode",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-27269",
     "description": "Fixed an Async error notification not registering due to uninitialised pointer",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-27309",
     "description": "Fixed an issue where Designer failed to load images in VideoFile folder with incorrect ﬁle extension",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-27338",
     "description": "Fixed an issue where sorting scenes in the unreal project schema broke applications that rely on index",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "Fixes",
     "dsof": "DSOF-27370",
     "description": "Fixed Unreal RenderStream failover in UE5.3/UE5.4",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.6.3",
@@ -7095,399 +7095,399 @@
     "category": "",
     "dsof": "",
     "description": "Skinned mesh support for Skeletons",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "",
     "dsof": "",
     "description": "A new SkeletalPointTrackingSource for controlling skeleton bones based on tracked points",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Creating and editing a new skeleton",
     "dsof": "",
     "description": "In the stage editor, under Skeletons, click the + button to add a new skeleton with a default bone structure",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Creating and editing a new skeleton",
     "dsof": "",
     "description": "Use the Mesh field to select an FBX rigged mesh for the skeleton. In this example, a flag mesh has been used",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Creating and editing a new skeleton",
     "dsof": "",
     "description": "In the Appearance separator options can be set to control the rendering of the skeleton in the visualiser, for example showing or hiding the bones and the mesh",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Creating and editing a new skeleton",
     "dsof": "",
     "description": "In Joints separator allow the skeleton to be posed manually by adjusting bone offsets and rotations",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skinned mesh for a projection surface",
     "dsof": "",
     "description": "Find or create an FBX file which contains a single rigged mesh and copy this into the project’s objects/Mesh folder",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skinned mesh for a projection surface",
     "dsof": "",
     "description": "Create a new skeleton and select the FBX mesh in the skeleton’s mesh field",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skinned mesh for a projection surface",
     "dsof": "",
     "description": "Create a new projection surface and select the mesh named after the skeleton (not the original FBX mesh)",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skinned mesh for a projection surface",
     "dsof": "",
     "description": "Try moving the skeleton’s bones using the manual posing controls in the skeleton editor. The mesh should deform in both the skeleton and the projection surface",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skinned mesh for a projection surface",
     "dsof": "",
     "description": "To align the projection surface exactly with the skeleton, add the projection surface as a child of the skeleton and set the surface’s offset and rotation to zero",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skinned mesh for a projection surface",
     "dsof": "",
     "description": "If you want to hide the skeleton mesh, set the Display mode under Appearance to Hidden",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "",
     "description": "Set up a suitable tracking system and driver to receive tracked points in Disguise",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "",
     "description": "Create a rigged mesh with joints at each tracked marker position, export as FBX and select in a skeleton",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "",
     "description": "Under Hierarchy in the skeleton, click Create Reference Points to create a reference point for each joint",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "",
     "description": "Create a new SkeletalPointTrackingSource and set it as the skeleton’s tracking source",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "",
     "description": "In the tracking source editor, add points to link each tracked point to its corresponding reference point",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "",
     "description": "Points can be sorted into groups. If a point stops receiving tracking data, its position will be estimated based on a rigid body transform from other receiving points in the same groups",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "",
     "description": "Each point can also have an offset applied relative to the fixed point and can have Twist ticked to calculate the twist of that joint based on the positions of points within the same group",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "",
     "description": "Adjust the Rejoin velocity limit to change the speed at which points catch up with the tracked position when tracking is received again after being lost",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-25206",
     "description": "Add deformable mesh functionality to skeleton",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-25221",
     "description": "Ability to import skeleton rig from FBX file",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-25307",
     "description": "Make skeleton layout persistent",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-25409",
     "description": "Render mesh when it is selected in a Skeleton",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-26074",
     "description": "Add retargeting to control skeletal mesh with tracked skeleton data",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-26599",
     "description": "Instance skeleton-controlled deformable meshes so the same mesh can be used multiple times",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-27004",
     "description": "Expose skeleton joint pose manual controls to users",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-25223",
     "description": "Ability to add tracked points to Skeleton",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-26734",
     "description": "Add option to clear reference points in Skeleton",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-25366",
     "description": "Account for non-receiving tracked points in Skeleton control",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-25407",
     "description": "Automatically detect and control duplicate joints",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-25484",
     "description": "Skeleton tracking - avoid points jumping when they stop receiving",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-25497",
     "description": "Skeleton tracking - avoid points jumping when they start receiving again",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-25498",
     "description": "Skeleton tracking - calculate bone twist angle from rigid body group",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-24875",
     "description": "Add API call to indicate GUI state/selected option",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-25528",
     "description": "Add API call to set GUI mode",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-25063",
     "description": "Add API call to query timecode receive status of a transport",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-25088",
     "description": "Add API endpoints to query QuickCal pixel error and overwrite manual calibration",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "",
     "description": "quickcal/overwritemanualcalibration which overwrites the manual calibration for the given projector",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "",
     "description": "quickcal/projectorcalibration which returns information about the projector config including the error values",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-25222",
     "description": "OmniCal - ability to mesh deform without adding verts",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-25351",
     "description": "OmniCal: minor MeshDeform performance improvements",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-25367",
     "description": "Add prediction to tracked points",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "",
     "description": "Prediction time (sec): How much time to predict",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "",
     "description": "Sample interval threshold (sec): This is the threshold of time intervals between samples to filter out noise. If the interval time between samples is bigger, detection will be ignored",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "",
     "description": "Sample size: The number of samples to use for prediction. More samples will make prediction less prone to the noise",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "",
     "description": "Terms: This is the term of curve that is used for curve fitting. The Value can be set to either 1 or 2",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-26057",
     "description": "Add user facing option to render normals",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Fixes",
     "dsof": "DSOF-23836",
     "description": "Fixed an issue where feeds dragged over a GUI could no longer be suppressed by Alt+G or Alt+F",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Fixes",
     "dsof": "DSOF-24884",
     "description": "Fixed an issue where toggling the GUI with ALT+G persisted the state through a project restart",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Fixes",
     "dsof": "DSOF-25021",
     "description": "Fixed an issue where NatNet driver could introduce subtle rotation errors in Rigid Bodies",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Fixes",
     "dsof": "DSOF-25331",
     "description": "Fixed an issue where unlabelled markers in Motive created infinite unnamed TrackedPoints in Designer",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Fixes",
     "dsof": "DSOF-26190",
     "description": "Fixed an issue where a dormant Sockpuppet Video Layer briefly became active when changing media slot",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Fixes",
     "dsof": "DSOF-26622",
     "description": "Fixed FBX mesh collisions mesh being generated incorrectly",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Fixes",
     "dsof": "DSOF-26704",
     "description": "Fixed FBX mesh thumbnail being empty",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Fixes",
     "dsof": "DSOF-26901",
     "description": "Fixed an issue where Alt+G GUI Is Disabled splash was not always in bottom right of screen",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Fixes",
     "dsof": "DSOF-27011",
     "description": "Offline editors no longer affect aggregate status in the session widget",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.5.1",
@@ -7711,63 +7711,63 @@
     "category": "Fixes",
     "dsof": "DSOF-24757",
     "description": "Fixed an issue where focus distance showed negative values in the object tracking mode",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
   },
   {
     "version": "r27.4",
     "category": "Fixes",
     "dsof": "DSOF-15782",
     "description": "Sockpuppet : Fixed an issue where sACN Sockpuppet playback could be out of sync",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
   },
   {
     "version": "r27.4",
     "category": "Fixes",
     "dsof": "DSOF-23659",
     "description": "Fixed an issue where the tracking axis filtered value of zoom and focus failed send to system",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
   },
   {
     "version": "r27.4",
     "category": "Fixes",
     "dsof": "DSOF-24426",
     "description": "Fixed an indefinite hang on mapping a bluefish input to video input",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
   },
   {
     "version": "r27.4",
     "category": "Fixes",
     "dsof": "DSOF-26481",
     "description": "Fixed an issue where OSC expressions did not re-evaluate after a project restart",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
   },
   {
     "version": "r27.4",
     "category": "Fixes",
     "dsof": "DSOF-26520",
     "description": "Fixed an issue where LocaleMetaData was missing from diagnostics, meaning events logs were not completely readable",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
   },
   {
     "version": "r27.4",
     "category": "Fixes",
     "dsof": "DSOF-26773",
     "description": "Fixed a DMX/OSC-related error when right-click on the Devices",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
   },
   {
     "version": "r27.4",
     "category": "Fixes",
     "dsof": "DSOF-26775",
     "description": "Fixed an issue where “redistributionDelay” field under the Devices was written in an incorrect style",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
   },
   {
     "version": "r27.4",
     "category": "Fixes",
     "dsof": "DSOF-26819",
     "description": "RMAXd3: logging now handles 3 error codes",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
   },
   {
     "version": "r27.3.3",
@@ -7858,105 +7858,105 @@
     "category": "New Features",
     "dsof": "",
     "description": "Create a layer in Designer that you wish to patch",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
     "category": "New Features",
     "dsof": "",
     "description": "Right-click on the layer and select Patch to HTTP",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
     "category": "New Features",
     "dsof": "",
     "description": "Call sockpuppet/easingfunctions to get list of possible easing functions",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
     "category": "New Features",
     "dsof": "",
     "description": "Call sockpuppet/patches to get list of possible patches",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
     "category": "New Features",
     "dsof": "",
     "description": "Using data from sockpuppet/patches, use /sockpuppet/live to make changes to the patch, and therefore the layer. Send to the director only, or use for controlling understudy",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
     "category": "Improvements",
     "dsof": "",
     "description": "Ctrl Alt = (expand)",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
     "category": "Improvements",
     "dsof": "",
     "description": "Ctrl Alt - (collapse)",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
     "category": "Improvements",
     "dsof": "",
     "description": "Option in Designer. d3 > Advanced > Enable Crash Reporting > On / Off",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
     "category": "Improvements",
     "dsof": "",
     "description": "Advanced Project Setting > Option Switch: enableCrashReporting is Project Wide and depending which machine has the Access Violation thrown, it will generate a dump file on that specific machine",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
     "category": "Improvements",
     "dsof": "",
     "description": "Holding Ctrl while moving feed warp points with arrow keys causes them to move in smaller increments",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
     "category": "Improvements",
     "dsof": "",
     "description": "Holding Shift while moving feed warp points with arrow keys causes them to move in larger increments",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.2",
     "category": "Improvements",
     "dsof": "",
     "description": "Added support for VX 3 server type. Read more about the VX 3 media server here",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r272---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r272---improvements--fixes"
   },
   {
     "version": "r27.2",
     "category": "Improvements",
     "dsof": "DSOF-26613",
     "description": "“d3-events” EventLog now included in System Diagnostics",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r272---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r272---improvements--fixes"
   },
   {
     "version": "r27.2",
     "category": "Fixes",
     "dsof": "DSOF-24757",
     "description": "Fixed an issue where focus distance showed negative values in the object tracking mode",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r272---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r272---improvements--fixes"
   },
   {
     "version": "r27.2",
     "category": "Fixes",
     "dsof": "DSOF-26575",
     "description": "Fixed an issue where 2.5D assets incorrectly said it was at zero dept",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r272---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r272---improvements--fixes"
   },
   {
     "version": "r27.1.4",
@@ -8166,154 +8166,154 @@
     "category": "Improvements",
     "dsof": "DSOF-23762",
     "description": "Ability to see usages of mappings",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-25935",
     "description": "Replace all usages of a mapping\nThe above two improvements are accessible via the ‘Find/Replace Mapping Usages’ button in the Mapping editor",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-23946",
     "description": "Remove “CodeMeter USB Mode” check from installers",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-24291",
     "description": "Show Designer software version in UI\nWe have added the Designer software version in the bottom right of the UI next to the machine name",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-25256",
     "description": "Machine List in Monitoring Manager should be alphabetical\nWe have made the Machine List alphabetical within the Monitoring Manager window, found by left clicking on the FPS in the lower right\nhand corner of the track",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-25700",
     "description": "Warn the user when the audio codec in their embedded audio is not supported\nWe have added a notification to warn the user that an unsupported audio codec is recognised when using embedded audio, and to convert the audio codec to either ‘sowt’ or ‘twos’",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-25873",
     "description": "Define a certain degree of a cylinder mapping\nWhen using cylindrical mappings, we have added a red highlight to any areas that extend past the top and/or bottom of the cylindrical mapping wireframe",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-25936",
     "description": "Auto-select first enabled layer in feed warp editor\nIn previous releases, when a user left-clicked the + button under Deformation layers - found within the Edit Warp Menu in the feed view - the first deformation layer was selected, even if the deformation layer had been disabled. In r27.1 the first deformation layer that is selected is the first one within the stack that is\nenabled",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-26029",
     "description": "OmniCal: export unstructured point clouds (without invalid points)\nWe have enabled users to be able to export unstructured point clouds when using OmniCal. Structured point clouds directly correspond to\nthe 2D grid output by projectors, and will include invalid points as NaN values. These values are usually those that were not visible to\nenough cameras or where 3D reconstruction failed. Unstructured point clouds provide no invalid points as NaN values within the export.\nThis can be found in the Advanced section in OmniCal Calibration and clicking on ‘Save PointCloud’. This will save four PCD files for\neach projector grid within the Optical Stage Plan folder:\n\nAligned and unaligned (as captured)",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "",
     "description": "Structured and unstructured",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-21670",
     "description": "DMX String: Now defaults to 1 fixture\nWe have changed the default behaviour of new DmxStrings to one fixture",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Fixes",
     "dsof": "DSOF-24032",
     "description": "Fixed an issue where an ‘Indirections’ object had no attribute ‘role’ - d3net Manager",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Fixes",
     "dsof": "DSOF-24561",
     "description": "Fixed an issue when starting a RenderStream workload, RMAX receiver was being attached/detached several times",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Fixes",
     "dsof": "DSOF-25904",
     "description": "Sockpuppet: Fixed an issue where moving the Frame Index value caused stuttering and jumping of playhead in Video Clip",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Fixes",
     "dsof": "DSOF-25950",
     "description": "Asset preview for 2.5D beach asset no longer clashes",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Fixes",
     "dsof": "DSOF-25987",
     "description": "Fixed an issue where adjusting prediction would break spatial mapping",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Fixes",
     "dsof": "DSOF-26146",
     "description": "Added feedback when active latency automatic calculation is higher than the manually set active latency override",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Fixes",
     "dsof": "DSOF-26247",
     "description": "Fixed an Access Violation when starting DSV video in preview",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Fixes",
     "dsof": "DSOF-26251",
     "description": "Fixed an Access Violation opening Virtual Reality Navigator editor",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Fixes",
     "dsof": "DSOF-26290",
     "description": "Fixed an issue where MAC addresses stored in NetworkAdapter were wrong",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Fixes",
     "dsof": "DSOF-26137",
     "description": "Fixed an issue where UE would crash on launch when a single fragment was too large",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Fixes",
     "dsof": "DSOF-26250",
     "description": "Fixed an Access Violation when using VR headset",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27",
@@ -8418,315 +8418,315 @@
     "category": "New Features",
     "dsof": "DSOF-25410",
     "description": "Updated the way proxy and non-proxy streams are filtered in health status widget",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "New Features",
     "dsof": "DSOF-25448",
     "description": "Receive Health status in the RenderStream layer editor should no longer report “Frames Dropped Recently” for Proxy streams",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-23229",
     "description": "Fixed an issue where the current status of RenderStream was not shown under ‘Network’ tab within d3manager",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-23266",
     "description": "RenderStream Workload widget does now automatically shrinks",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-23889",
     "description": "Fixed an issue where d3manager did not update network share location when changing d3 projects folder",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-23890",
     "description": "Fixed an issue where d3manager did not update network shares if not running as admin / elevated",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24449",
     "description": "Fixed an issue where eRenderStream uncompressed streams intermittently only rendered black",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24474",
     "description": "Fixed an issue where Heap corruption in Rivermax cleanup code caused a crash in TouchDesigner",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24475",
     "description": "Fixed a CL_OUT_OF_HOST_MEMORY error on vx using RenderStream",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24622",
     "description": "Fixed an issue where workloads could occasionally get stuck in awaiting requests",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24648",
     "description": "Fixed an intermittent flickering issue when starting RenderStream",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24706",
     "description": "Fixed an issue that occurred when using an uncompressed Unreal RenderStream, some actors showed RECV 0",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24707",
     "description": "Fixed an issue where an exception occurred when trying to remove a channel mapping",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24715",
     "description": "Fixed an issue where actors crashed whilst starting and stopping workload",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24838",
     "description": "Fixed an issue where pool usage was not shown for assets using the default channel name",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24855",
     "description": "Fixed d3 heap corruption and a crash to desktop with RenderStream compressed in LibGpuVideoCodec (AMD 22.Q2)",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24918",
     "description": "Fixed an issue that occurred If the drive that d3manager was pointed at disappeared, launching d3 remotely on that machine would default to another drive",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24943",
     "description": "Improved RenderstreamSystem system speed when updating statistics about many streams",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24974",
     "description": "Fixed an issue where starting and stopping a render stream workload reduce performance of the director",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24984",
     "description": "Fixed an issue where launching d3manager with a missing d3 projects folder would result in the next project folder from the list being launched",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25009",
     "description": "Fixed an issue where adding samples to an uninitialized graph descriptor caused an exception",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25023",
     "description": "Fixed a crash on director when receiving proxy streams",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25028",
     "description": "Fixed an issue where if d3service crashed while RenderStream is running, all RenderStream processes on that machine will no longer be controllable via d3net",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25039",
     "description": "Fixed an intermittent issue where streams were occasionally never received",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25096",
     "description": "Fixed an issue where calling an invalid API endpoint can intermittently caused a crash to desktop",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25113",
     "description": "Fixed an issue where 16K or higher screen couldn’t use blur layer even using enableSLC switch",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25136",
     "description": "Fixed an Access Violation can occur when moving the playhead out of a RenderStream layer after the GUI had been reloaded during development",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25137",
     "description": "Fixed an issue where Renderer Graph was not accessible via the Workload details GUI",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25183",
     "description": "Fixed an issue where a video layer missing media highlight no longer updated as frequently to changes in sequencing",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25185",
     "description": "Fixed an issue where a vx occasionally dropped all received frames with RenderStream Uncompressed",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25237",
     "description": "Fixed an issue where missing media scenarios with a Bitmap layer caused notification spam: Corrupt keyframe, please check sequencing",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25327",
     "description": "Fixed an issue where Feed Mapping Editor still opened is interactable even if the feed mapping is “Locked”",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25338",
     "description": "Reduced active time of “Packets dropped recently”",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25556",
     "description": "Fixed an issue where editing Feed Warps intermittently did not take effort on actor machines in session, but the control points did move",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25568",
     "description": "Fixed an issue where RenderStream failed to initialise due to an exception, rs_initialise returns success",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25629",
     "description": "Fixed an error when launching project on actor, “Current d3projects folder not available on machine…”",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25631",
     "description": "When opening d3 manager “Run Project” button is now populated with the “current” project",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25765",
     "description": "Fixed an issue where Understudy takes over but does not indicate on director, sometimes failing to trigger matrix failover",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25829",
     "description": "Fixed RenderStream Failover",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25892",
     "description": "Improved Track widget updates when RenderStream workload status is updating",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25893",
     "description": "Improved receive health widget",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25932",
     "description": "Fixed an issue where workload state intermittently got stuck in “Launching”",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-26095",
     "description": "Fixed an issue where some RenderStream uncompressed streams failed to start on the director when using an actor controller to run many streams",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-24245",
     "description": "Fixed an indefinite hang/crash due to exhausting video memory",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
     "category": "Fixes",
     "dsof": "DSOF-25905",
     "description": "Fixed an issue where mesh mapping fragments teared when the engine origin is changed in real-time",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements-fixes"
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.4.2",
