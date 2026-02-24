@@ -156,8 +156,24 @@ function parseReleasePage(html, pagePath) {
       }
     }
 
+    // Extract prose-only <p> features when no list items exist in this section
+    if (topLevelLis.length === 0) {
+      const prosePRe = /<p[^>]*>([\s\S]*?)<\/p>/gi;
+      let proseMatch;
+      while ((proseMatch = prosePRe.exec(cleanedPart))) {
+        const inner = proseMatch[1];
+        // Skip if already captured (has DSOF and was added above)
+        const dsofs = inner.match(/DSOF-\d+/g);
+        if (dsofs && dsofs.some(d => seenDsofs.has(d))) continue;
+        const plainText = decodeEntities(inner.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+        if (plainText.length > 40) {
+          rawSnippets.push(inner);
+        }
+      }
+    }
+
     for (const raw of rawSnippets) {
-      const text = decodeEntities(raw.replace(/<[^>]+>/g, "")).trim();
+      const text = decodeEntities(raw.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
       if (!text) continue;
 
       // Extract DSOF ticket numbers
@@ -168,6 +184,8 @@ function parseReleasePage(html, pagePath) {
       let description = text
         .replace(/DSOF-\d+/g, "")
         .replace(/\[\s*\]/g, "")
+        .replace(/\s+/g, " ")
+        .replace(/\s+,/g, ",")
         .replace(/^\s*[-–—:,.&/\s]+/, "")
         .replace(/\s*[-–—:,.&/\s]+$/, "")
         .trim();
@@ -175,12 +193,22 @@ function parseReleasePage(html, pagePath) {
       // If description is empty, use full text
       if (!description) description = text;
 
-      const dedupeKey = `${currentVersion}\t${dsof}\t${description}`;
+      // Filter obvious junk entries (instructional steps, prerequisite notes)
+      const JUNK_PATTERNS = [
+        /^Create a layer in Designer/i,
+        /^Right-click on the layer/i,
+        /^Call sockpuppet/i,
+        /^Using data from sockpuppet/i,
+        /^Use r\d+\.\d+ and above/i,
+      ];
+      if (JUNK_PATTERNS.some(re => re.test(description))) continue;
+
+      const dedupeKey = `${currentVersion}\t${dsof}\t${description.toLowerCase()}`;
       if (seen.has(dedupeKey)) continue;
       seen.add(dedupeKey);
 
       // Default empty category to "Fixes" for hotfix releases (e.g. r30.0.1)
-      const category = currentCategory || (currentVersion.includes(".") ? "Fixes" : "");
+      const category = currentCategory || (currentVersion.includes(".") ? "Fixes" : "New Features");
 
       entries.push({
         version: currentVersion,

@@ -2,6 +2,13 @@
   {
     "version": "r32.3.2",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 239442 Starter build: 239443 Released: February 18th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3232---hotfixes"
+  },
+  {
+    "version": "r32.3.2",
+    "category": "Fixes",
     "dsof": "DSOF-32128",
     "description": "Sockpuppet personalities can now be renamed and duplicated, as they could before r31.0",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3232---hotfixes"
@@ -19,6 +26,13 @@
     "dsof": "DSOF-32154",
     "description": "Starter will now launch successfully on machines with Windows 11 update KB5074105",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3232---hotfixes"
+  },
+  {
+    "version": "r32.3.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 238768 Starter build: 238769 Released: February 11th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3231---hotfixes"
   },
   {
     "version": "r32.3.1",
@@ -71,9 +85,37 @@
   },
   {
     "version": "r32.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 238105 Starter build: 238106 Released: February 4th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r323---openvpcal-plugin-support"
+  },
+  {
+    "version": "r32.3",
+    "category": "New Features",
+    "dsof": "",
+    "description": "With the release of r32.3, Designer includes support for the OpenVPCal Plugin. This plugin integrates Netflix’s OpenVPCal colour calibration tool directly into Designer, enabling accurate colour calibration of LED surfaces used in VP and XR workflows. The integration allows calibration data to be generated and applied within Designer, streamlining setup and ensuring colour consistency across calibrated LED volumes",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r323---openvpcal-plugin-support"
+  },
+  {
+    "version": "r32.3",
+    "category": "New Features",
+    "dsof": "",
+    "description": "For information on how to use this plugin, see our OpenVPCal Plugin documentation here",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r323---openvpcal-plugin-support"
+  },
+  {
+    "version": "r32.3",
+    "category": "New Features",
+    "dsof": "",
+    "description": "We’ve also created a useful open-source command-line tool for creating OCIO colour spaces from custom RGB Primaries. You can find it and isntructions for how to use it on our GitHub here",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r323---openvpcal-plugin-support"
+  },
+  {
+    "version": "r32.3",
     "category": "Improvements",
     "dsof": "DSOF-31232",
-    "description": "The Remove Media API endpoints now only act on media in the Disguise-controlled media paths:\n\nprojects\nrs-assets\nrs-engine\n\nYou can now reference these special keys in your API calls to auto-resolve these paths: {projects}, {rs-assets} and {rs-engine}",
+    "description": "The Remove Media API endpoints now only act on media in the Disguise-controlled media paths: projects rs-assets rs-engine You can now reference these special keys in your API calls to auto-resolve these paths: {projects}, {rs-assets} and {rs-engine}",
     "url": "https://help.disguise.one/designer/release-notes/r32#r323---openvpcal-plugin-support"
   },
   {
@@ -143,7 +185,7 @@
     "version": "r32.3",
     "category": "Improvements",
     "dsof": "DSOF-26052",
-    "description": "Users can now remotely create project and system diagnostics via the  system/createsystemdiagnostics and system/createprojectdiagnostics API endpoints",
+    "description": "Users can now remotely create project and system diagnostics via the system/createsystemdiagnostics and system/createprojectdiagnostics API endpoints",
     "url": "https://help.disguise.one/designer/release-notes/r32#r323---openvpcal-plugin-support"
   },
   {
@@ -260,6 +302,13 @@
   },
   {
     "version": "r32.2.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 238041 Starter build: 238042 Released: February 4th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3226---hotfixes"
+  },
+  {
+    "version": "r32.2.6",
     "category": "Improvements",
     "dsof": "DSOF-30843",
     "description": "The non-functional “Get your assets” button has been removed from d3 Manager",
@@ -289,6 +338,13 @@
   {
     "version": "r32.2.5",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 237380 Starter build: 237381 Released: January 28th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3225---hotfixes"
+  },
+  {
+    "version": "r32.2.5",
+    "category": "Fixes",
     "dsof": "DSOF-31761",
     "description": "Designer will no longer occasionally CTD when scrubbing through many audio layers when few audio output channels are configured",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3225---hotfixes"
@@ -313,6 +369,13 @@
     "dsof": "DSOF-31902",
     "description": "Projects with a Track Jump module that references a tag will no longer briefly hang before closing",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3225---hotfixes"
+  },
+  {
+    "version": "r32.2.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 236919 Starter build: 236920 Released: January 21st 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3224---hotfixes"
   },
   {
     "version": "r32.2.4",
@@ -355,6 +418,13 @@
     "dsof": "DSOF-31082",
     "description": "Deleting a RenderStream Local layer while it is running will no longer result in an Access Violation",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3224---hotfixes"
+  },
+  {
+    "version": "r32.2.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 236414 Starter build: 236415 Released: January 14th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3223---hotfixes"
   },
   {
     "version": "r32.2.3",
@@ -463,6 +533,13 @@
   },
   {
     "version": "r32.2.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 235800 Starter build: 235801 Released: December 24th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3222---hotfixes"
+  },
+  {
+    "version": "r32.2.2",
     "category": "Improvements",
     "dsof": "DSOF-31806",
     "description": "Designer will now log more information to the console about certain rendering errors for faster debugging",
@@ -520,6 +597,13 @@
   {
     "version": "r32.2.1",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 235248 Starter build: 235249 Released: December 17th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3221---hotfixes"
+  },
+  {
+    "version": "r32.2.1",
+    "category": "Fixes",
     "dsof": "DSOF-31720",
     "description": "Missing media Layer highlighting will now be more accurate",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3221---hotfixes"
@@ -568,6 +652,13 @@
   },
   {
     "version": "r32.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 234682 Starter build: 234683 Released: December 10th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r322---depth-workflows-sockpuppet-gdtf-export-and-hdmi-capture"
+  },
+  {
+    "version": "r32.2",
     "category": "New Features",
     "dsof": "",
     "description": "1x 4K DCI HDMI 2.0 capture (HDMI connector)",
@@ -584,7 +675,7 @@
     "version": "r32.2",
     "category": "New Features",
     "dsof": "",
-    "description": "1x 12G SDI inputs via Port A (HD-BNC connector), or 4x 3G SDI inputs (HD-BNC connector)\nor",
+    "description": "1x 12G SDI inputs via Port A (HD-BNC connector), or 4x 3G SDI inputs (HD-BNC connector) or",
     "url": "https://help.disguise.one/designer/release-notes/r32#r322---depth-workflows-sockpuppet-gdtf-export-and-hdmi-capture"
   },
   {
@@ -592,13 +683,6 @@
     "category": "New Features",
     "dsof": "",
     "description": "2x 12G SDI inputs via Ports A and C (HD-BNC connector)",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r322---depth-workflows-sockpuppet-gdtf-export-and-hdmi-capture"
-  },
-  {
-    "version": "r32.2",
-    "category": "New Features",
-    "dsof": "",
-    "description": "Use r32.2 and above",
     "url": "https://help.disguise.one/designer/release-notes/r32#r322---depth-workflows-sockpuppet-gdtf-export-and-hdmi-capture"
   },
   {
@@ -640,7 +724,7 @@
     "version": "r32.2",
     "category": "Other Improvements",
     "dsof": "DSOF-31215",
-    "description": "When using a VR set to previsualise the scene you can now set a User Parent field which allows for the VR user to be the child of another stage object. You can read more about this new field here.\n\nThere is also a new option switch enableNullVRDriver which allows the user to use the Steam VR “null” driver for testing",
+    "description": "When using a VR set to previsualise the scene you can now set a User Parent field which allows for the VR user to be the child of another stage object. You can read more about this new field here . There is also a new option switch enableNullVRDriver which allows the user to use the Steam VR “null” driver for testing",
     "url": "https://help.disguise.one/designer/release-notes/r32#r322---depth-workflows-sockpuppet-gdtf-export-and-hdmi-capture"
   },
   {
@@ -912,9 +996,23 @@
   {
     "version": "r32.1.5",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 234595 Starter build: 234596 Released: December 10th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3215---hotfixes"
+  },
+  {
+    "version": "r32.1.5",
+    "category": "Fixes",
     "dsof": "DSOF-31758",
     "description": "Designer will no longer fail to launch properly when loading specific Skeletal Mesh rigged FBX files",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3215---hotfixes"
+  },
+  {
+    "version": "r32.1.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 234042 Starter build: 234043 Released: December 3rd 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3214---hotfixes"
   },
   {
     "version": "r32.1.4",
@@ -955,8 +1053,15 @@
     "version": "r32.1.4",
     "category": "Fixes",
     "dsof": "DSOF-24743",
-    "description": "The IP Address of the Local Machine in the Machine editor no longer always displays 127.0.0.1 and instead shows the actual d3Net IP Address.\nlastUpdated: 2025-12-10",
+    "description": "The IP Address of the Local Machine in the Machine editor no longer always displays 127.0.0.1 and instead shows the actual d3Net IP Address. lastUpdated: 2025-12-10",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3214---hotfixes"
+  },
+  {
+    "version": "r32.1.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 233619 Starter build: 233620 Released: November 26th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3213---hotfixes"
   },
   {
     "version": "r32.1.3",
@@ -1031,6 +1136,13 @@
   {
     "version": "r32.1.2",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 232426 Starter build: 232427 Released: November 12th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3212---hotfixes"
+  },
+  {
+    "version": "r32.1.2",
+    "category": "Fixes",
     "dsof": "DSOF-31466",
     "description": "Track editing performance has generally been improved when working with many layers",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3212---hotfixes"
@@ -1055,6 +1167,13 @@
     "dsof": "DSOF-31385",
     "description": "The Task Status API endpoint now correctly reports about tasks when they are Queued and Started",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3212---hotfixes"
+  },
+  {
+    "version": "r32.1.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 231784 Starter build: 231785 Released: November 5th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3211---hotfixes"
   },
   {
     "version": "r32.1.1",
@@ -1107,6 +1226,13 @@
   },
   {
     "version": "r32.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 231132 Starter build: 231133 Released: October 22nd 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r321---partial-ip-vfc-support-for-gx-3"
+  },
+  {
+    "version": "r32.1",
     "category": "Improvements",
     "dsof": "DSOF-30801",
     "description": "The GX 3+ now has partial IP-VFC card support for specific output formats. You can find these formats listed here",
@@ -1137,7 +1263,7 @@
     "version": "r32.1",
     "category": "Fixes",
     "dsof": "DSOF-31352",
-    "description": "When a DMX signal is lost for more than 10 seconds, DMX event transport no longer reverts to 0, which could cause unexpected behaviour e.g. jumping back to CUE 0.\n\nTriggering failover via DMX is also modified to now only work when the value is first set to 0 and then set to the configured value for failover triggering. e.g. if you need to send 20 for failover you will need to set the channel to 0, then 20. If you sent it from 0 to 10 and then to 20, Failover will not trigger",
+    "description": "When a DMX signal is lost for more than 10 seconds, DMX event transport no longer reverts to 0, which could cause unexpected behaviour e.g. jumping back to CUE 0. Triggering failover via DMX is also modified to now only work when the value is first set to 0 and then set to the configured value for failover triggering. e.g. if you need to send 20 for failover you will need to set the channel to 0, then 20. If you sent it from 0 to 10 and then to 20, Failover will not trigger",
     "url": "https://help.disguise.one/designer/release-notes/r32#r321---partial-ip-vfc-support-for-gx-3"
   },
   {
@@ -1151,7 +1277,7 @@
     "version": "r32.1",
     "category": "Fixes",
     "dsof": "DSOF-31265",
-    "description": "Sockpuppeted effects layers no longer duplicate the content source texture property in their personality on project restart. This restores behaviour before r31.0.\n\nFor customers with projects that have already experienced this problem, you can find instructions for how to reset your personalities to their defaults here",
+    "description": "Sockpuppeted effects layers no longer duplicate the content source texture property in their personality on project restart. This restores behaviour before r31.0. For customers with projects that have already experienced this problem, you can find instructions for how to reset your personalities to their defaults here",
     "url": "https://help.disguise.one/designer/release-notes/r32#r321---partial-ip-vfc-support-for-gx-3"
   },
   {
@@ -1171,6 +1297,13 @@
   {
     "version": "r32.0.3",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 229654 Starter build: 229655 Released: October 8th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3203---hotfixes"
+  },
+  {
+    "version": "r32.0.3",
+    "category": "Fixes",
     "dsof": "DSOF-31299",
     "description": "Opening projects with many tags and cues is no longer very slow",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3203---hotfixes"
@@ -1186,7 +1319,7 @@
     "version": "r32.0.3",
     "category": "Fixes",
     "dsof": "DSOF-31257",
-    "description": "Notch blocks without default values set in Notch now set sensible default values in Designer instead of failing to launch properly.\n\nEnum values will select the 1st enum.\nNumerical fields will select the mid value between the min and max.\nColours default to black with alpha 1",
+    "description": "Notch blocks without default values set in Notch now set sensible default values in Designer instead of failing to launch properly. Enum values will select the 1st enum. Numerical fields will select the mid value between the min and max. Colours default to black with alpha 1",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3203---hotfixes"
   },
   {
@@ -1223,6 +1356,48 @@
     "dsof": "DSOF-30298",
     "description": "Switching Colour space from OCIO back to Gamma after setting OCIO parameters no longer results in console spam",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3203---hotfixes"
+  },
+  {
+    "version": "r32.0.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 229072 Starter build: 229073 Released: September 26th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3202---hotfixes"
+  },
+  {
+    "version": "r32.0.2",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "r32.0.2 includes all the same features as r32.0 but now also correctly includes the fixes in r31.3.4",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3202---hotfixes"
+  },
+  {
+    "version": "r32.0.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 228975 Starter build: 228976 Released: September 25th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3201---hotfixes"
+  },
+  {
+    "version": "r32.0.1",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "No improvements here. This was a mistake release. Please update to r32.0.2",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3201---hotfixes"
+  },
+  {
+    "version": "r32.0",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 228570 Starter build: 228571 Released: September 24th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r320---gx-3-support"
+  },
+  {
+    "version": "r32.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "r32.0 supports the latest Disguise server type: the GX 3+. Full hardware specifications and further details are coming soon. You can find our initial (and eventually full) documentation here",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r320---gx-3-support"
   },
   {
     "version": "r32.0",
@@ -1270,14 +1445,14 @@
     "version": "r32.0",
     "category": "Improvements",
     "dsof": "DSOF-31086",
-    "description": "Designer now has a new Python object SequencedValue, which can be obtained through the new Python method FieldSequence.getSequencedValue(). This object contains information about the sequenced value at a given time, and its neighbouring left and right keyframes. For more details, please refer to the Developer Documentation",
+    "description": "Designer now has a new Python object SequencedValue, which can be obtained through the new Python method FieldSequence.getSequencedValue() . This object contains information about the sequenced value at a given time, and its neighbouring left and right keyframes. For more details, please refer to the Developer Documentation",
     "url": "https://help.disguise.one/designer/release-notes/r32#r320---gx-3-support"
   },
   {
     "version": "r32.0",
     "category": "Improvements",
     "dsof": "DSOF-31180",
-    "description": "Designer now has new Python methods for the VideoClip class: hasAudio(), enabledVersion, proxyInfo. For more details, please refer to the Developer Documentation",
+    "description": "Designer now has new Python methods for the VideoClip class: hasAudio(), enabledVersion, proxyInfo . For more details, please refer to the Developer Documentation",
     "url": "https://help.disguise.one/designer/release-notes/r32#r320---gx-3-support"
   },
   {
@@ -1293,6 +1468,13 @@
     "dsof": "DSOF-31055",
     "description": "The Layer.module field accessible in the python API is now restricted so it cannot be accessed directly by plugin developers. This is because it doesn’t behave the way people expect and is not required for plugins",
     "url": "https://help.disguise.one/designer/release-notes/r32#r320---gx-3-support"
+  },
+  {
+    "version": "r31.3.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 228566 Starter build: 228567 Released: September 24th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r3134---hotfixes"
   },
   {
     "version": "r31.3.4",
@@ -1332,6 +1514,13 @@
   {
     "version": "r31.3.3",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 228168 Starter build: 228169 Released: September 17th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r3133---hotfixes"
+  },
+  {
+    "version": "r31.3.3",
+    "category": "Fixes",
     "dsof": "DSOF-31183",
     "description": "Python method Track.splitSectionAtBeat() now accepts an optional second argument for specifying the transition setting for the new section, as it did before r31.3. For more information about the Track class, please refer to the Developer Documentation",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3133---hotfixes"
@@ -1349,6 +1538,13 @@
     "dsof": "DSOF-30770, DSOF-30769",
     "description": "DMX Channels in the DMXPatch Editor can now be reordered to lower Channels again, as they could be before r31.0. Once reordered, the properties are correctly editable",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3133---hotfixes"
+  },
+  {
+    "version": "r31.3.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 227560 Starter build: 227561 Released: September 10th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r3132---hotfixes"
   },
   {
     "version": "r31.3.2",
@@ -1389,7 +1585,7 @@
     "version": "r31.3.2",
     "category": "Fixes",
     "dsof": "DSOF-31059",
-    "description": "HTTP Sockpuppet listPatches endpoint no longer returns an empty ‘type’ and stringValue. The type is now ‘string’, and if a value had been previously sent via the ‘live’ endpoint, stringValue now displays the last value sent. This restores the behaviour before r31.0",
+    "description": "HTTP Sockpuppet listPatches endpoint no longer returns an empty ‘type’ and stringValue . The type is now ‘string’, and if a value had been previously sent via the ‘live’ endpoint, stringValue now displays the last value sent. This restores the behaviour before r31.0",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3132---hotfixes"
   },
   {
@@ -1398,6 +1594,13 @@
     "dsof": "DSOF-30562",
     "description": "RenderStream workloads using Texture Parameters no longer reports a spurious “RenderStream Send Failed” error",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3132---hotfixes"
+  },
+  {
+    "version": "r31.3.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 226904 Starter build: 226905 Released: September 3rd 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r3131---hotfixes"
   },
   {
     "version": "r31.3.1",
@@ -1410,7 +1613,7 @@
     "version": "r31.3.1",
     "category": "Fixes",
     "dsof": "DSOF-31097",
-    "description": "Designer no longer fails to start up on GX 1 and GX 2 servers with a “Error calling ‘pOutput->QueryInterface<IDXGIOutput6>(&output6)’” error message, as it did before r31.2",
+    "description": "Designer no longer fails to start up on GX 1 and GX 2 servers with a “Error calling ‘ pOutput->QueryInterface<IDXGIOutput6>(&output6) ’” error message, as it did before r31.2",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3131---hotfixes"
   },
   {
@@ -1447,6 +1650,13 @@
     "dsof": "DSOF-24778",
     "description": "The api/service/system/projects API endpoint now correctly handles Designer versions that match the rXX.Y-name custom branch format, and the ancient release_XX format",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3131---hotfixes"
+  },
+  {
+    "version": "r31.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 226529 Starter build: 226530 Released: August 27th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r313---stacked-tags"
   },
   {
     "version": "r31.3",
@@ -1527,6 +1737,13 @@
   },
   {
     "version": "r31.2.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 226526 Starter build: 226527 Released: August 27th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r3122---hotfixes"
+  },
+  {
+    "version": "r31.2.2",
     "category": "Improvements",
     "dsof": "DSOF-31053",
     "description": "Python API users can create parameters for Open Layers without needing a Playhead over the Layer",
@@ -1584,6 +1801,13 @@
   {
     "version": "r31.2.1",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 225580 Starter build: 225581 Released: August 20th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r3121---hotfixes"
+  },
+  {
+    "version": "r31.2.1",
+    "category": "Fixes",
     "dsof": "DSOF-30993",
     "description": "Cameras no longer stutter in their movement when the parent prop is animated, as they did before r31.0.3",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3121---hotfixes"
@@ -1608,6 +1832,13 @@
     "dsof": "DSOF-30999",
     "description": "The Python API method overlayMessage no longer misses some of its parameter names",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3121---hotfixes"
+  },
+  {
+    "version": "r31.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 225152 Starter build: 225153 Released: August 13th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r312---skeleton-tracking-improvements"
   },
   {
     "version": "r31.2",
@@ -1751,6 +1982,13 @@
   },
   {
     "version": "r31.1.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 225126 Starter build: 225127 Released: August 13th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r3111---hotfixes"
+  },
+  {
+    "version": "r31.1.1",
     "category": "Improvements",
     "dsof": "DSOF-29296, DSOF-28954",
     "description": "The EULA for Pro and Starter installers are now the same",
@@ -1832,6 +2070,13 @@
     "dsof": "DSOF-30712",
     "description": "Now RenderStream Projects network share settings will always be configured upon installation of Designer, same as the d3 Projects network share",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3111---hotfixes"
+  },
+  {
+    "version": "r31.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 224006 Starter build: 224007 Released: July 30th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r311---luma-matte-mask-and-25d-improvements"
   },
   {
     "version": "r31.1",
@@ -1982,6 +2227,13 @@
   },
   {
     "version": "r31.0.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 223832 Starter build: 223833 Released: July 30th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r3104---hotfixes"
+  },
+  {
+    "version": "r31.0.4",
     "category": "Improvements",
     "dsof": "DSOF-30789",
     "description": "Plugin and web layer logs are now more comprehensive for easier debugging",
@@ -2007,6 +2259,13 @@
     "dsof": "DSOF-30667",
     "description": "Skeleton objects can now be correctly controlled with Rigid Body Tracking Sources",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3104---hotfixes"
+  },
+  {
+    "version": "r31.0.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 223323 Starter build: 223324 Released: July 23rd 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r3103---hotfixes"
   },
   {
     "version": "r31.0.3",
@@ -2088,6 +2347,13 @@
   {
     "version": "r31.0.2",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 222612 Starter build: 222613 Released: July 16th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r3102---hotfixes"
+  },
+  {
+    "version": "r31.0.2",
+    "category": "Fixes",
     "dsof": "DSOF-30707",
     "description": "The XR Colour calibration widget can now correctly be opened again",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3102---hotfixes"
@@ -2131,8 +2397,15 @@
     "version": "r31.0.2",
     "category": "Fixes",
     "dsof": "DSOF-29740",
-    "description": "SDI 1080p Level B quad link video signals coming from Blackmagic video sources no longer flicker when captured on Disguise servers equipped with Deltacast capture cards.\n\nIf the Colourimetry or Transfer Characteristic of the incoming video signal cannot be read from the signal metadata, Designer will default to Rec.709 and SDR",
+    "description": "SDI 1080p Level B quad link video signals coming from Blackmagic video sources no longer flicker when captured on Disguise servers equipped with Deltacast capture cards. If the Colourimetry or Transfer Characteristic of the incoming video signal cannot be read from the signal metadata, Designer will default to Rec.709 and SDR",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3102---hotfixes"
+  },
+  {
+    "version": "r31.0.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 222355 Starter build: 222356 Released: July 9th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r3101---hotfixes"
   },
   {
     "version": "r31.0.1",
@@ -2217,6 +2490,104 @@
     "dsof": "DSOF-30609",
     "description": "d3Manager’s feature Clear ingestion history works as expected again",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3101---hotfixes"
+  },
+  {
+    "version": "r31.0",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 221477 Starter build: 221478 Released: July 7th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "We are releasing a new content layer called the RenderStream Local layer, which allows the user to run any RenderStream asset on the same server as Designer. This functions like the existing RenderStream layer, but rather than sending the rendered frames over the network, the frames are accessible to Designer in the shared GPU memory",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "RenderStream Local layer using the Unreal Engine integration on a VX 2 media server",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "RenderStream Local layers are watermarked by default if no RenderStream License has been applied to the server. RenderStream Local is supported on the VX and GX ranges only",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "VX 4 and VX 4+ servers do not support the RenderStream Local layer due to technical limitations with AMD GPUs. EX range servers can use RenderStream Local for TouchDesigner only with the purchase of an optional, perpetual Real-Time Connector License. Read more about optional EX range licenses here",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Read more about the RenderStream Local layer in our new documentation here",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "The EX range now supports the TouchDesigner RenderStream plugin via the RenderStreamLocal layer. This is enabled with the optional EX Real-Time connector (RTC) license, which also enables users to run a Notch block on the EX range. The Real-Time Connector license is purchased as a one-time cost. There is no need for a RenderStream license to enable this functionality. TouchDesigner using the RenderStream layer (where the RenderStream workload is deployed to an RX server) is not supported on the EX range",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "We’ve overhauled the Sockpuppet Patch UI, which will allow you to more easily view, modify and export your Sockpuppet Patches. You can read more about these changes here",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Cameras now have the capacity to simulate a depth of field effect that is physically accurate. You can find more information about this feature here",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "This is especially useful when paired with Stage Render Layers and 2.5D Assets",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "From r31.0 onwards, the Disguise Designer software will no longer support Designer Legacy licenses. Only Designer Pro licenses are now supported",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Users will continue to be able to use both Designer Pro and Designer Legacy licenses to run versions prior to r31.0",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "We have also removed support for shared Educational Licenses. If you are interested in teaching Disguise, we can distribute a range of appropriate licenses for you if you contact us here . For more information, see Educational Licenses",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
+  },
+  {
+    "version": "r31.0",
+    "category": "New Features",
+    "dsof": "",
+    "description": "We have introduced a simple API for copying media to and removing media from your Designer media server cluster. You can read more about the media provisioning API here",
+    "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
   },
   {
     "version": "r31.0",
@@ -2348,7 +2719,7 @@
     "version": "r31.0",
     "category": "Improvements",
     "dsof": "DSOF-30224",
-    "description": "Designer now has more detailed and helpful error messages when Starter projects are opened in Ful  versions of Designer",
+    "description": "Designer now has more detailed and helpful error messages when Starter projects are opened in Ful versions of Designer",
     "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
   },
   {
@@ -2395,6 +2766,13 @@
   },
   {
     "version": "r30.8.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 221470 Starter build: 221471 Released: July 7th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3086---hotfixes"
+  },
+  {
+    "version": "r30.8.6",
     "category": "Improvements",
     "dsof": "DSOF-28616",
     "description": "Changing warp markers on a Feed Map will no longer cause excessive console logging",
@@ -2427,6 +2805,13 @@
     "dsof": "DSOF-30565",
     "description": "The list of network adaptors displayed in the SMC UI will no update in realtime when adaptor settings change",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3086---hotfixes"
+  },
+  {
+    "version": "r30.8.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 220156 Starter build: 220157 Released: June 18th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3085---hotfixes"
   },
   {
     "version": "r30.8.5",
@@ -2543,6 +2928,13 @@
   {
     "version": "r30.8.4",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 219136 Starter build: 219134 Released: June 4th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3084---hotfixes"
+  },
+  {
+    "version": "r30.8.4",
+    "category": "Fixes",
     "dsof": "DSOF-29712",
     "description": "RenderStream workloads will no longer intermittently get stuck in Awaiting requests (not requested) on launch if packets are dropped on startup",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3084---hotfixes"
@@ -2588,6 +2980,13 @@
     "dsof": "DSOF-30413",
     "description": "Designer will no longer trigger OSC events multiple times if their addresses start with the same string of characters",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3084---hotfixes"
+  },
+  {
+    "version": "r30.8.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 218797 Starter build: 218798 Released: May 28th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3083---hotfixes"
   },
   {
     "version": "r30.8.3",
@@ -2655,6 +3054,13 @@
   {
     "version": "r30.8.2",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 217911 Starter build: 217912 Released: May 21st 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3082---hotfixes"
+  },
+  {
+    "version": "r30.8.2",
+    "category": "Fixes",
     "dsof": "DSOF-30106",
     "description": "The API endpoint service/project/startlocalproject will no longer fail to launch the project",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3082---hotfixes"
@@ -2704,6 +3110,13 @@
   {
     "version": "r30.8.1",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 217342 Starter build: 217340 Released: May 14th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3081---hotfixes"
+  },
+  {
+    "version": "r30.8.1",
+    "category": "Fixes",
     "dsof": "DSOF-30211",
     "description": "When the Plugin Manager can’t find the project plugin folder it will no longer cause d3service to crash",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3081---hotfixes"
@@ -2728,6 +3141,13 @@
     "dsof": "DSOF-29689",
     "description": "Shift selecting nothing on timeline no longer displays a useless blank error window",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3081---hotfixes"
+  },
+  {
+    "version": "r30.8",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 216685 Starter build: 216683 Released: May 7th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r308---coloured-layers-sockpuppet-sync-and-st-2110-capture-prerelease"
   },
   {
     "version": "r30.8",
@@ -2907,6 +3327,13 @@
   {
     "version": "r30.7.5",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 216640 Starter build: 216645 Released: May 7th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3075---hotfixes"
+  },
+  {
+    "version": "r30.7.5",
+    "category": "Fixes",
     "dsof": "DSOF-30135",
     "description": "Running RenderStream texture parameters in OCIO mode is now slightly more performant",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3075---hotfixes"
@@ -2928,6 +3355,13 @@
   {
     "version": "r30.7.4",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 216140 Starter build: 216138 Released: April 30th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3074---hotfixes"
+  },
+  {
+    "version": "r30.7.4",
+    "category": "Fixes",
     "dsof": "DSOF-30142",
     "description": "2x4 servers are now correctly detected as Disguise servers again",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3074---hotfixes"
@@ -2938,6 +3372,13 @@
     "dsof": "DSOF-30070",
     "description": "Right-clicking on a non-numeric field now correctly opens the meta field editor again",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3074---hotfixes"
+  },
+  {
+    "version": "r30.7.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 215806 Starter build: 215804 Released: April 23rd 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3073---hotfixes"
   },
   {
     "version": "r30.7.3",
@@ -3012,6 +3453,13 @@
   {
     "version": "r30.7.2",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 215456 Starter build: 215454 Released: April 16th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3072---hotfixes"
+  },
+  {
+    "version": "r30.7.2",
+    "category": "Fixes",
     "dsof": "DSOF-30084, DSOF-30096",
     "description": "Running Designer on a Windows 10 machine in a network where some Designer machines cannot see each other over d3net but can see each other over another network will no longer result in excessive console spam which can fill up the C drive",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3072---hotfixes"
@@ -3057,6 +3505,13 @@
     "dsof": "DSOF-29877",
     "description": "CDL objects that are locked can no longer be modified via the CDL API endpoints",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3072---hotfixes"
+  },
+  {
+    "version": "r30.7.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 214307 Starter build: 214304 Released: April 9th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3071---hotfixes"
   },
   {
     "version": "r30.7.1",
@@ -3130,6 +3585,13 @@
   },
   {
     "version": "r30.7",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 213337 Starter build: 213335 Released: March 31st 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
+  },
+  {
+    "version": "r30.7",
     "category": "New Features",
     "dsof": "",
     "description": "Ask Aid3n - Our Disguise AI workflow assistant",
@@ -3146,14 +3608,14 @@
     "version": "r30.7",
     "category": "New Features",
     "dsof": "",
-    "description": "Luma AI Video Generator - Text-to-video generation that imports directly to your d3 project.\nYou can find detailed information on accessing, installing, and managing plugins here",
+    "description": "Luma AI Video Generator - Text-to-video generation that imports directly to your d3 project. You can find detailed information on accessing, installing, and managing plugins here",
     "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
   },
   {
     "version": "r30.7",
     "category": "Improvements",
     "dsof": "DSOF-29317, DSOF-28577, DSOF-27706, DSOF-28310, DSOF-28501, DSOF-28657, DSOF-28666, DSOF-28734",
-    "description": "We’ve made a range of improvements to expressions. You can find the extensive documentation on common datatypes, variables, string manipulation, and monitoring using custom messages.\n\n - A variable for “Fade up” and “Fade down” is now exposed for use with OSC Output Expressions.\n - A variable for Pre-Roll in TC Status is now exposed for use with OSC Output Expressions.\n - Float expressions in the Expressions Variable Device now have a settable min and max.\n - Expression function variables can now have parameters defined.\n - Expression variables are now re-orderable by left-click and drag.\n - Expressions now support returning an array of composite vector types. Note that to use them in a field you still need to access the individual floats. These are:\n\nColour\nVec2 (alias float2)\nVec3 (alias float3)\nVec4 (alias float4)\n\n\n - Expressions now have a range of string manipulation functions:\n\nsplit\nreplace\nstrip\ntitle\nupper\nlower\ncombine",
+    "description": "We’ve made a range of improvements to expressions. You can find the extensive documentation on common datatypes, variables, string manipulation, and monitoring using custom messages . - A variable for “Fade up” and “Fade down” is now exposed for use with OSC Output Expressions. - A variable for Pre-Roll in TC Status is now exposed for use with OSC Output Expressions. - Float expressions in the Expressions Variable Device now have a settable min and max. - Expression function variables can now have parameters defined. - Expression variables are now re-orderable by left-click and drag. - Expressions now support returning an array of composite vector types. Note that to use them in a field you still need to access the individual floats. These are: Colour Vec2 (alias float2) Vec3 (alias float3) Vec4 (alias float4) - Expressions now have a range of string manipulation functions: split replace strip title upper lower combine",
     "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
   },
   {
@@ -3250,6 +3712,13 @@
   {
     "version": "r30.6.1",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 213321 Starter build: 213320 Released: March 31st 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3061---hotfixes"
+  },
+  {
+    "version": "r30.6.1",
+    "category": "Fixes",
     "dsof": "DSOF-29785",
     "description": "After holding at the end of a section for a while, Designer will no longer occasionally display the wrong frame of upcoming content when moving to the next section",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3061---hotfixes"
@@ -3267,6 +3736,27 @@
     "dsof": "DSOF-29660",
     "description": "Designer will no longer fail to launch on RX range machines even when they have a valid Designer or Pro license",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3061---hotfixes"
+  },
+  {
+    "version": "r30.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build (Full): 212444 Release build (Starter): 212442 Released: March 25th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r306---starter"
+  },
+  {
+    "version": "r30.6",
+    "category": "New Features",
+    "dsof": "",
+    "description": "With r30.6 we have introduced the new Starter version of Designer! With Starter you can use all the key features of Designer, for free ! Starter is designed for learning and so it will always output with watermarks, but it will run on servers, laptops, PCs and can do full network and session control, including RenderStream and OmniCal. Starter comes with its own free perpetual license built in, but it does require that you log in to your Disguise Cloud account in d3Manager to launch projects",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r306---starter"
+  },
+  {
+    "version": "r30.6",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Remember, Starter projects use the file extension: .d3starter and cannot be opened in the un-watermarked Full version of Designer, so if you’re working on a production that will eventually output from a server, you’ll need a Pro license and to use Full",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r306---starter"
   },
   {
     "version": "r30.6",
@@ -3299,6 +3789,13 @@
   {
     "version": "r30.5.3",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 212395 Released: March 25th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3053---hotfixes"
+  },
+  {
+    "version": "r30.5.3",
+    "category": "Fixes",
     "dsof": "DSOF-29304",
     "description": "VX 4+ servers will no longer struggle to maintain Genlock under certain uncommon Windows states",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3053---hotfixes"
@@ -3326,6 +3823,13 @@
   },
   {
     "version": "r30.5.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 211696 Released: March 19th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3052---hotfixes"
+  },
+  {
+    "version": "r30.5.2",
     "category": "Improvements",
     "dsof": "DSOF-29727",
     "description": "Consoles now have improved logging about renewed licenses for easier debugging",
@@ -3337,6 +3841,13 @@
     "dsof": "DSOF-29694",
     "description": "Consoles will no longer be filled with irrelevant logging when running an RS workload without texture parameters",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3052---hotfixes"
+  },
+  {
+    "version": "r30.5.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 211194 Released: March 12th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3051---hotfixes"
   },
   {
     "version": "r30.5.1",
@@ -3372,6 +3883,13 @@
     "dsof": "DSOF-29420",
     "description": "Logs about expired licenses are now easier to understand",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3051---hotfixes"
+  },
+  {
+    "version": "r30.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 210251 Released: March 5th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r305---xr-for-vr"
   },
   {
     "version": "r30.5",
@@ -3488,6 +4006,13 @@
   {
     "version": "r30.4.1",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 210246 Released: March 5th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3041---hotfixes"
+  },
+  {
+    "version": "r30.4.1",
+    "category": "Fixes",
     "dsof": "DSOF-29389",
     "description": "2.5D assets from modern versions of Cuebric no longer load with unexpected depths between plates",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3041---hotfixes"
@@ -3501,6 +4026,13 @@
   },
   {
     "version": "r30.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 209578 Released: February 26th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
+  },
+  {
+    "version": "r30.4",
     "category": "Improvements",
     "dsof": "DSOF-13670, DSOF-29213",
     "description": "Changing any Indirection will now wait to swap content for a few frames to allow for that content to be loaded. This means you should never see a flash to black when swapping a live indirection. We have also removed the Indirection delay (frames) field from indirection controllers as the correct delay is now computed automatically",
@@ -3510,7 +4042,7 @@
     "version": "r30.4",
     "category": "Improvements",
     "dsof": "DSOF-23779",
-    "description": "The implementation of CEF and Chromium used in Disguise are now more modern. We now support CEF 132.3.2+g4997b2f and chromium 132.0.6834.161. This means you get more features, stability and performance in the following layers:\n\nWeb Layer\nText Layer",
+    "description": "The implementation of CEF and Chromium used in Disguise are now more modern. We now support CEF 132.3.2+g4997b2f and chromium 132.0.6834.161. This means you get more features, stability and performance in the following layers: Web Layer Text Layer",
     "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
   },
   {
@@ -3552,7 +4084,7 @@
     "version": "r30.4",
     "category": "Improvements",
     "dsof": "DSOF-28865",
-    "description": "FFMPEG has now been updated to 7.1 from 5.0.1. FFMPEG is used for:\n\nRendering Feed Movies\nRendering Stage Movies\nRendering Animation Movies\nUploading to Previs\nThese workflows will now be a bit faster and more stable",
+    "description": "FFMPEG has now been updated to 7.1 from 5.0.1. FFMPEG is used for: Rendering Feed Movies Rendering Stage Movies Rendering Animation Movies Uploading to Previs These workflows will now be a bit faster and more stable",
     "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
   },
   {
@@ -3589,6 +4121,13 @@
     "dsof": "DSOF-29303",
     "description": "3rd party tools can now correctly pick up the DNS-SD record published by d3service",
     "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
+  },
+  {
+    "version": "r30.3.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 209573 Released: February 26th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3035---hotfixes"
   },
   {
     "version": "r30.3.5",
@@ -3642,6 +4181,13 @@
   {
     "version": "r30.3.3",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 208330 Released: February 12th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3033---hotfixes"
+  },
+  {
+    "version": "r30.3.3",
+    "category": "Fixes",
     "dsof": "DSOF-28985",
     "description": "Duplicating projectors will no longer cause an ACCESS_VIOLATION when certain GUI elements are open",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3033---hotfixes"
@@ -3666,6 +4212,13 @@
     "dsof": "DSOF-29378",
     "description": "Mousing over the software version in the bottom right of the Track widget now shows the full version of Designer in a tooltip",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3033---hotfixes"
+  },
+  {
+    "version": "r30.3.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 207901 Released: February 5th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3032---hotfixes"
   },
   {
     "version": "r30.3.2",
@@ -3697,6 +4250,13 @@
   },
   {
     "version": "r30.3.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 207286 Released: January 24th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3031---hotfixes"
+  },
+  {
+    "version": "r30.3.1",
     "category": "Improvement",
     "dsof": "DSOF-26577",
     "description": "After searching for a Cue in the Cue List and selecting it the GUI focus is now moved from the search box to the Track widget to enable faster, more intuitive programming",
@@ -3706,7 +4266,7 @@
     "version": "r30.3.1",
     "category": "Fixes",
     "dsof": "DSOF-29173",
-    "description": "Various improvements to IP-VFC Colour Format behaviour:\n\nApplying feeds on an IP-VFC will now attempt to apply the selected colour format and not force the output to RGB.\nThe feed outline will now correctly highlight in green when the colour format set in the GUI and the active output of the GPU match.\nWith the enableColourFormat option switch enabled Designer will no longer display a Sub Sampling option in the IP VFC GUI as it is now replaced with Colour Format.\nColour format options now specify in the GUI whether they are RGB or YCbCr to make it easier to select the correct format",
+    "description": "Various improvements to IP-VFC Colour Format behaviour: Applying feeds on an IP-VFC will now attempt to apply the selected colour format and not force the output to RGB. The feed outline will now correctly highlight in green when the colour format set in the GUI and the active output of the GPU match. With the enableColourFormat option switch enabled Designer will no longer display a Sub Sampling option in the IP VFC GUI as it is now replaced with Colour Format . Colour format options now specify in the GUI whether they are RGB or YCbCr to make it easier to select the correct format",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3031---hotfixes"
   },
   {
@@ -3732,9 +4292,16 @@
   },
   {
     "version": "r30.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 205609 Released: January 15th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
+  },
+  {
+    "version": "r30.3",
     "category": "Improvements",
     "dsof": "DSOF-6438, DSOF-25483",
-    "description": "We have added a ‘Border expansion’ field In the Mapping editor for all geometric mapping types. This can be used when there is an empty space within the screen UV map to stop black pixels blurring into visible screen space. The units are pixels in pixels. The following mappings have this field:\n\nSpherical\nPerspective\nCylindrical\nCamera Plate\nParallel\nMesh",
+    "description": "We have added a ‘Border expansion’ field In the Mapping editor for all geometric mapping types. This can be used when there is an empty space within the screen UV map to stop black pixels blurring into visible screen space. The units are pixels in pixels. The following mappings have this field: Spherical Perspective Cylindrical Camera Plate Parallel Mesh",
     "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
   },
   {
@@ -3748,7 +4315,7 @@
     "version": "r30.3",
     "category": "Improvements",
     "dsof": "DSOF-28542",
-    "description": "You can now mix Green screen and LED screen objects in your MR sets, and camera calibration will work correctly on Luma-keyed inputs. Additionally:\n\nSet extension will be applied outside of the LED screens and around any Luma-Keyed performers in front of Green screens.\nWe now only account for keying specifically within the green screen object so content being used by the LED screen with green in will no longer be keyed out",
+    "description": "You can now mix Green screen and LED screen objects in your MR sets, and camera calibration will work correctly on Luma-keyed inputs. Additionally: Set extension will be applied outside of the LED screens and around any Luma-Keyed performers in front of Green screens. We now only account for keying specifically within the green screen object so content being used by the LED screen with green in will no longer be keyed out",
     "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
   },
   {
@@ -3776,7 +4343,7 @@
     "version": "r30.3",
     "category": "Improvements",
     "dsof": "DSOF-28714",
-    "description": "You can now adjust output phase offset by lines and pixels in Designer with the option switches: genlockPhaseAdjustLines and genlockPhaseAdjustPixels. This is the same as setting a phase offset within the Nvidia or AMD interface, but will re-apply these settings during Apply Feed Settings",
+    "description": "You can now adjust output phase offset by lines and pixels in Designer with the option switches: genlockPhaseAdjustLines and genlockPhaseAdjustPixels . This is the same as setting a phase offset within the Nvidia or AMD interface, but will re-apply these settings during Apply Feed Settings",
     "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
   },
   {
@@ -3886,6 +4453,13 @@
   },
   {
     "version": "r30.2.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 205609 Released: January 8th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3022---hotfixes"
+  },
+  {
+    "version": "r30.2.2",
     "category": "Improvement",
     "dsof": "DSOF-29041",
     "description": "Designer API documentation now has a useful dropdown for selecting a scheme",
@@ -3922,6 +4496,13 @@
   {
     "version": "r30.2.1",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 205166 Released: December 18th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3021---hotfixes"
+  },
+  {
+    "version": "r30.2.1",
+    "category": "Fixes",
     "dsof": "DSOF-23680",
     "description": "Media distribution will no longer fail if the reg key for the d3 Projects folder path is changed",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3021---hotfixes"
@@ -3930,7 +4511,7 @@
     "version": "r30.2.1",
     "category": "Fixes",
     "dsof": "DSOF-28232",
-    "description": "Running in windowed mode will now be more reliable in the following ways:\n\nFramerates will no longer spike to very high values.\nMachines will no longer intermittently fail to join sessions.\nMoving the playhead will now respond immediately",
+    "description": "Running in windowed mode will now be more reliable in the following ways: Framerates will no longer spike to very high values. Machines will no longer intermittently fail to join sessions. Moving the playhead will now respond immediately",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3021---hotfixes"
   },
   {
@@ -3970,6 +4551,13 @@
   },
   {
     "version": "r30.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 204302 Released: December 13th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
+  },
+  {
+    "version": "r30.2",
     "category": "Improvements",
     "dsof": "DSOF-23236",
     "description": "Add support for HDMI & DP VFCs to output in 4:2:2 or 4:4:4",
@@ -4000,14 +4588,14 @@
     "version": "r30.2",
     "category": "Improvements",
     "dsof": "DSOF-24079",
-    "description": "Designer now has the option to skip setting d3 projects share on installation. There is now an option during d3 installation to share the d3 projects folder. When it is ticked, the d3 projects folder is shared and Everyone is given read and write permissions (This is the current default behaviour). If it is un-ticked the user-configured sharing settings are not changed.\nYou can find more information about this feature here",
+    "description": "Designer now has the option to skip setting d3 projects share on installation. There is now an option during d3 installation to share the d3 projects folder. When it is ticked, the d3 projects folder is shared and Everyone is given read and write permissions (This is the current default behaviour). If it is un-ticked the user-configured sharing settings are not changed. You can find more information about this feature here",
     "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
   },
   {
     "version": "r30.2",
     "category": "Improvements",
     "dsof": "DSOF-26889",
-    "description": "Designer now has various ways of using the CTRL modified to interact with text fields. Here is a comprehensive list:\n\nCTRL + Delete to delete the word to the right of the cursor\nCTRL + Backspace to delete the word to the left of the cursor\nCTRL + Left-click to move the cursor left to the next word boundary\nCTRL + Right-click to move the cursor right to the next word boundary\nCTRL + SHIFT + Left-click to extend the selection left to the next word boundary\nCTRL + Shift + Right-click to extend the selection right to the next word boundary",
+    "description": "Designer now has various ways of using the CTRL modified to interact with text fields. Here is a comprehensive list: CTRL + Delete to delete the word to the right of the cursor CTRL + Backspace to delete the word to the left of the cursor CTRL + Left-click to move the cursor left to the next word boundary CTRL + Right-click to move the cursor right to the next word boundary CTRL + SHIFT + Left-click to extend the selection left to the next word boundary CTRL + Shift + Right-click to extend the selection right to the next word boundary",
     "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
   },
   {
@@ -4035,7 +4623,7 @@
     "version": "r30.2",
     "category": "Improvements",
     "dsof": "DSOF-28342",
-    "description": "On launch, Designer will now auto-update expressions that fail due to case sensitivity.\nIn r29.2 we changed expressions to be case-sensitive to make them more powerful. This unfortunately left some old projects relying on case insensitivity to have broken expressions. We’ll fix that for you now when you update so you don’t have to!",
+    "description": "On launch, Designer will now auto-update expressions that fail due to case sensitivity. In r29.2 we changed expressions to be case-sensitive to make them more powerful. This unfortunately left some old projects relying on case insensitivity to have broken expressions. We’ll fix that for you now when you update so you don’t have to!",
     "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
   },
   {
@@ -4049,7 +4637,7 @@
     "version": "r30.2",
     "category": "Improvements",
     "dsof": "DSOF-28829",
-    "description": "Designer now allows you to independently set the Bit Depth of the GUI to 8-bit regardless of the setting for the rest of the project. To do this you simply enable the option switch forcePrimaryOutputTo8Bit on each machine you want to behave in this way.\nThis is to help in scenarios where you want to output 10-bit but the KVM you have only supports 8-bit",
+    "description": "Designer now allows you to independently set the Bit Depth of the GUI to 8-bit regardless of the setting for the rest of the project. To do this you simply enable the option switch forcePrimaryOutputTo8Bit on each machine you want to behave in this way. This is to help in scenarios where you want to output 10-bit but the KVM you have only supports 8-bit",
     "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
   },
   {
@@ -4079,6 +4667,13 @@
     "dsof": "DSOF-28673",
     "description": "Detect systems API will no longer intermittently fail with a 5000 error code. See our developer documentation for more information about our APIs",
     "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
+  },
+  {
+    "version": "r30.1.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 204302 Released: December 11th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3012---hotfixes"
   },
   {
     "version": "r30.1.2",
@@ -4147,7 +4742,7 @@
     "version": "r30.1.2",
     "category": "Fixes",
     "dsof": "DSOF-28912",
-    "description": "Layers with Square Brackets  in their names can now we used in Expressions again with the same syntax as normal",
+    "description": "Layers with Square Brackets in their names can now we used in Expressions again with the same syntax as normal",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3012---hotfixes"
   },
   {
@@ -4156,6 +4751,13 @@
     "dsof": "DSOF-28923",
     "description": "You can now output the value of a layer parameter via custom OSC output expression even when it is keyframed",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3012---hotfixes"
+  },
+  {
+    "version": "r30.1.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 203629 Released: December 4th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r3011---hotfixes"
   },
   {
     "version": "r30.1.1",
@@ -4182,7 +4784,7 @@
     "version": "r30.1.1",
     "category": "Fixes",
     "dsof": "DSOF-28768",
-    "description": "Designer will now correctly output the value of a layer parameter via custom OSC output expressions and will no longer report a “recursion limit” error. Examples of values that can now be sent include:\n\nmodule:video.brightness\nmodule:video.speed\nmodule:video.volume\netc",
+    "description": "Designer will now correctly output the value of a layer parameter via custom OSC output expressions and will no longer report a “recursion limit” error. Examples of values that can now be sent include: module:video.brightness module:video.speed module:video.volume etc",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3011---hotfixes"
   },
   {
@@ -4191,6 +4793,13 @@
     "dsof": "DSOF-28769",
     "description": "Single-layer Notch blocks no longer fail to load if they do not expose a layer parameter",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3011---hotfixes"
+  },
+  {
+    "version": "r30.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 203052 Released: November 27th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r301---sdihdr-video-capture-and-output"
   },
   {
     "version": "r30.1",
@@ -4273,7 +4882,7 @@
     "version": "r30.1",
     "category": "Improvements",
     "dsof": "DSOF-27396",
-    "description": "Designer will now notify you if it detects that NDI® Tools 5 has been installed, as this software has been tied to multiple BSOD events on D3 servers. Our recommendation is not to use NDI® Tools 5 at this time.\n\nPlease see TA-54 for more information",
+    "description": "Designer will now notify you if it detects that NDI® Tools 5 has been installed, as this software has been tied to multiple BSOD events on D3 servers. Our recommendation is not to use NDI® Tools 5 at this time. Please see TA-54 for more information",
     "url": "https://help.disguise.one/designer/release-notes/r30#r301---sdihdr-video-capture-and-output"
   },
   {
@@ -4383,23 +4992,30 @@
   },
   {
     "version": "r30.0",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 201424 Released: November 13th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
+  },
+  {
+    "version": "r30.0",
     "category": "Changes",
     "dsof": "DSOF-28407",
-    "description": "Move solo to a long-term Designer software version release\n\nUsers will be unable to run and install any Designer software version from r30.0 onwards on a Solo. The final Designer software version to run on the Solo will be r29.2. This will become a long-term release model, with fixes only for show-critical issues that do not require large changes, for a duration of 1 year.\nWe have released final video playback performance metrics for the Solo that are measured in r29.\nWe have put together an overview of the product lifecycle which explains each of the phases in more detail. This can be seen here",
+    "description": "Move solo to a long-term Designer software version release Users will be unable to run and install any Designer software version from r30.0 onwards on a Solo. The final Designer software version to run on the Solo will be r29.2. This will become a long-term release model, with fixes only for show-critical issues that do not require large changes, for a duration of 1 year. We have released final video playback performance metrics for the Solo that are measured in r29. We have put together an overview of the product lifecycle which explains each of the phases in more detail. This can be seen here",
     "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
   },
   {
     "version": "r30.0",
     "category": "Improvements",
     "dsof": "DSOF-26046",
-    "description": "API: Include Setlist in Active Transport endpoint.\n\nWe have included both the name and the UID of the setlist within the Active Transport API endpoint. This is described in detail in our developer documentation here",
+    "description": "API: Include Setlist in Active Transport endpoint. We have included both the name and the UID of the setlist within the Active Transport API endpoint. This is described in detail in our developer documentation here",
     "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
   },
   {
     "version": "r30.0",
     "category": "Improvements",
     "dsof": "DSOF-28313",
-    "description": "Remove OCIO shader properties from layers that don’t require them. These layers are:\n\nRGB Colour\nTracking Marker\nLUT",
+    "description": "Remove OCIO shader properties from layers that don’t require them. These layers are: RGB Colour Tracking Marker LUT",
     "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
   },
   {
@@ -4420,14 +5036,14 @@
     "version": "r30.0",
     "category": "Improvements",
     "dsof": "DSOF-28365",
-    "description": "The HTTPSockpuppet API now supports selecting resources by full path, not just filename. This means:\n\nYou can now specify objects/videofile/sample/ada.jpg instead of just ada.jpg.\nIf you have two files with the same filename but are in a different path you can now disambiguate them by selecting the full path",
+    "description": "The HTTPSockpuppet API now supports selecting resources by full path, not just filename. This means: You can now specify objects/videofile/sample/ada.jpg instead of just ada.jpg . If you have two files with the same filename but are in a different path you can now disambiguate them by selecting the full path",
     "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
   },
   {
     "version": "r30.0",
     "category": "Improvements",
     "dsof": "DSOF-27658",
-    "description": "Add uid field for identifying patches in HTTPSockpuppet API. Deprecate address field\n\naddress was not unique across tracks. Multiple HTTP patches could exist with the same name (layers with same name across track) causing issues when\nHTTPSockpuppet was used with MultiTransports.\nuid was added and should be used. uid is unique per patch.\nYou can find the updated API documentation for HTTPSockpuppet here",
+    "description": "Add uid field for identifying patches in HTTPSockpuppet API. Deprecate address field address was not unique across tracks. Multiple HTTP patches could exist with the same name (layers with same name across track) causing issues when HTTPSockpuppet was used with MultiTransports. uid was added and should be used. uid is unique per patch. You can find the updated API documentation for HTTPSockpuppet here",
     "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
   },
   {
@@ -4555,6 +5171,27 @@
     "dsof": "DSOF-28643",
     "description": "Holding tab and Shift+Tab while moving the mouse now correctly pan and rotated the visualiser camera again",
     "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
+  },
+  {
+    "version": "r29.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full (Pro) build: 220701 Released: July 2nd 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r29#r293---designer-pro-license-support"
+  },
+  {
+    "version": "r29.3",
+    "category": "New Features",
+    "dsof": "",
+    "description": "r29.3 brings support for Designer Pro licenses to r29. This will allow users to open r29.3 with either a Designer Legacy License or a Designer Pro License. For more information, see legacy licenses",
+    "url": "https://help.disguise.one/designer/release-notes/r29#r293---designer-pro-license-support"
+  },
+  {
+    "version": "r29.3",
+    "category": "New Features",
+    "dsof": "",
+    "description": "This allows projects that include Disguise Solo servers to use Editor machines with Designer Pro licenses",
+    "url": "https://help.disguise.one/designer/release-notes/r29#r293---designer-pro-license-support"
   },
   {
     "version": "r29.3",
@@ -4768,23 +5405,30 @@
   },
   {
     "version": "r29.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 199175 Released: October 16th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r29#r292---osc-output-expression-qol"
+  },
+  {
+    "version": "r29.2",
     "category": "Improvements",
     "dsof": "DSOF-21329",
-    "description": "Support non-16:9 camera aspect ratios with “region of interest”\n\nVideo input configuration now supports the ability to crop the image with two new configuration fields:\nCrop size: The crop rectangle size in pixels to apply to the incoming video. The applied crop will be centered on the frame e.g. a horizontal crop of 1600px on a 1920px original frame will remove 160px on the left-hand side and 160px on the right hand side.\nCrop offset: The offset in pixels to apply to the crop rectangle. Offsetting the crop rectangle more than half the crop size in an axis will cause the crop rectangle to shrink in order to stay within the original frame.\nThis functionality is useful for use cases such as when a camera produces non-16:9 output over SDI which is restricted to 16:9, resulting in black bars. The black bars can be cropped out with this feature. Productions using anamorphic lenses will also benefit from this feature.\nFor more information about video in cropping, see setup-video-input",
+    "description": "Support non-16:9 camera aspect ratios with “region of interest” Video input configuration now supports the ability to crop the image with two new configuration fields: Crop size : The crop rectangle size in pixels to apply to the incoming video. The applied crop will be centered on the frame e.g. a horizontal crop of 1600px on a 1920px original frame will remove 160px on the left-hand side and 160px on the right hand side. Crop offset : The offset in pixels to apply to the crop rectangle. Offsetting the crop rectangle more than half the crop size in an axis will cause the crop rectangle to shrink in order to stay within the original frame. This functionality is useful for use cases such as when a camera produces non-16:9 output over SDI which is restricted to 16:9, resulting in black bars. The black bars can be cropped out with this feature. Productions using anamorphic lenses will also benefit from this feature. For more information about video in cropping, see setup-video-input",
     "url": "https://help.disguise.one/designer/release-notes/r29#r292---osc-output-expression-qol"
   },
   {
     "version": "r29.2",
     "category": "Improvements",
     "dsof": "DSOF-26311",
-    "description": "OSC output with customisation using Expressions\n\nIn addition to existing functionality to receive commands over OSC, Designer now supports outputting OSC for monitoring purposes with a flexible approach using Expressions.\nFor detailed documentation on this feature, see OSC Monitoring and OSC Custom Monitoring",
+    "description": "OSC output with customisation using Expressions In addition to existing functionality to receive commands over OSC, Designer now supports outputting OSC for monitoring purposes with a flexible approach using Expressions. For detailed documentation on this feature, see OSC Monitoring and OSC Custom Monitoring",
     "url": "https://help.disguise.one/designer/release-notes/r29#r292---osc-output-expression-qol"
   },
   {
     "version": "r29.2",
     "category": "Improvements",
     "dsof": "DSOF-27760",
-    "description": "OSC Output Expressions: Ability to output via OSC what Timecode is coming into Disguise\n\nUsing the new OSC output expressions functionality described above, timecode coming into Designer can be outputted over OSC using the expression transport.timecode.current.__str__()",
+    "description": "OSC Output Expressions: Ability to output via OSC what Timecode is coming into Disguise Using the new OSC output expressions functionality described above, timecode coming into Designer can be outputted over OSC using the expression transport.timecode.current.__str__()",
     "url": "https://help.disguise.one/designer/release-notes/r29#r292---osc-output-expression-qol"
   },
   {
@@ -4930,6 +5574,13 @@
   {
     "version": "r29.1.1",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 198080 Released: October 2nd 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r29#r2911---hotfix"
+  },
+  {
+    "version": "r29.1.1",
+    "category": "Fixes",
     "dsof": "DSOF-28283",
     "description": "Transitioning between content targeting a Precomp Display using TrackFade transitions will now fade correctly. The content in the Precomp will not snap to black regardless of the TrackFade transition content",
     "url": "https://help.disguise.one/designer/release-notes/r29#r2911---hotfix"
@@ -4950,51 +5601,86 @@
   },
   {
     "version": "r29.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 197552 Released: September 25th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
+  },
+  {
+    "version": "r29.1",
+    "category": "New Features",
+    "dsof": "",
+    "description": "OCIO is a widely adopted open-source colour management solution. For more details on OCIO, visit https://opencolorio.org . For details on how OCIO is implemented in Designer, see the detailed documentation here",
+    "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
+  },
+  {
+    "version": "r29.1",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Known issue: When using an identical colour space transform on multiple different resources (videos, textures, LEDScreen, etc.), changing the OCIO dynamic properties (exposure, contrast and gamma) on a resource will also affect all other resources which use the same colour space and transform. This issue will be resolved in a subsequent hotfix. For more information on OCIO dynamic properties, refer to the user guide link above",
+    "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
+  },
+  {
+    "version": "r29.1",
+    "category": "New Features",
+    "dsof": "",
+    "description": "The Colour Inspector is a new tool in Designer for inspecting the specific colour values of pixels within an image. It is useful for verifying content and colour workflows",
+    "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
+  },
+  {
+    "version": "r29.1",
+    "category": "New Features",
+    "dsof": "",
+    "description": "See the Disguise User Guide for detailed documentation on the Colour Inspector",
+    "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
+  },
+  {
+    "version": "r29.1",
     "category": "Improvements",
     "dsof": "DSOF-22938",
-    "description": "Make XR Color Calibration work with ACES/OCIO\n\nColour calibration for XR now supports ACES and OCIO modes",
+    "description": "Make XR Color Calibration work with ACES/OCIO Colour calibration for XR now supports ACES and OCIO modes",
     "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
   },
   {
     "version": "r29.1",
     "category": "Improvements",
     "dsof": "DSOF-26828",
-    "description": "Notch colour management in OCIO\n\nUsing Notch with Designer now supports both ACES and OCIO modes",
+    "description": "Notch colour management in OCIO Using Notch with Designer now supports both ACES and OCIO modes",
     "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
   },
   {
     "version": "r29.1",
     "category": "Improvements",
     "dsof": "DSOF-26830",
-    "description": "OCIO working space selection\n\nIn OCIO mode, the working colour space is configurable. See the user guide OCIO section for details on how to set the working colour space",
+    "description": "OCIO working space selection In OCIO mode, the working colour space is configurable. See the user guide OCIO section for details on how to set the working colour space",
     "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
   },
   {
     "version": "r29.1",
     "category": "Improvements",
     "dsof": "DSOF-26832",
-    "description": "Implement OCIO for RenderStream module\n\nOCIO supports the RenderStream layer. Sharing OCIO information with content engines over RenderStream was out of scope for this improvement",
+    "description": "Implement OCIO for RenderStream module OCIO supports the RenderStream layer. Sharing OCIO information with content engines over RenderStream was out of scope for this improvement",
     "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
   },
   {
     "version": "r29.1",
     "category": "Improvements",
     "dsof": "DSOF-26927",
-    "description": "Selectable default input and output transforms in OCIO config\n\nIn OCIO mode, default input and output transforms can be configured so they are automatically applied to media and output devices. See the user guide OCIO section for details on how to set the default input and output transforms",
+    "description": "Selectable default input and output transforms in OCIO config In OCIO mode, default input and output transforms can be configured so they are automatically applied to media and output devices. See the user guide OCIO section for details on how to set the default input and output transforms",
     "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
   },
   {
     "version": "r29.1",
     "category": "Improvements",
     "dsof": "DSOF-24246",
-    "description": "Ability to duplicate and rename projects from within d3Manager\n\nRight-clicking on a project or project file within d3Manager now provides options to:\nDuplicate project\nDuplicate project file (option is disabled if right-clicking the project rather than the project file))\nDelete project\nDelete project file (option is disabled if right-clicking the project rather than the project file)\nProjects and project files can now also be renamed via d3Manager",
+    "description": "Ability to duplicate and rename projects from within d3Manager Right-clicking on a project or project file within d3Manager now provides options to: Duplicate project Duplicate project file (option is disabled if right-clicking the project rather than the project file)) Delete project Delete project file (option is disabled if right-clicking the project rather than the project file) Projects and project files can now also be renamed via d3Manager",
     "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
   },
   {
     "version": "r29.1",
     "category": "Improvements",
     "dsof": "DSOF-28287",
-    "description": "Improve or explain the new VimbaX pop up in r29.0\n\nThe notification “Vimba X SDK/Driver not installed” now only appears when using the OmniCal workflow",
+    "description": "Improve or explain the new VimbaX pop up in r29.0 The notification “Vimba X SDK/Driver not installed” now only appears when using the OmniCal workflow",
     "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
   },
   {
@@ -5008,7 +5694,7 @@
     "version": "r29.1",
     "category": "Fixes",
     "dsof": "DSOF-23972",
-    "description": "Sockpuppet:  Fixed an issue where exporting generic DMX personality for VIDEOTRIGGER produced divide by zero error",
+    "description": "Sockpuppet: Fixed an issue where exporting generic DMX personality for VIDEOTRIGGER produced divide by zero error",
     "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
   },
   {
@@ -5049,6 +5735,13 @@
   {
     "version": "r29.0.1",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 197126 Released: September 16th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r29#r2901---hotfix"
+  },
+  {
+    "version": "r29.0.1",
+    "category": "Fixes",
     "dsof": "DSOF-28225",
     "description": "CTRL + SHIFT + D now correctly duplicates and renames layers again!",
     "url": "https://help.disguise.one/designer/release-notes/r29#r2901---hotfix"
@@ -5069,6 +5762,13 @@
   },
   {
     "version": "r29",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Release build: 196648 Released: September 11th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
+  },
+  {
+    "version": "r29",
     "category": "Improvements",
     "dsof": "DSOF-22892",
     "description": "You now no longer need to enable the enableSDIIPVFC option switch to use your IP-VFC with SDI SFPs",
@@ -5078,7 +5778,7 @@
     "version": "r29",
     "category": "Improvements",
     "dsof": "DSOF-23731",
-    "description": "The IP-VFC card’s list of supported formats now correctly hides unsupported formats.\n\n720p and QUAD video output modes on the IP-VFC when running in SDI mode are greyed out by default as they are not currently fully supported. They can be enabled for testing via the enableIPSDIExperimentalModes option switch, however they are not fully supported and if you do plan to use them please reach out to support to discuss the limitations and risks",
+    "description": "The IP-VFC card’s list of supported formats now correctly hides unsupported formats. 720p and QUAD video output modes on the IP-VFC when running in SDI mode are greyed out by default as they are not currently fully supported. They can be enabled for testing via the enableIPSDIExperimentalModes option switch, however they are not fully supported and if you do plan to use them please reach out to support to discuss the limitations and risks",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
@@ -5092,21 +5792,21 @@
     "version": "r29",
     "category": "Improvements",
     "dsof": "DSOF-25602",
-    "description": "IP-VFC cards now no longer expose a TPG field when in SDI mode\n\nIn previous releases, when an IP-VFC was in SDI mode, there was a field in the output port properties called TPG, which stands for Test Pattern Generator. We have removed this field as the functionality is replicated by rendering a test pattern via a video layer",
+    "description": "IP-VFC cards now no longer expose a TPG field when in SDI mode In previous releases, when an IP-VFC was in SDI mode, there was a field in the output port properties called TPG, which stands for Test Pattern Generator. We have removed this field as the functionality is replicated by rendering a test pattern via a video layer",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
     "version": "r29",
     "category": "Improvements",
     "dsof": "DSOF-25603",
-    "description": "IP-VFC cards in SDI mode can no longer independently be set to “Frame Replay”.\n\nIn previous releases, when an IP-VFC was in SDI mode, there was a field in the output port properties called “Frame Replay”. We have removed this field as the functionality is replicated by the ‘Hold output’ function, which allows the user to freeze the output on one or a selection of screens",
+    "description": "IP-VFC cards in SDI mode can no longer independently be set to “Frame Replay”. In previous releases, when an IP-VFC was in SDI mode, there was a field in the output port properties called “Frame Replay”. We have removed this field as the functionality is replicated by the ‘Hold output’ function, which allows the user to freeze the output on one or a selection of screens",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
     "version": "r29",
     "category": "Improvements",
     "dsof": "DSOF-26523",
-    "description": "You can now select your PTP profile on the IP-VFC from the Designer interface when in ST 2110 output mode.\n\nThe options we support are:\n\nSMPTE2059-2015\nSMPTE2059-2021",
+    "description": "You can now select your PTP profile on the IP-VFC from the Designer interface when in ST 2110 output mode. The options we support are: SMPTE2059-2015 SMPTE2059-2021",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
@@ -5288,7 +5988,7 @@
     "version": "r29",
     "category": "Improvements",
     "dsof": "DSOF-28200",
-    "description": "You can now specify a default gamma space colour transform for all new ingested media and all newly created displays.\n\nIn Project Settings under ‘Colour Management’ you will find two new entries when the mode is set to ‘Gamma Space’ which each accept a colour profile object:\n\n‘Default ingest profile’\n‘Default display profile’",
+    "description": "You can now specify a default gamma space colour transform for all new ingested media and all newly created displays. In Project Settings under ‘Colour Management’ you will find two new entries when the mode is set to ‘Gamma Space’ which each accept a colour profile object: ‘Default ingest profile’ ‘Default display profile’",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
@@ -5330,7 +6030,7 @@
     "version": "r29",
     "category": "Fixes",
     "dsof": "DSOF-24035",
-    "description": "28127/26713 - We have made various improvements to tooltip behaviour in this release:\n\nTooltips will now be slower to display and display more consistently across the UI.\nWe have improved a range of tooltips to make them more explanatory and helpful.\nTooltips for broken expressions now better explain what’s wrong and how to fix it",
+    "description": "28127/26713 - We have made various improvements to tooltip behaviour in this release: Tooltips will now be slower to display and display more consistently across the UI. We have improved a range of tooltips to make them more explanatory and helpful. Tooltips for broken expressions now better explain what’s wrong and how to fix it",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
@@ -5346,6 +6046,13 @@
     "dsof": "DSOF-28138",
     "description": "d3service logs are now simpler to assist with troubleshooting",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
+  },
+  {
+    "version": "r28.1.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 196020 Released: September 4th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r28#r2811---fixes"
   },
   {
     "version": "r28.1.1",
@@ -5372,8 +6079,15 @@
     "version": "r28.1.1",
     "category": "Fixes",
     "dsof": "DSOF-27869",
-    "description": "Updated the test patterns that come with Designer in the following ways:\n\nFixed the 100% -> 0% greyscale to have correct colour values\nFixed the “Full Range” text to be the correct limited range colour values\nRe-centred the content",
+    "description": "Updated the test patterns that come with Designer in the following ways: Fixed the 100% -> 0% greyscale to have correct colour values Fixed the “Full Range” text to be the correct limited range colour values Re-centred the content",
     "url": "https://help.disguise.one/designer/release-notes/r28#r2811---fixes"
+  },
+  {
+    "version": "r28.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 195634 Released: August 28th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r28#r281---qol-and-fixes"
   },
   {
     "version": "r28.1",
@@ -5400,7 +6114,7 @@
     "version": "r28.1",
     "category": "Improvements",
     "dsof": "DSOF-27989",
-    "description": "Shortcuts added to move selected layers/groups where the  Playhead is\n\nCTRL + [  Extend/Trim the start of the selected layers to the playhead position\nCTRL + ]  Extend/Trim the End of the selected layers to the playhead position\nCTRL + ALT + [    Move the start of the selected layers to the playhead position while maintaining the length of the layers\nCTRL + ALT + ]    Move the end of the selected layers to the playhead position while maintaining the length of the layers",
+    "description": "Shortcuts added to move selected layers/groups where the Playhead is CTRL + [ Extend/Trim the start of the selected layers to the playhead position CTRL + ] Extend/Trim the End of the selected layers to the playhead position CTRL + ALT + [ Move the start of the selected layers to the playhead position while maintaining the length of the layers CTRL + ALT + ] Move the end of the selected layers to the playhead position while maintaining the length of the layers",
     "url": "https://help.disguise.one/designer/release-notes/r28#r281---qol-and-fixes"
   },
   {
@@ -5414,7 +6128,7 @@
     "version": "r28.1",
     "category": "Improvements",
     "dsof": "DSOF-27793",
-    "description": "Hierarchy->Add Child now allows you to select grandchildren objects.\nFor example consider the following object hierarchy",
+    "description": "Hierarchy->Add Child now allows you to select grandchildren objects. For example consider the following object hierarchy",
     "url": "https://help.disguise.one/designer/release-notes/r28#r281---qol-and-fixes"
   },
   {
@@ -5497,6 +6211,13 @@
   {
     "version": "r28.0.1",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 195062 Released: August 21st 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r28#r2801---fixes"
+  },
+  {
+    "version": "r28.0.1",
+    "category": "Fixes",
     "dsof": "DSOF-20204",
     "description": "Fixed an issue where VFC Firmware and Generation would not be visible for remote machines in the feed view",
     "url": "https://help.disguise.one/designer/release-notes/r28#r2801---fixes"
@@ -5563,6 +6284,13 @@
     "dsof": "DSOF-28069",
     "description": "Fixed an issue where Nginx couldn’t start after installation if d3 nginx log folder is missing",
     "url": "https://help.disguise.one/designer/release-notes/r28#r2801---fixes"
+  },
+  {
+    "version": "r28",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Release build: 194541 Released: August 14th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
     "version": "r28",
@@ -5664,6 +6392,20 @@
   },
   {
     "version": "r27.10.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 193894 Released: August 7th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r27103---fixes"
+  },
+  {
+    "version": "r27.10.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Due to some issues discovered during the release process, we have delayed our recent releases. We are now releasing r27.10.3 which includes the Fixes listed below",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r27103---fixes"
+  },
+  {
+    "version": "r27.10.3",
     "category": "Fixes added in r27.10.1, r27.10.2 and r27.10.3",
     "dsof": "DSOF-27660",
     "description": "Fixed an issue where the HardwareList instance had no attribute ‘close’ error when closing Video Input Patch Editor",
@@ -5720,9 +6462,30 @@
   },
   {
     "version": "r27.10",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 192216 Released: July 16th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
+  },
+  {
+    "version": "r27.10",
     "category": "New Features",
     "dsof": "DSOF-24626",
     "description": "Expression Variables",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
+  },
+  {
+    "version": "r27.10",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Expression variables enable the sharing of values between Designer expressions",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
+  },
+  {
+    "version": "r27.10",
+    "category": "New Features",
+    "dsof": "",
+    "description": "A number of backwardly-incompatible changes were made to the expressions system. This page provides a reference for any projects which used expressions (specifically variable assignment) before that release",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
   },
   {
@@ -5757,7 +6520,7 @@
     "version": "r27.10",
     "category": "Fixes",
     "dsof": "DSOF-27644",
-    "description": "Fixed an issue where  the Sockpuppet Notch layer moved the Effect field under Timecode Separator",
+    "description": "Fixed an issue where the Sockpuppet Notch layer moved the Effect field under Timecode Separator",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
   },
   {
@@ -5766,6 +6529,27 @@
     "dsof": "DSOF-27692",
     "description": "Fixed Web browser-based layers not limiting to the max texture size available to the renderer",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
+  },
+  {
+    "version": "r27.9",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 192216 Released: July 16th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
+  },
+  {
+    "version": "r27.9",
+    "category": "Notice",
+    "dsof": "",
+    "description": "All Notch blocks flickered when they were not being rendered at full frame rates when a user upgraded their project file to r27.8. As a result we removed r27.8 (build number 191665). This has now been resolved in r27.9, which includes a number of additional fixes and improvements",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
+  },
+  {
+    "version": "r27.9",
+    "category": "Notice",
+    "dsof": "",
+    "description": "The original release notes for r27.8 are also listed",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
   },
   {
     "version": "r27.9",
@@ -5828,6 +6612,69 @@
     "category": "Improvements",
     "dsof": "DSOF-27204",
     "description": "Manager to show list of locally connected (physical) CodeMeter containers in “d3 License” window",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
+  },
+  {
+    "version": "r27.9",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "Additional zoom levels have been added to zoom in and out of the timeline, for example using Alt Scroll or the timeline magnifier icons",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
+  },
+  {
+    "version": "r27.9",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "The Track Editor menu now contains a new Actions section which contains the following: - Clear Arrows (if the option switchisClearArrowsEnabled is enabled) - Toggle Groups - Close Layer Editors (see next item)",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
+  },
+  {
+    "version": "r27.9",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "The Actions section of the Track Editor now contains a Close Layer Editors function, which ensures that the list of layers which would open when the timeline scrubs over them is cleared",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
+  },
+  {
+    "version": "r27.9",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "The “Collapse all Groups” button in the Track Editor has been renamed to Toggle Groups, and it now collapses or expands all Groups across the whole track. If even one group is open then clicking the button will close the group(s). Expanding will only happen if there are no open groups on the entire track. The shortcuts Ctl Alt + and Ctrl Alt - also perform this action",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
+  },
+  {
+    "version": "r27.9",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "In order to easily move existing points without accidentally adding new points when doing QuickAlign, a checkbox has been added to toggle on or off adding new alignment points. The checkbox is under the Interface Options menu",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
+  },
+  {
+    "version": "r27.9",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "The OSC Position Receiver can now use multiple arguments in the same OSC message. This means that one message can be received for the three arguments x, y, and z, rather than three separate messages",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
+  },
+  {
+    "version": "r27.9",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "The Transport Engaged / Disengaged button now has a more helpful tooltip to inform as to why it cannot be engaged and/or disengaged",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
+  },
+  {
+    "version": "r27.9",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "A new HTTP API to get and set notes has been added. For details, see the documentation at https://developer.disguise.one or the API documentation bundled with Designer, which can be found by navigating to: d3manager > Help > Open API Documentation",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
+  },
+  {
+    "version": "r27.9",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "The d3Manager License dialogue (accessible from d3Manager > Help > d3 Licenses) now contains a section detailing the serial number(s) of local CodeMeter license containers",
     "url": "https://help.disguise.one/designer/release-notes/r27#r279---improvements-and-fixes"
   },
   {
@@ -5946,7 +6793,7 @@
     "version": "r27.8",
     "category": "Fixes",
     "dsof": "DSOF-17036",
-    "description": "ProRes Support\nProRes video codecs are now supported for playout on Disguise. ProRes is a visually lossless codec that uses intra-frame compression, where each frame is stored independently and can be decoded with no dependencies on other frames.\nUsers are now able to playout the following ProRes codecs from Disguise",
+    "description": "ProRes Support ProRes video codecs are now supported for playout on Disguise. ProRes is a visually lossless codec that uses intra-frame compression, where each frame is stored independently and can be decoded with no dependencies on other frames. Users are now able to playout the following ProRes codecs from Disguise",
     "url": "https://help.disguise.one/designer/release-notes/r27#r278---prores-support"
   },
   {
@@ -6016,7 +6863,7 @@
     "version": "r27.8",
     "category": "Improvements",
     "dsof": "DSOF-26887",
-    "description": "In r27.5.1 we introduced , which added GUI status to the ‘Output’ indicator on the Network Status Widget. The GUI icon follows the same convention as the other icons, namely if the GUI is on a Disguise media server running in session that the icon will be green. If it is off then the icon will be grey. The icon became orange if the GUI was on the understudy machines running in session.\nIn r27.8 we have changed the icon to become green if the GUI was on the understudy machines running in session as seen in the screenshot below",
+    "description": "In r27.5.1 we introduced, which added GUI status to the ‘Output’ indicator on the Network Status Widget. The GUI icon follows the same convention as the other icons, namely if the GUI is on a Disguise media server running in session that the icon will be green. If it is off then the icon will be grey. The icon became orange if the GUI was on the understudy machines running in session. In r27.8 we have changed the icon to become green if the GUI was on the understudy machines running in session as seen in the screenshot below",
     "url": "https://help.disguise.one/designer/release-notes/r27#r278---prores-support"
   },
   {
@@ -6148,9 +6995,23 @@
   {
     "version": "r27.7.4",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 190369 Released: July 9th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2774"
+  },
+  {
+    "version": "r27.7.4",
+    "category": "Fixes",
     "dsof": "DSOF-27746",
     "description": "Fixed a critical issue where Notch blocks were getting ‘LOGIC ERROR’ in r27.7.3",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2774"
+  },
+  {
+    "version": "r27.7.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 190369 Released: June 26th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2772"
   },
   {
     "version": "r27.7.2",
@@ -6184,7 +7045,7 @@
     "version": "r27.7.2",
     "category": "Fixes",
     "dsof": "DSOF-27251, DSOF-27363",
-    "description": "Fixed an issue where Colour Calibration returned a black LUT and an .cube file with null values -  - Fixed an issue where extending the start of a layer using ctrl+< with the end of the layer at the end of track resulted in track lengthening",
+    "description": "Fixed an issue where Colour Calibration returned a black LUT and an .cube file with null values - - Fixed an issue where extending the start of a layer using ctrl+< with the end of the layer at the end of track resulted in track lengthening",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2772"
   },
   {
@@ -6228,6 +7089,13 @@
     "dsof": "DSOF-27271",
     "description": "Notch instances that get prefetched but never end up being played through don’t return to Sleeping state",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2772"
+  },
+  {
+    "version": "r27.7.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 189739 Released: June 20th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2771"
   },
   {
     "version": "r27.7.1",
@@ -6526,6 +7394,13 @@
   {
     "version": "r27.6.3",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 188543 Released: June 5th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2763"
+  },
+  {
+    "version": "r27.6.3",
+    "category": "Fixes",
     "dsof": "DSOF-24431",
     "description": "Fixed an issue where LUT files created textures directly rather than through the GpuPool",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2763"
@@ -6576,7 +7451,7 @@
     "version": "r27.6.3",
     "category": "Fixes",
     "dsof": "DSOF-27040, DSOF-26131",
-    "description": "Reverts , which was introduced in r27.4. The change caused playback modes in a Sockpuppet video layer to behave incorrectly. As a result of the revert, DMXsockpuppet triggers will no longer be in sync between machines, however, sockpuppet inframe/outframe will once again work as intended",
+    "description": "Reverts, which was introduced in r27.4. The change caused playback modes in a Sockpuppet video layer to behave incorrectly. As a result of the revert, DMXsockpuppet triggers will no longer be in sync between machines, however, sockpuppet inframe/outframe will once again work as intended",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2763"
   },
   {
@@ -6592,6 +7467,13 @@
     "dsof": "DSOF-27310",
     "description": "Fixed an issue where Natnet driver editor failed to populate with ‘onClose’ error",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2763"
+  },
+  {
+    "version": "r27.6.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 188006 Released: May 29th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2762"
   },
   {
     "version": "r27.6.2",
@@ -6704,6 +7586,13 @@
     "dsof": "DSOF-27230",
     "description": "Fixed an issue where the ProxyMaker did not unsubscribe removeResourceAction",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2762"
+  },
+  {
+    "version": "r27.6.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 187488 Released: May 22nd 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2761"
   },
   {
     "version": "r27.6.1",
@@ -6829,6 +7718,13 @@
     "category": "Setting up a skinned mesh for a projection surface",
     "dsof": "",
     "description": "If you want to hide the skeleton mesh, set the Display mode under Appearance to Hidden",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
+  },
+  {
+    "version": "r27.6",
+    "category": "Controlling a skeleton using tracking data",
+    "dsof": "",
+    "description": "To use tracking data to control a skeleton’s bones, you will need to create a skeletal tracking source or driver",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
@@ -7052,28 +7948,28 @@
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "",
-    "description": "Prediction time (sec): How much time to predict",
+    "description": "Prediction time (sec) : How much time to predict",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "",
-    "description": "Sample interval threshold (sec): This is the threshold of time intervals between samples to filter out noise. If the interval time between samples is bigger, detection will be ignored",
+    "description": "Sample interval threshold (sec) : This is the threshold of time intervals between samples to filter out noise. If the interval time between samples is bigger, detection will be ignored",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "",
-    "description": "Sample size: The number of samples to use for prediction. More samples will make prediction less prone to the noise",
+    "description": "Sample size : The number of samples to use for prediction. More samples will make prediction less prone to the noise",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "",
-    "description": "Terms: This is the term of curve that is used for curve fitting. The Value can be set to either 1 or 2",
+    "description": "Terms : This is the term of curve that is used for curve fitting. The Value can be set to either 1 or 2",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
@@ -7162,6 +8058,20 @@
   },
   {
     "version": "r27.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Build removed from the website - see r27.5.1 which also contains the following features and improvements",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r275---rx-iii-support"
+  },
+  {
+    "version": "r27.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 186871 Released: May 9th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r275---rx-iii-support"
+  },
+  {
+    "version": "r27.5",
     "category": "New Features",
     "dsof": "",
     "description": "Added support for RX III server type",
@@ -7233,6 +8143,13 @@
   {
     "version": "r27.4.3",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 186729 Released: May 8th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2743"
+  },
+  {
+    "version": "r27.4.3",
+    "category": "Fixes",
     "dsof": "DSOF-26229",
     "description": "Fixed an issue where levels were marked as invalid when using an actor as a controller",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2743"
@@ -7292,6 +8209,13 @@
     "dsof": "DSOF-26949",
     "description": "Fixed an Access Violation when receiving 16-channel ArtNet data",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2743"
+  },
+  {
+    "version": "r27.4.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 186339 Released: May 2nd 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2742"
   },
   {
     "version": "r27.4.2",
@@ -7358,6 +8282,13 @@
   },
   {
     "version": "r27.4.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 185492 Released: April 24th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2741"
+  },
+  {
+    "version": "r27.4.1",
     "category": "Improvements",
     "dsof": "DSOF-26926",
     "description": "BlueFish card temperature is now logged on startup",
@@ -7372,6 +8303,13 @@
   },
   {
     "version": "r27.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 185066 Released: April 10th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
+  },
+  {
+    "version": "r27.4",
     "category": "Improvements",
     "dsof": "DSOF-17967",
     "description": "Make “Find Usage” more useful (jump to usage etc)",
@@ -7382,6 +8320,76 @@
     "category": "Improvements",
     "dsof": "DSOF-22572",
     "description": "Redistribute DMX and OSC data to allow for synchronisation",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
+  },
+  {
+    "version": "r27.4",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "We have improved the Find Usage functionality in the VideoClip, DfxFile, and AudioTrack layer editors",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
+  },
+  {
+    "version": "r27.4",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "This can be found by right-clicking on the respective pieces of media and left-clicking on the Find Usage button in the layer editor for VideoClip, DfxFile and AutoTrack . This will open a window with all occurrences of the current piece of media across all tracks and layers. An example can be found here",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
+  },
+  {
+    "version": "r27.4",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "Each entry will contain the Track, Layer and usage location, shown as the timecode time from the timeline. A left-click on the entry will jump the playhead to the start of the layer that uses that piece of media",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
+  },
+  {
+    "version": "r27.4",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "All Find Usage information can now be exported as a .txt file",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
+  },
+  {
+    "version": "r27.4",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "The same functionality has been added to the Find/Replace Usages button in the Mapping editor",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
+  },
+  {
+    "version": "r27.4",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "which was introduced in r27.1 for sequenced mappings only. From r27.4, the window shown will display all occurrences of the mapping",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
+  },
+  {
+    "version": "r27.4",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "In the menu, to the side of Replacement Mapping, click None and select a different mapping. Then click Replace with selected Mapping to assign the new mapping as seen here",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
+  },
+  {
+    "version": "r27.4",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "In previous releases, both DMX and OSC packets were received independently and actioned by each Disguise media server running in the session. We have changed this behaviour so that both DMX and OSC packets are now received by the Director machine running in the session and distributed to the actors. This means that all DMX and OSC packets are executed at the same timestamp",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
+  },
+  {
+    "version": "r27.4",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "This improvement allows for the DMX and OSC protocols to be used in situations which require operations to happen in synchronisation, such as triggering DMX or OSC changes on a screen split across multiple actors",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
+  },
+  {
+    "version": "r27.4",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "For example, if Disguise is receiving DMX or OSC packets, right-click DMX or OSC on the state tab at the top of the Designer GUI to open the DMX Recorders or OSC Recorders editor menu. This includes a Redistribution Delay field where the frame delay can be customised to enable the redistribution of the DMX or OSC packets to take place. A higher frame delay will compensate for a high-latency network as it allows more time for the DMX or OSC packets to get from the director machine to the actor machines",
     "url": "https://help.disguise.one/designer/release-notes/r27#r274---improvements--fixes"
   },
   {
@@ -7450,6 +8458,13 @@
   {
     "version": "r27.3.3",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 184464 Released: April 10th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2733"
+  },
+  {
+    "version": "r27.3.3",
+    "category": "Fixes",
     "dsof": "DSOF-25391",
     "description": "TheMIDIBeat Clock Timecode Transport, when set to Metronome mode, now holds at the end of a section when in Playing to End of Section playmode",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2733"
@@ -7474,6 +8489,13 @@
     "dsof": "DSOF-26721",
     "description": "Fixed an issue where RenderStream duplicated one stream across outputs",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2733"
+  },
+  {
+    "version": "r27.3.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 184112 Released: April 3rd 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2732"
   },
   {
     "version": "r27.3.2",
@@ -7533,37 +8555,23 @@
   },
   {
     "version": "r27.3.1",
-    "category": "New Features",
+    "category": "Fixes",
     "dsof": "",
-    "description": "Create a layer in Designer that you wish to patch",
+    "description": "Release build: 183598 Released: March 27th 2024",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
-    "category": "New Features",
+    "category": "Notice",
     "dsof": "",
-    "description": "Right-click on the layer and select Patch to HTTP",
+    "description": "The size of the Designer installer for r27.3 (build number 183205) and a number of custom branches exceeded the available RAM permitted as part of the reimaging process. This caused the reimaging process to stop and prevented the user from booting the Disguise media server into Windows",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
-    "category": "New Features",
+    "category": "Notice",
     "dsof": "",
-    "description": "Call sockpuppet/easingfunctions to get list of possible easing functions",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
-  },
-  {
-    "version": "r27.3.1",
-    "category": "New Features",
-    "dsof": "",
-    "description": "Call sockpuppet/patches to get list of possible patches",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
-  },
-  {
-    "version": "r27.3.1",
-    "category": "New Features",
-    "dsof": "",
-    "description": "Using data from sockpuppet/patches, use /sockpuppet/live to make changes to the patch, and therefore the layer. Send to the director only, or use for controlling understudy",
+    "description": "We removed r27.3 (build number 183205) from our website. This has now been resolved in r27.3.1, which is otherwise identical to r27.3",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
@@ -7876,6 +8884,13 @@
   },
   {
     "version": "r27.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 182700 Released: March 13th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r272---improvements--fixes"
+  },
+  {
+    "version": "r27.2",
     "category": "Improvements",
     "dsof": "",
     "description": "Added support for VX 3 server type. Read more about the VX 3 media server here",
@@ -7904,6 +8919,13 @@
   },
   {
     "version": "r27.1.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 181698 Released: March 7th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2714"
+  },
+  {
+    "version": "r27.1.4",
     "category": "Improvements",
     "dsof": "DSOF-26470",
     "description": "IP-VFC - inform a user when no SFPs are connected",
@@ -7922,6 +8944,13 @@
     "dsof": "DSOF-26571",
     "description": "TrackJump-increase maximum section number from 32 to 1000",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2714"
+  },
+  {
+    "version": "r27.1.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 180975 Released: February 28th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2713"
   },
   {
     "version": "r27.1.3",
@@ -8002,6 +9031,13 @@
   },
   {
     "version": "r27.1.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 180269 Released: February 21st 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2712"
+  },
+  {
+    "version": "r27.1.2",
     "category": "Improvements",
     "dsof": "DSOF-23937",
     "description": "IP-VFC: Device names in NMOS are more descriptive",
@@ -8034,6 +9070,13 @@
     "dsof": "DSOF-26391",
     "description": "Fixed an issue where LayerStack was not being applied to video input",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2712"
+  },
+  {
+    "version": "r27.1.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 179597 Released: February 14th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r2711"
   },
   {
     "version": "r27.1.1",
@@ -8107,6 +9150,13 @@
   },
   {
     "version": "r27.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 178972 Released: February 7th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
+  },
+  {
+    "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-23762",
     "description": "Ability to see usages of mappings",
@@ -8116,7 +9166,7 @@
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-25935",
-    "description": "Replace all usages of a mapping\nThe above two improvements are accessible via the ‘Find/Replace Mapping Usages’ button in the Mapping editor",
+    "description": "Replace all usages of a mapping The above two improvements are accessible via the ‘Find/Replace Mapping Usages’ button in the Mapping editor",
     "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
@@ -8130,49 +9180,49 @@
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-24291",
-    "description": "Show Designer software version in UI\nWe have added the Designer software version in the bottom right of the UI next to the machine name",
+    "description": "Show Designer software version in UI We have added the Designer software version in the bottom right of the UI next to the machine name",
     "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-25256",
-    "description": "Machine List in Monitoring Manager should be alphabetical\nWe have made the Machine List alphabetical within the Monitoring Manager window, found by left clicking on the FPS in the lower right\nhand corner of the track",
+    "description": "Machine List in Monitoring Manager should be alphabetical We have made the Machine List alphabetical within the Monitoring Manager window, found by left clicking on the FPS in the lower right hand corner of the track",
     "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-25700",
-    "description": "Warn the user when the audio codec in their embedded audio is not supported\nWe have added a notification to warn the user that an unsupported audio codec is recognised when using embedded audio, and to convert the audio codec to either ‘sowt’ or ‘twos’",
+    "description": "Warn the user when the audio codec in their embedded audio is not supported We have added a notification to warn the user that an unsupported audio codec is recognised when using embedded audio, and to convert the audio codec to either ‘sowt’ or ‘twos’",
     "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-25873",
-    "description": "Define a certain degree of a cylinder mapping\nWhen using cylindrical mappings, we have added a red highlight to any areas that extend past the top and/or bottom of the cylindrical mapping wireframe",
+    "description": "Define a certain degree of a cylinder mapping When using cylindrical mappings, we have added a red highlight to any areas that extend past the top and/or bottom of the cylindrical mapping wireframe",
     "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-25936",
-    "description": "Auto-select first enabled layer in feed warp editor\nIn previous releases, when a user left-clicked the + button under Deformation layers - found within the Edit Warp Menu in the feed view - the first deformation layer was selected, even if the deformation layer had been disabled. In r27.1 the first deformation layer that is selected is the first one within the stack that is\nenabled",
+    "description": "Auto-select first enabled layer in feed warp editor In previous releases, when a user left-clicked the + button under Deformation layers - found within the Edit Warp Menu in the feed view - the first deformation layer was selected, even if the deformation layer had been disabled. In r27.1 the first deformation layer that is selected is the first one within the stack that is enabled",
     "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-26029",
-    "description": "OmniCal: export unstructured point clouds (without invalid points)\nWe have enabled users to be able to export unstructured point clouds when using OmniCal. Structured point clouds directly correspond to\nthe 2D grid output by projectors, and will include invalid points as NaN values. These values are usually those that were not visible to\nenough cameras or where 3D reconstruction failed. Unstructured point clouds provide no invalid points as NaN values within the export.\nThis can be found in the Advanced section in OmniCal Calibration and clicking on ‘Save PointCloud’. This will save four PCD files for\neach projector grid within the Optical Stage Plan folder:\n\nAligned and unaligned (as captured)\nStructured and unstructured",
+    "description": "OmniCal: export unstructured point clouds (without invalid points) We have enabled users to be able to export unstructured point clouds when using OmniCal. Structured point clouds directly correspond to the 2D grid output by projectors, and will include invalid points as NaN values. These values are usually those that were not visible to enough cameras or where 3D reconstruction failed. Unstructured point clouds provide no invalid points as NaN values within the export. This can be found in the Advanced section in OmniCal Calibration and clicking on ‘Save PointCloud’. This will save four PCD files for each projector grid within the Optical Stage Plan folder: Aligned and unaligned (as captured) Structured and unstructured",
     "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-21670",
-    "description": "DMX String: Now defaults to 1 fixture\nWe have changed the default behaviour of new DmxStrings to one fixture",
+    "description": "DMX String: Now defaults to 1 fixture We have changed the default behaviour of new DmxStrings to one fixture",
     "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
@@ -8254,6 +9304,13 @@
   },
   {
     "version": "r27",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Release build: 178488 Released: January 31st 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r27#r27---matrox-sdi-improvements"
+  },
+  {
+    "version": "r27",
     "category": "Improvements",
     "dsof": "",
     "description": "Mixed frame rate support - users can now work with any combination of video resolution formats and refresh rates across each video input. This resolves the outstanding TA-19: Matrox Video capture cards advisory",
@@ -8325,6 +9382,13 @@
   {
     "version": "r26.5.3",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 183434 Released: March 22nd 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2653"
+  },
+  {
+    "version": "r26.5.3",
+    "category": "Fixes",
     "dsof": "DSOF-26466",
     "description": "Fixed an issue where RenderStream Proxy did not show up on Director if both 25g connectors were active",
     "url": "https://help.disguise.one/designer/release-notes/r26#r2653"
@@ -8339,6 +9403,13 @@
   {
     "version": "r26.5.2",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 178116 Released: February 14th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2652"
+  },
+  {
+    "version": "r26.5.2",
+    "category": "Fixes",
     "dsof": "DSOF-25851",
     "description": "Fixed Manage RenderStream Workloads not working reliably",
     "url": "https://help.disguise.one/designer/release-notes/r26#r2652"
@@ -8346,9 +9417,23 @@
   {
     "version": "r26.5.1",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 178116 Released: January 31st 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2651"
+  },
+  {
+    "version": "r26.5.1",
+    "category": "Fixes",
     "dsof": "DSOF-26273",
     "description": "Fixed console spam with ‘Updating Scene Due to Change in Resource’ every time feed scene is changed",
     "url": "https://help.disguise.one/designer/release-notes/r26#r2651"
+  },
+  {
+    "version": "r26.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 178116 Released: January 24th 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r265---improvements--fixes"
   },
   {
     "version": "r26.5",
@@ -8668,6 +9753,13 @@
   {
     "version": "r26.4.2",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 177453 Released: January 17th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2642"
+  },
+  {
+    "version": "r26.4.2",
+    "category": "Fixes",
     "dsof": "DSOF-25476",
     "description": "Fixed an issue where Projection Screens could be inactive on Editors when animated with Animate Object Preset",
     "url": "https://help.disguise.one/designer/release-notes/r26#r2642"
@@ -8706,6 +9798,13 @@
     "dsof": "DSOF-26093",
     "description": "Fixed an issue where 2.5D had an error parsing depth map when an image was fully transparent",
     "url": "https://help.disguise.one/designer/release-notes/r26#r2642"
+  },
+  {
+    "version": "r26.4.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 177175 Released: January 10th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2641"
   },
   {
     "version": "r26.4.1",
@@ -8786,6 +9885,13 @@
   },
   {
     "version": "r26.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 176069 Released: January 10th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r264---vx-2-support"
+  },
+  {
+    "version": "r26.4",
     "category": "New Features",
     "dsof": "",
     "description": "Added support for VX 2+. Read more about VX 2+ here",
@@ -8797,6 +9903,13 @@
     "dsof": "DSOF-25920",
     "description": "2.5D - Fixed an issue where changes in z-offset for plates with depth maps don’t get saved to 2p5d file",
     "url": "https://help.disguise.one/designer/release-notes/r26#r264---vx-2-support"
+  },
+  {
+    "version": "r26.3.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 175636 Released: December 13th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2631"
   },
   {
     "version": "r26.3.1",
@@ -8832,6 +9945,76 @@
     "dsof": "DSOF-25926",
     "description": "Fixed an issue where the GUI was black when starting Designer on a server when Parsec Virtual Display Adapter is installed",
     "url": "https://help.disguise.one/designer/release-notes/r26#r2631"
+  },
+  {
+    "version": "r26.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 175110 Released: December 6th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r263"
+  },
+  {
+    "version": "r26.3",
+    "category": "New 2.5D Workflow",
+    "dsof": "",
+    "description": "The new 2.5D workflow is also covered here with a new demo video",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r263"
+  },
+  {
+    "version": "r26.3",
+    "category": "New 2.5D Workflow",
+    "dsof": "",
+    "description": "2.5D workflows bridge the gap between traditional 2D video plates and full 3D generative scenes. By building up a scene with layers of images or video plates, with the possibility to add depth or shaping to the plates, users can quickly create a realistic-looking scene with parallax. 2.5D assets can be saved as .2p5d files and shared across projects or created using external integrations such as Cuebric to harness the power of generative AI to optionally create the image or just to speed up the process of image segmentation using AI",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r263"
+  },
+  {
+    "version": "r26.3",
+    "category": "New 2.5D Workflow",
+    "dsof": "",
+    "description": "2.5D has been possible with Designer prior to r26.3, however, it required the manual creation of plates using a projection surface per plate, manually applying specific settings to each plate, and the use of a StageRender layer. With r26.3, 2.5D has been made a first-class citizen in Designer with its own layer type and the concept of a 2.5D asset. This dramatically increases the usability and speeds up the workflow, as well as making it more intuitive and less error-prone",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r263"
+  },
+  {
+    "version": "r26.3",
+    "category": "New 2.5D Workflow",
+    "dsof": "",
+    "description": "In addition, the Cuebric integration speeds up the pipeline between the creative and volume control stages of the end-to-end workflow",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r263"
+  },
+  {
+    "version": "r26.3",
+    "category": "Cuebric Integration",
+    "dsof": "",
+    "description": "Cuebric is a web-based tool for creating 2.5D scenes with the help of AI. For more information visit https://cuebric.com",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r263"
+  },
+  {
+    "version": "r26.3",
+    "category": "Cuebric Integration",
+    "dsof": "",
+    "description": "With r26.3, 2.5D scenes can be exported from Cuebric and imported into Disguise. At launch, the Cuebric scene is exported from Cuebric by clicking on Plug & Play 3D in the Segmentation view under the Depth option. Once exported, follow the 2p5D workflow to set up a 2.5D asset from an existing .2p5d file.vWhen the Cuebric export includes AI-generated depth mapping information, Designer will auto-generate a 3D mesh from the depth data to add shape to the plates. To remove the depth mapping from the plate, you can simply select the standard rectangle mesh instead in the plate properties",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r263"
+  },
+  {
+    "version": "r26.3",
+    "category": "Cuebric Integration",
+    "dsof": "",
+    "description": "Read more about 2.5D and the new workflow here and the Cuebric integration here",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r263"
+  },
+  {
+    "version": "r26.3",
+    "category": "Cuebric Integration",
+    "dsof": "",
+    "description": "For a video explanation of the Cuebric to Disguise end-to-end workflow, visit https://vimeo.com/890469715",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r263"
+  },
+  {
+    "version": "r26.2.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 174130 Released: November 29th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2622"
   },
   {
     "version": "r26.2.2",
@@ -8877,6 +10060,13 @@
   },
   {
     "version": "r26.2.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 173945 Released: November 22nd 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2621"
+  },
+  {
+    "version": "r26.2.1",
     "category": "Fixed",
     "dsof": "DSOF-23262",
     "description": "Fixed an issue where the Bank Editor widget resized when adding a new bank, hiding all of the slots in the top half of the widget",
@@ -8919,6 +10109,13 @@
   },
   {
     "version": "r26.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 173464 Released: November 16th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r262"
+  },
+  {
+    "version": "r26.2",
     "category": "Improvements",
     "dsof": "DSOF-24937",
     "description": "Fixed an issue where SaveOnDelete Resource Transport commands shouldn’t blocked Resource Transport if a resend failed",
@@ -8955,9 +10152,23 @@
   {
     "version": "r26.1.1",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 172420 Released: November 8th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2611"
+  },
+  {
+    "version": "r26.1.1",
+    "category": "Fixes",
     "dsof": "DSOF-25507",
     "description": "Fixed an issue seen in AMD machines, where SLC affected output when using Stage Render layer",
     "url": "https://help.disguise.one/designer/release-notes/r26#r2611"
+  },
+  {
+    "version": "r26.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 171936 Released: November 1st 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r261"
   },
   {
     "version": "r26.1",
@@ -9025,6 +10236,13 @@
   {
     "version": "r26.0.5",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 170952 Released: October 18th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2605"
+  },
+  {
+    "version": "r26.0.5",
+    "category": "Fixes",
     "dsof": "DSOF-25401",
     "description": "Fixed an issue where it was not possible to select objects after opening ‘Points’ separator in Rigid Body Tracking Source editor",
     "url": "https://help.disguise.one/designer/release-notes/r26#r2605"
@@ -9042,6 +10260,13 @@
     "dsof": "DSOF-25450",
     "description": "OmniCal: Fixed Rig Check workflow",
     "url": "https://help.disguise.one/designer/release-notes/r26#r2605"
+  },
+  {
+    "version": "r26.0.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 170952 Released: October 18th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2604"
   },
   {
     "version": "r26.0.4",
@@ -9081,9 +10306,23 @@
   {
     "version": "r26.0.3",
     "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 169912 Released: October 4th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2603"
+  },
+  {
+    "version": "r26.0.3",
+    "category": "Fixes",
     "dsof": "DSOF-24932",
     "description": "Fixed an issue where Deltacast vx4+ video input group 2 is duplicated",
     "url": "https://help.disguise.one/designer/release-notes/r26#r2603"
+  },
+  {
+    "version": "r26.0.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 169539 Released: September 27th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r2602"
   },
   {
     "version": "r26.0.2",
@@ -9154,6 +10393,13 @@
     "dsof": "DSOF-24921",
     "description": "Fixed an issue where an Object Tracking error blocked Spatial Calibration when not receiving Tracking data",
     "url": "https://help.disguise.one/designer/release-notes/r26#r2601"
+  },
+  {
+    "version": "r26",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Release build: 168310 Released: September 14th 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
     "version": "r26",
@@ -9702,6 +10948,20 @@
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
+    "version": "r25.3.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 168878 Released: 20 September 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2531"
+  },
+  {
+    "version": "r25.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "build: 167949 (released September 06 2023)",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r253"
+  },
+  {
     "version": "r25.3",
     "category": "Improvements",
     "dsof": "DSOF-24101",
@@ -9772,6 +11032,20 @@
     "url": "https://help.disguise.one/designer/release-notes/r25#r253"
   },
   {
+    "version": "r25.2.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 167492 Released: 30 August 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2523"
+  },
+  {
+    "version": "r25.2.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 166280 Released: 16 August 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2521"
+  },
+  {
     "version": "r25.2",
     "category": "Fixes",
     "dsof": "DSOF-24386",
@@ -9828,6 +11102,34 @@
     "url": "https://help.disguise.one/designer/release-notes/r25#r252"
   },
   {
+    "version": "r25.1.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 164520 Released: 26 July 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2514"
+  },
+  {
+    "version": "r25.1.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 164135 Released: 19 July 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2513"
+  },
+  {
+    "version": "r25.1.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 163502 Released: 12 July 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2512"
+  },
+  {
+    "version": "r25.1.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 162852 Released: 05 July 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2511"
+  },
+  {
     "version": "r25.1",
     "category": "Fixes",
     "dsof": "DSOF-22915",
@@ -9868,6 +11170,27 @@
     "dsof": "DSOF-24560",
     "description": "Fixed an Access Violation when using the ‘Removing Virtual Head’ option in the FeedHead widget",
     "url": "https://help.disguise.one/designer/release-notes/r25#r251"
+  },
+  {
+    "version": "r25.0.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 161701 Released: 21 June 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2503"
+  },
+  {
+    "version": "r25.0.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 161015 Released: 14 June 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2502"
+  },
+  {
+    "version": "r25.0.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 160825 Released: 07 June 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2501"
   },
   {
     "version": "r25",
@@ -10286,7 +11609,7 @@
     "version": "r25",
     "category": "Fixes",
     "dsof": "DSOF-23429",
-    "description": "Fixed an issue where a “‘NoneType’ object has no attribute ‘base’” notification was displayed when right clicking on proxy maker with disableProxyMaker option switch enabled",
+    "description": "Fixed an issue where a “‘NoneType’ object has no attribute ‘ base ’” notification was displayed when right clicking on proxy maker with disableProxyMaker option switch enabled",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
@@ -10328,7 +11651,7 @@
     "version": "r25",
     "category": "Fixes",
     "dsof": "DSOF-23581, DSOF-23595",
-    "description": "Fixed an issue where ‘Cannot create a link without a Resource’ error was displayed when adding the new depth of fieldparameters to the shot recorder\n - Fixed an issue where the ‘enable Depth of Field (DOF)’ option check-box in Camera settings has changed to a number field input box",
+    "description": "Fixed an issue where ‘Cannot create a link without a Resource’ error was displayed when adding the new depth of fieldparameters to the shot recorder - Fixed an issue where the ‘enable Depth of Field (DOF)’ option check-box in Camera settings has changed to a number field input box",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
@@ -10563,6 +11886,34 @@
     "url": "https://help.disguise.one/designer/release-notes/r24#r243"
   },
   {
+    "version": "r24.2.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 157795 Released: 26 April 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2422"
+  },
+  {
+    "version": "r24.2.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 157444 Released: 19 April 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2421"
+  },
+  {
+    "version": "r24.2",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Added EX 3 Support. Learn more about the EX 3 here",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r242"
+  },
+  {
+    "version": "r24.1.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 156889 Released: 05 April 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2411"
+  },
+  {
     "version": "r24.1",
     "category": "New Features",
     "dsof": "DSOF-23365",
@@ -10575,6 +11926,34 @@
     "dsof": "DSOF-23038",
     "description": "AV in Upload assets test case in test_cloudserver",
     "url": "https://help.disguise.one/designer/release-notes/r24#r241"
+  },
+  {
+    "version": "r24.0.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 156441 Released: 29 March 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2404"
+  },
+  {
+    "version": "r24.0.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 155917 Released: 22 March 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2403"
+  },
+  {
+    "version": "r24.0.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 155361 Released: 15 March 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2402"
+  },
+  {
+    "version": "r24.0.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 154927 Released: 8 March 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2401"
   },
   {
     "version": "r24",
@@ -10738,6 +12117,20 @@
     "url": "https://help.disguise.one/designer/release-notes/r24#r24"
   },
   {
+    "version": "r23.4.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 154174 Released: 22 February 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2342"
+  },
+  {
+    "version": "r23.4.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 153580 Released: 15 February 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2341"
+  },
+  {
     "version": "r23.4",
     "category": "Quality of Life Improvements & Fixes",
     "dsof": "",
@@ -10829,6 +12222,27 @@
     "url": "https://help.disguise.one/designer/release-notes/r23#r234"
   },
   {
+    "version": "r23.3",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Support for IP-VFC cards outputting in SMPTE ST2100",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r233"
+  },
+  {
+    "version": "r23.3",
+    "category": "New Features",
+    "dsof": "",
+    "description": "SDI functionality will be added in a future release",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r233"
+  },
+  {
+    "version": "r23.2.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 152551 Released: 01 February 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2321"
+  },
+  {
     "version": "r23.2",
     "category": "New Features",
     "dsof": "",
@@ -10844,6 +12258,13 @@
   },
   {
     "version": "r23.2",
+    "category": "Previz link",
+    "dsof": "",
+    "description": "Previz allows the user to export their stage and content from Designer, and upload it to Disguise drive as a Previz Scene. With a URL to the uploaded Previz Scene, users and Disguise show programmers can share the current state of the Disguise show without restricting the end customers with baked-in camera angles, or having to install Designer themselves",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r232"
+  },
+  {
+    "version": "r23.2",
     "category": "Improvements",
     "dsof": "",
     "description": "Support exporting stage from Designer in glTF format",
@@ -10855,6 +12276,62 @@
     "dsof": "",
     "description": "Improved asset uploads to the Disguise cloud portal",
     "url": "https://help.disguise.one/designer/release-notes/r23#r232"
+  },
+  {
+    "version": "r23.1.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 97965 Released: 25 January 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2313"
+  },
+  {
+    "version": "r23.1.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 97610 Released: 18 January 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2312"
+  },
+  {
+    "version": "r23.1.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 97354 Released: 11 January 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2311"
+  },
+  {
+    "version": "r23.1",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "RenderStream project upgrading fix to prevent removal of scene keyframes",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r231"
+  },
+  {
+    "version": "r23.0.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 96975 Released: 04 January 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2302"
+  },
+  {
+    "version": "r23.0.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 96894 Released: 15 December 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2301"
+  },
+  {
+    "version": "r23",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Live Action Volume allows the masking of on-stage objects outside the performance region such as cameras, and lights. It also allows more of the frame to be taken up by virtual content, which seamlessly blends with the filmed screens within the live action volume",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r23"
+  },
+  {
+    "version": "r23",
+    "category": "New Features",
+    "dsof": "",
+    "description": "This feature is especially useful for xR stages with set extensions, typically within Live, Broadcast and Corporate environments. Live Action Volume can be used as a workaround to solve on-set issues such as an inaccurate mesh or colour problems",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r23"
   },
   {
     "version": "r23",
@@ -10927,59 +12404,185 @@
     "url": "https://help.disguise.one/designer/release-notes/r23#r23"
   },
   {
+    "version": "r22.3.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 97919 Released: 27 January 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2231"
+  },
+  {
+    "version": "r22.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 96094 Released: 30 November 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r223"
+  },
+  {
+    "version": "r22.2.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 95980 Released: 23 November 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2222"
+  },
+  {
+    "version": "r22.2.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 95741 Released: 16 November 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2221"
+  },
+  {
+    "version": "r22.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 95501 Released: 09 November 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r222"
+  },
+  {
+    "version": "r22.1.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 95051 Released: 02 November 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2216"
+  },
+  {
+    "version": "r22.1.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 94724 Released: 26 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2215"
+  },
+  {
+    "version": "r22.1.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 94488 Released: 19 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2214"
+  },
+  {
+    "version": "r22.1.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 94288 Released: 12 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2213"
+  },
+  {
+    "version": "r22.1.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 94124 Released: 06 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2212"
+  },
+  {
+    "version": "r22.1.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 93827 Released: 28 September 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2211"
+  },
+  {
+    "version": "r22.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 93749 Released: 21 September 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r221"
+  },
+  {
+    "version": "r22.1",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Designer r22.1 offers users the ability to log in to Disguise Cloud through d3manager by clicking on the new “Sign In” button. When you sign in, you will be prompted to link your machine to your Disguise Cloud account by following the on-screen instructions",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r221-cloud-integration"
+  },
+  {
+    "version": "r22.1",
+    "category": "New Features",
+    "dsof": "",
+    "description": "If you have previously signed up for Disguise Cloud, you can link your Designer install to an existing Disguise Cloud account. If you’re new to Disguise Cloud, you can sign up for a new account",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r221-cloud-integration"
+  },
+  {
+    "version": "r22.1",
+    "category": "New Features",
+    "dsof": "",
+    "description": "If you do not have a Designer license you can acquire a Designer license via the Designer integration with Disguise Cloud",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r221-cloud-integration"
+  },
+  {
+    "version": "r22.1",
+    "category": "New Features",
+    "dsof": "",
+    "description": "To return to license activation click “Account” in the d3manager cloud menu. This will take you to your Disguise Cloud account details page which includes Designer license activation functionality",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r221-cloud-integration"
+  },
+  {
+    "version": "r22.1",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Further Disguise Cloud integration functionality in Designer will be rolled out over the coming months",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r221-cloud-integration"
+  },
+  {
     "version": "r22",
-    "category": "",
+    "category": "New Features",
     "dsof": "",
     "description": "Intelligent media distribution",
     "url": "https://help.disguise.one/designer/release-notes/r22#r22"
   },
   {
     "version": "r22",
-    "category": "",
+    "category": "New Features",
     "dsof": "",
     "description": "Single Large Canvas",
     "url": "https://help.disguise.one/designer/release-notes/r22#r22"
   },
   {
     "version": "r22",
-    "category": "",
+    "category": "New Features",
     "dsof": "",
     "description": "TouchDesigner integration",
     "url": "https://help.disguise.one/designer/release-notes/r22#r22"
   },
   {
     "version": "r22",
-    "category": "",
+    "category": "New Features",
     "dsof": "",
     "description": "RenderStream Validation Framework",
     "url": "https://help.disguise.one/designer/release-notes/r22#r22"
   },
   {
     "version": "r22",
-    "category": "",
+    "category": "New Features",
     "dsof": "",
     "description": "Vulkan API Support",
     "url": "https://help.disguise.one/designer/release-notes/r22#r22"
   },
   {
     "version": "r22",
-    "category": "",
+    "category": "New Features",
     "dsof": "",
     "description": "Faster spatial calibration",
     "url": "https://help.disguise.one/designer/release-notes/r22#r22"
   },
   {
     "version": "r22",
-    "category": "",
+    "category": "New Features",
     "dsof": "",
     "description": "d3 Manager Dark Mode",
     "url": "https://help.disguise.one/designer/release-notes/r22#r22"
   },
   {
     "version": "r22",
-    "category": "RenderStream 1.3",
+    "category": "Media Distribution",
     "dsof": "",
-    "description": "Vulkan API support",
+    "description": "Media Distribution will sync and distribute only the media files in your video layer that are needed across each Disguise server. Unused content can then be removed with a click of a button",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r22"
+  },
+  {
+    "version": "r22",
+    "category": "Single Large Canvas",
+    "dsof": "",
+    "description": "Let your creativity go beyond the power of a single GPU, and use bigger content. Single Large Canvas seamlessly combines multiple video fragments into a single view output when used alongside multiple projectors",
     "url": "https://help.disguise.one/designer/release-notes/r22#r22"
   },
   {
@@ -10988,6 +12591,83 @@
     "dsof": "",
     "description": "RenderStream backwards compatibility",
     "url": "https://help.disguise.one/designer/release-notes/r22#r22"
+  },
+  {
+    "version": "r22",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "We have reduced spatial calibration time to less than half the amount taken in previous software releases. For studios with multiple cameras for example, this can result in a time saving of several hours. Fast Spatial Calibration is enabled by default",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r22"
+  },
+  {
+    "version": "r22",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "d3Manager improvements include the launch UI for Designer is now available in dark mode, the ability to add a global delay to audio, project rollback and a project version comparison tool",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r22"
+  },
+  {
+    "version": "r21.4.9",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 95025 Released: 02 November 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2149"
+  },
+  {
+    "version": "r21.4.8",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 94723 Released: 26 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2148"
+  },
+  {
+    "version": "r21.4.7",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 94485 Released: 19 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2147"
+  },
+  {
+    "version": "r21.4.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 94285 Released: 12 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2146"
+  },
+  {
+    "version": "r21.4.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 94042 Released: 05 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2145"
+  },
+  {
+    "version": "r21.4.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 93597 Released: 28 September 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2144"
+  },
+  {
+    "version": "r21.4.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 92787 Released: 24 August 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2143"
+  },
+  {
+    "version": "r21.4.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 92384 Released: 17 August 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2142"
+  },
+  {
+    "version": "r21.4.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 92179 Released: 10 August 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2141"
   },
   {
     "version": "r21.4",
@@ -11025,6 +12705,34 @@
     "url": "https://help.disguise.one/designer/release-notes/r21#r211"
   },
   {
+    "version": "r21.0.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 88904 Released: 27 April 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2103"
+  },
+  {
+    "version": "r21.0.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 88695 Released: 20 April 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2102"
+  },
+  {
+    "version": "r21.0.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 88204 Released: 06 April 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2101"
+  },
+  {
+    "version": "r21",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Full build: 87976 Released: 22 March 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r21"
+  },
+  {
     "version": "r21",
     "category": "New Colour Workflow Tools",
     "dsof": "",
@@ -11043,6 +12751,20 @@
     "category": "New Colour Workflow Tools",
     "dsof": "",
     "description": "Waveform/RGB Parade",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r21"
+  },
+  {
+    "version": "r21",
+    "category": "New Usability features",
+    "dsof": "",
+    "description": "RenderStream has been used on some of the largest shows on the planet, which has led to a host of stability and performance improvements and to help push its capabilities further",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r21"
+  },
+  {
+    "version": "r21",
+    "category": "New Usability features",
+    "dsof": "",
+    "description": "We have created a notepad tool within Designer. These notes can be stickied to specific parts of the project - for example, a note in the feed view to tell the operator to check specific things, or a warning note to not do something",
     "url": "https://help.disguise.one/designer/release-notes/r21#r21"
   },
   {
@@ -11231,7 +12953,7 @@
     "version": "r21",
     "category": "Quality of Life (QoL) improvements",
     "dsof": "",
-    "description": "Export lossless images from:\n\nVideo inputs - 8 or 10 bit images (16-bit if a layer stack is applied)\nThe compositor - 16-bit floating point images using EXR (before ACES transforms)\nThe feed output - 8 or 10-bit images (after ACES transforms)",
+    "description": "Export lossless images from: Video inputs - 8 or 10 bit images (16-bit if a layer stack is applied) The compositor - 16-bit floating point images using EXR (before ACES transforms) The feed output - 8 or 10-bit images (after ACES transforms)",
     "url": "https://help.disguise.one/designer/release-notes/r21#r21"
   },
   {
@@ -11242,10 +12964,80 @@
     "url": "https://help.disguise.one/designer/release-notes/r21#r21"
   },
   {
+    "version": "r20.1.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 87272 Released: 09 March 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2013"
+  },
+  {
+    "version": "r20.1.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 86992 Released: 02 March 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2012"
+  },
+  {
+    "version": "r20.1.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 86719 Released: 23 February 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2011"
+  },
+  {
+    "version": "r20.0.8",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 86261 Released: 9 February 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2008"
+  },
+  {
+    "version": "r20.0.7",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 85926 Released: 02 February 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2007"
+  },
+  {
+    "version": "r20.0.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 85620 Released: 26 January 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2006"
+  },
+  {
+    "version": "r20.0.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 85280 Released: 19 January 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2005"
+  },
+  {
+    "version": "r20.0.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 85036 Released: 12 January 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2004"
+  },
+  {
+    "version": "r20.0.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 84705 Released: 22 December 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2003"
+  },
+  {
+    "version": "r20.0.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 84533 Released: 15 December 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2002"
+  },
+  {
     "version": "r20",
     "category": "Features",
     "dsof": "",
-    "description": "Localisation\n\nLearn or use disguise Designer in your local language. The Designer software, training materials and user guide is now available in 6 new languages including Spanish, Simplified Chinese, French, Japanese, German and Korean.\nr20 downloads will default to these system languages\nChange language easily with the language switcher and easily control the language you want to use",
+    "description": "Localisation Learn or use disguise Designer in your local language. The Designer software, training materials and user guide is now available in 6 new languages including Spanish, Simplified Chinese, French, Japanese, German and Korean. r20 downloads will default to these system languages Change language easily with the language switcher and easily control the language you want to use",
     "url": "https://help.disguise.one/designer/release-notes/r20#r20"
   },
   {
@@ -11275,6 +13067,76 @@
     "dsof": "",
     "description": "Layer Stacks",
     "url": "https://help.disguise.one/designer/release-notes/r20#r20"
+  },
+  {
+    "version": "r19.1.8",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 83616 Released: 17 November 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1918"
+  },
+  {
+    "version": "r19.1.7",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 83172 Released: 03 November 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1917"
+  },
+  {
+    "version": "r19.1.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 82952 Released: 27 October 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1916"
+  },
+  {
+    "version": "r19.1.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 82618 Released: 13 October 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1915"
+  },
+  {
+    "version": "r19.1.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 82282 Released: 6 October 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1914"
+  },
+  {
+    "version": "r19.1.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 82053 Released: 29 September 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1913"
+  },
+  {
+    "version": "r19.1.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 81665 Released: 15 September 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1912"
+  },
+  {
+    "version": "r19.1.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 81488 Released: 08 September 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1911"
+  },
+  {
+    "version": "r19.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 81382 Released: 01 September 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r191"
+  },
+  {
+    "version": "r19.0.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 80825 Released: 11 August 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1901"
   },
   {
     "version": "r19",
@@ -11312,11 +13174,263 @@
     "url": "https://help.disguise.one/designer/release-notes/r19#r19"
   },
   {
+    "version": "r18.1.14",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 179736 Released: 14 February 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r18114"
+  },
+  {
+    "version": "r18.1.13",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 175640 Released: 13 December 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r18113"
+  },
+  {
+    "version": "r18.1.12",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 171491 Released: 25 October 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r18112"
+  },
+  {
+    "version": "r18.1.10",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 84524 Released: 15 December 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r18110"
+  },
+  {
+    "version": "r18.1.9",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 81046 Released: 18 August 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1819"
+  },
+  {
+    "version": "r18.1.8",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 80867 Released: 11 August 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1818"
+  },
+  {
+    "version": "r18.1.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 179736 Released: 14 February 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1814"
+  },
+  {
+    "version": "r18.1.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 175640 Released: 11 December 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1813"
+  },
+  {
+    "version": "r18.1.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 171491 Released: 25 October 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1812"
+  },
+  {
+    "version": "r18.0.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 78115 Released: 28 April 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1802"
+  },
+  {
     "version": "r18.0.1",
     "category": "Fixes",
     "dsof": "DSOF-13268",
     "description": "MultiEventTransportRemote - requesting player list results in an exception",
     "url": "https://help.disguise.one/designer/release-notes/r18#r1801"
+  },
+  {
+    "version": "r17.6.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 76600 Released: 17 March 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1762"
+  },
+  {
+    "version": "r17.6.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 76523 Released: 10 March 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1761"
+  },
+  {
+    "version": "r17.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 76148 Released: 03 March 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r176"
+  },
+  {
+    "version": "r17.5.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 75519 Released: 17 February 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1754"
+  },
+  {
+    "version": "r17.5.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 75233 Released: 10 February 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1753"
+  },
+  {
+    "version": "r17.5.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 74924 Released: 03 February 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1752"
+  },
+  {
+    "version": "r17.5.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 74716 Released: 27 January 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1751"
+  },
+  {
+    "version": "r17.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 74443 Released: 20 January 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r175"
+  },
+  {
+    "version": "r17.4.12",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 74208 Released: 06 January 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r17412"
+  },
+  {
+    "version": "r17.4.11",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 73764 Released: 16 December 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r17411"
+  },
+  {
+    "version": "r17.4.10",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 73706 Released: 09 December 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r17410"
+  },
+  {
+    "version": "r17.4.9",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 73274 Released: 02 December 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1749"
+  },
+  {
+    "version": "r17.4.8",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 73155 Released: 25 November 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1748"
+  },
+  {
+    "version": "r17.4.7",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 72936 Released: 18 November 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1747"
+  },
+  {
+    "version": "r17.4.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 72761 Released: 11 November 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1746"
+  },
+  {
+    "version": "r17.4.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 72537 Released: 04 November 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1745"
+  },
+  {
+    "version": "r17.4.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 72309 Released: 28 October 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1744"
+  },
+  {
+    "version": "r17.4.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 72113 Released: 21 October 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1743"
+  },
+  {
+    "version": "r17.4.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 72073 Released: 14 October 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1742"
+  },
+  {
+    "version": "r17.4.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 71907 Released: 07 October 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1741"
+  },
+  {
+    "version": "r17.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 71881 Released: 30 September 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r174"
+  },
+  {
+    "version": "r17.3.8",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 70918 Released: 26 August 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1738"
+  },
+  {
+    "version": "r17.3.7",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 70725 Released: 19 August 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1737"
+  },
+  {
+    "version": "r17.3.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 70419 Released: 12 August 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1736"
+  },
+  {
+    "version": "r17.3.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 70175 Released: 5 August 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1735"
+  },
+  {
+    "version": "r17.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 66731 Released: 29 April 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r172"
   },
   {
     "version": "r17.1.3",
@@ -11350,7 +13464,7 @@
     "version": "r17.1.1",
     "category": "Fixes",
     "dsof": "DSOF-13303",
-    "description": "d3.exe no longer marked as DPI aware in r17.1, causing DPI scaling issues on some displays",
+    "description": "d3.exe no longer marked as DPI aware in r17.1, causing DPI scaling issues on some displays",
     "url": "https://help.disguise.one/designer/release-notes/r17#r1711"
   },
   {
@@ -12220,6 +14334,146 @@
     "dsof": "DSOF-12701",
     "description": "Fixed an issue where notes could sometimes span two lines",
     "url": "https://help.disguise.one/designer/release-notes/r17#r171"
+  },
+  {
+    "version": "r17.0.7",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 64872 Released: 11 March 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1707"
+  },
+  {
+    "version": "r17.0.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 64572 Released: 04 March 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1706"
+  },
+  {
+    "version": "r17.0.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 64458 Released: 26 February 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1705"
+  },
+  {
+    "version": "r17.0.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 64319 Released: 19 February 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1704"
+  },
+  {
+    "version": "r17.0.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 63775 Released: 29 January 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1703"
+  },
+  {
+    "version": "r17.0.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 63572 Released: 22 January 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1702"
+  },
+  {
+    "version": "r17.0.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 63540 Released: 16 January 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1701"
+  },
+  {
+    "version": "r17",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Full build: 63364 Released: 8 January 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r17"
+  },
+  {
+    "version": "r16.1.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 62867 Released: 4 December 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1612"
+  },
+  {
+    "version": "r16.1.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 62240 Released: 13 November 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1611"
+  },
+  {
+    "version": "r16.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 61826 Released: 06 November 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r161"
+  },
+  {
+    "version": "r16.0.8",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 61473 Released: 23 October 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1608"
+  },
+  {
+    "version": "r16.0.7",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 61298 Released: 16 October 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1607"
+  },
+  {
+    "version": "r16.0.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 61009 Released: 02 October 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1606"
+  },
+  {
+    "version": "r16.0.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 60932 Released: 25 September 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1605"
+  },
+  {
+    "version": "r16.0.4",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 60742 Released: 18 September 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1604"
+  },
+  {
+    "version": "r16.0.3",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 60516 Released: 04 September 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1603"
+  },
+  {
+    "version": "r16.0.2",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 60384 Released: 28 August 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1602"
+  },
+  {
+    "version": "r16.0.1",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Full build: 60308 Released: 20 August 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1601"
+  },
+  {
+    "version": "r16",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Release build: 60037 Released: August 7th 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
     "version": "r16",
@@ -14563,6 +16817,13 @@
     "version": "r15.3.5",
     "category": "Fixes",
     "dsof": "",
+    "description": "Release build: 59085 Released: June 20th 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r15#r1535"
+  },
+  {
+    "version": "r15.3.5",
+    "category": "Fixes",
+    "dsof": "",
     "description": "Large audio files may cause the audio layer to stutter as it processes the files. Workarounds",
     "url": "https://help.disguise.one/designer/release-notes/r15#r1535"
   },
@@ -14584,7 +16845,7 @@
     "version": "r15.3.5",
     "category": "Fixes",
     "dsof": "",
-    "description": "or  try staggering multiple audio files on the timeline to save overdue, instant demand by multiple files",
+    "description": "or try staggering multiple audio files on the timeline to save overdue, instant demand by multiple files",
     "url": "https://help.disguise.one/designer/release-notes/r15#r1535"
   },
   {
@@ -14628,6 +16889,34 @@
     "dsof": "",
     "description": "Audio does not start again when encountering a new keyframe of the same audio track",
     "url": "https://help.disguise.one/designer/release-notes/r15#r1535"
+  },
+  {
+    "version": "r15.2.5",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 56254 Released: March 11th 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r15#r1525"
+  },
+  {
+    "version": "r15.1.8",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 54682 Released: December 11th 2018",
+    "url": "https://help.disguise.one/designer/release-notes/r15#r1518"
+  },
+  {
+    "version": "r15.0.6",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 52148 Released: August 5th, 2018",
+    "url": "https://help.disguise.one/designer/release-notes/r15#r1506"
+  },
+  {
+    "version": "r15",
+    "category": "New Features",
+    "dsof": "",
+    "description": "Release build: 50985 Released: June 19th 2018",
+    "url": "https://help.disguise.one/designer/release-notes/r15#r15"
   },
   {
     "version": "r15",
@@ -14913,7 +17202,7 @@
     "version": "r15",
     "category": "Improvements",
     "dsof": "",
-    "description": "[Timeline] Rename DVI Matrix Control Layer to MatrixControl to indicate wider matrix control usage [VFC] Emulated EDID labelling to make it easier to identify to the GUI or passthrough outputs [Video Capture] -\tMultiview video input now available as an additional option for capture input",
+    "description": "[Timeline] Rename DVI Matrix Control Layer to MatrixControl to indicate wider matrix control usage [VFC] Emulated EDID labelling to make it easier to identify to the GUI or passthrough outputs [Video Capture] - Multiview video input now available as an additional option for capture input",
     "url": "https://help.disguise.one/designer/release-notes/r15#r15"
   },
   {
@@ -15235,7 +17524,7 @@
     "version": "r15",
     "category": "Fixes",
     "dsof": "",
-    "description": "[Layers] Access Violation encountered in min/max Brightness widget after editing other objects\n[Movie Writer] When Recording a Stage Movie whilst in Feed View, d3 incorrectly records a feed movie of the GUI head [Networking] Network lag can prevent Editors from joining a session without a failed to sync warning being issued [Networking] Ensure that the machine’s IP address is taken from host name resolution instead of Zyre",
+    "description": "[Layers] Access Violation encountered in min/max Brightness widget after editing other objects [Movie Writer] When Recording a Stage Movie whilst in Feed View, d3 incorrectly records a feed movie of the GUI head [Networking] Network lag can prevent Editors from joining a session without a failed to sync warning being issued [Networking] Ensure that the machine’s IP address is taken from host name resolution instead of Zyre",
     "url": "https://help.disguise.one/designer/release-notes/r15#r15"
   },
   {
@@ -15459,6 +17748,13 @@
     "version": "r14.5",
     "category": "Fixes",
     "dsof": "",
+    "description": "Release build: 51416 Released: July 5th, 2018",
+    "url": "https://help.disguise.one/designer/release-notes/r14#r145-32-bit"
+  },
+  {
+    "version": "r14.5",
+    "category": "Fixes",
+    "dsof": "",
     "description": "[Automation / Encoders] Restore behaviour of PSN frames sent across multiple frames [Automation / Encoders] Movement threshold does not work unless prediction is on",
     "url": "https://help.disguise.one/designer/release-notes/r14#r145-32-bit"
   },
@@ -15538,6 +17834,13 @@
     "dsof": "",
     "description": "The fix for this makes fundamental changes to timeline operations, so will take a while to work its way into future releases",
     "url": "https://help.disguise.one/designer/release-notes/r14#r145-32-bit"
+  },
+  {
+    "version": "r14.4.7",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "Release build: 50324 Released: May 29th 2018",
+    "url": "https://help.disguise.one/designer/release-notes/r14#r1447"
   },
   {
     "version": "r14.4.7",
@@ -15642,6 +17945,27 @@
     "category": "Fixes",
     "dsof": "",
     "description": "The fix for this makes fundamental changes to timeline operations, so will take a while to work its way into future releases",
+    "url": "https://help.disguise.one/designer/release-notes/r14#r1447"
+  },
+  {
+    "version": "r14.4.7",
+    "category": "Fixes",
+    "dsof": "",
+    "description": "[Audio] Intermittent crackling when playing back project specific audio files",
+    "url": "https://help.disguise.one/designer/release-notes/r14#r1447"
+  },
+  {
+    "version": "r14.4.7",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "[Video Output] Better EDID management to cope with updated AMD drivers (to be released in the next OS image update)",
+    "url": "https://help.disguise.one/designer/release-notes/r14#r1447"
+  },
+  {
+    "version": "r14.4.7",
+    "category": "Improvements",
+    "dsof": "",
+    "description": "Please contact support@disguise.one for feedback and issues",
     "url": "https://help.disguise.one/designer/release-notes/r14#r1447"
   }
 ]
