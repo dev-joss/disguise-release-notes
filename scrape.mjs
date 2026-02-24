@@ -137,12 +137,20 @@ function parseReleasePage(html, pagePath) {
     // Extract <p> tags that contain DSOF references (some pages use paragraphs instead of lists)
     // Strip anchor/sr-only noise first to avoid spanning across tags
     const cleanedPart = part.replace(/<a class="sl-anchor-link"[\s\S]*?<\/a>/gi, "");
+    // Collect DSOF numbers already found in list items to avoid duplicates
+    const seenDsofs = new Set();
+    for (const raw of rawSnippets) {
+      const matches = raw.match(/DSOF-\d+/g);
+      if (matches) matches.forEach(d => seenDsofs.add(d));
+    }
     const pTagRe = /<p[^>]*>([\s\S]*?)<\/p>/gi;
     let pMatch;
     while ((pMatch = pTagRe.exec(cleanedPart))) {
       const inner = pMatch[1];
-      if (/DSOF-\d+/.test(inner)) {
+      const dsofs = inner.match(/DSOF-\d+/g);
+      if (dsofs && !dsofs.some(d => seenDsofs.has(d))) {
         rawSnippets.push(inner);
+        dsofs.forEach(d => seenDsofs.add(d));
       }
     }
 
