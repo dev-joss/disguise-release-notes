@@ -39,6 +39,7 @@ function decodeEntities(s) {
     .replace(/&quot;/g, '"').replace(/&#39;/g, "'")
     .replace(/&nbsp;/g, " ")
     .replace(/[\u200b\u200c\u200d\ufeff]/g, "");
+}
 
 // Extract only top-level <li> contents from HTML, ignoring nested <li> inside sub-lists.
 // Tracks <ul>/<ol> nesting depth so inner list items are included in their parent's content.
