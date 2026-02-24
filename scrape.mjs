@@ -40,6 +40,43 @@ function decodeEntities(s) {
     .replace(/&nbsp;/g, " ");
 }
 
+// Extract only top-level <li> contents from HTML, ignoring nested <li> inside sub-lists.
+// Tracks <ul>/<ol> nesting depth so inner list items are included in their parent's content.
+function extractTopLevelLis(html) {
+  const items = [];
+  const tagRe = /<(\/?)(?:ul|ol|li)(?:\s[^>]*)?\s*>/gi;
+  let listDepth = 0; // depth of <ul>/<ol> nesting
+  let liDepth = 0; // which listDepth the current top-level <li> opened at
+  let capturing = false;
+  let start = 0;
+
+  let m;
+  while ((m = tagRe.exec(html))) {
+    const isClose = m[1] === "/";
+    const tag = m[0].toLowerCase();
+
+    if (!isClose && (tag.startsWith("<ul") || tag.startsWith("<ol"))) {
+      listDepth++;
+    } else if (isClose && (tag === "</ul>" || tag === "</ol>")) {
+      listDepth--;
+    } else if (!isClose && tag.startsWith("<li")) {
+      if (listDepth === 1 && !capturing) {
+        // Top-level <li> — start capturing after this tag
+        capturing = true;
+        liDepth = listDepth;
+        start = m.index + m[0].length;
+      }
+    } else if (isClose && tag === "</li>") {
+      if (capturing && listDepth === liDepth) {
+        // Closing the top-level <li>
+        items.push(html.slice(start, m.index));
+        capturing = false;
+      }
+    }
+  }
+  return items;
+}
+
 function parseReleasePage(html, pagePath) {
   const entries = [];
 
@@ -85,11 +122,9 @@ function parseReleasePage(html, pagePath) {
       currentCategory = decodeEntities(h3Match[1].replace(/<[^>]+>/g, "")).trim();
     }
 
-    // Extract list items
-    const liRe = /<li[^>]*>([\s\S]*?)<\/li>/gi;
-    let liMatch;
-    while ((liMatch = liRe.exec(part))) {
-      const raw = liMatch[1];
+    // Extract top-level list items (skip nested <li> inside sub-lists)
+    const topLevelLis = extractTopLevelLis(part);
+    for (const raw of topLevelLis) {
       const text = decodeEntities(raw.replace(/<[^>]+>/g, "")).trim();
       if (!text) continue;
 

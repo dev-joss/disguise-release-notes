@@ -73,21 +73,7 @@
     "version": "r32.3",
     "category": "Improvements",
     "dsof": "DSOF-31232",
-    "description": "The Remove Media API endpoints now only act on media in the Disguise-controlled media paths:\n\nprojects",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r323---openvpcal-plugin-support"
-  },
-  {
-    "version": "r32.3",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "rs-assets",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r323---openvpcal-plugin-support"
-  },
-  {
-    "version": "r32.3",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "rs-engine",
+    "description": "The Remove Media API endpoints now only act on media in the Disguise-controlled media paths:\n\nprojects\nrs-assets\nrs-engine\n\nYou can now reference these special keys in your API calls to auto-resolve these paths: {projects}, {rs-assets} and {rs-engine}",
     "url": "https://help.disguise.one/designer/release-notes/r32#r323---openvpcal-plugin-support"
   },
   {
@@ -1277,21 +1263,7 @@
     "version": "r32.0.3",
     "category": "Fixes",
     "dsof": "DSOF-31257",
-    "description": "Notch blocks without default values set in Notch now set sensible default values in Designer instead of failing to launch properly.\n\nEnum values will select the 1st enum",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r3203---hotfixes"
-  },
-  {
-    "version": "r32.0.3",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "Numerical fields will select the mid value between the min and max",
-    "url": "https://help.disguise.one/designer/release-notes/r32#r3203---hotfixes"
-  },
-  {
-    "version": "r32.0.3",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "Colours default to black with alpha 1",
+    "description": "Notch blocks without default values set in Notch now set sensible default values in Designer instead of failing to launch properly.\n\nEnum values will select the 1st enum.\nNumerical fields will select the mid value between the min and max.\nColours default to black with alpha 1",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3203---hotfixes"
   },
   {
@@ -3257,113 +3229,8 @@
   {
     "version": "r30.7",
     "category": "Improvements",
-    "dsof": "DSOF-29317, DSOF-28577",
-    "description": "We’ve made a range of improvements to expressions. You can find the extensive documentation on common datatypes, variables, string manipulation, and monitoring using custom messages.\n\n - A variable for “Fade up” and “Fade down” is now exposed for use with OSC Output Expressions",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "DSOF-27706",
-    "description": "A variable for Pre-Roll in TC Status is now exposed for use with OSC Output Expressions",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "DSOF-28310",
-    "description": "Float expressions in the Expressions Variable Device now have a settable min and max",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "DSOF-28501",
-    "description": "Expression function variables can now have parameters defined",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "DSOF-28657",
-    "description": "Expression variables are now re-orderable by left-click and drag",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "DSOF-28666",
-    "description": "Expressions now support returning an array of composite vector types. Note that to use them in a field you still need to access the individual floats. These are:\n\nColour",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Vec2 (alias float2)",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Vec3 (alias float3)",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Vec4 (alias float4)",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "DSOF-28734",
-    "description": "Expressions now have a range of string manipulation functions:\n\nsplit",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "replace",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "strip",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "title",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "upper",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "lower",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
-  },
-  {
-    "version": "r30.7",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "combine",
+    "dsof": "DSOF-29317, DSOF-28577, DSOF-27706, DSOF-28310, DSOF-28501, DSOF-28657, DSOF-28666, DSOF-28734",
+    "description": "We’ve made a range of improvements to expressions. You can find the extensive documentation on common datatypes, variables, string manipulation, and monitoring using custom messages.\n\n - A variable for “Fade up” and “Fade down” is now exposed for use with OSC Output Expressions.\n - A variable for Pre-Roll in TC Status is now exposed for use with OSC Output Expressions.\n - Float expressions in the Expressions Variable Device now have a settable min and max.\n - Expression function variables can now have parameters defined.\n - Expression variables are now re-orderable by left-click and drag.\n - Expressions now support returning an array of composite vector types. Note that to use them in a field you still need to access the individual floats. These are:\n\nColour\nVec2 (alias float2)\nVec3 (alias float3)\nVec4 (alias float4)\n\n\n - Expressions now have a range of string manipulation functions:\n\nsplit\nreplace\nstrip\ntitle\nupper\nlower\ncombine",
     "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
   },
   {
@@ -3713,14 +3580,7 @@
     "version": "r30.4",
     "category": "Improvements",
     "dsof": "DSOF-23779",
-    "description": "The implementation of CEF and Chromium used in Disguise are now more modern. We now support CEF 132.3.2+g4997b2f and chromium 132.0.6834.161. This means you get more features, stability and performance in the following layers:\n\nWeb Layer",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
-  },
-  {
-    "version": "r30.4",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Text Layer",
+    "description": "The implementation of CEF and Chromium used in Disguise are now more modern. We now support CEF 132.3.2+g4997b2f and chromium 132.0.6834.161. This means you get more features, stability and performance in the following layers:\n\nWeb Layer\nText Layer",
     "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
   },
   {
@@ -3762,28 +3622,7 @@
     "version": "r30.4",
     "category": "Improvements",
     "dsof": "DSOF-28865",
-    "description": "FFMPEG has now been updated to 7.1 from 5.0.1. FFMPEG is used for:\n\nRendering Feed Movies",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
-  },
-  {
-    "version": "r30.4",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Rendering Stage Movies",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
-  },
-  {
-    "version": "r30.4",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Rendering Animation Movies",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
-  },
-  {
-    "version": "r30.4",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Uploading to Previs\nThese workflows will now be a bit faster and more stable",
+    "description": "FFMPEG has now been updated to 7.1 from 5.0.1. FFMPEG is used for:\n\nRendering Feed Movies\nRendering Stage Movies\nRendering Animation Movies\nUploading to Previs\nThese workflows will now be a bit faster and more stable",
     "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
   },
   {
@@ -3951,28 +3790,7 @@
     "version": "r30.3.1",
     "category": "Fixes",
     "dsof": "DSOF-29173",
-    "description": "Various improvements to IP-VFC Colour Format behaviour:\n\nApplying feeds on an IP-VFC will now attempt to apply the selected colour format and not force the output to RGB",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r3031---hotfixes"
-  },
-  {
-    "version": "r30.3.1",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "The feed outline will now correctly highlight in green when the colour format set in the GUI and the active output of the GPU match",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r3031---hotfixes"
-  },
-  {
-    "version": "r30.3.1",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "With the enableColourFormat option switch enabled Designer will no longer display a Sub Sampling option in the IP VFC GUI as it is now replaced with Colour Format",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r3031---hotfixes"
-  },
-  {
-    "version": "r30.3.1",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "Colour format options now specify in the GUI whether they are RGB or YCbCr to make it easier to select the correct format",
+    "description": "Various improvements to IP-VFC Colour Format behaviour:\n\nApplying feeds on an IP-VFC will now attempt to apply the selected colour format and not force the output to RGB.\nThe feed outline will now correctly highlight in green when the colour format set in the GUI and the active output of the GPU match.\nWith the enableColourFormat option switch enabled Designer will no longer display a Sub Sampling option in the IP VFC GUI as it is now replaced with Colour Format.\nColour format options now specify in the GUI whether they are RGB or YCbCr to make it easier to select the correct format",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3031---hotfixes"
   },
   {
@@ -4000,42 +3818,7 @@
     "version": "r30.3",
     "category": "Improvements",
     "dsof": "DSOF-6438, DSOF-25483",
-    "description": "&  - We have added a ‘Border expansion’ field In the Mapping editor for all geometric mapping types. This can be used when there is an empty space within the screen UV map to stop black pixels blurring into visible screen space. The units are pixels in pixels. The following mappings have this field:\n\nSpherical",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
-  },
-  {
-    "version": "r30.3",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Perspective",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
-  },
-  {
-    "version": "r30.3",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Cylindrical",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
-  },
-  {
-    "version": "r30.3",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Camera Plate",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
-  },
-  {
-    "version": "r30.3",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Parallel",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
-  },
-  {
-    "version": "r30.3",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Mesh",
+    "description": "&  - We have added a ‘Border expansion’ field In the Mapping editor for all geometric mapping types. This can be used when there is an empty space within the screen UV map to stop black pixels blurring into visible screen space. The units are pixels in pixels. The following mappings have this field:\n\nSpherical\nPerspective\nCylindrical\nCamera Plate\nParallel\nMesh",
     "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
   },
   {
@@ -4049,14 +3832,7 @@
     "version": "r30.3",
     "category": "Improvements",
     "dsof": "DSOF-28542",
-    "description": "You can now mix Green screen and LED screen objects in your MR sets, and camera calibration will work correctly on Luma-keyed inputs. Additionally:\n\nSet extension will be applied outside of the LED screens and around any Luma-Keyed performers in front of Green screens",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
-  },
-  {
-    "version": "r30.3",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "We now only account for keying specifically within the green screen object so content being used by the LED screen with green in will no longer be keyed out",
+    "description": "You can now mix Green screen and LED screen objects in your MR sets, and camera calibration will work correctly on Luma-keyed inputs. Additionally:\n\nSet extension will be applied outside of the LED screens and around any Luma-Keyed performers in front of Green screens.\nWe now only account for keying specifically within the green screen object so content being used by the LED screen with green in will no longer be keyed out",
     "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
   },
   {
@@ -4238,21 +4014,7 @@
     "version": "r30.2.1",
     "category": "Fixes",
     "dsof": "DSOF-28232",
-    "description": "Running in windowed mode will now be more reliable in the following ways:\n\nFramerates will no longer spike to very high values",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r3021---hotfixes"
-  },
-  {
-    "version": "r30.2.1",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "Machines will no longer intermittently fail to join sessions",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r3021---hotfixes"
-  },
-  {
-    "version": "r30.2.1",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "Moving the playhead will now respond immediately",
+    "description": "Running in windowed mode will now be more reliable in the following ways:\n\nFramerates will no longer spike to very high values.\nMachines will no longer intermittently fail to join sessions.\nMoving the playhead will now respond immediately",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3021---hotfixes"
   },
   {
@@ -4329,42 +4091,7 @@
     "version": "r30.2",
     "category": "Improvements",
     "dsof": "DSOF-26889",
-    "description": "Designer now has various ways of using the CTRL modified to interact with text fields. Here is a comprehensive list:\n\nCTRL + Delete to delete the word to the right of the cursor",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
-  },
-  {
-    "version": "r30.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "CTRL + Backspace to delete the word to the left of the cursor",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
-  },
-  {
-    "version": "r30.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "CTRL + Left-click to move the cursor left to the next word boundary",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
-  },
-  {
-    "version": "r30.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "CTRL + Right-click to move the cursor right to the next word boundary",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
-  },
-  {
-    "version": "r30.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "CTRL + SHIFT + Left-click to extend the selection left to the next word boundary",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
-  },
-  {
-    "version": "r30.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "CTRL + Shift + Right-click to extend the selection right to the next word boundary",
+    "description": "Designer now has various ways of using the CTRL modified to interact with text fields. Here is a comprehensive list:\n\nCTRL + Delete to delete the word to the right of the cursor\nCTRL + Backspace to delete the word to the left of the cursor\nCTRL + Left-click to move the cursor left to the next word boundary\nCTRL + Right-click to move the cursor right to the next word boundary\nCTRL + SHIFT + Left-click to extend the selection left to the next word boundary\nCTRL + Shift + Right-click to extend the selection right to the next word boundary",
     "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
   },
   {
@@ -4539,28 +4266,7 @@
     "version": "r30.1.1",
     "category": "Fixes",
     "dsof": "DSOF-28768",
-    "description": "Designer will now correctly output the value of a layer parameter via custom OSC output expressions and will no longer report a “recursion limit” error. Examples of values that can now be sent include:\n\nmodule:video.brightness",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r3011---hotfixes"
-  },
-  {
-    "version": "r30.1.1",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "module:video.speed",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r3011---hotfixes"
-  },
-  {
-    "version": "r30.1.1",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "module:video.volume",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r3011---hotfixes"
-  },
-  {
-    "version": "r30.1.1",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "etc",
+    "description": "Designer will now correctly output the value of a layer parameter via custom OSC output expressions and will no longer report a “recursion limit” error. Examples of values that can now be sent include:\n\nmodule:video.brightness\nmodule:video.speed\nmodule:video.volume\netc",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3011---hotfixes"
   },
   {
@@ -4777,21 +4483,7 @@
     "version": "r30.0",
     "category": "Improvements",
     "dsof": "DSOF-28313",
-    "description": "Remove OCIO shader properties from layers that don’t require them. These layers are:\n\nRGB Colour",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
-  },
-  {
-    "version": "r30.0",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Tracking Marker",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
-  },
-  {
-    "version": "r30.0",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "LUT",
+    "description": "Remove OCIO shader properties from layers that don’t require them. These layers are:\n\nRGB Colour\nTracking Marker\nLUT",
     "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
   },
   {
@@ -4812,28 +4504,14 @@
     "version": "r30.0",
     "category": "Improvements",
     "dsof": "DSOF-28365",
-    "description": "The HTTPSockpuppet API now supports selecting resources by full path, not just filename. This means:\n\nYou can now specify objects/videofile/sample/ada.jpg instead of just ada.jpg",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
-  },
-  {
-    "version": "r30.0",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "If you have two files with the same filename but are in a different path you can now disambiguate them by selecting the full path",
+    "description": "The HTTPSockpuppet API now supports selecting resources by full path, not just filename. This means:\n\nYou can now specify objects/videofile/sample/ada.jpg instead of just ada.jpg.\nIf you have two files with the same filename but are in a different path you can now disambiguate them by selecting the full path",
     "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
   },
   {
     "version": "r30.0",
     "category": "Improvements",
     "dsof": "DSOF-27658",
-    "description": "Add uid field for identifying patches in HTTPSockpuppet API. Deprecate address field\n\naddress was not unique across tracks. Multiple HTTP patches could exist with the same name (layers with same name across track) causing issues when\nHTTPSockpuppet was used with MultiTransports",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
-  },
-  {
-    "version": "r30.0",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "uid was added and should be used. uid is unique per patch.\nYou can find the updated API documentation for HTTPSockpuppet here",
+    "description": "Add uid field for identifying patches in HTTPSockpuppet API. Deprecate address field\n\naddress was not unique across tracks. Multiple HTTP patches could exist with the same name (layers with same name across track) causing issues when\nHTTPSockpuppet was used with MultiTransports.\nuid was added and should be used. uid is unique per patch.\nYou can find the updated API documentation for HTTPSockpuppet here",
     "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
   },
   {
@@ -5176,21 +4854,7 @@
     "version": "r29.2",
     "category": "Improvements",
     "dsof": "DSOF-21329",
-    "description": "Support non-16:9 camera aspect ratios with “region of interest”\n\nVideo input configuration now supports the ability to crop the image with two new configuration fields",
-    "url": "https://help.disguise.one/designer/release-notes/r29#r292---osc-output-expression-qol"
-  },
-  {
-    "version": "r29.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Crop size: The crop rectangle size in pixels to apply to the incoming video. The applied crop will be centered on the frame e.g. a horizontal crop of 1600px on a 1920px original frame will remove 160px on the left-hand side and 160px on the right hand side",
-    "url": "https://help.disguise.one/designer/release-notes/r29#r292---osc-output-expression-qol"
-  },
-  {
-    "version": "r29.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Crop offset: The offset in pixels to apply to the crop rectangle. Offsetting the crop rectangle more than half the crop size in an axis will cause the crop rectangle to shrink in order to stay within the original frame.\nThis functionality is useful for use cases such as when a camera produces non-16:9 output over SDI which is restricted to 16:9, resulting in black bars. The black bars can be cropped out with this feature. Productions using anamorphic lenses will also benefit from this feature.\nFor more information about video in cropping, see setup-video-input",
+    "description": "Support non-16:9 camera aspect ratios with “region of interest”\n\nVideo input configuration now supports the ability to crop the image with two new configuration fields:\nCrop size: The crop rectangle size in pixels to apply to the incoming video. The applied crop will be centered on the frame e.g. a horizontal crop of 1600px on a 1920px original frame will remove 160px on the left-hand side and 160px on the right hand side.\nCrop offset: The offset in pixels to apply to the crop rectangle. Offsetting the crop rectangle more than half the crop size in an axis will cause the crop rectangle to shrink in order to stay within the original frame.\nThis functionality is useful for use cases such as when a camera produces non-16:9 output over SDI which is restricted to 16:9, resulting in black bars. The black bars can be cropped out with this feature. Productions using anamorphic lenses will also benefit from this feature.\nFor more information about video in cropping, see setup-video-input",
     "url": "https://help.disguise.one/designer/release-notes/r29#r292---osc-output-expression-qol"
   },
   {
@@ -5407,35 +5071,7 @@
     "version": "r29.1",
     "category": "Improvements",
     "dsof": "DSOF-24246",
-    "description": "Ability to duplicate and rename projects from within d3Manager\n\nRight-clicking on a project or project file within d3Manager now provides options to",
-    "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
-  },
-  {
-    "version": "r29.1",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Duplicate project",
-    "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
-  },
-  {
-    "version": "r29.1",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Duplicate project file (option is disabled if right-clicking the project rather than the project file))",
-    "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
-  },
-  {
-    "version": "r29.1",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Delete project",
-    "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
-  },
-  {
-    "version": "r29.1",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Delete project file (option is disabled if right-clicking the project rather than the project file)\nProjects and project files can now also be renamed via d3Manager",
+    "description": "Ability to duplicate and rename projects from within d3Manager\n\nRight-clicking on a project or project file within d3Manager now provides options to:\nDuplicate project\nDuplicate project file (option is disabled if right-clicking the project rather than the project file))\nDelete project\nDelete project file (option is disabled if right-clicking the project rather than the project file)\nProjects and project files can now also be renamed via d3Manager",
     "url": "https://help.disguise.one/designer/release-notes/r29#r291---ocio"
   },
   {
@@ -5554,14 +5190,7 @@
     "version": "r29",
     "category": "Improvements",
     "dsof": "DSOF-26523",
-    "description": "You can now select your PTP profile on the IP-VFC from the Designer interface when in ST 2110 output mode.\n\nThe options we support are:\n\nSMPTE2059-2015",
-    "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
-  },
-  {
-    "version": "r29",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "SMPTE2059-2021",
+    "description": "You can now select your PTP profile on the IP-VFC from the Designer interface when in ST 2110 output mode.\n\nThe options we support are:\n\nSMPTE2059-2015\nSMPTE2059-2021",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
@@ -5743,14 +5372,7 @@
     "version": "r29",
     "category": "Improvements",
     "dsof": "DSOF-28200",
-    "description": "You can now specify a default gamma space colour transform for all new ingested media and all newly created displays.\n\nIn Project Settings under ‘Colour Management’ you will find two new entries when the mode is set to ‘Gamma Space’ which each accept a colour profile object:\n\n‘Default ingest profile’",
-    "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
-  },
-  {
-    "version": "r29",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "‘Default display profile’",
+    "description": "You can now specify a default gamma space colour transform for all new ingested media and all newly created displays.\n\nIn Project Settings under ‘Colour Management’ you will find two new entries when the mode is set to ‘Gamma Space’ which each accept a colour profile object:\n\n‘Default ingest profile’\n‘Default display profile’",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
@@ -5792,21 +5414,7 @@
     "version": "r29",
     "category": "Fixes",
     "dsof": "DSOF-24035",
-    "description": "/28127/26713 - We have made various improvements to tooltip behaviour in this release:\n\nTooltips will now be slower to display and display more consistently across the UI",
-    "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
-  },
-  {
-    "version": "r29",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "We have improved a range of tooltips to make them more explanatory and helpful",
-    "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
-  },
-  {
-    "version": "r29",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "Tooltips for broken expressions now better explain what’s wrong and how to fix it",
+    "description": "/28127/26713 - We have made various improvements to tooltip behaviour in this release:\n\nTooltips will now be slower to display and display more consistently across the UI.\nWe have improved a range of tooltips to make them more explanatory and helpful.\nTooltips for broken expressions now better explain what’s wrong and how to fix it",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
@@ -5848,21 +5456,7 @@
     "version": "r28.1.1",
     "category": "Fixes",
     "dsof": "DSOF-27869",
-    "description": "Updated the test patterns that come with Designer in the following ways:\n\nFixed the 100% -> 0% greyscale to have correct colour values",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r2811---fixes"
-  },
-  {
-    "version": "r28.1.1",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "Fixed the “Full Range” text to be the correct limited range colour values",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r2811---fixes"
-  },
-  {
-    "version": "r28.1.1",
-    "category": "Fixes",
-    "dsof": "",
-    "description": "Re-centred the content",
+    "description": "Updated the test patterns that come with Designer in the following ways:\n\nFixed the 100% -> 0% greyscale to have correct colour values\nFixed the “Full Range” text to be the correct limited range colour values\nRe-centred the content",
     "url": "https://help.disguise.one/designer/release-notes/r28#r2811---fixes"
   },
   {
@@ -5890,28 +5484,7 @@
     "version": "r28.1",
     "category": "Improvements",
     "dsof": "DSOF-27989",
-    "description": "Shortcuts added to move selected layers/groups where the  Playhead is\n\nCTRL + [  Extend/Trim the start of the selected layers to the playhead position",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r281---qol-and-fixes"
-  },
-  {
-    "version": "r28.1",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "CTRL + ]  Extend/Trim the End of the selected layers to the playhead position",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r281---qol-and-fixes"
-  },
-  {
-    "version": "r28.1",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "CTRL + ALT + [    Move the start of the selected layers to the playhead position while maintaining the length of the layers",
-    "url": "https://help.disguise.one/designer/release-notes/r28#r281---qol-and-fixes"
-  },
-  {
-    "version": "r28.1",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "CTRL + ALT + ]    Move the end of the selected layers to the playhead position while maintaining the length of the layers",
+    "description": "Shortcuts added to move selected layers/groups where the  Playhead is\n\nCTRL + [  Extend/Trim the start of the selected layers to the playhead position\nCTRL + ]  Extend/Trim the End of the selected layers to the playhead position\nCTRL + ALT + [    Move the start of the selected layers to the playhead position while maintaining the length of the layers\nCTRL + ALT + ]    Move the end of the selected layers to the playhead position while maintaining the length of the layers",
     "url": "https://help.disguise.one/designer/release-notes/r28#r281---qol-and-fixes"
   },
   {
@@ -8221,14 +7794,7 @@
     "version": "r27.1",
     "category": "Improvements",
     "dsof": "DSOF-26029",
-    "description": "OmniCal: export unstructured point clouds (without invalid points)\nWe have enabled users to be able to export unstructured point clouds when using OmniCal. Structured point clouds directly correspond to\nthe 2D grid output by projectors, and will include invalid points as NaN values. These values are usually those that were not visible to\nenough cameras or where 3D reconstruction failed. Unstructured point clouds provide no invalid points as NaN values within the export.\nThis can be found in the Advanced section in OmniCal Calibration and clicking on ‘Save PointCloud’. This will save four PCD files for\neach projector grid within the Optical Stage Plan folder:\n\nAligned and unaligned (as captured)",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
-  },
-  {
-    "version": "r27.1",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Structured and unstructured",
+    "description": "OmniCal: export unstructured point clouds (without invalid points)\nWe have enabled users to be able to export unstructured point clouds when using OmniCal. Structured point clouds directly correspond to\nthe 2D grid output by projectors, and will include invalid points as NaN values. These values are usually those that were not visible to\nenough cameras or where 3D reconstruction failed. Unstructured point clouds provide no invalid points as NaN values within the export.\nThis can be found in the Advanced section in OmniCal Calibration and clicking on ‘Save PointCloud’. This will save four PCD files for\neach projector grid within the Optical Stage Plan folder:\n\nAligned and unaligned (as captured)\nStructured and unstructured",
     "url": "https://help.disguise.one/designer/release-notes/r27#r271---improvements--fixes"
   },
   {
@@ -11287,21 +10853,7 @@
     "version": "r21",
     "category": "Quality of Life (QoL) improvements",
     "dsof": "",
-    "description": "Export lossless images from:\n\nVideo inputs - 8 or 10 bit images (16-bit if a layer stack is applied)",
-    "url": "https://help.disguise.one/designer/release-notes/r21#r21"
-  },
-  {
-    "version": "r21",
-    "category": "Quality of Life (QoL) improvements",
-    "dsof": "",
-    "description": "The compositor - 16-bit floating point images using EXR (before ACES transforms)",
-    "url": "https://help.disguise.one/designer/release-notes/r21#r21"
-  },
-  {
-    "version": "r21",
-    "category": "Quality of Life (QoL) improvements",
-    "dsof": "",
-    "description": "The feed output - 8 or 10-bit images (after ACES transforms)",
+    "description": "Export lossless images from:\n\nVideo inputs - 8 or 10 bit images (16-bit if a layer stack is applied)\nThe compositor - 16-bit floating point images using EXR (before ACES transforms)\nThe feed output - 8 or 10-bit images (after ACES transforms)",
     "url": "https://help.disguise.one/designer/release-notes/r21#r21"
   },
   {
@@ -11315,21 +10867,7 @@
     "version": "r20",
     "category": "Features",
     "dsof": "",
-    "description": "Localisation\n\nLearn or use disguise Designer in your local language. The Designer software, training materials and user guide is now available in 6 new languages including Spanish, Simplified Chinese, French, Japanese, German and Korean",
-    "url": "https://help.disguise.one/designer/release-notes/r20#r20"
-  },
-  {
-    "version": "r20",
-    "category": "Features",
-    "dsof": "",
-    "description": "r20 downloads will default to these system languages",
-    "url": "https://help.disguise.one/designer/release-notes/r20#r20"
-  },
-  {
-    "version": "r20",
-    "category": "Features",
-    "dsof": "",
-    "description": "Change language easily with the language switcher and easily control the language you want to use",
+    "description": "Localisation\n\nLearn or use disguise Designer in your local language. The Designer software, training materials and user guide is now available in 6 new languages including Spanish, Simplified Chinese, French, Japanese, German and Korean.\nr20 downloads will default to these system languages\nChange language easily with the language switcher and easily control the language you want to use",
     "url": "https://help.disguise.one/designer/release-notes/r20#r20"
   },
   {
