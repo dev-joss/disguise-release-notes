@@ -24,7 +24,7 @@
     "version": "r32.3.1",
     "category": "Fixes",
     "dsof": "DSOF-32055, DSOF-32033, DSOF-31930",
-    "description": "&  &  - When saving a section of a Track as a new Track Designer will no longer behave unexpectedly",
+    "description": "When saving a section of a Track as a new Track Designer will no longer behave unexpectedly",
     "url": "https://help.disguise.one/designer/release-notes/r32#r3231---hotfixes"
   },
   {
@@ -654,7 +654,7 @@
     "version": "r32.2",
     "category": "Other Improvements",
     "dsof": "DSOF-26195, DSOF-31679",
-    "description": "&  - Blackmagic Video Hub Matrixes can now we set to either 3G and 12G and will automatically update their delays appropriately, thereby removing the need to set blackMagicMatrixSendDelay manually. As a result this option switch has been deprecated",
+    "description": "Blackmagic Video Hub Matrixes can now we set to either 3G and 12G and will automatically update their delays appropriately, thereby removing the need to set blackMagicMatrixSendDelay manually. As a result this option switch has been deprecated",
     "url": "https://help.disguise.one/designer/release-notes/r32#r322---depth-workflows-sockpuppet-gdtf-export-and-hdmi-capture"
   },
   {
@@ -780,7 +780,7 @@
     "version": "r32.2",
     "category": "Fixes",
     "dsof": "DSOF-31509, DSOF-31546",
-    "description": "&  - Multi-Dragging Notes/Tags/Cues/Sections no longer “Slide off” features that they should not",
+    "description": "Multi-Dragging Notes/Tags/Cues/Sections no longer “Slide off” features that they should not",
     "url": "https://help.disguise.one/designer/release-notes/r32#r322---depth-workflows-sockpuppet-gdtf-export-and-hdmi-capture"
   },
   {
@@ -2376,7 +2376,7 @@
     "version": "r31.0",
     "category": "Improvements",
     "dsof": "DSOF-30461, DSOF-30460, DSOF-30459, DSOF-30458",
-    "description": "&  - A range of improvements have been made, including the ability to subscribe to live Graph data",
+    "description": "A range of improvements have been made, including the ability to subscribe to live Graph data",
     "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
   },
   {
@@ -2572,7 +2572,7 @@
     "version": "r30.8.5",
     "category": "Fixes",
     "dsof": "DSOF-29510, DSOF-29512",
-    "description": "&  - Certain cases where projects can become corrupted will no longer occur",
+    "description": "Certain cases where projects can become corrupted will no longer occur",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3085---hotfixes"
   },
   {
@@ -2740,7 +2740,7 @@
     "version": "r30.8.2",
     "category": "Fixes",
     "dsof": "DSOF-29867, DSOF-30020",
-    "description": "&  - The API endpoint /system/projects now correctly returns the list of projects on a system, including .d3starter projects if they are present",
+    "description": "The API endpoint /system/projects now correctly returns the list of projects on a system, including .d3starter projects if they are present",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3082---hotfixes"
   },
   {
@@ -2887,7 +2887,7 @@
     "version": "r30.8",
     "category": "Improvements",
     "dsof": "DSOF-29981, DSOF-30005",
-    "description": "&   - Plugin authors can now provide a json file to share metadata about their plugins. This can also be configured to be fully DNS-SD compliant. You can read more about how to setup this meta-data here",
+    "description": "Plugin authors can now provide a json file to share metadata about their plugins. This can also be configured to be fully DNS-SD compliant. You can read more about how to setup this meta-data here",
     "url": "https://help.disguise.one/designer/release-notes/r30#r308---coloured-layers-sockpuppet-sync-and-st-2110-capture-prerelease"
   },
   {
@@ -2922,7 +2922,7 @@
     "version": "r30.8",
     "category": "Fixes",
     "dsof": "DSOF-29816, DSOF-29815",
-    "description": "&  - The Web layer now allows you to select “None” as a bookmark or command keyframe (and will no longer highlight in red if None is selected)",
+    "description": "The Web layer now allows you to select “None” as a bookmark or command keyframe (and will no longer highlight in red if None is selected)",
     "url": "https://help.disguise.one/designer/release-notes/r30#r308---coloured-layers-sockpuppet-sync-and-st-2110-capture-prerelease"
   },
   {
@@ -3055,7 +3055,7 @@
     "version": "r30.7.3",
     "category": "Fixes",
     "dsof": "DSOF-30082, DSOF-29922",
-    "description": "&  - Installer logs are now more detailed to help with finding and fixing errors",
+    "description": "Installer logs are now more detailed to help with finding and fixing errors",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3073---hotfixes"
   },
   {
@@ -3083,14 +3083,14 @@
     "version": "r30.7.3",
     "category": "Fixes",
     "dsof": "DSOF-30127, DSOF-30128",
-    "description": "&  - Stopping a RenderStream workload in a high latency environment will no longer display spurious notifications and console logging",
+    "description": "Stopping a RenderStream workload in a high latency environment will no longer display spurious notifications and console logging",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3073---hotfixes"
   },
   {
     "version": "r30.7.2",
     "category": "Fixes",
     "dsof": "DSOF-30084, DSOF-30096",
-    "description": "&  - Running Designer on a Windows 10 machine in a network where some Designer machines cannot see each other over d3net but can see each other over another network will no longer result in excessive console spam which can fill up the C drive",
+    "description": "Running Designer on a Windows 10 machine in a network where some Designer machines cannot see each other over d3net but can see each other over another network will no longer result in excessive console spam which can fill up the C drive",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3072---hotfixes"
   },
   {
@@ -3146,7 +3146,7 @@
     "version": "r30.7.1",
     "category": "Improvements",
     "dsof": "DSOF-29767, DSOF-29874",
-    "description": "&  - Various error messages about opening Starter and Full versions of the software are now clearer",
+    "description": "Various error messages about opening Starter and Full versions of the software are now clearer",
     "url": "https://help.disguise.one/designer/release-notes/r30#r3071---hotfixes"
   },
   {
@@ -3265,7 +3265,7 @@
     "version": "r30.7",
     "category": "Improvements",
     "dsof": "DSOF-29330, DSOF-29331, DSOF-29643",
-    "description": "&  &  - Designer now sends us additional telemetry data about plugin usage. Remember, if you want to opt-out of telemetry you can do so in the installer or at any time in d3Manager by going to Help > About Manager. We still do not include whole project files or content",
+    "description": "Designer now sends us additional telemetry data about plugin usage. Remember, if you want to opt-out of telemetry you can do so in the installer or at any time in d3Manager by going to Help > About Manager. We still do not include whole project files or content",
     "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
   },
   {
@@ -3370,7 +3370,7 @@
     "version": "r30.6",
     "category": "Improvements",
     "dsof": "DSOF-29313, DSOF-29402",
-    "description": "&  - We’ve added additional details to our telemetry about how users use Designer. Remember, if you want to opt-out of telemetry you can do so in the installer or at any time in d3Manager by going to Help > About Manager. We still do not include whole project files or content",
+    "description": "We’ve added additional details to our telemetry about how users use Designer. Remember, if you want to opt-out of telemetry you can do so in the installer or at any time in d3Manager by going to Help > About Manager. We still do not include whole project files or content",
     "url": "https://help.disguise.one/designer/release-notes/r30#r306---starter"
   },
   {
@@ -3454,21 +3454,21 @@
     "version": "r30.5",
     "category": "Improvements",
     "dsof": "DSOF-22124, DSOF-28753",
-    "description": "&  - Designer now supports virtual spherical cameras",
+    "description": "Designer now supports virtual spherical cameras",
     "url": "https://help.disguise.one/designer/release-notes/r30#r305---xr-for-vr"
   },
   {
     "version": "r30.5",
     "category": "Improvements",
     "dsof": "DSOF-22125, DSOF-28588",
-    "description": "&  - Spherical cameras now support backplate and frontplate mappings",
+    "description": "Spherical cameras now support backplate and frontplate mappings",
     "url": "https://help.disguise.one/designer/release-notes/r30#r305---xr-for-vr"
   },
   {
     "version": "r30.5",
     "category": "Improvements",
     "dsof": "DSOF-28492, DSOF-28628",
-    "description": "&  - Spherical cameras can now output 180 degree lat/long format (previously only 360° lat/long was supported)",
+    "description": "Spherical cameras can now output 180 degree lat/long format (previously only 360° lat/long was supported)",
     "url": "https://help.disguise.one/designer/release-notes/r30#r305---xr-for-vr"
   },
   {
@@ -3524,7 +3524,7 @@
     "version": "r30.5",
     "category": "Improvements",
     "dsof": "DSOF-29305, DSOF-29372, DSOF-29423",
-    "description": "&  &  - Improve performance of d3service when querying licenses (this should improve d3manager startup time in most cases)",
+    "description": "Improve performance of d3service when querying licenses (this should improve d3manager startup time in most cases)",
     "url": "https://help.disguise.one/designer/release-notes/r30#r305---xr-for-vr"
   },
   {
@@ -3545,7 +3545,7 @@
     "version": "r30.5",
     "category": "Fixes",
     "dsof": "DSOF-4950, DSOF-29613",
-    "description": "&  - Licenses will no longer be incorrectly reported as Perpetual in d3Manager in certain rare cases",
+    "description": "Licenses will no longer be incorrectly reported as Perpetual in d3Manager in certain rare cases",
     "url": "https://help.disguise.one/designer/release-notes/r30#r305---xr-for-vr"
   },
   {
@@ -3573,7 +3573,7 @@
     "version": "r30.4",
     "category": "Improvements",
     "dsof": "DSOF-13670, DSOF-29213",
-    "description": "&  - Changing any Indirection will now wait to swap content for a few frames to allow for that content to be loaded. This means you should never see a flash to black when swapping a live indirection. We have also removed the Indirection delay (frames) field from indirection controllers as the correct delay is now computed automatically",
+    "description": "Changing any Indirection will now wait to swap content for a few frames to allow for that content to be loaded. This means you should never see a flash to black when swapping a live indirection. We have also removed the Indirection delay (frames) field from indirection controllers as the correct delay is now computed automatically",
     "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
   },
   {
@@ -3587,14 +3587,14 @@
     "version": "r30.4",
     "category": "Improvements",
     "dsof": "DSOF-26455, DSOF-25328, DSOF-28943, DSOF-28387",
-    "description": "&  &  &  - Content played on the timeline will now always load before the playhead jumps when jumping on the timeline. This will mean you should not see intermittent flashes to black or performance spikes when jumping on the timeline via the mouse, LTC or other transport control mechanism",
+    "description": "Content played on the timeline will now always load before the playhead jumps when jumping on the timeline. This will mean you should not see intermittent flashes to black or performance spikes when jumping on the timeline via the mouse, LTC or other transport control mechanism",
     "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
   },
   {
     "version": "r30.4",
     "category": "Improvements",
     "dsof": "DSOF-28949, DSOF-28523, DSOF-28524",
-    "description": "&  &  - Video playback at speeds other than 1 or for videos with a higher content FPS than the timeline, now only decode the frames necessary for playback, improving performance in these states",
+    "description": "Video playback at speeds other than 1 or for videos with a higher content FPS than the timeline, now only decode the frames necessary for playback, improving performance in these states",
     "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
   },
   {
@@ -3818,7 +3818,7 @@
     "version": "r30.3",
     "category": "Improvements",
     "dsof": "DSOF-6438, DSOF-25483",
-    "description": "&  - We have added a ‘Border expansion’ field In the Mapping editor for all geometric mapping types. This can be used when there is an empty space within the screen UV map to stop black pixels blurring into visible screen space. The units are pixels in pixels. The following mappings have this field:\n\nSpherical\nPerspective\nCylindrical\nCamera Plate\nParallel\nMesh",
+    "description": "We have added a ‘Border expansion’ field In the Mapping editor for all geometric mapping types. This can be used when there is an empty space within the screen UV map to stop black pixels blurring into visible screen space. The units are pixels in pixels. The following mappings have this field:\n\nSpherical\nPerspective\nCylindrical\nCamera Plate\nParallel\nMesh",
     "url": "https://help.disguise.one/designer/release-notes/r30#r303---qol-and-hotfixes"
   },
   {
@@ -4665,7 +4665,7 @@
     "version": "r29.3",
     "category": "Improvements",
     "dsof": "DSOF-29305, DSOF-29372, DSOF-29423",
-    "description": "&  &  - Improve performance of d3service when querying licenses (this should improve d3Manager startup time in most cases)",
+    "description": "Improve performance of d3service when querying licenses (this should improve d3Manager startup time in most cases)",
     "url": "https://help.disguise.one/designer/release-notes/r29#r293---designer-pro-license-support"
   },
   {
@@ -4714,7 +4714,7 @@
     "version": "r29.3",
     "category": "Fixes",
     "dsof": "DSOF-4950, DSOF-29613",
-    "description": "&  - Licenses will no longer be incorrectly reported as Perpetual in d3Manager in certain rare cases",
+    "description": "Licenses will no longer be incorrectly reported as Perpetual in d3Manager in certain rare cases",
     "url": "https://help.disguise.one/designer/release-notes/r29#r293---designer-pro-license-support"
   },
   {
@@ -4875,7 +4875,7 @@
     "version": "r29.2",
     "category": "Improvements",
     "dsof": "DSOF-24047, DSOF-27975",
-    "description": "&  - It is now possible to resize the track widget horizontally instead of only vertically and there is a useful button for restoring the default size",
+    "description": "It is now possible to resize the track widget horizontally instead of only vertically and there is a useful button for restoring the default size",
     "url": "https://help.disguise.one/designer/release-notes/r29#r292---osc-output-expression-qol"
   },
   {
@@ -5393,7 +5393,7 @@
     "version": "r29",
     "category": "Fixes",
     "dsof": "DSOF-22779",
-    "description": "/22970 - Changing the split mode of a Quad-split capable VFC card from Mirror to Quad or Quad 4K will no longer randomly create or delete virtual heads erroneously",
+    "description": "22970 - Changing the split mode of a Quad-split capable VFC card from Mirror to Quad or Quad 4K will no longer randomly create or delete virtual heads erroneously",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
@@ -5414,7 +5414,7 @@
     "version": "r29",
     "category": "Fixes",
     "dsof": "DSOF-24035",
-    "description": "/28127/26713 - We have made various improvements to tooltip behaviour in this release:\n\nTooltips will now be slower to display and display more consistently across the UI.\nWe have improved a range of tooltips to make them more explanatory and helpful.\nTooltips for broken expressions now better explain what’s wrong and how to fix it",
+    "description": "28127/26713 - We have made various improvements to tooltip behaviour in this release:\n\nTooltips will now be slower to display and display more consistently across the UI.\nWe have improved a range of tooltips to make them more explanatory and helpful.\nTooltips for broken expressions now better explain what’s wrong and how to fix it",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
@@ -5463,7 +5463,7 @@
     "version": "r28.1",
     "category": "Improvements",
     "dsof": "DSOF-11562, DSOF-24738",
-    "description": "&  mp4 video format files will now correctly be reported as unsupported when loaded, instead of reporting a cryptic error",
+    "description": "mp4 video format files will now correctly be reported as unsupported when loaded, instead of reporting a cryptic error",
     "url": "https://help.disguise.one/designer/release-notes/r28#r281---qol-and-fixes"
   },
   {
@@ -5512,7 +5512,7 @@
     "version": "r28.1",
     "category": "Fixes",
     "dsof": "DSOF-24353, DSOF-24890",
-    "description": "&  - Fixed some performance issues in the web module",
+    "description": "Fixed some performance issues in the web module",
     "url": "https://help.disguise.one/designer/release-notes/r28#r281---qol-and-fixes"
   },
   {
@@ -5533,7 +5533,7 @@
     "version": "r28.1",
     "category": "Fixes",
     "dsof": "DSOF-27748, DSOF-27814",
-    "description": "&  - Layer editors for groups now properly close all related keyframe widgets when closing",
+    "description": "Layer editors for groups now properly close all related keyframe widgets when closing",
     "url": "https://help.disguise.one/designer/release-notes/r28#r281---qol-and-fixes"
   },
   {
@@ -5806,35 +5806,35 @@
     "version": "r27.10",
     "category": "Improvements",
     "dsof": "",
-    "description": "/failover/applydefaultrouting",
+    "description": "failover/applydefaultrouting",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
   },
   {
     "version": "r27.10",
     "category": "Improvements",
     "dsof": "",
-    "description": "/failover/restoremachine",
+    "description": "failover/restoremachine",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
   },
   {
     "version": "r27.10",
     "category": "Improvements",
     "dsof": "",
-    "description": "/failover/failovermachine",
+    "description": "failover/failovermachine",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
   },
   {
     "version": "r27.10",
     "category": "Improvements",
     "dsof": "",
-    "description": "/failover/settings",
+    "description": "failover/settings",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
   },
   {
     "version": "r27.10",
     "category": "Improvements",
     "dsof": "",
-    "description": "/failover/understudytargets",
+    "description": "failover/understudytargets",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
   },
   {
@@ -6128,7 +6128,7 @@
     "version": "r27.7.2",
     "category": "Fixes",
     "dsof": "DSOF-27498, DSOF-27500",
-    "description": "/ - Fixed an issue where slideshows did not load",
+    "description": "Fixed an issue where slideshows did not load",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2772"
   },
   {

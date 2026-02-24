@@ -132,11 +132,11 @@ function parseReleasePage(html, pagePath) {
       const dsofMatches = text.match(/DSOF-\d+/g);
       const dsof = dsofMatches ? dsofMatches.join(", ") : "";
 
-      // Description: remove DSOF references and clean up
+      // Description: remove DSOF references and separators between them, then clean up
       let description = text
         .replace(/DSOF-\d+/g, "")
-        .replace(/^\s*[-–—:,.\s]+/, "")
-        .replace(/\s*[-–—:,.\s]+$/, "")
+        .replace(/^\s*[-–—:,.&/\s]+/, "")
+        .replace(/\s*[-–—:,.&/\s]+$/, "")
         .trim();
 
       // If description is empty, use full text
