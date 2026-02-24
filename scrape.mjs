@@ -1,13 +1,130 @@
 #!/usr/bin/env node
 
-import { writeFileSync, mkdirSync } from "node:fs";
+import { writeFileSync, readFileSync, existsSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const INDEX_URL =
   "https://help.disguise.one/designer/release-notes/release-notes";
 const BASE_URL = "https://help.disguise.one";
+
+const AI_API_URL = "https://models.github.ai/inference/chat/completions";
+const AI_MODEL = "openai/gpt-4o-mini";
+const AI_TOKEN = process.env.AI_TOKEN;
+const NO_AI = process.argv.includes("--no-ai");
+const USE_AI = !NO_AI && !!AI_TOKEN;
+
+if (!AI_TOKEN && !NO_AI) {
+  console.warn("Warning: AI_TOKEN not set. Falling back to regex parser.");
+  console.warn("Set AI_TOKEN to a GitHub PAT or use --no-ai to silence this warning.\n");
+}
+
+// --- AI cache ---
+const CACHE_PATH = join(dirname(fileURLToPath(import.meta.url)), "data", ".ai-cache.json");
+let aiCache = {};
+if (existsSync(CACHE_PATH)) {
+  try { aiCache = JSON.parse(readFileSync(CACHE_PATH, "utf-8")); } catch { aiCache = {}; }
+}
+function saveCacheSync() {
+  mkdirSync(dirname(CACHE_PATH), { recursive: true });
+  writeFileSync(CACHE_PATH, JSON.stringify(aiCache, null, 2));
+}
+function cacheKey(html) {
+  return createHash("sha256").update(html).digest("hex");
+}
+
+// Rate limiter: max 15 RPM → 1 request per 4s
+let lastAiCall = 0;
+async function rateLimitDelay() {
+  const elapsed = Date.now() - lastAiCall;
+  const wait = Math.max(0, 4000 - elapsed);
+  if (wait > 0) await new Promise((r) => setTimeout(r, wait));
+  lastAiCall = Date.now();
+}
+
+const AI_JSON_SCHEMA = {
+  type: "object",
+  properties: {
+    entries: {
+      type: "array",
+      items: {
+        type: "object",
+        properties: {
+          dsof: { type: "string", description: "Comma-separated DSOF-XXXXX numbers, or empty string if none" },
+          description: { type: "string", description: "Concise description of the change" },
+        },
+        required: ["dsof", "description"],
+        additionalProperties: false,
+      },
+    },
+  },
+  required: ["entries"],
+  additionalProperties: false,
+};
+
+// Strip non-semantic HTML tags, attributes, and prose paragraphs to reduce token usage
+function simplifyHtml(html) {
+  return html
+    .replace(/<p\b[^>]*>[\s\S]*?<\/p>/gi, "")  // remove paragraphs (intros, workarounds, doc links)
+    .replace(/<\/?(a|span|strong|em|b|i|code|div|br|img)\b[^>]*>/gi, "")
+    .replace(/\s+(class|style|id|data-[\w-]+)="[^"]*"/gi, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+async function extractWithAI(sectionHtml, version, category) {
+  const simplified = simplifyHtml(sectionHtml);
+  const key = cacheKey(simplified);
+  if (aiCache[key]) {
+    console.log(`    [cache hit] ${version} / ${category}`);
+    return aiCache[key];
+  }
+
+  await rateLimitDelay();
+  console.log(`    [AI] ${version} / ${category}`);
+
+  const res = await fetch(AI_API_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${AI_TOKEN}`,
+    },
+    body: JSON.stringify({
+      model: AI_MODEL,
+      messages: [
+        {
+          role: "user",
+          content: `Extract release note entries from this HTML. Each top-level list item is one entry. Nested sub-items belong to their parent. Return DSOF-XXXXX numbers exactly as written (comma-separated), or empty string if none.\n\n${simplified}`,
+        },
+      ],
+      response_format: {
+        type: "json_schema",
+        json_schema: { name: "release_entries", strict: true, schema: AI_JSON_SCHEMA },
+      },
+      temperature: 0,
+    }),
+  });
+
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(`AI API error ${res.status}: ${body}`);
+  }
+
+  const data = await res.json();
+  const content = data.choices?.[0]?.message?.content;
+  if (!content) throw new Error("AI returned empty content");
+
+  const parsed = JSON.parse(content);
+  const entries = parsed.entries || [];
+
+  // Cache and persist
+  aiCache[key] = entries;
+  saveCacheSync();
+
+  return entries;
+}
 
 // Fallback list of release page paths (r14–r32)
 const FALLBACK_PATHS = Array.from({ length: 19 }, (_, i) => {
@@ -77,7 +194,71 @@ function extractTopLevelLis(html) {
   return items;
 }
 
-function parseReleasePage(html, pagePath) {
+function extractWithRegex(sectionContent, currentVersion, currentCategory, sectionUrl, entries) {
+  const topBlockRe = /<(ul|ol|p)(?:\s[^>]*)?\s*>/gi;
+  let topMatch;
+  while ((topMatch = topBlockRe.exec(sectionContent))) {
+    const blockTag = topMatch[1].toLowerCase();
+    const blockStart = topMatch.index;
+
+    if (blockTag === "p") {
+      const closeIdx = sectionContent.indexOf("</p>", topMatch.index + topMatch[0].length);
+      if (closeIdx === -1) continue;
+      const inner = sectionContent.slice(topMatch.index + topMatch[0].length, closeIdx);
+      topBlockRe.lastIndex = closeIdx + 4;
+
+      const pText = decodeEntities(inner.replace(/<[^>]+>/g, "")).trim();
+      if (pText && entries.length > 0) {
+        const lastEntry = entries[entries.length - 1];
+        if (lastEntry.version === currentVersion && lastEntry.category === currentCategory) {
+          lastEntry.description += "\n" + pText;
+        }
+      }
+      continue;
+    }
+
+    // <ul> or <ol> — find matching close tag respecting nesting
+    let depth = 1;
+    const closeRe = new RegExp(`<(/?)${blockTag}(?:\\s[^>]*)?>`, "gi");
+    closeRe.lastIndex = topMatch.index + topMatch[0].length;
+    let closeMatch;
+    while ((closeMatch = closeRe.exec(sectionContent))) {
+      if (closeMatch[1] === "/") depth--;
+      else depth++;
+      if (depth === 0) break;
+    }
+    if (!closeMatch || depth !== 0) continue;
+    const blockHtml = sectionContent.slice(blockStart, closeMatch.index + closeMatch[0].length);
+    topBlockRe.lastIndex = closeMatch.index + closeMatch[0].length;
+
+    const topLevelLis = extractTopLevelLis(blockHtml);
+    for (const raw of topLevelLis) {
+      const text = decodeEntities(raw.replace(/<[^>]+>/g, "")).trim();
+      if (!text) continue;
+
+      const dsofMatches = text.match(/DSOF-\d+/g);
+      const dsof = dsofMatches ? dsofMatches.join(", ") : "";
+
+      let description = text
+        .replace(/DSOF-\d+/g, "")
+        .replace(/^\s*[-–—:,.&/\s]+/, "")
+        .replace(/\s*[-–—:,.&/\s]+$/, "")
+        .trim();
+
+      if (!description) description = text;
+
+      entries.push({
+        version: currentVersion,
+        category: currentCategory,
+        dsof,
+        description,
+        url: sectionUrl,
+      });
+    }
+  }
+}
+
+async function parseReleasePage(html, pagePath) {
   const entries = [];
 
   // Extract <main> content if present, otherwise use full HTML
@@ -122,34 +303,60 @@ function parseReleasePage(html, pagePath) {
       currentCategory = decodeEntities(h3Match[1].replace(/<[^>]+>/g, "")).trim();
     }
 
-    // Extract top-level list items (skip nested <li> inside sub-lists)
-    const topLevelLis = extractTopLevelLis(part);
-    for (const raw of topLevelLis) {
-      const text = decodeEntities(raw.replace(/<[^>]+>/g, "")).trim();
-      if (!text) continue;
+    const sectionContent = part.replace(/<h[23][^>]*>[\s\S]*?<\/h[23]>/i, "");
+    const sectionUrl = `${BASE_URL}${pagePath}${currentAnchor ? "#" + currentAnchor : ""}`;
 
-      // Extract DSOF ticket numbers
-      const dsofMatches = text.match(/DSOF-\d+/g);
-      const dsof = dsofMatches ? dsofMatches.join(", ") : "";
+    // Skip sections with no list content (e.g. version header metadata)
+    const hasListContent = /<(ul|ol|li)[\s>]/i.test(sectionContent);
 
-      // Description: remove DSOF references and separators between them, then clean up
-      let description = text
-        .replace(/DSOF-\d+/g, "")
-        .replace(/^\s*[-–—:,.&/\s]+/, "")
-        .replace(/\s*[-–—:,.&/\s]+$/, "")
-        .trim();
-
-      // If description is empty, use full text
-      if (!description) description = text;
-
-      entries.push({
-        version: currentVersion,
-        category: currentCategory,
-        dsof,
-        description,
-        url: `${BASE_URL}${pagePath}${currentAnchor ? "#" + currentAnchor : ""}`,
-      });
+    // --- AI extraction path ---
+    if (USE_AI && currentVersion && hasListContent) {
+      try {
+        const aiEntries = await extractWithAI(sectionContent, currentVersion, currentCategory);
+        for (const e of aiEntries) {
+          if (!e.description) continue;
+          entries.push({
+            version: currentVersion,
+            category: currentCategory,
+            dsof: e.dsof || "",
+            description: e.description,
+            url: sectionUrl,
+          });
+        }
+      } catch (err) {
+        console.warn(`    [AI fallback] ${currentVersion} / ${currentCategory}: ${err.message}`);
+        // Fall through to regex extraction below
+        extractWithRegex(sectionContent, currentVersion, currentCategory, sectionUrl, entries);
+      }
+      continue;
     }
+
+    // --- Regex extraction path (fallback) ---
+    extractWithRegex(sectionContent, currentVersion, currentCategory, sectionUrl, entries);
+  }
+
+  if (!USE_AI) {
+    // Merge orphan entries (no DSOF) into their nearest preceding DSOF sibling
+    const merged = [];
+    for (const entry of entries) {
+      if (entry.dsof || merged.length === 0) {
+        merged.push(entry);
+      } else {
+        let parent = null;
+        for (let i = merged.length - 1; i >= 0; i--) {
+          if (merged[i].dsof && merged[i].version === entry.version && merged[i].category === entry.category) {
+            parent = merged[i];
+            break;
+          }
+        }
+        if (parent) {
+          parent.description += "\n" + entry.description;
+        } else {
+          merged.push(entry);
+        }
+      }
+    }
+    return merged;
   }
 
   return entries;
@@ -171,22 +378,39 @@ async function main() {
 
   const allEntries = [];
 
-  const results = await Promise.allSettled(
-    paths.map(async (path) => {
+  if (USE_AI) {
+    // Sequential processing — AI calls are rate-limited
+    for (const path of paths) {
       const url = `${BASE_URL}${path}`;
       console.log(`  Fetching ${url}...`);
-      const html = await fetchText(url);
-      return { path, entries: parseReleasePage(html, path) };
-    })
-  );
+      try {
+        const html = await fetchText(url);
+        const entries = await parseReleasePage(html, path);
+        console.log(`  ${path}: ${entries.length} entries`);
+        allEntries.push(...entries);
+      } catch (err) {
+        console.warn(`  Failed: ${err.message}`);
+      }
+    }
+  } else {
+    // Parallel fetching — regex parsing is instant
+    const results = await Promise.allSettled(
+      paths.map(async (path) => {
+        const url = `${BASE_URL}${path}`;
+        console.log(`  Fetching ${url}...`);
+        const html = await fetchText(url);
+        return { path, entries: await parseReleasePage(html, path) };
+      })
+    );
 
-  for (const result of results) {
-    if (result.status === "fulfilled") {
-      const { path, entries } = result.value;
-      console.log(`  ${path}: ${entries.length} entries`);
-      allEntries.push(...entries);
-    } else {
-      console.warn(`  Failed: ${result.reason.message}`);
+    for (const result of results) {
+      if (result.status === "fulfilled") {
+        const { path, entries } = result.value;
+        console.log(`  ${path}: ${entries.length} entries`);
+        allEntries.push(...entries);
+      } else {
+        console.warn(`  Failed: ${result.reason.message}`);
+      }
     }
   }
 

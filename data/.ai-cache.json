@@ -1,0 +1,346 @@
+{
+  "25165f2dadf070d0648e66d4c76b17f15a8f241de94ada3b9d9163bb8737d9c9": [
+    {
+      "description": "Sockpuppet personalities can now be renamed and duplicated, as they could before r31.0.",
+      "dsof": "DSOF-32128"
+    },
+    {
+      "description": "Designer will no longer occasionally report an error when generating the user-readable name of a stream or workload while using RenderStream.",
+      "dsof": "DSOF-32050"
+    },
+    {
+      "description": "Starter will now launch successfully on machines with Windows 11 update KB5074105.",
+      "dsof": "DSOF-32154"
+    }
+  ],
+  "f715c25f1e0eaa8cf6b258149e80ace481dd28c5b707c0a2184a2a3e3d29a0e7": [
+    {
+      "description": "When saving a section of a Track as a new Track Designer will no longer behave unexpectedly.",
+      "dsof": "DSOF-32055,DSOF-32033,DSOF-31930"
+    },
+    {
+      "description": "Arrowed content in to Blur Layers using the Mask Blend Mode will now animate correctly, as it did before r31.0.",
+      "dsof": "DSOF-32008"
+    },
+    {
+      "description": "Fields in Layers that are expression controlled and linked to a field in a Layer controlled by Sockpuppet now update correctly as they did before r31.0.",
+      "dsof": "DSOF-31944"
+    },
+    {
+      "description": "Rolling back an object in Designer now correctly allows the user to select versions of that object from History files, as it did before r30.6.",
+      "dsof": "DSOF-32058"
+    },
+    {
+      "description": "Fields in Notch, RenderStream and RenderStream Local layers that have been removed from the asset after keyframes were added to them no longer display Keyframe indicators on the Track.",
+      "dsof": "DSOF-31913"
+    },
+    {
+      "description": "Designer will now run more smoothly on Actors while ingesting new media.",
+      "dsof": "DSOF-31346"
+    },
+    {
+      "description": "CTRL + UP ARROW and CTRL + DOWN ARROW now jump to the top or bottom of the Cue List.",
+      "dsof": "DSOF-31918"
+    }
+  ],
+  "f2bfd6e728510ada9259c93395918078327d43bd503ce5b7fc8bc5c7858e126a": [
+    {
+      "description": "Improvements to various projects",
+      "dsof": ""
+    }
+  ],
+  "dbdd092ee9e1e679526da64edd5f32601e5cd7e575387056c4b440766d7b75b7": [
+    {
+      "description": "Diagnostics produced on machines where the username contains certain unicode characters now correctly include all debugging information.",
+      "dsof": "DSOF-31815"
+    },
+    {
+      "description": "Navigating the track is now more performant in projects with many many layers.",
+      "dsof": "DSOF-31542"
+    },
+    {
+      "description": "d3service now utilises a much lower amount of CPU resource.",
+      "dsof": "DSOF-31372"
+    },
+    {
+      "description": "Enabling OCIO mode is now more performant.",
+      "dsof": "DSOF-31469"
+    },
+    {
+      "description": "IP-VFC cards in understudies no longer inherit the Multi-cast IP addresses of the machines that they are taking over from during failover.",
+      "dsof": "DSOF-26999"
+    },
+    {
+      "description": "Designer plugins now correctly react to monitor DPI scale.",
+      "dsof": "DSOF-31869"
+    },
+    {
+      "description": "SDI VFCs in quad mode no longer default incorrectly in size to 3840x2160.",
+      "dsof": "DSOF-22046"
+    },
+    {
+      "description": "The Live Update API is now more performant when given a target update frequency.",
+      "dsof": "DSOF-31646"
+    },
+    {
+      "description": "Depth Map Mesh assets now always fit within the layer widget thumbnail area on lower DPI displays.",
+      "dsof": "DSOF-31541"
+    },
+    {
+      "description": "The Live Update API can now set string type values.",
+      "dsof": "DSOF-30629"
+    },
+    {
+      "description": "Closing and opening a project where virtual feed heads have been configured now correctly persists their resolution and does not wrongly default to 4096x2160.",
+      "dsof": "DSOF-31552"
+    },
+    {
+      "description": "Colour Properties on layers in OCIO mode are now correctly enabled every time OCIO is enabled.",
+      "dsof": "DSOF-31046"
+    },
+    {
+      "description": "Omnical Point Cloud visualisation modes: Inlier score and Filtered only now correctly show inliers.",
+      "dsof": "DSOF-31942"
+    },
+    {
+      "description": "Designer is now slightly more performant when processing Transport Commands, especially Timecode Transport Commands.",
+      "dsof": "DSOF-31813"
+    },
+    {
+      "description": "The ITU-R BT.1886 Gamma curve is now correctly applied as an input transform for video clips when in Gamma colour management mode.",
+      "dsof": "DSOF-32043"
+    },
+    {
+      "description": "The Live Update API now correctly updates deeply nested fields in multi-machine sessions.",
+      "dsof": "DSOF-31892"
+    }
+  ],
+  "65491976046c5802ee98169b17a011e94e356a2019f45a4f82ea6a42741012c6": [
+    {
+      "description": "The non-functional “Get your assets” button has been removed from d3 Manager.",
+      "dsof": "DSOF-30843"
+    }
+  ],
+  "4ca14d6ada7da95b7799725539f138ccf25c91cde6cb0d923167ab1d6a552272": [
+    {
+      "description": "Designer will now more reliably report the license state of Mellanox NICs in Disguise Servers.",
+      "dsof": "DSOF-31894"
+    },
+    {
+      "description": "Layer names now correctly show up on exported layers again.",
+      "dsof": "DSOF-32101"
+    },
+    {
+      "description": "Updating the Nvidia Driver on your laptop above 581 will now no longer cause all RenderStream compressed receiving and sending to fail. We still do not recommend that users update drivers outside of the OS Images Disguise provides, but this should make working on laptops easier.",
+      "dsof": "DSOF-31980"
+    }
+  ],
+  "19b9c4b484fd99cc8b4776501f56367e5011b45260bdeef3c891821b9bb72d16": [
+    {
+      "description": "Designer will no longer occasionally CTD when scrubbing through many audio layers when few audio output channels are configured.",
+      "dsof": "DSOF-31761"
+    },
+    {
+      "description": "VX 4 and VX 4N machines will no longer erroneously report that their Deltacast Drivers are out of date when they are not.",
+      "dsof": "DSOF-31926"
+    },
+    {
+      "description": "OSC expressions no longer require array indexing for non-array OSC values.",
+      "dsof": "DSOF-31637"
+    },
+    {
+      "description": "Projects with a Track Jump module that references a tag will no longer briefly hang before closing.",
+      "dsof": "DSOF-31902"
+    }
+  ],
+  "94f2d810c822eb90f41143da4c8674ac5d727b4efceed88593f795986758c604": [
+    {
+      "description": "Ask AId3n plugin now works properly again.",
+      "dsof": "DSOF-31955"
+    },
+    {
+      "description": "Renderstream Remote Text Parameters can now be patched to Sockpuppet again.",
+      "dsof": "DSOF-31934"
+    },
+    {
+      "description": "Renderstream will no longer intermittently fail to launch the first time an Render node is booted.",
+      "dsof": "DSOF-30181"
+    },
+    {
+      "description": "Keyframe snapping at certain zoom levels is now more consistent.",
+      "dsof": "DSOF-31923"
+    },
+    {
+      "description": "Machines with HDMI Capture cared (EX 3+ and EX 2C) no longer require the enableHDMICapture option switch to be set to enable HDMI capture.",
+      "dsof": "DSOF-31862"
+    },
+    {
+      "description": "Deleting a RenderStream Local layer while it is running will no longer result in an Access Violation.",
+      "dsof": "DSOF-31082"
+    }
+  ],
+  "5eec9d01b6e93794914f5bb308a1a6a54cc7d7827bfd347680523c177b6437b5": [
+    {
+      "description": "Designer now produces more detailed debugging information for a range of small Designer utility processes.",
+      "dsof": "DSOF-31885"
+    },
+    {
+      "description": "Sockpuppet layers with missing media in their banks now display useful tooltips about where the content is missing even if the layers extend beyond the extent of the GUI.",
+      "dsof": "DSOF-31784"
+    }
+  ],
+  "20fdbf83d17f3fe8f740d3a41156f7ee23ec0a7bb2efdb197e80c1185c2adf8b": [
+    {
+      "description": "Jumping in to a video layer that has a video keyframe before the start of the layer now correctly treats the keyframe as starting at the layer start.",
+      "dsof": "DSOF-31629"
+    },
+    {
+      "description": "Opening a project via d3Manager will no longer fail to open projects in rare conditions where user permissions are limited on laptops.",
+      "dsof": "DSOF-31888"
+    },
+    {
+      "description": "Designer now correctly composes multiple layers in Mask blend modes together like it did before r31.1.",
+      "dsof": "DSOF-31867"
+    },
+    {
+      "description": "Removing and re-adding a device to the devices list no longer incorrectly reports spurious errors.",
+      "dsof": "DSOF-31852"
+    },
+    {
+      "description": "Sending media remove requests via the remove media API will now always correctly remove the media even if Designer is operating under heavy load.",
+      "dsof": "DSOF-31847"
+    },
+    {
+      "description": "Remote transports that are engaged when they are removed from the remote transport list are now correctly disabled and no longer respond to transport commands.",
+      "dsof": "DSOF-31799"
+    },
+    {
+      "description": "You can no longer add new points by clicking on a vertex in “Line Up Points” mode when using QuickCal.",
+      "dsof": "DSOF-25730"
+    },
+    {
+      "description": "Writing feed movies now always starts with the playhead at the start of the selected area.",
+      "dsof": "DSOF-31873"
+    },
+    {
+      "description": "Removing the director from the d3NetManager of an actor will no longer cause the actor to hang indefinitely.",
+      "dsof": "DSOF-30193"
+    },
+    {
+      "description": "The Provision Media API endpoint now responds with the correct values for mediaPath and localPath.",
+      "dsof": "DSOF-31886"
+    },
+    {
+      "description": "Alembic meshes now load with everything calculated correctly before they are animated.",
+      "dsof": "DSOF-31807"
+    },
+    {
+      "description": "The orthographic camera render mode works again.",
+      "dsof": "DSOF-31532"
+    },
+    {
+      "description": "RenderStream local now correctly displays the graphs for texture parameters in the advanced debugging widget.",
+      "dsof": "DSOF-30677"
+    }
+  ],
+  "7277487e775940e7b7af4144b80daafd157f5d7d4b55eb451aabe7d461235c99": [
+    {
+      "description": "Designer will now log more information to the console about certain rendering errors for faster debugging.",
+      "dsof": "DSOF-31806"
+    }
+  ],
+  "9cc55e5bc7ede657caf779b7144b95394b89a476a11243a0835375c32f9b4a6a": [
+    {
+      "description": "Advanced Machine Settings now appear correctly no matter which tab you type them under, as it did before r32.2.",
+      "dsof": "DSOF-31866"
+    },
+    {
+      "description": "Media Remove API now supports removing files with upper cased names, as it did before r32.2.",
+      "dsof": "DSOF-31856"
+    },
+    {
+      "description": "Task status API now always report 100% progress on task completion.",
+      "dsof": "DSOF-31875"
+    },
+    {
+      "description": "Media Remove API now supports removing entire folders.",
+      "dsof": "DSOF-31857"
+    },
+    {
+      "description": "Proxy files created by the Designer proxy maker are automatically detected, as it did before r30.7.",
+      "dsof": "DSOF-31861"
+    },
+    {
+      "description": "QSDI VFC cards now always report the correct total resolution.",
+      "dsof": "DSOF-29462"
+    },
+    {
+      "description": "Clicking on the space widget no longer fills up the undo system with undo operations that do nothing.",
+      "dsof": "DSOF-31843"
+    }
+  ],
+  "5a4f583c4e8853e593bd8a2b3821a76bd084828dc89fad7a1c73e64498aadd32": [
+    {
+      "description": "Missing media Layer highlighting will now be more accurate.",
+      "dsof": "DSOF-31720"
+    },
+    {
+      "description": "Moving machines in and out of session and changing machine roles while ingesting media can no longer very occasionally lead Designer to CTD.",
+      "dsof": "DSOF-31551"
+    },
+    {
+      "description": "Designer now loads all FBX Skeletons with bones correctly regardless of the coordinate space of the bones in the FBX file.",
+      "dsof": "DSOF-31759"
+    },
+    {
+      "description": "The /service/media/remove API endpoint will now correctly work after Designer has been closed.",
+      "dsof": "DSOF-31841"
+    },
+    {
+      "description": "Using the /service/media/provision API endpoint with a mediaPath field for a file that does not exist on disk will now report “Failed” rather than “Succeeded” when subscribed to the Task Status Streaming API.",
+      "dsof": "DSOF-31823"
+    },
+    {
+      "description": "d3service will now set Nvidia Power management mode to Prefer Maximum Performance on GX 3+ machines to improve FPS reporting and playback.",
+      "dsof": "DSOF-31744"
+    },
+    {
+      "description": "Multi-editing in the Feed view now correctly shows output heads of EX range machines.",
+      "dsof": "DSOF-31731"
+    }
+  ],
+  "8215dec7bcef3cac04b24a80c097e42d5fb9e3d79142b0ffddfb03b99778d01f": [
+    {
+      "description": "HDMI Video Capture",
+      "dsof": ""
+    },
+    {
+      "description": "1x 4K DCI HDMI 2.0 capture (HDMI connector)",
+      "dsof": ""
+    },
+    {
+      "description": "2x 12G SDI inputs via Ports A and C (HD-BNC connector), or 4x 3G SDI inputs (HD-BNC connector)",
+      "dsof": ""
+    },
+    {
+      "description": "Use r32.2 and above",
+      "dsof": ""
+    },
+    {
+      "description": "Enable the option switch enableHDMICapture",
+      "dsof": ""
+    },
+    {
+      "description": "Use the appropriate 25Q3 OS image for the relevant server as outlined here.",
+      "dsof": ""
+    },
+    {
+      "description": "Depth Workflows",
+      "dsof": ""
+    },
+    {
+      "description": "Sockpuppet GDTF Export",
+      "dsof": ""
+    }
+  ]
+}
