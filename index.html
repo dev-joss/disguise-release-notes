@@ -233,7 +233,19 @@
     .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
     .then(data => {
       loadingEl.hidden = true;
-      allData = data;
+      // Flatten tree structure into rows for the table
+      allData = data.flatMap(v =>
+        v.changes.map(c => ({
+          version: v.version,
+          build: v.build || "",
+          starter_build: v.starter_build || "",
+          released: v.released || "",
+          url: v.url || "",
+          category: c.category || "",
+          dsof: c.dsof || "",
+          description: c.description,
+        }))
+      );
       populateFilters();
       updateSortArrows();
       applyFilters();
