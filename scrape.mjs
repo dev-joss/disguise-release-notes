@@ -37,6 +37,11 @@ const AI_API_URL = "https://models.github.ai/inference/chat/completions";
 const AI_MODEL = "openai/gpt-4o-mini";
 const AI_TOKEN = process.env.AI_TOKEN;
 const NO_AI = process.argv.includes("--no-ai");
+const FORCE = process.argv.includes("--force");
+const ONLY_VERSION = (() => {
+  const idx = process.argv.findIndex(a => a === "--version" || a === "--only");
+  return idx !== -1 && process.argv[idx + 1] ? process.argv[idx + 1].toLowerCase() : null;
+})();
 const USE_AI = !NO_AI && !!AI_TOKEN;
 
 if (!AI_TOKEN && !NO_AI) {
@@ -58,11 +63,11 @@ function cacheKey(html) {
   return createHash("sha256").update(html).digest("hex");
 }
 
-// Rate limiter: max 15 RPM → 1 request per 4s
+// Rate limiter: ~10 RPM → 1 request per 6s (GitHub Models allows 15 RPM)
 let lastAiCall = 0;
 async function rateLimitDelay() {
   const elapsed = Date.now() - lastAiCall;
-  const wait = Math.max(0, 4000 - elapsed);
+  const wait = Math.max(0, 6000 - elapsed);
   if (wait > 0) await new Promise((r) => setTimeout(r, wait));
   lastAiCall = Date.now();
 }
@@ -70,6 +75,9 @@ async function rateLimitDelay() {
 const AI_JSON_SCHEMA = {
   type: "object",
   properties: {
+    build: { type: "string", description: "The Full/Pro build number (e.g. '234682'), or empty string if not listed" },
+    starter_build: { type: "string", description: "The Starter build number (e.g. '234683'), or empty string if not listed" },
+    released: { type: "string", description: "The release date as written (e.g. 'December 10th 2025'), or empty string if not listed" },
     entries: {
       type: "array",
       items: {
@@ -84,7 +92,7 @@ const AI_JSON_SCHEMA = {
       },
     },
   },
-  required: ["entries"],
+  required: ["build", "starter_build", "released", "entries"],
   additionalProperties: false,
 };
 
@@ -100,7 +108,7 @@ function htmlToMarkdown(html) {
 async function extractWithAI(versionHtml, version) {
   const markdown = htmlToMarkdown(versionHtml);
   const key = cacheKey(markdown);
-  if (aiCache[key]) {
+  if (aiCache[key] && !FORCE) {
     console.log(`    [cache hit] ${version}`);
     return aiCache[key];
   }
@@ -119,7 +127,7 @@ async function extractWithAI(versionHtml, version) {
       messages: [
         {
           role: "user",
-          content: `Extract release note entries from this markdown. Each top-level list item is one entry. Nested sub-items belong to their parent. Identify the category from section headings (e.g. "Bug Fixes", "New Features"). Return DSOF-XXXXX numbers exactly as written (comma-separated), or empty string if none.\n\n${markdown}`,
+          content: `Extract changes from these release notes.\n\nFirst, extract the build metadata: the Full/Pro build number, Starter build number (if available), and release date.\n\nThen extract each individual change. Changes may be listed as bullet points under category headings (e.g. "Bug Fixes", "New Features", "Improvements"). Some changes have explicit DSOF ticket numbers (e.g. DSOF-12345), others are described in prose (e.g. new feature descriptions). Extract all of them. If there are no changes listed, return an empty entries array — do NOT invent or hallucinate changes.\n\nFor each change:\n- category: the section heading it falls under. If there is no explicit heading, infer an appropriate category (e.g. "New Features", "Bug Fixes", "Improvements", "Changes")\n- dsof: DSOF-XXXXX numbers exactly as written (comma-separated), or empty string if none\n- description: if the change has a DSOF number, copy the description verbatim from the source. Otherwise, write a concise description.\n\n${markdown}`,
         },
       ],
       response_format: {
@@ -140,13 +148,12 @@ async function extractWithAI(versionHtml, version) {
   if (!content) throw new Error("AI returned empty content");
 
   const parsed = JSON.parse(content);
-  const entries = parsed.entries || [];
 
-  // Cache and persist
-  aiCache[key] = entries;
+  // Cache and persist (include version for easier inspection)
+  aiCache[key] = { version, ...parsed };
   saveCacheSync();
 
-  return entries;
+  return parsed;
 }
 
 // Fallback list of release page paths (r14–r32)
@@ -347,7 +354,7 @@ async function parseReleasePage(html, pagePath, debugDir = null) {
     }
 
     // Regex fallback still processes per-section
-    if (!USE_AI) {
+    if (!USE_AI && (!ONLY_VERSION || currentVersion.toLowerCase() === ONLY_VERSION)) {
       extractWithRegex(sectionContent, currentVersion, currentCategory, sectionUrl, entries);
     }
   }
@@ -360,13 +367,19 @@ async function parseReleasePage(html, pagePath, debugDir = null) {
     }
   }
 
+  // Filter to specific version when --version is used
+  const sections = ONLY_VERSION
+    ? versionSections.filter(s => s.version.toLowerCase() === ONLY_VERSION)
+    : versionSections;
+
   // --- AI extraction path: one call per version ---
   if (USE_AI) {
-    for (const sec of versionSections) {
+    for (const sec of sections) {
       if (!sec.html) continue;
       const sectionUrl = `${BASE_URL}${pagePath}${sec.anchor ? "#" + sec.anchor : ""}`;
       try {
-        const aiEntries = await extractWithAI(sec.html, sec.version);
+        const aiResult = await extractWithAI(sec.html, sec.version);
+        const { build, starter_build, released, entries: aiEntries } = aiResult;
         for (const e of aiEntries) {
           if (!e.description) continue;
           entries.push({
@@ -374,6 +387,9 @@ async function parseReleasePage(html, pagePath, debugDir = null) {
             category: e.category || "",
             dsof: e.dsof || "",
             description: e.description,
+            build: build || "",
+            starter_build: starter_build || "",
+            released: released || "",
             url: sectionUrl,
           });
         }
@@ -425,8 +441,22 @@ async function main() {
     indexHtml = "";
   }
 
-  const paths = indexHtml ? discoverReleaseLinks(indexHtml) : FALLBACK_PATHS;
-  console.log(`Found ${paths.length} release pages.`);
+  let paths = indexHtml ? discoverReleaseLinks(indexHtml) : FALLBACK_PATHS;
+
+  // Filter to specific release page when --version is used (e.g. --version r30.0.1 → /designer/release-notes/r30)
+  if (ONLY_VERSION) {
+    const majorMatch = ONLY_VERSION.match(/^(r\d+)/i);
+    if (majorMatch) {
+      const major = majorMatch[1].toLowerCase();
+      paths = paths.filter(p => p.toLowerCase().endsWith(`/${major}`));
+    }
+    if (paths.length === 0) {
+      console.error(`No release page found for version ${ONLY_VERSION}`);
+      process.exit(1);
+    }
+  }
+
+  console.log(`Found ${paths.length} release page(s).`);
 
   const allEntries = [];
   const debugDir = join(__dirname, "data", "debug");
@@ -468,13 +498,23 @@ async function main() {
     }
   }
 
-  console.log(`\nTotal entries: ${allEntries.length}`);
-
   const outDir = join(__dirname, "data");
   mkdirSync(outDir, { recursive: true });
   const outPath = join(outDir, "releases.json");
-  writeFileSync(outPath, JSON.stringify(allEntries, null, 2));
-  console.log(`Written to ${outPath}`);
+
+  // When targeting a specific version, merge into existing releases.json
+  if (ONLY_VERSION && existsSync(outPath)) {
+    let existing = [];
+    try { existing = JSON.parse(readFileSync(outPath, "utf-8")); } catch {}
+    const filtered = existing.filter(e => e.version.toLowerCase() !== ONLY_VERSION);
+    filtered.push(...allEntries);
+    writeFileSync(outPath, JSON.stringify(filtered, null, 2));
+    console.log(`\nReplaced ${ONLY_VERSION} entries (${allEntries.length} new) in ${outPath}`);
+  } else {
+    writeFileSync(outPath, JSON.stringify(allEntries, null, 2));
+    console.log(`\nTotal entries: ${allEntries.length}`);
+    console.log(`Written to ${outPath}`);
+  }
 
   console.log(`Debug markdown written to ${debugDir}`);
 }
