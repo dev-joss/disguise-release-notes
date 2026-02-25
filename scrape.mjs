@@ -39,6 +39,7 @@ const AI_TOKEN = process.env.AI_TOKEN;
 const FORCE = process.argv.includes("--force");
 const CACHE_ONLY = process.argv.includes("--cache-only");
 const FIX_URLS = process.argv.includes("--fix-urls");
+const NEW_ONLY = process.argv.includes("--new-only");
 const ONLY_VERSION = (() => {
   const idx = process.argv.findIndex(a => a === "--version" || a === "--only");
   return idx !== -1 && process.argv[idx + 1] ? process.argv[idx + 1].toLowerCase() : null;
@@ -195,7 +196,7 @@ function decodeEntities(s) {
     .replace(/[\u200b\u200c\u200d\ufeff]/g, "");
 }
 
-async function parseReleasePage(html, pagePath, debugDir = null) {
+async function parseReleasePage(html, pagePath, debugDir = null, knownVersions = null) {
   const entries = [];
   const seen = new Set(); // deduplicate entries with identical version + description
 
@@ -250,10 +251,13 @@ async function parseReleasePage(html, pagePath, debugDir = null) {
     }
   }
 
-  // Filter to specific version when --version is used
-  const sections = ONLY_VERSION
-    ? versionSections.filter(s => matchesVersion(s.version))
-    : versionSections;
+  // Filter to specific version when --version is used, or skip known versions when --new-only is used
+  let sections = versionSections;
+  if (ONLY_VERSION) {
+    sections = versionSections.filter(s => matchesVersion(s.version));
+  } else if (NEW_ONLY && knownVersions) {
+    sections = versionSections.filter(s => !knownVersions.has(s.version));
+  }
 
   // AI extraction: one call per version
   for (const sec of sections) {
@@ -386,6 +390,21 @@ async function main() {
   const debugDir = join(__dirname, "data", "debug");
   mkdirSync(debugDir, { recursive: true });
 
+  // Load known versions when --new-only is used
+  let knownVersions = null;
+  if (NEW_ONLY) {
+    const relPath = join(__dirname, "data", "releases.json");
+    if (existsSync(relPath)) {
+      try {
+        const existing = JSON.parse(readFileSync(relPath, "utf-8"));
+        knownVersions = new Set(existing.map(v => v.version));
+        console.log(`Loaded ${knownVersions.size} known versions from releases.json`);
+      } catch { knownVersions = new Set(); }
+    } else {
+      knownVersions = new Set();
+    }
+  }
+
   if (CACHE_ONLY) {
     console.log("Building from AI cache...");
     allEntries.push(...buildFromCache());
@@ -422,7 +441,7 @@ async function main() {
       console.log(`  Fetching ${url}...`);
       try {
         const html = await fetchText(url);
-        const entries = await parseReleasePage(html, path, debugDir);
+        const entries = await parseReleasePage(html, path, debugDir, knownVersions);
         console.log(`  ${path}: ${entries.length} entries`);
         allEntries.push(...entries);
       } catch (err) {
@@ -435,7 +454,7 @@ async function main() {
   mkdirSync(outDir, { recursive: true });
   const outPath = join(outDir, "releases.json");
 
-  // When targeting a specific version, merge into existing releases.json
+  // When targeting a specific version or new-only, merge into existing releases.json
   if (ONLY_VERSION && existsSync(outPath)) {
     let existing = [];
     try { existing = JSON.parse(readFileSync(outPath, "utf-8")); } catch {}
@@ -443,6 +462,18 @@ async function main() {
     filtered.push(...buildTree(allEntries));
     writeFileSync(outPath, JSON.stringify(filtered, null, 2));
     console.log(`\nReplaced ${ONLY_VERSION} entries (${allEntries.length} changes) in ${outPath}`);
+  } else if (NEW_ONLY && existsSync(outPath)) {
+    if (allEntries.length === 0) {
+      console.log("\nNo new versions found.");
+    } else {
+      let existing = [];
+      try { existing = JSON.parse(readFileSync(outPath, "utf-8")); } catch {}
+      const newVersions = new Set(allEntries.map(e => e.version));
+      const filtered = existing.filter(v => !newVersions.has(v.version));
+      filtered.push(...buildTree(allEntries));
+      writeFileSync(outPath, JSON.stringify(filtered, null, 2));
+      console.log(`\nAdded ${newVersions.size} new version(s) (${allEntries.length} changes) to ${outPath}`);
+    }
   } else {
     const tree = buildTree(allEntries);
     writeFileSync(outPath, JSON.stringify(tree, null, 2));
