@@ -4,8 +4,31 @@ import { writeFileSync, readFileSync, existsSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
+import TurndownService from "turndown";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const turndown = new TurndownService({ headingStyle: "atx", bulletListMarker: "-" });
+turndown.addRule("remove-anchor-links", {
+  filter: node =>
+    node.nodeName === "A" &&
+    (node.getAttribute("class") || "").includes("sl-anchor-link"),
+  replacement: () => "",
+});
+turndown.addRule("remove-sr-only", {
+  filter: node =>
+    node.nodeName === "SPAN" &&
+    (node.getAttribute("class") || "").includes("sr-only"),
+  replacement: () => "",
+});
+turndown.addRule("remove-images", {
+  filter: "img",
+  replacement: () => "",
+});
+turndown.addRule("unwrap-links", {
+  filter: "a",
+  replacement: (content) => content,
+});
 const INDEX_URL =
   "https://help.disguise.one/designer/release-notes/release-notes";
 const BASE_URL = "https://help.disguise.one";
@@ -52,10 +75,11 @@ const AI_JSON_SCHEMA = {
       items: {
         type: "object",
         properties: {
+          category: { type: "string", description: "The category/section heading this entry falls under (e.g. 'Bug Fixes', 'New Features'), or empty string if none" },
           dsof: { type: "string", description: "Comma-separated DSOF-XXXXX numbers, or empty string if none" },
           description: { type: "string", description: "Concise description of the change" },
         },
-        required: ["dsof", "description"],
+        required: ["category", "dsof", "description"],
         additionalProperties: false,
       },
     },
@@ -64,26 +88,25 @@ const AI_JSON_SCHEMA = {
   additionalProperties: false,
 };
 
-// Strip non-semantic HTML tags, attributes, and prose paragraphs to reduce token usage
-function simplifyHtml(html) {
-  return html
-    .replace(/<p\b[^>]*>[\s\S]*?<\/p>/gi, "")  // remove paragraphs (intros, workarounds, doc links)
-    .replace(/<\/?(a|span|strong|em|b|i|code|div|br|img)\b[^>]*>/gi, "")
-    .replace(/\s+(class|style|id|data-[\w-]+)="[^"]*"/gi, "")
-    .replace(/\s+/g, " ")
+// Convert HTML to markdown for cleaner AI input and debug output
+function htmlToMarkdown(html) {
+  return turndown.turndown(html)
+    .replace(/^#{4,}\s+Download\b.*$/gm, "")  // remove download headings
+    .replace(/^\s*_(?!.*(?:build|released)[:\s])[^_\n]+_\s*$/gmi, "")  // remove standalone italic lines (image captions) but keep metadata
+    .replace(/\n{3,}/g, "\n\n")     // collapse extra blank lines
     .trim();
 }
 
-async function extractWithAI(sectionHtml, version, category) {
-  const simplified = simplifyHtml(sectionHtml);
-  const key = cacheKey(simplified);
+async function extractWithAI(versionHtml, version) {
+  const markdown = htmlToMarkdown(versionHtml);
+  const key = cacheKey(markdown);
   if (aiCache[key]) {
-    console.log(`    [cache hit] ${version} / ${category}`);
+    console.log(`    [cache hit] ${version}`);
     return aiCache[key];
   }
 
   await rateLimitDelay();
-  console.log(`    [AI] ${version} / ${category}`);
+  console.log(`    [AI] ${version}`);
 
   const res = await fetch(AI_API_URL, {
     method: "POST",
@@ -96,7 +119,7 @@ async function extractWithAI(sectionHtml, version, category) {
       messages: [
         {
           role: "user",
-          content: `Extract release note entries from this HTML. Each top-level list item is one entry. Nested sub-items belong to their parent. Return DSOF-XXXXX numbers exactly as written (comma-separated), or empty string if none.\n\n${simplified}`,
+          content: `Extract release note entries from this markdown. Each top-level list item is one entry. Nested sub-items belong to their parent. Identify the category from section headings (e.g. "Bug Fixes", "New Features"). Return DSOF-XXXXX numbers exactly as written (comma-separated), or empty string if none.\n\n${markdown}`,
         },
       ],
       response_format: {
@@ -258,7 +281,7 @@ function extractWithRegex(sectionContent, currentVersion, currentCategory, secti
   }
 }
 
-async function parseReleasePage(html, pagePath) {
+async function parseReleasePage(html, pagePath, debugDir = null) {
   const entries = [];
 
   // Extract <main> content if present, otherwise use full HTML
@@ -276,22 +299,24 @@ async function parseReleasePage(html, pagePath) {
   // Split content by heading tags to process sequentially
   const parts = content.split(/(?=<h[23][^>]*>)/i);
 
+  // First pass: group parts by version
+  const versionSections = []; // { version, anchor, html, parts: [{ category, content, url }] }
+  let currentSection = null;
+
   for (const part of parts) {
     // Check for h2 (version heading)
     const h2Match = part.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i);
     if (h2Match) {
       const rawText = decodeEntities(h2Match[1].replace(/<[^>]+>/g, "")).trim();
-      // Extract the id attribute directly from the h2 tag
       const idMatch = h2Match[0].match(/<h2[^>]*\bid="([^"]+)"/i);
-      // Extract version like "r32.3.2" from "r32.3.2 - Hotfixes"
       const vMatch = rawText.match(/(r\d+(?:\.\d+)*)/i);
       if (vMatch) {
         currentVersion = vMatch[1];
         currentAnchor = idMatch ? idMatch[1] : "";
-        currentCategory = ""; // reset category under new version
+        currentCategory = "";
+        currentSection = { version: currentVersion, anchor: currentAnchor, html: "", parts: [] };
+        versionSections.push(currentSection);
       } else {
-        // h2 doesn't contain a version — treat it as a category heading
-        // Use the page-level version as fallback
         if (!currentVersion && pageVersion) currentVersion = pageVersion;
         currentCategory = rawText;
       }
@@ -305,34 +330,61 @@ async function parseReleasePage(html, pagePath) {
 
     const sectionContent = part.replace(/<h[23][^>]*>[\s\S]*?<\/h[23]>/i, "");
     const sectionUrl = `${BASE_URL}${pagePath}${currentAnchor ? "#" + currentAnchor : ""}`;
-
-    // Skip sections with no list content (e.g. version header metadata)
     const hasListContent = /<(ul|ol|li)[\s>]/i.test(sectionContent);
 
-    // --- AI extraction path ---
-    if (USE_AI && currentVersion && hasListContent) {
+    if (currentSection) {
+      // Accumulate all HTML for this version (metadata, h3 headings, lists)
+      currentSection.html += part;
+      if (hasListContent) {
+        currentSection.parts.push({ category: currentCategory, content: sectionContent, url: sectionUrl });
+      }
+    } else if (currentVersion && hasListContent) {
+      // Content before first versioned h2 — use page-level version
+      currentSection = { version: currentVersion, anchor: currentAnchor, html: "", parts: [] };
+      versionSections.push(currentSection);
+      currentSection.html += part;
+      currentSection.parts.push({ category: currentCategory, content: sectionContent, url: sectionUrl });
+    }
+
+    // Regex fallback still processes per-section
+    if (!USE_AI) {
+      extractWithRegex(sectionContent, currentVersion, currentCategory, sectionUrl, entries);
+    }
+  }
+
+  // Debug: write markdown per version to data/debug/
+  if (debugDir) {
+    for (const sec of versionSections) {
+      const filePath = join(debugDir, `${sec.version}.md`);
+      writeFileSync(filePath, htmlToMarkdown(sec.html));
+    }
+  }
+
+  // --- AI extraction path: one call per version ---
+  if (USE_AI) {
+    for (const sec of versionSections) {
+      if (!sec.html) continue;
+      const sectionUrl = `${BASE_URL}${pagePath}${sec.anchor ? "#" + sec.anchor : ""}`;
       try {
-        const aiEntries = await extractWithAI(sectionContent, currentVersion, currentCategory);
+        const aiEntries = await extractWithAI(sec.html, sec.version);
         for (const e of aiEntries) {
           if (!e.description) continue;
           entries.push({
-            version: currentVersion,
-            category: currentCategory,
+            version: sec.version,
+            category: e.category || "",
             dsof: e.dsof || "",
             description: e.description,
             url: sectionUrl,
           });
         }
       } catch (err) {
-        console.warn(`    [AI fallback] ${currentVersion} / ${currentCategory}: ${err.message}`);
-        // Fall through to regex extraction below
-        extractWithRegex(sectionContent, currentVersion, currentCategory, sectionUrl, entries);
+        console.warn(`    [AI fallback] ${sec.version}: ${err.message}`);
+        // Fall back to regex for each sub-section
+        for (const p of sec.parts) {
+          extractWithRegex(p.content, sec.version, p.category, p.url, entries);
+        }
       }
-      continue;
     }
-
-    // --- Regex extraction path (fallback) ---
-    extractWithRegex(sectionContent, currentVersion, currentCategory, sectionUrl, entries);
   }
 
   if (!USE_AI) {
@@ -377,6 +429,8 @@ async function main() {
   console.log(`Found ${paths.length} release pages.`);
 
   const allEntries = [];
+  const debugDir = join(__dirname, "data", "debug");
+  mkdirSync(debugDir, { recursive: true });
 
   if (USE_AI) {
     // Sequential processing — AI calls are rate-limited
@@ -385,7 +439,7 @@ async function main() {
       console.log(`  Fetching ${url}...`);
       try {
         const html = await fetchText(url);
-        const entries = await parseReleasePage(html, path);
+        const entries = await parseReleasePage(html, path, debugDir);
         console.log(`  ${path}: ${entries.length} entries`);
         allEntries.push(...entries);
       } catch (err) {
@@ -399,7 +453,7 @@ async function main() {
         const url = `${BASE_URL}${path}`;
         console.log(`  Fetching ${url}...`);
         const html = await fetchText(url);
-        return { path, entries: await parseReleasePage(html, path) };
+        return { path, entries: await parseReleasePage(html, path, debugDir) };
       })
     );
 
@@ -421,6 +475,8 @@ async function main() {
   const outPath = join(outDir, "releases.json");
   writeFileSync(outPath, JSON.stringify(allEntries, null, 2));
   console.log(`Written to ${outPath}`);
+
+  console.log(`Debug markdown written to ${debugDir}`);
 }
 
 main().catch((err) => {

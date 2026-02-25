@@ -577,7 +577,7 @@
     "version": "r32.2",
     "category": "New Features",
     "dsof": "",
-    "description": "2x 12G SDI inputs via Ports A and C (HD-BNC connector), or 4x 3G SDI inputs (HD-BNC connector)",
+    "description": "2x 12G SDI inputs via Ports A and C (HD-BNC connector), or 4x 3G SDI inputs (HD-BNC connector)\nThat means the EX 2c can support simultaneously:",
     "url": "https://help.disguise.one/designer/release-notes/r32#r322---depth-workflows-sockpuppet-gdtf-export-and-hdmi-capture"
   },
   {
@@ -598,7 +598,7 @@
     "version": "r32.2",
     "category": "New Features",
     "dsof": "",
-    "description": "2x 12G SDI inputs via Ports A and C (HD-BNC connector)",
+    "description": "2x 12G SDI inputs via Ports A and C (HD-BNC connector)\nNote that to unlock this feature you will need to:",
     "url": "https://help.disguise.one/designer/release-notes/r32#r322---depth-workflows-sockpuppet-gdtf-export-and-hdmi-capture"
   },
   {
@@ -619,7 +619,7 @@
     "version": "r32.2",
     "category": "New Features",
     "dsof": "",
-    "description": "Use the appropriate 25Q3 OS image for the relevant server as outlined here",
+    "description": "Use the appropriate 25Q3 OS image for the relevant server as outlined here\nThere are new Layer, Mesh and Mapping types which allow users to apply a Depth Video to meshes providing improved parallax effects in moving camera scenarios. This also integrates natively with 2.5D workflows. You can find more information about these new workflows here.\nDepth Video Layer\nDepth Map Mesh\nSockpuppet Personalities can now be exported as GDTF that can be read by GrandMA3. We have removed the ability to export MA2 XML formats as this seemed to be used exclusively for converting to GDTF.\nYou can read more about how this feature works here.",
     "url": "https://help.disguise.one/designer/release-notes/r32#r322---depth-workflows-sockpuppet-gdtf-export-and-hdmi-capture"
   },
   {
@@ -731,7 +731,7 @@
     "version": "r32.2",
     "category": "Other Improvements",
     "dsof": "DSOF-31281",
-    "description": "The Global Enter keybind now will always toggle playback on the timeline and to select an option using the keyboard the user will instead use CTRL + Enter",
+    "description": "The Global Enter keybind now will always toggle playback on the timeline and to select an option using the keyboard the user will instead use CTRL + Enter\nWe’ve also made a range of improvements to our Plugins API:",
     "url": "https://help.disguise.one/designer/release-notes/r32#r322---depth-workflows-sockpuppet-gdtf-export-and-hdmi-capture"
   },
   {
@@ -1368,7 +1368,7 @@
     "version": "r32.0",
     "category": "Improvements",
     "dsof": "DSOF-31055",
-    "description": "The Layer.module field accessible in the python API is now restricted so it cannot be accessed directly by plugin developers. This is because it doesn’t behave the way people expect and is not required for plugins",
+    "description": "The Layer.module field accessible in the python API is now restricted so it cannot be accessed directly by plugin developers. This is because it doesn’t behave the way people expect and is not required for plugins\nLast updated: Feb 18, 2026",
     "url": "https://help.disguise.one/designer/release-notes/r32#r320---gx-3-support"
   },
   {
@@ -1445,7 +1445,7 @@
     "version": "r31.3.2",
     "category": "Fixes",
     "dsof": "DSOF-30093",
-    "description": "Designer will no longer occasionally hang indefinitely on shutdown from handling API requests",
+    "description": "Designer will no longer occasionally hang indefinitely on shutdown from handling API requests\nNote\nFrequent polling of API endpoints is strongly discouraged. It can lead to reduced system performance. To receive real-time updates, we recommend using the Live Update API for streaming data from Designer. This ensures your app always has the latest data without extra overhead. A more detailed explanation can be found under Recommended: Use Live Update Instead of Polling REST APIs on the Developer Portal.",
     "url": "https://help.disguise.one/designer/release-notes/r31#r3132---hotfixes"
   },
   {
@@ -1550,7 +1550,7 @@
     "version": "r31.3",
     "category": "New Features",
     "dsof": "",
-    "description": "CTRL+T - open the menu and focus on the last-editted Tag type",
+    "description": "CTRL+T - open the menu and focus on the last-editted Tag type\nIndividual Tags and Notes can be moved along the Track as usual by holding Alt and Left Mouse Button Dragging. Dragging in this mode allows users to merge Notes and Tags onto existing Cues. Holding Ctrl and Alt and Left Mouse Button Dragging now moves an entire Cue along the Track. Cues cannot be merged in this mode. Instead, it will slip to the next available beat.\nFor users of the Python API, the Track object now has additional methods, e.g.",
     "url": "https://help.disguise.one/designer/release-notes/r31#r313---stacked-tags"
   },
   {
@@ -1571,7 +1571,7 @@
     "version": "r31.3",
     "category": "New Features",
     "dsof": "",
-    "description": "setNoteAtBeat - sets the Note at the specified beat",
+    "description": "setNoteAtBeat - sets the Note at the specified beat\nFor more details on the new Track methods, please see the Developer guide.\nThe Cue List has been modified to accommodate multiple Tags on the same beat. Empty Note and Tags columns are automatically hidden in the Cue List for performance reasons. Users can now create Notes and Tags directly from the Cue List, as long as the relevant column is visible. Inserting a blank string in the Note or Tags columns will automatically delete it from the Track.\nThe Track Jump module has been modified so it no longer references a Section index, but rather a Cue in the selected track. The reference is preserved when Sections are added or removed, or if the selected Section break is moved around on the Track.",
     "url": "https://help.disguise.one/designer/release-notes/r31#r313---stacked-tags"
   },
   {
@@ -2362,7 +2362,7 @@
     "version": "r31.0",
     "category": "Improvements",
     "dsof": "DSOF-30314",
-    "description": "A new Zero Pose Button in the Skeleton editor, which will set all the joint poses to 0",
+    "description": "A new Zero Pose Button in the Skeleton editor, which will set all the joint poses to 0\nYou can visit our Developer documentation here.",
     "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
   },
   {
@@ -2467,7 +2467,7 @@
     "version": "r31.0",
     "category": "Fixes",
     "dsof": "DSOF-29726",
-    "description": "Dragging a section with a custom Fade Duration set no longer reverts the section’s Fade setting to Global",
+    "description": "Dragging a section with a custom Fade Duration set no longer reverts the section’s Fade setting to Global\nLast updated: Sep 24, 2025",
     "url": "https://help.disguise.one/designer/release-notes/r31#r310---renderstream-local-legacy-license-deprecation-and-other-improvements"
   },
   {
@@ -2810,28 +2810,28 @@
     "version": "r30.8",
     "category": "New Features",
     "dsof": "",
-    "description": "Coloured Layers",
+    "description": "Coloured Layers\nLayers on the timeline and in layer stacks can now be coloured based on a range of user-definable criteria. You can read more about this feature here. There are several more improvements to the look and feel of the timeline including a new highlighting look to better distinguish selected layers. Keyframes are now also visible directly on the timeline.\nExample of Coloured Layers",
     "url": "https://help.disguise.one/designer/release-notes/r30#r308---coloured-layers-sockpuppet-sync-and-st-2110-capture-prerelease"
   },
   {
     "version": "r30.8",
     "category": "New Features",
     "dsof": "",
-    "description": "Sockpuppet Synchronisation",
+    "description": "Sockpuppet Synchronisation\nWe can also now guarantee synchronisation in a Sockpuppet workflow for the first time! Now even if machines drop frames, when they recover from frame drops, Sockpuppet layers will return to an in-sync state regardless of what transport commands have been sent.",
     "url": "https://help.disguise.one/designer/release-notes/r30#r308---coloured-layers-sockpuppet-sync-and-st-2110-capture-prerelease"
   },
   {
     "version": "r30.8",
     "category": "New Features",
     "dsof": "",
-    "description": "ST 2110 Network Video Capture (Prerelease)",
+    "description": "ST 2110 Network Video Capture (Prerelease)\nFinally, we’re releasing our first beta test for ST 2110 network video capture! You can access this feature in Gold by turning on the option switch enableIPVideo. Please do reach out to us if you’d like to use it on a show so we can help support you and gather any feedback. You can read more about the workflow here.",
     "url": "https://help.disguise.one/designer/release-notes/r30#r308---coloured-layers-sockpuppet-sync-and-st-2110-capture-prerelease"
   },
   {
     "version": "r30.8",
     "category": "New Features",
     "dsof": "",
-    "description": "X1 Support",
+    "description": "X1 Support\nDesigner r30.8 introduces support for our new Disguise X1 USB License Key enabling users to run a single node on their own hardware provided it meets the recommended technical specification.\nRead more about the Disguise X1 here.",
     "url": "https://help.disguise.one/designer/release-notes/r30#r308---coloured-layers-sockpuppet-sync-and-st-2110-capture-prerelease"
   },
   {
@@ -2859,7 +2859,7 @@
     "version": "r30.8",
     "category": "Improvements",
     "dsof": "DSOF-30014",
-    "description": "Plugins opened inside Designer will default to a dark mode scheme if one is available",
+    "description": "Plugins opened inside Designer will default to a dark mode scheme if one is available\nWe’ve made a range of improvements in this release to the plugin developer experience to increase the power and usability of Designer plugins:",
     "url": "https://help.disguise.one/designer/release-notes/r30#r308---coloured-layers-sockpuppet-sync-and-st-2110-capture-prerelease"
   },
   {
@@ -3223,7 +3223,7 @@
     "version": "r30.7",
     "category": "New Features",
     "dsof": "",
-    "description": "Luma AI Video Generator - Text-to-video generation that imports directly to your d3 project.\nYou can find detailed information on accessing, installing, and managing plugins here",
+    "description": "Luma AI Video Generator - Text-to-video generation that imports directly to your d3 project.\nYou can find detailed information on accessing, installing, and managing plugins here\nDocumentation of our Plugins Framework can be found here.\nPlugins are not supported in the Starter version of Designer. To use plugins, ensure you have the Full (Pro) version of Designer.",
     "url": "https://help.disguise.one/designer/release-notes/r30#r307---plugins-and-expressions"
   },
   {
@@ -3503,7 +3503,7 @@
     "version": "r30.5",
     "category": "Improvements",
     "dsof": "DSOF-29017",
-    "description": "Spherical mappings now have settable Padding and Overlap fields",
+    "description": "Spherical mappings now have settable Padding and Overlap fields\nThe following improvements are unrelated to the xR for VR workflows but are still cool:",
     "url": "https://help.disguise.one/designer/release-notes/r30#r305---xr-for-vr"
   },
   {
@@ -3587,7 +3587,7 @@
     "version": "r30.4",
     "category": "Improvements",
     "dsof": "DSOF-26455, DSOF-25328, DSOF-28943, DSOF-28387",
-    "description": "Content played on the timeline will now always load before the playhead jumps when jumping on the timeline. This will mean you should not see intermittent flashes to black or performance spikes when jumping on the timeline via the mouse, LTC or other transport control mechanism",
+    "description": "Content played on the timeline will now always load before the playhead jumps when jumping on the timeline. This will mean you should not see intermittent flashes to black or performance spikes when jumping on the timeline via the mouse, LTC or other transport control mechanism\nBecause Designer now prefetches content only when the jump command is issued, we have also significantly reduced the overhead of playing the normal timeline as Designer will no longer decode video frames from other parts of the track unnecessarily. This means that you should see performance improvements when entering new sections, jumping to new tracks or playing simple sections that lie just ahead of busy sections.",
     "url": "https://help.disguise.one/designer/release-notes/r30#r304---prefetcher-improvements-and-qol"
   },
   {
@@ -4056,35 +4056,14 @@
     "version": "r30.2",
     "category": "Improvements",
     "dsof": "DSOF-23236",
-    "description": "Add support for HDMI & DP VFCs to output in 4:2:2 or 4:4:4",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
-  },
-  {
-    "version": "r30.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "IP -> Selects YUV 4:2:2",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
-  },
-  {
-    "version": "r30.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "HDMI -> Selects RGB unless bandwidth Exceeds HDMI 2.0 spec at which point it will drop down to YUV 4:2:2",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
-  },
-  {
-    "version": "r30.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "DP -> Selects RGB",
+    "description": "Add support for HDMI & DP VFCs to output in 4:2:2 or 4:4:4\nSetting HDMI and DisplayPort VFC cards to 4:2:2 or 4:4:4 is available behind the option switch enableColourFormat. It will stay behind the option switch until we are certain the EDID changes have no adverse downstream effects. The options available are RGB, RGB Limited, 4:4:4, 4:2:2, and Auto.\nAuto Behaviour varies by VFC card:\nIP -> Selects YUV 4:2:2\nHDMI -> Selects RGB unless bandwidth Exceeds HDMI 2.0 spec at which point it will drop down to YUV 4:2:2\nDP -> Selects RGB\nDVI and SDI VFCs do not have this option. The colour format for DVI cards is always RGB (and that is all they support) and for SDI VFCs it is determined by the SMPTE standard format selected.\nSelect Colour Format",
     "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
   },
   {
     "version": "r30.2",
     "category": "Improvements",
     "dsof": "DSOF-24079",
-    "description": "Designer now has the option to skip setting d3 projects share on installation. There is now an option during d3 installation to share the d3 projects folder. When it is ticked, the d3 projects folder is shared and Everyone is given read and write permissions (This is the current default behaviour). If it is un-ticked the user-configured sharing settings are not changed.\nYou can find more information about this feature here",
+    "description": "Designer now has the option to skip setting d3 projects share on installation. There is now an option during d3 installation to share the d3 projects folder. When it is ticked, the d3 projects folder is shared and Everyone is given read and write permissions (This is the current default behaviour). If it is un-ticked the user-configured sharing settings are not changed.\nYou can find more information about this feature here\nUn-ticking this will mean that you can no longer access the shared folders via Manager and several features like content distribution won’t work unless you manually configure sharing settings.",
     "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
   },
   {
@@ -4098,21 +4077,7 @@
     "version": "r30.2",
     "category": "Improvements",
     "dsof": "DSOF-28149",
-    "description": "Designer will now warn the user in the UI when understudies are set up in an invalid configuration in the following ways",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
-  },
-  {
-    "version": "r30.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "An understudy that has no target will be highlighted orange and show a helpful tootip",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
-  },
-  {
-    "version": "r30.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Two understudies with the same target will be highlighted red and show a helpful tooltip",
+    "description": "Designer will now warn the user in the UI when understudies are set up in an invalid configuration in the following ways\nAn understudy that has no target will be highlighted orange and show a helpful tootip\nTwo understudies with the same target will be highlighted red and show a helpful tooltip",
     "url": "https://help.disguise.one/designer/release-notes/r30#r302---quality-of-life-improvements"
   },
   {
@@ -4301,21 +4266,7 @@
     "version": "r30.1",
     "category": "New Features",
     "dsof": "DSOF-28397",
-    "description": "Designer will not allow the user to select HLG or PQ when outputting with Rec.709 or Rec.601",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r301---sdihdr-video-capture-and-output"
-  },
-  {
-    "version": "r30.1",
-    "category": "New Features",
-    "dsof": "",
-    "description": "In the REC.2020 (also known as BT.2020) colour space",
-    "url": "https://help.disguise.one/designer/release-notes/r30#r301---sdihdr-video-capture-and-output"
-  },
-  {
-    "version": "r30.1",
-    "category": "New Features",
-    "dsof": "",
-    "description": "Set to 10-bit",
+    "description": "Designer will not allow the user to select HLG or PQ when outputting with Rec.709 or Rec.601\nDynamic range describes the ratio between the brightest and darkest parts of an image. High Dynamic Range (HDR) is a technology that represents an increased dynamic range in an image to provide a greater level of contrast, brightness and colour.\nBoth Hybrid Log-Gamma (HLG) and Perceptual Quantiser (PQ) transfer functions for HDR video are supported for SDI HDR capture.\nWe now support HDR video capture on all Disguise media servers with SDI capture cards. For the signal to be captured properly as HDR it must be:\nIn the REC.2020 (also known as BT.2020) colour space\nSet to 10-bit\nIn the Video Input Patch Editor, the Input Transform needs to be changed to HLG - Rec.2020 or PQ - Rec.2020. The format field will then show the colorimetry and transfer characteristics as seen in the screenshot below:\nWe also support SDI HDR video output using the Quad 3G VFC card. In the Feed View we have added the option to change the YCbCr Conversion Matrix to Rec.2020 (BT.2020). The Transfer Characteristics setting will then need to be changed to either HLG or PQ depending on the transfer function being used.",
     "url": "https://help.disguise.one/designer/release-notes/r30#r301---sdihdr-video-capture-and-output"
   },
   {
@@ -4637,7 +4588,7 @@
     "version": "r30.0",
     "category": "Fixes",
     "dsof": "DSOF-28643",
-    "description": "Holding tab and Shift+Tab while moving the mouse now correctly pan and rotated the visualiser camera again",
+    "description": "Holding tab and Shift+Tab while moving the mouse now correctly pan and rotated the visualiser camera again\nNDI® is a registered trademark of Vizrt NDI AB.\nLast updated: Jul 22, 2025",
     "url": "https://help.disguise.one/designer/release-notes/r30#r300---solo-support-deprecation"
   },
   {
@@ -5365,7 +5316,7 @@
     "version": "r29",
     "category": "Improvements",
     "dsof": "DSOF-24868",
-    "description": "You no longer need to apply feed settings on every system reboot to output from IP-VFC cards",
+    "description": "You no longer need to apply feed settings on every system reboot to output from IP-VFC cards\nWe’ve been working on things other than the IP-VFC too.",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
@@ -5428,7 +5379,7 @@
     "version": "r29",
     "category": "Fixes",
     "dsof": "DSOF-28138",
-    "description": "d3service logs are now simpler to assist with troubleshooting",
+    "description": "d3service logs are now simpler to assist with troubleshooting\nLast updated: Jul 2, 2025",
     "url": "https://help.disguise.one/designer/release-notes/r29#r29---ip-vfc-improvements"
   },
   {
@@ -5498,7 +5449,7 @@
     "version": "r28.1",
     "category": "Improvements",
     "dsof": "DSOF-27793",
-    "description": "Hierarchy->Add Child now allows you to select grandchildren objects.\nFor example consider the following object hierarchy",
+    "description": "Hierarchy->Add Child now allows you to select grandchildren objects.\nFor example consider the following object hierarchy\nNow when selecting children for Screen 1 you can select Screen 3 and Screen 4, whereas previously you could only do so if you removed Screen 2 as the parent of screens 3 and 4.",
     "url": "https://help.disguise.one/designer/release-notes/r28#r281---qol-and-fixes"
   },
   {
@@ -5743,7 +5694,7 @@
     "version": "r28",
     "category": "Fixes",
     "dsof": "DSOF-27801",
-    "description": "Fixed an issue where Windows 11 reported as Windows 10 22631 in Disguise Manager",
+    "description": "Fixed an issue where Windows 11 reported as Windows 10 22631 in Disguise Manager\nNDI® is a registered trademark of Vizrt NDI AB.",
     "url": "https://help.disguise.one/designer/release-notes/r28#r28---ex-2-ex-2c--ex-3-support"
   },
   {
@@ -5848,7 +5799,7 @@
     "version": "r27.10",
     "category": "Fixes",
     "dsof": "DSOF-27229",
-    "description": "Fixed a machine hang in MatroxTopology::cleanupSurfaceBufferPool",
+    "description": "Fixed a machine hang in MatroxTopology::cleanupSurfaceBufferPool\nThe d3Manager License dialogue (accessible from d3Manager->Help->d3 Licenses) now contains a section detailing the serial number(s) of local CodeMeter license containers.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2710---expressions"
   },
   {
@@ -5876,63 +5827,21 @@
     "version": "r27.8",
     "category": "",
     "dsof": "DSOF-17036",
-    "description": "ProRes Support\nProRes video codecs are now supported for playout on Disguise. ProRes is a visually lossless codec that uses intra-frame compression, where each frame is stored independently and can be decoded with no dependencies on other frames.\nUsers are now able to playout the following ProRes codecs from Disguise",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r278---prores-support"
-  },
-  {
-    "version": "r27.8",
-    "category": "",
-    "dsof": "",
-    "description": "ProRes 422",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r278---prores-support"
-  },
-  {
-    "version": "r27.8",
-    "category": "",
-    "dsof": "",
-    "description": "ProRes 422 HQ",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r278---prores-support"
-  },
-  {
-    "version": "r27.8",
-    "category": "",
-    "dsof": "",
-    "description": "ProRes 422 LT",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r278---prores-support"
-  },
-  {
-    "version": "r27.8",
-    "category": "",
-    "dsof": "",
-    "description": "ProRes 422 Proxy",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r278---prores-support"
-  },
-  {
-    "version": "r27.8",
-    "category": "",
-    "dsof": "",
-    "description": "ProRes 4444",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r278---prores-support"
-  },
-  {
-    "version": "r27.8",
-    "category": "",
-    "dsof": "",
-    "description": "ProRes 4444 XQ",
+    "description": "ProRes Support\nProRes video codecs are now supported for playout on Disguise. ProRes is a visually lossless codec that uses intra-frame compression, where each frame is stored independently and can be decoded with no dependencies on other frames.\nUsers are now able to playout the following ProRes codecs from Disguise\nProRes 422\nProRes 422 HQ\nProRes 422 LT\nProRes 422 Proxy\nProRes 4444\nProRes 4444 XQ\nProRes RAW playback in Disguise is not supported.\nProRes video codecs are CPU-based. We recommend checking the video playback performance for the Disguise media server(s) when deciding whether ProRes is appropriate for your show or production.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r278---prores-support"
   },
   {
     "version": "r27.8",
     "category": "Improvements",
     "dsof": "DSOF-25479",
-    "description": "Export proﬁles of GPU memory allocation",
+    "description": "Export proﬁles of GPU memory allocation\nWe have added proﬁleGPUPoolFromLaunch as an option switch to enable users to trigger the creation of a memory proﬁle so that they can understand the behaviour of a GPU pool for debugging purposes. This is exported as a .json ﬁle to a project folder called ‘output’.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r278---prores-support"
   },
   {
     "version": "r27.8",
     "category": "Improvements",
     "dsof": "DSOF-27549",
-    "description": "On Understudy machines, don’t set output status to orange in the network status widget if the GUI is on",
+    "description": "On Understudy machines, don’t set output status to orange in the network status widget if the GUI is on\nIn r27.5.1 we introduced DSOF-26887, which added GUI status to the ‘Output’ indicator on the Network Status Widget. The GUI icon follows the same convention as the other icons, namely if the GUI is on a Disguise media server running in session that the icon will be green. If it is off then the icon will be grey. The icon became orange if the GUI was on the understudy machines running in session.\nIn r27.8 we have changed the icon to become green if the GUI was on the understudy machines running in session as seen in the screenshot below:",
     "url": "https://help.disguise.one/designer/release-notes/r27#r278---prores-support"
   },
   {
@@ -6191,14 +6100,14 @@
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-22053",
-    "description": "Upgrade to Vimba X SDK for OmniCal",
+    "description": "Upgrade to Vimba X SDK for OmniCal\nFor more information about Vimba X, please see our OmniCal Camera Setup page.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-25066",
-    "description": "Custom colour primaries in Gamma Space mode",
+    "description": "Custom colour primaries in Gamma Space mode\nWe have added the option to add custom output colour primaries from Designer to enable high performance colour transforms for LED panels. This is available when Gamma Space mode is selected as the colour management mode in Project Settings. This can be found by right-clicking an LED Screen found in a project and right-clicking Colour Profile underneath the Output dropdown menu.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
@@ -6219,14 +6128,14 @@
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-26353",
-    "description": "Implement colour management interface with Notch version 1.0",
+    "description": "Implement colour management interface with Notch version 1.0\nWe now support colour management settings included in a Notch block exported from version 1.0 or later to a Notch layer in Designer.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-26356",
-    "description": "Raise warning about Notch version 1.0 compatibility on unsupported servers",
+    "description": "Raise warning about Notch version 1.0 compatibility on unsupported servers\nNotch Blocks that have been exported in version 1.0 or later have a number of requirements in order to run on a Disguise media server:\nWindows OS: must be Windows 10 1607 or higher\nGPU: support for Nvidia GPUs only (Maxwell Architecture or later)\nNotch Blocks that are exported in version 1.1 or later will have the following requirements in order to run on a Disguise media server:\nWindows OS: must be Windows 10 1607 or higher\nGPU: support for Nvidia GPUs only (Turing Architecture or later)\nWe have created a notification in Designer to warn a user that attempts to run a Notch block that has been exported in version 1.0 or later on a Disguise media server that is not supported.\nA compatibility table can be found here\nMore information about Notch layers can be found here.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
@@ -6240,7 +6149,7 @@
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-27009",
-    "description": "Prewarm notch instances",
+    "description": "Prewarm notch instances\nWe have reduced the load time when a user adds a Notch layer to a project for the ﬁrst time, or starts a project with a Notch layer already assigned to a track. We have enabled this as default behaviour.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
@@ -6261,7 +6170,7 @@
     "version": "r27.7",
     "category": "",
     "dsof": "DSOF-27152",
-    "description": "Update NDI® SDK to NDI® 6",
+    "description": "Update NDI® SDK to NDI® 6\nWe have updated the NDI® SDK to support NDI® 6.0. This includes improvements to the 16-bit colour formats that are supported (P216/PA16) and a new speciﬁcation for NDI® HDR metadata. More information on NDI® 6.0 can be found in their release notes here (link). It is important to note that NDI® 5.0 video inputs continue to work as expected.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r277---improvements--fixes"
   },
   {
@@ -6513,42 +6422,21 @@
     "version": "r27.6.2",
     "category": "Improvements",
     "dsof": "DSOF-26045",
-    "description": "API: session/status/health does not return statuses from solo mode machines",
+    "description": "API: session/status/health does not return statuses from solo mode machines\nWe have enabled the Designer APIs to return status information when the machine(s) that has been queried is running in solo mode.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2762"
   },
   {
     "version": "r27.6.2",
     "category": "Improvements",
     "dsof": "DSOF-26527",
-    "description": "Update test cards with new logo",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2762"
-  },
-  {
-    "version": "r27.6.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Full or limited colour test pattern",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2762"
-  },
-  {
-    "version": "r27.6.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Chroma subsampling test pattern to prove 4:2:2 or 4:2:0",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r2762"
-  },
-  {
-    "version": "r27.6.2",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Updated Disguise branding",
+    "description": "Update test cards with new logo\nWe have updated both the colour and test patterns included as part of the Designer installer and made available in both 16:9 and 4:3 versions. We have added the following:\nFull or limited colour test pattern\nChroma subsampling test pattern to prove 4:2:2 or 4:2:0\nUpdated Disguise branding",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2762"
   },
   {
     "version": "r27.6.2",
     "category": "Improvements",
     "dsof": "DSOF-27199",
-    "description": "API: session/gototag returns 200 even when tag isn’t found",
+    "description": "API: session/gototag returns 200 even when tag isn’t found\nIn previous releases, the session/gototag endpoint returned a 200 OK HTTP status code even if a transport tag was not found. This has been resolved by returning a 400 bad request status code instead.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2762"
   },
   {
@@ -6625,7 +6513,7 @@
     "version": "r27.6.1",
     "category": "Improvements",
     "dsof": "DSOF-26801",
-    "description": "P - Promote propSelectionPriority == 10 as default behaviour",
+    "description": "P - Promote propSelectionPriority == 10 as default behaviour\nSelection of objects in the Designer visualiser is prioritised based on the type of object. For example, if a camera is behind a projector, the camera will be selected even if the projector is visually in front. In previous releases, the Prop object had the lowest selection priority of all object types. This could be changed with the option switch propSelectionPriority. In this release, the default selection priority of Props has been changed so it is the same priority as a projector, puck, skeleton and 2.5D asset. It is still possible to use the option switch to change this, whereby setting propSelectionPriority to 0 is the lowest priority and 25 is the highest priority.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2761"
   },
   {
@@ -6674,7 +6562,7 @@
     "version": "r27.6",
     "category": "",
     "dsof": "",
-    "description": "A new SkeletalPointTrackingSource for controlling skeleton bones based on tracked points",
+    "description": "A new SkeletalPointTrackingSource for controlling skeleton bones based on tracked points\nTaken together, these features allow us to deform a mesh based on tracked marker positions from a system such as Blacktrax or Optitrack.\nWorkflow",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
@@ -6800,7 +6688,7 @@
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "",
-    "description": "Adjust the Rejoin velocity limit to change the speed at which points catch up with the tracked position when tracking is received again after being lost",
+    "description": "Adjust the Rejoin velocity limit to change the speed at which points catch up with the tracked position when tracking is received again after being lost\nTo learn more about the Skinned Mesh Workflows see the Skeleton and Skeletal Point Track Source pages.\nSkinned skeletal mesh support",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
@@ -6849,7 +6737,7 @@
     "version": "r27.6",
     "category": "Setting up a skeletal point tracking source to control a skeleton",
     "dsof": "DSOF-27004",
-    "description": "Expose skeleton joint pose manual controls to users",
+    "description": "Expose skeleton joint pose manual controls to users\nSkeletalPointTrackingSource for marker-based skeleton control",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
@@ -6912,91 +6800,49 @@
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-25528",
-    "description": "Add API call to set GUI mode",
+    "description": "Add API call to set GUI mode\nThe above two items are in a new API endpoint /session/status/setguimode",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-25063",
-    "description": "Add API call to query timecode receive status of a transport",
+    "description": "Add API call to query timecode receive status of a transport\nA new receivingTimecode field has been added to TransportIndo in the Session API.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-25088",
-    "description": "Add API endpoints to query QuickCal pixel error and overwrite manual calibration",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
-  },
-  {
-    "version": "r27.6",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "quickcal/overwritemanualcalibration which overwrites the manual calibration for the given projector",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
-  },
-  {
-    "version": "r27.6",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "quickcal/projectorcalibration which returns information about the projector config including the error values",
+    "description": "Add API endpoints to query QuickCal pixel error and overwrite manual calibration\nTwo new endpoints have been added:\nquickcal/overwritemanualcalibration which overwrites the manual calibration for the given projector\nquickcal/projectorcalibration which returns information about the projector config including the error values",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-25222",
-    "description": "OmniCal - ability to mesh deform without adding verts",
+    "description": "OmniCal - ability to mesh deform without adding verts\nIt is sometimes desirable to deform with OmniCal without adding extra vertices. This is now configurable in MeshDeform in the new Topology Behaviour setting. Selecting “Discard inserted vertices” will result in a deformed mesh without added complexity. The number of vertices and triangles before/after MeshDeform will remain the same.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-25351",
-    "description": "OmniCal: minor MeshDeform performance improvements",
+    "description": "OmniCal: minor MeshDeform performance improvements\nPerformance of the OmniCal mesh deform feature has been improved.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-25367",
-    "description": "Add prediction to tracked points",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
-  },
-  {
-    "version": "r27.6",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Prediction time (sec): How much time to predict",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
-  },
-  {
-    "version": "r27.6",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Sample interval threshold (sec): This is the threshold of time intervals between samples to filter out noise. If the interval time between samples is bigger, detection will be ignored",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
-  },
-  {
-    "version": "r27.6",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Sample size: The number of samples to use for prediction. More samples will make prediction less prone to the noise",
-    "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
-  },
-  {
-    "version": "r27.6",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Terms: This is the term of curve that is used for curve fitting. The Value can be set to either 1 or 2",
+    "description": "Add prediction to tracked points\nA new section for Prediction has been added to the natnet driver. This can help to minimise lag. The new fields in the Prediction section are as follows:\nPrediction time (sec): How much time to predict\nSample interval threshold (sec): This is the threshold of time intervals between samples to filter out noise. If the interval time between samples is bigger, detection will be ignored\nSample size: The number of samples to use for prediction. More samples will make prediction less prone to the noise\nTerms: This is the term of curve that is used for curve fitting. The Value can be set to either 1 or 2",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
     "version": "r27.6",
     "category": "Improvements",
     "dsof": "DSOF-26057",
-    "description": "Add user facing option to render normals",
+    "description": "Add user facing option to render normals\nMesh normals can now be toggled on in the Designer visualiser. To turn on normals, go to Stage -> Visualiser Camera -> Render settings -> Object visibility -> Mesh normals. Normals will then be displayed for any mesh which is selected.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
@@ -7059,7 +6905,7 @@
     "version": "r27.6",
     "category": "Fixes",
     "dsof": "DSOF-27011",
-    "description": "Offline editors no longer affect aggregate status in the session widget",
+    "description": "Offline editors no longer affect aggregate status in the session widget\nFor more information about new APIs, please visit the Developer Portal.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r276---new-features-improvements--fixes"
   },
   {
@@ -7080,42 +6926,42 @@
     "version": "r27.5",
     "category": "New Features",
     "dsof": "",
-    "description": "Added support for RX III server type",
+    "description": "Added support for RX III server type\nWe have added support for the RX III render node. Read more about the new RX III here",
     "url": "https://help.disguise.one/designer/release-notes/r27#r275---rx-iii-support"
   },
   {
     "version": "r27.5",
     "category": "Improvements",
     "dsof": "DSOF-25698",
-    "description": "Add a modifier to locking to director, which first jumps the director to the editor playhead before locking",
+    "description": "Add a modifier to locking to director, which first jumps the director to the editor playhead before locking\nWhen using an Editor that is running in session, users can now press ALT + SHIFT + click ‘Lock to Director’ to jump the Director to the Editors’ time location before locking.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r275---rx-iii-support"
   },
   {
     "version": "r27.5",
     "category": "Improvements",
     "dsof": "DSOF-25854",
-    "description": "Add range finder option to camera visualiser",
+    "description": "Add range finder option to camera visualiser\nWe have added a range finder option to the camera visualiser to enable users to know how far away from a screen when completing pixel pitch calculations. This can be turned on by right clicking anywhere in the stage view, and then right-clicking the Render settings. The Range finder can be toggled on and off from this menu and will appear as an overlay in the stage view.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r275---rx-iii-support"
   },
   {
     "version": "r27.5",
     "category": "Improvements",
     "dsof": "DSOF-26839",
-    "description": "Allow padding outside of RenderStream full-frame renders",
+    "description": "Allow padding outside of RenderStream full-frame renders\nWhen the Splitting Strategy is set to ‘Full-Frame’ mode in the Cluster Assigner menu - found within the Conﬁg section the RenderStream layer - the Padding value is now applied to the outside of the full frame. This can also be used with Mesh and Direct Mappings if using the RenderStream layer.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r275---rx-iii-support"
   },
   {
     "version": "r27.5",
     "category": "Improvements",
     "dsof": "DSOF-26887",
-    "description": "Remote GUI status and toggle for actors",
+    "description": "Remote GUI status and toggle for actors\nWe have added GUI status to the ‘Output’ indicator on the Network Status Widget as seen in the screenshot below. The GUI icon follows the same convention as the other icons, namely if the GUI is on a Disguise media server running in session then the icon will be green. If it is off then the icon will be grey. A tooltip also states this information if the user hovers over the icon.\nNetwork Status Widget",
     "url": "https://help.disguise.one/designer/release-notes/r27#r275---rx-iii-support"
   },
   {
     "version": "r27.5",
     "category": "Improvements",
     "dsof": "DSOF-26890",
-    "description": "Add hotkeys to next/last through the tracks in the setlist",
+    "description": "Add hotkeys to next/last through the tracks in the setlist\nWe have introduced hotkeys to allow users to jump between tracks in the setlist. This can be completed by pressing ‘PgDn’ to go to the next track in the setlist, and ‘PgUp’ to go to the last track in the setlist.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r275---rx-iii-support"
   },
   {
@@ -7437,7 +7283,7 @@
     "version": "r27.3.1",
     "category": "New Features",
     "dsof": "",
-    "description": "Right-click on the layer and select Patch to HTTP",
+    "description": "Right-click on the layer and select Patch to HTTP\nHTTP sockpuppet exposes the following HTTP API endpoints, currently under the experimental namespace and not yet documented at developer.disguise.one.\nSee http://127.0.0.1/docs/experimental for the Swagger documentation. Note that as these APIs are in the experimental namespace, they may be subject to change before promotion to the non-experimental namespace.\nExpected usage of APIs are as follows:",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
@@ -7458,7 +7304,7 @@
     "version": "r27.3.1",
     "category": "New Features",
     "dsof": "",
-    "description": "Using data from sockpuppet/patches, use /sockpuppet/live to make changes to the patch, and therefore the layer. Send to the director only, or use for controlling understudy",
+    "description": "Using data from sockpuppet/patches, use /sockpuppet/live to make changes to the patch, and therefore the layer. Send to the director only, or use for controlling understudy\nLive changes sent to the director will be played back in sync across the session with a 2 frame delay.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
@@ -7472,21 +7318,21 @@
     "version": "r27.3.1",
     "category": "Improvements",
     "dsof": "",
-    "description": "Ctrl Alt - (collapse)",
+    "description": "Ctrl Alt - (collapse)\nIn addition, there is a new Collapse All Groups button in the right click menu of the track which collapses all supergroups and smart groups.\nDSOF-19079 - Make strobe layer less intense when created\nWhen a strobe layer is created the rate is now 1hz by default.\nDSOF-23033 - Sequencing: Add hot key for layer ‘fit to contents’\nWhen a layer is selected using the key bind ‘CTRL + SHIFT + F’ it will fit layer to contents\nThe key bind is noted in the ‘F1’ Shortcut menu.\nDSOF-23439 - FolderWatcher abort logs are unclear (e.g. if d3service fails to clean up)\nDSOF-25049 - Add text to manual observation alignment widget explaining initial alignment\nWe have added text in the Manual Observation widget that explains to users that if a wireframe is not visible, then the user should increase the Stage Render Opacity and adjust the Solved Position and Rotation until the alignment objects are in view.\nDSOF-25224 - DSE accounting for surface normal relative to projector\nWe have added functionality to the Dynamic Blend workflow which accounts for the surface normal relative to the projector. When users edit the ‘Cutoff angle’ in the Dynamic Blend section of each projector and the relative angle of the projector and the surface normal exceeds this value, then we remove the contribution of that projector and use projectors with a better view instead.\nDSOF-25614 - DSE: promote “dynamicSoftEdgeFullRes” to user-editable per-projector option\nThe option switch dynamicSoftEdgeFullRes has been promoted to a user-editable per-projector option.\nThis enables the soft edge resolution to vary per projector rather than set across the whole project. In the projector settings, the “Dynamic Blend” section has a “Resolution factor” field 1/16, 1/8, 1/4, 1/2 and Full. 1/16 is the default for best performance. The “Resolution factor” changes DSE resolution,affecting blend quality (it is visible).\nDSOF-25623 - DSE: re-organise Dynamic Blend section to hide less-used settings\nThe Projector Dynamic Blend section now has an Advanced Blend Setting sub-section with less frequently used options, to save on screen real estate.\nDSOF-25657 - Make crash reporting disabled by default\nCrash dumps are created when an unhandled exception occurs. This incurs a brief stall while the dump is generated. This behaviour is now opt-in and disabled by default. It can be enabled by one of the following two methods:",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
     "category": "Improvements",
     "dsof": "",
-    "description": "Option in Designer. d3 > Advanced > Enable Crash Reporting > On / Off",
+    "description": "Option in Designer. d3 > Advanced > Enable Crash Reporting > On / Off\nWhen On, it generates a dump file on the local machine when an Access Violation thrown.\nWhen Off, it doesn’t generate a dump file on the local machine when an Access Violation thrown.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
     "version": "r27.3.1",
     "category": "Improvements",
     "dsof": "",
-    "description": "Advanced Project Setting > Option Switch: enableCrashReporting is Project Wide and depending which machine has the Access Violation thrown, it will generate a dump file on that specific machine",
+    "description": "Advanced Project Setting > Option Switch: enableCrashReporting is Project Wide and depending which machine has the Access Violation thrown, it will generate a dump file on that specific machine\nDSOF-25922 - Keyboard modifiers for fine and coarse control of feed warp points\nWhen on a KVM or on a laptop trackpad it tends to be easier to use a keyboard than use the cursor.\nUsing the keyboard means the points move really slowly though. Adding modifiers means easier control of points without the movement being forced to be one slow speed. The following modifiers have been added:",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
@@ -7500,7 +7346,7 @@
     "version": "r27.3.1",
     "category": "Improvements",
     "dsof": "",
-    "description": "Holding Shift while moving feed warp points with arrow keys causes them to move in larger increments",
+    "description": "Holding Shift while moving feed warp points with arrow keys causes them to move in larger increments\nDSOF-26395 Allow users to use field of view for XR calibration when focus encoder unreliable\nIf a tracking system is not sending a reliable focus encoder value, it can be preferable to disable it and use the field of view instead as a basis for XR calibration. Now, when the focus encoder value in the camera tracking source is disabled, it will be overwritten by the horizontal field of view if the focal length value is enabled.\nThis value is shown as the zoom value when doing XR spatial calibrations, and is also used as the zoom encoder value when interpolating calibrated lens poses during operation\nWhen overriding, the field in the tracking source is highlighted red, with the help text explaining why it is overridden. Similar highlighting and help text is also shown when the field is locked from the spatial calibration. All the equivalent of above is also true for focus encoder, overriding with focus distance where available.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2731---improvements--fixes"
   },
   {
@@ -7535,14 +7381,14 @@
     "version": "r27.1.4",
     "category": "Improvements",
     "dsof": "DSOF-26470",
-    "description": "IP-VFC - inform a user when no SFPs are connected",
+    "description": "IP-VFC - inform a user when no SFPs are connected\nWhen using an IP-VFC card, we have added error reporting into the feed scene in the form of a tooltip for the Sync Mode button.\nWhen a user is using the PTP option in sync mode, if there is no compatible 25Gb SFP in Port 1 on the IP-VFC then the sync mode button will turn red and a message will state the Disguise media server and VFC slot number which has the invalid configuration as seen below:\nWhen a user is using the EXT option in sync mode, if there is no compatible single or dual SDI SFP in\nPorts 3 and/or 4 on the IP-VFC then the sync mode button will turn red and a message will state the Disguise media server and VFC slot number which has the invalid configuration.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2714"
   },
   {
     "version": "r27.1.4",
     "category": "Improvements",
     "dsof": "DSOF-26538",
-    "description": "IP-VFC - Change PTP_LOCKED mode name to PTP_SYNC",
+    "description": "IP-VFC - Change PTP_LOCKED mode name to PTP_SYNC\nWhen using IP-VFC, we have changed the name of the PTP sync mode located under the Sync Info tab in the IP-VFC control widget from PTP_LOCKED to PTP_SYNC",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2714"
   },
   {
@@ -7633,7 +7479,7 @@
     "version": "r27.1.2",
     "category": "Improvements",
     "dsof": "DSOF-23937",
-    "description": "IP-VFC: Device names in NMOS are more descriptive",
+    "description": "IP-VFC: Device names in NMOS are more descriptive\nWhen using the IP-VFC in ST 2110 mode, we have changed the NMOS device label so that it clearly states the slot that it is occupying on the Disguise media server, for example ‘Slot 1’. In previous releases, the NMOS device label of each IP-VFC would be ‘Disguise Port 0’. Wehavealso changed the NMOS node label to be the user-defined name, which is often changed from the Windows name to match the role in which it occupies within the d3net session i.e. Actor01.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r2712"
   },
   {
@@ -7899,7 +7745,7 @@
     "version": "r27",
     "category": "Improvements",
     "dsof": "",
-    "description": "General performance improvements",
+    "description": "General performance improvements\nThese improvements are only available when running Designer software version r27 and above alongside the following OS builds - all of which are available to download on disguise.download/#hardware or\nhttps://disguise.cloud/account/software/os-downloads:",
     "url": "https://help.disguise.one/designer/release-notes/r27#r27---matrox-sdi-improvements"
   },
   {
@@ -7948,7 +7794,7 @@
     "version": "r27",
     "category": "Fixes",
     "dsof": "DSOF-25465",
-    "description": "Fixed an issue where only the 12G-enabled ports hold onto the last frame if input was removed",
+    "description": "Fixed an issue where only the 12G-enabled ports hold onto the last frame if input was removed\nNDI® is a registered trademark of Vizrt NDI AB.",
     "url": "https://help.disguise.one/designer/release-notes/r27#r27---matrox-sdi-improvements"
   },
   {
@@ -8753,7 +8599,7 @@
     "version": "r26.0.1",
     "category": "",
     "dsof": "DSOF-25123",
-    "description": "We have implemented a preview feature that allows d3 to chase timecode at non-standard frame rates. This can be used for example to adjust the playback speed of video in line with a DJs adjustments to the BPM of a track. To utilise this preview feature you can enable the option switch “forcePIDTimecodeChase”. Chasing LTC or any kind of timecode will smoothly follow adjustments to timecode playback while this is set. If you perform large timecode jumps you may find that the playhead will fast-forward to get to the new timecode rather than immediately jump to that point",
+    "description": "We have implemented a preview feature that allows d3 to chase timecode at non-standard frame rates. This can be used for example to adjust the playback speed of video in line with a DJs adjustments to the BPM of a track. To utilise this preview feature you can enable the option switch “forcePIDTimecodeChase”. Chasing LTC or any kind of timecode will smoothly follow adjustments to timecode playback while this is set. If you perform large timecode jumps you may find that the playhead will fast-forward to get to the new timecode rather than immediately jump to that point\nIf you have feedback about this new preview feature please let us know via our support@disguise.one email so that we can take that into account for the finished implementation.",
     "url": "https://help.disguise.one/designer/release-notes/r26#r2601"
   },
   {
@@ -8788,63 +8634,49 @@
     "version": "r26",
     "category": "Improvements",
     "dsof": "DSOF-16666",
-    "description": "Simple FBX mesh support",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r26"
-  },
-  {
-    "version": "r26",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "Object hierarchies found within the FBX file in Designer are currently not supported",
-    "url": "https://help.disguise.one/designer/release-notes/r26#r26"
-  },
-  {
-    "version": "r26",
-    "category": "Improvements",
-    "dsof": "",
-    "description": "FBX files imported with up to 3x UV maps are supported. Designer uses the first UV map only and there is currently no way to switch between each UV map",
+    "description": "Simple FBX mesh support\nThe FBX file format can now be successfully imported into Designer as a single mesh. These can be used in the schematic, lux and heatmap renderers. Any FBX mesh will be imported with global positions, and non-triangulated meshes are triangulated on import. FBX files are imported with UV maps.\nIt is important to note the following mitigations with this feature:\nObject hierarchies found within the FBX file in Designer are currently not supported\nFBX files imported with up to 3x UV maps are supported. Designer uses the first UV map only and there is currently no way to switch between each UV map\nFBX file format support can be used with the option switch enabled. To access, right-click on a project folder in d3manager, select ‘Advanced project settings’ and then select ‘enableFbxMeshImport’. Please contact product-team@disguise.one for feedback on this feature.",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
     "version": "r26",
     "category": "Improvements",
     "dsof": "DSOF-22271",
-    "description": "TransportJumpCommand locations should use time adjusted by timecode tag when using timecode location",
+    "description": "TransportJumpCommand locations should use time adjusted by timecode tag when using timecode location\nWhen making a TransportJumpCommand in the TransportControl module, the location value has the option of being set with CUE or timecode.\nIn previous releases, when there are timecode tags on the track that a user wants to specify a location on, the timecode displayed in the GUI is based on the timecode tags, but the location that the TransportJumpCommand uses does not take the timecode tags into account.\nIn r26, the location for TransportJumpCommand now uses the time adjusted by timecode tags when using the timecode location.",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
     "version": "r26",
     "category": "Improvements",
     "dsof": "DSOF-23321",
-    "description": "Show RenderStream proxy stream status in the GUI",
+    "description": "Show RenderStream proxy stream status in the GUI\nWe have added RenderStream proxy information in the RenderStream Editor widget.",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
     "version": "r26",
     "category": "Improvements",
     "dsof": "DSOF-23699",
-    "description": "Make list/grid view selection for media/texture browsers persistent",
+    "description": "Make list/grid view selection for media/texture browsers persistent\nIn previous releases, the behaviour of the media and texture browser in Designer was not persistent when a user would switch between grid view and list view. In r26 we have made the selection of grid or list view in the media/texture browser to remain persistent across all machines running in a session.",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
     "version": "r26",
     "category": "Improvements",
     "dsof": "DSOF-23810",
-    "description": "Add FBX ASCII format for Shot Recorder export",
+    "description": "Add FBX ASCII format for Shot Recorder export\nUsers can now export data from the Shot Recorder to the FBX ASCII format.",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
     "version": "r26",
     "category": "Improvements",
     "dsof": "DSOF-24041",
-    "description": "XR: improve usability of Tracker Delay UI",
+    "description": "XR: improve usability of Tracker Delay UI\nWe have made a number of changes to the Tracker Delay UI. These include changing the overlay colour from magenta to red to signify when no tracking data was captured, or the delay is set to too low or too high. We have also introduced help text in a number of areas of the UI to provide instruction on the Tracker Delay process.",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
     "version": "r26",
     "category": "Improvements",
     "dsof": "DSOF-24066",
-    "description": "Alert the user when video lookup times becomes unstable or if errors are high",
+    "description": "Alert the user when video lookup times becomes unstable or if errors are high\nWe have added a visible notification within the UI to notify users that the video receive delay is set incorrectly during the spatial calibration process when working with MR Sets. The calibration will be highlighted in red, and hovering over the row with a mouse will explain that there is a video receive delay error and to perform the delay calibration again.\nVideo receive delay notification during spatial calibration",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
@@ -8865,14 +8697,14 @@
     "version": "r26",
     "category": "Improvements",
     "dsof": "DSOF-24099",
-    "description": "Shorten RenderStream workload/stream friendly names for the UI",
+    "description": "Shorten RenderStream workload/stream friendly names for the UI\nIn previous releases, RenderStream workloads and streams were identified within the UI through a 64 bit unique ID to enable users to reference each stream. In r26 we have shortened the RenderStream workload names to make it more straightforward for a user to reference each RenderStream workload.\nRenderStream workload name shortened",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
     "version": "r26",
     "category": "Improvements",
     "dsof": "DSOF-24153",
-    "description": "Expressions: if expressions are broken, the layer they are used in should change colour as well as the parameter",
+    "description": "Expressions: if expressions are broken, the layer they are used in should change colour as well as the parameter\nIn previous releases, if an incorrect Expression had been written then this would be flagged to the user by turning the parameter orange in colour.\nIn r26 we have included the layer that is using the Expression to also change to red in colour so that the user is notified that the Expression is incorrect. If the layer is in a group, then the group will turn red when the layer it contains turns red.\nWe have also included an error message on the layer via a tooltip. If a user corrects the Expression then the layer will return to its default colour.",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
@@ -8886,21 +8718,21 @@
     "version": "r26",
     "category": "Improvements",
     "dsof": "DSOF-24166",
-    "description": "Make list editors stickyable",
+    "description": "Make list editors stickyable\nIn r26 we have enabled users to pin ListEditors to the Designer UI by clicking the pin in the top left hand side of each ListEditor as seen in the image below.\nEditor windows pinned",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
     "version": "r26",
     "category": "Improvements",
     "dsof": "DSOF-24271",
-    "description": "Change default location for d3 Projects to D: Drive after reimaging a Disguise media server",
+    "description": "Change default location for d3 Projects to D: Drive after reimaging a Disguise media server\nIn r26 we have changed the default location for d3 Projects to be in the D: Drive after reimaging a Disguise media server. In previous releases, a user would be pointed towards the Documents folder whereas all Designer projects should be located in the D: Drive.",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
     "version": "r26",
     "category": "Improvements",
     "dsof": "DSOF-24375",
-    "description": "Include display master brightness in the feed UI",
+    "description": "Include display master brightness in the feed UI\nWe have included the master brightness of LED screens and projectors within the feed UI. This can be seen as a percentage underneath the name of each screen, as shown in the screenshot below.\nBrightness setting feed view",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
@@ -9327,7 +9159,7 @@
     "version": "r26",
     "category": "Fixes",
     "dsof": "DSOF-25099",
-    "description": "Fixed an issue d3preview caused an Access Violation on opening file",
+    "description": "Fixed an issue d3preview caused an Access Violation on opening file\nLast updated: Aug 8, 2025",
     "url": "https://help.disguise.one/designer/release-notes/r26#r26"
   },
   {
@@ -9453,7 +9285,7 @@
     "version": "r25.2",
     "category": "Fixes",
     "dsof": "DSOF-24928",
-    "description": "FFixed a memory leak in RenderStream Uncompressed with Texture Parameters",
+    "description": "FFixed a memory leak in RenderStream Uncompressed with Texture Parameters\nFull build: 165620Released: 09 August 2023",
     "url": "https://help.disguise.one/designer/release-notes/r25#r252"
   },
   {
@@ -9537,28 +9369,28 @@
     "version": "r25",
     "category": "New Features",
     "dsof": "",
-    "description": "General UI improvements",
+    "description": "General UI improvements\nRead more about the improvements here.\nFurther featured changes include:\nWe have implemented centroid tracking sources into the RTTrPMDriver within the PositionDriver.\nWe have added Arri LDS within the PositionReceiver devices so that users can receive metadata from Arri cameras into Disguise - that being focal length, aspect ratio, vertical and horizontal field of view, sensor size, aperture, and focus distance.",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
     "version": "r25",
     "category": "Improvements",
     "dsof": "DSOF-22279",
-    "description": "Ensure Quad-SDI VFC output signal is not interrupted after configuration",
+    "description": "Ensure Quad-SDI VFC output signal is not interrupted after configuration\nIn previous releases, the output from a Quad-SDI VFC card would be interrupted if a project would be restarted within Designer.\nIn r25, if a user was to restart a project within Designer then the output from a Quad-SDI VFC card would be the same resolution as it was before the project was restarted. This prevents the signal being interrupted upon restarting a project within Designer.\nThe only time that an output will be interrupted from a Quad-SDI VFC will be if a Disguise media server was restarted or powered off, or when apply feed settings is executed.",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
     "version": "r25",
     "category": "Improvements",
     "dsof": "DSOF-22410",
-    "description": "Support focus and iris data in FBX export from shot recorder",
+    "description": "Support focus and iris data in FBX export from shot recorder\nIn r25 we have added both aperture and focus distance to the default parameter collection for new cameras within the Shot Recorder feature. These properties can also be set within the Shot Recorder FBX export.",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
     "version": "r25",
     "category": "Improvements",
     "dsof": "DSOF-22460",
-    "description": "Keep last-known camera position if camera tracking drops",
+    "description": "Keep last-known camera position if camera tracking drops\nIn previous releases, when camera tracking is lost, the camera will revert back to 0,0,0. In r25, the camera tracking will remain at the last tracked camera position.",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
@@ -9572,56 +9404,56 @@
     "version": "r25",
     "category": "Improvements",
     "dsof": "DSOF-22837",
-    "description": "Write functionality to clear up exported glb, movie and metadata files",
+    "description": "Write functionality to clear up exported glb, movie and metadata files\nWe have added an improvement to the Previz Link within Designer in r25 to clear up disk space by deleting old export files related to Previz that are no longer being used by any other application. Any export file that is still being used will not be deleted until the next time a clean-up takes place, where again we will only delete export files that are no longer being used by any application.\nDSOF-22937 Move nginx logs to d3 app data directory instead of in program files\nIn r25, nginx logs have been moved from the program files path to\nC:\\Users\\d3\\AppData\\Local\\d3\\nginx",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
     "version": "r25",
     "category": "Improvements",
     "dsof": "DSOF-22995",
-    "description": "GUI: The layer editor should move to front open keyframe editors when it gains focus",
+    "description": "GUI: The layer editor should move to front open keyframe editors when it gains focus\nIn previous releases, when working on a large timeline that overlaps on-screen with a layer editor, if a user was to click on the layer editor to focus on it, the layer editor widget would be foreground but the keyframe editor would be behind the timeline. In r25, when a user brings a layer editor into focus, the keyframe editor will now foreground with it.",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
     "version": "r25",
     "category": "Improvements",
     "dsof": "DSOF-23002",
-    "description": "Sequencing: On project upgrade, disable sequencing for all fields which are not sequenced",
+    "description": "Sequencing: On project upgrade, disable sequencing for all fields which are not sequenced\nIn previous releases, if a project was upgraded from a version of Designer that did not support the Keyframe Toggle (before r20.0), all fields were set to have Keyframes enabled. This required a significant amount of tidying to be able to benefit from the Keyframe Toggle. In r25, we have enabled any fields that only have 1 frame and therefore no sequencing should have the Keyframe Toggle automatically set to off on project upgrade.",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
     "version": "r25",
     "category": "Improvements",
     "dsof": "DSOF-23110",
-    "description": "Videoins with placeholder images should have the resolution of the placeholder",
+    "description": "Videoins with placeholder images should have the resolution of the placeholder\nIn previous releases, when adding a Videoin for a placeholder image, the video would be set to the last resolution of the video input received by Disguise. In r25, if a Videoin is added with a placeholder image, the video will be set to the resolution of theplaceholder image that is used. The Videoin will override the placeholder image resolution when it is available.",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
     "version": "r25",
     "category": "Improvements",
     "dsof": "DSOF-23245",
-    "description": "Optimize DmxScreenRead layer",
+    "description": "Optimize DmxScreenRead layer\nIn previous releases, it was reported that the DmxScreenRead layer was impacting the performance of Designer. We have now optimised the layer.",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
     "version": "r25",
     "category": "Improvements",
     "dsof": "DSOF-23336",
-    "description": "IP VFC SDP file paths should be discoverable",
+    "description": "IP VFC SDP file paths should be discoverable\nWe have added a ‘Copy SDP path to clipboard’ button within the IP-VFC settings menu. This includes the SDP path that can be copied and added onto a ST 2110 receiver device, such as the MegapixelHelios.",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
     "version": "r25",
     "category": "Improvements",
     "dsof": "DSOF-23646",
-    "description": "GET activetransport API should return the selected track for each transport",
+    "description": "GET activetransport API should return the selected track for each transport\nWe have enabled the ActiveTransport API to return the currently selected track for each transport. This can be found within the GET activetransport API, where we have included a currentTrack property that indicates the current selected track of a given transport.",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
     "version": "r25",
     "category": "Improvements",
     "dsof": "DSOF-23756",
-    "description": "Add double dot RS plugin version to schema JSON",
+    "description": "Add double dot RS plugin version to schema JSON\nWe have added a new RenderStream release naming convention to include double dots for plugin-specific hotfixes. This can now be seen within the Designer GUI.",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
@@ -9635,7 +9467,7 @@
     "version": "r25",
     "category": "Improvements",
     "dsof": "DSOF-23927",
-    "description": "Allow user to copy/paste notifications",
+    "description": "Allow user to copy/paste notifications\nUsers can now copy and paste notifications from Designer without having to open the console.",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
@@ -10097,7 +9929,7 @@
     "version": "r25",
     "category": "Fixes",
     "dsof": "DSOF-24083",
-    "description": "Fixed multiple Access Violations and crashes to desktop when trying to stream 3 channels over RenderStream",
+    "description": "Fixed multiple Access Violations and crashes to desktop when trying to stream 3 channels over RenderStream\nNDI® is a registered trademark of Vizrt NDI AB.\nLast updated: Aug 8, 2025",
     "url": "https://help.disguise.one/designer/release-notes/r25#r25"
   },
   {
@@ -10342,7 +10174,7 @@
     "version": "r24",
     "category": "Improvements",
     "dsof": "",
-    "description": "6 Transport Manager: Incoming clock should be displayed even when transport disengaged",
+    "description": "6 Transport Manager: Incoming clock should be displayed even when transport disengaged\nLast updated: Aug 8, 2025",
     "url": "https://help.disguise.one/designer/release-notes/r24#r24"
   },
   {
@@ -10531,7 +10363,7 @@
     "version": "r23",
     "category": "Improvements",
     "dsof": "",
-    "description": "Notify user of new or mismatching VFC firmware",
+    "description": "Notify user of new or mismatching VFC firmware\nLast updated: Aug 8, 2025",
     "url": "https://help.disguise.one/designer/release-notes/r23#r23"
   },
   {
@@ -10860,7 +10692,7 @@
     "version": "r21",
     "category": "Quality of Life (QoL) improvements",
     "dsof": "",
-    "description": "Gradient Layer and Gradient Texture have an additional interpolation method called ‘Smoothstep’",
+    "description": "Gradient Layer and Gradient Texture have an additional interpolation method called ‘Smoothstep’\nLast updated: Aug 8, 2025",
     "url": "https://help.disguise.one/designer/release-notes/r21#r21"
   },
   {
@@ -10895,7 +10727,7 @@
     "version": "r20",
     "category": "Features",
     "dsof": "",
-    "description": "Layer Stacks",
+    "description": "Layer Stacks\nLast updated: Aug 8, 2025",
     "url": "https://help.disguise.one/designer/release-notes/r20#r20"
   },
   {
@@ -10930,7 +10762,7 @@
     "version": "r19",
     "category": "RenderStream enhancements",
     "dsof": "",
-    "description": "RS Compressed: HEVC compression (H.265), implemented in r19, replaces NDI® when used in RenderStream compressed workflow",
+    "description": "RS Compressed: HEVC compression (H.265), implemented in r19, replaces NDI® when used in RenderStream compressed workflow\nNDI® is a registered trademark of Vizrt NDI AB.\nLast updated: Aug 8, 2025",
     "url": "https://help.disguise.one/designer/release-notes/r19#r19"
   },
   {
@@ -14192,7 +14024,7 @@
     "version": "r16",
     "category": "Other",
     "dsof": "DSOF-11507",
-    "description": "[] - Update default test pattern images",
+    "description": "[] - Update default test pattern images\nNDI® is a registered trademark of Vizrt NDI AB.\nLast updated: Aug 8, 2025",
     "url": "https://help.disguise.one/designer/release-notes/r16#r16"
   },
   {
@@ -14241,7 +14073,7 @@
     "version": "r15.3.5",
     "category": "Fixes",
     "dsof": "",
-    "description": "Playing to Loop section in Locked mode when section has been resized ignores the section break",
+    "description": "Playing to Loop section in Locked mode when section has been resized ignores the section break\nThese four have potential fixes identified, but need to go through the process of code review and verification",
     "url": "https://help.disguise.one/designer/release-notes/r15#r1535"
   },
   {
@@ -15585,7 +15417,7 @@
     "version": "r15",
     "category": "Current known issues",
     "dsof": "",
-    "description": "The fix for this makes fundamental changes to timeline operations, so will take a while to work its way into future releases",
+    "description": "The fix for this makes fundamental changes to timeline operations, so will take a while to work its way into future releases\nPlease contact support@disguise.one for feedback or if you have any issues.\nLast updated: Aug 8, 2025",
     "url": "https://help.disguise.one/designer/release-notes/r15#r15"
   },
   {
@@ -15725,7 +15557,7 @@
     "version": "r14.4.7",
     "category": "Fixes",
     "dsof": "",
-    "description": "Intermittent crackling when playing back audio files",
+    "description": "Intermittent crackling when playing back audio files\nUpgrading 32-bit to 64-bit Sockpuppet shows",
     "url": "https://help.disguise.one/designer/release-notes/r14#r1447"
   },
   {
@@ -15774,7 +15606,7 @@
     "version": "r14.4.7",
     "category": "Fixes",
     "dsof": "",
-    "description": "The fix for this makes fundamental changes to timeline operations, so will take a while to work its way into future releases",
+    "description": "The fix for this makes fundamental changes to timeline operations, so will take a while to work its way into future releases\n[Audio] Intermittent crackling when playing back project specific audio files",
     "url": "https://help.disguise.one/designer/release-notes/r14#r1447"
   }
 ]
