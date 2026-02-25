@@ -36,17 +36,24 @@ const BASE_URL = "https://help.disguise.one";
 const AI_API_URL = "https://models.github.ai/inference/chat/completions";
 const AI_MODEL = "openai/gpt-4o-mini";
 const AI_TOKEN = process.env.AI_TOKEN;
-const NO_AI = process.argv.includes("--no-ai");
 const FORCE = process.argv.includes("--force");
+const CACHE_ONLY = process.argv.includes("--cache-only");
+const FIX_URLS = process.argv.includes("--fix-urls");
 const ONLY_VERSION = (() => {
   const idx = process.argv.findIndex(a => a === "--version" || a === "--only");
   return idx !== -1 && process.argv[idx + 1] ? process.argv[idx + 1].toLowerCase() : null;
 })();
-const USE_AI = !NO_AI && !!AI_TOKEN;
 
-if (!AI_TOKEN && !NO_AI) {
-  console.warn("Warning: AI_TOKEN not set. Falling back to regex parser.");
-  console.warn("Set AI_TOKEN to a GitHub PAT or use --no-ai to silence this warning.\n");
+if (!AI_TOKEN && !CACHE_ONLY && !FIX_URLS) {
+  console.error("Error: AI_TOKEN not set. Set AI_TOKEN to a GitHub PAT or use --cache-only.");
+  process.exit(1);
+}
+
+// Match version against --version filter (exact or prefix match)
+function matchesVersion(version) {
+  if (!ONLY_VERSION) return true;
+  const v = version.toLowerCase();
+  return v === ONLY_VERSION || v.startsWith(ONLY_VERSION + ".");
 }
 
 // --- AI cache ---
@@ -105,7 +112,7 @@ function htmlToMarkdown(html) {
     .trim();
 }
 
-async function extractWithAI(versionHtml, version) {
+async function extractWithAI(versionHtml, version, url) {
   const markdown = htmlToMarkdown(versionHtml);
   const key = cacheKey(markdown);
   if (aiCache[key] && !FORCE) {
@@ -149,11 +156,11 @@ async function extractWithAI(versionHtml, version) {
 
   const parsed = JSON.parse(content);
 
-  // Cache and persist (include version for easier inspection)
-  aiCache[key] = { version, ...parsed };
+  // Cache and persist (include version and url for easier inspection)
+  aiCache[key] = { version, url, ...parsed };
   saveCacheSync();
 
-  return parsed;
+  return { ...parsed, url };
 }
 
 // Fallback list of release page paths (r14–r32)
@@ -187,107 +194,6 @@ function decodeEntities(s) {
     .replace(/&nbsp;/g, " ");
 }
 
-// Extract only top-level <li> contents from HTML, ignoring nested <li> inside sub-lists.
-// Tracks <ul>/<ol> nesting depth so inner list items are included in their parent's content.
-function extractTopLevelLis(html) {
-  const items = [];
-  const tagRe = /<(\/?)(?:ul|ol|li)(?:\s[^>]*)?\s*>/gi;
-  let listDepth = 0; // depth of <ul>/<ol> nesting
-  let liDepth = 0; // which listDepth the current top-level <li> opened at
-  let capturing = false;
-  let start = 0;
-
-  let m;
-  while ((m = tagRe.exec(html))) {
-    const isClose = m[1] === "/";
-    const tag = m[0].toLowerCase();
-
-    if (!isClose && (tag.startsWith("<ul") || tag.startsWith("<ol"))) {
-      listDepth++;
-    } else if (isClose && (tag === "</ul>" || tag === "</ol>")) {
-      listDepth--;
-    } else if (!isClose && tag.startsWith("<li")) {
-      if (listDepth === 1 && !capturing) {
-        // Top-level <li> — start capturing after this tag
-        capturing = true;
-        liDepth = listDepth;
-        start = m.index + m[0].length;
-      }
-    } else if (isClose && tag === "</li>") {
-      if (capturing && listDepth === liDepth) {
-        // Closing the top-level <li>
-        items.push(html.slice(start, m.index));
-        capturing = false;
-      }
-    }
-  }
-  return items;
-}
-
-function extractWithRegex(sectionContent, currentVersion, currentCategory, sectionUrl, entries) {
-  const topBlockRe = /<(ul|ol|p)(?:\s[^>]*)?\s*>/gi;
-  let topMatch;
-  while ((topMatch = topBlockRe.exec(sectionContent))) {
-    const blockTag = topMatch[1].toLowerCase();
-    const blockStart = topMatch.index;
-
-    if (blockTag === "p") {
-      const closeIdx = sectionContent.indexOf("</p>", topMatch.index + topMatch[0].length);
-      if (closeIdx === -1) continue;
-      const inner = sectionContent.slice(topMatch.index + topMatch[0].length, closeIdx);
-      topBlockRe.lastIndex = closeIdx + 4;
-
-      const pText = decodeEntities(inner.replace(/<[^>]+>/g, "")).trim();
-      if (pText && entries.length > 0) {
-        const lastEntry = entries[entries.length - 1];
-        if (lastEntry.version === currentVersion && lastEntry.category === currentCategory) {
-          lastEntry.description += "\n" + pText;
-        }
-      }
-      continue;
-    }
-
-    // <ul> or <ol> — find matching close tag respecting nesting
-    let depth = 1;
-    const closeRe = new RegExp(`<(/?)${blockTag}(?:\\s[^>]*)?>`, "gi");
-    closeRe.lastIndex = topMatch.index + topMatch[0].length;
-    let closeMatch;
-    while ((closeMatch = closeRe.exec(sectionContent))) {
-      if (closeMatch[1] === "/") depth--;
-      else depth++;
-      if (depth === 0) break;
-    }
-    if (!closeMatch || depth !== 0) continue;
-    const blockHtml = sectionContent.slice(blockStart, closeMatch.index + closeMatch[0].length);
-    topBlockRe.lastIndex = closeMatch.index + closeMatch[0].length;
-
-    const topLevelLis = extractTopLevelLis(blockHtml);
-    for (const raw of topLevelLis) {
-      const text = decodeEntities(raw.replace(/<[^>]+>/g, "")).trim();
-      if (!text) continue;
-
-      const dsofMatches = text.match(/DSOF-\d+/g);
-      const dsof = dsofMatches ? dsofMatches.join(", ") : "";
-
-      let description = text
-        .replace(/DSOF-\d+/g, "")
-        .replace(/^\s*[-–—:,.&/\s]+/, "")
-        .replace(/\s*[-–—:,.&/\s]+$/, "")
-        .trim();
-
-      if (!description) description = text;
-
-      entries.push({
-        version: currentVersion,
-        category: currentCategory,
-        dsof,
-        description,
-        url: sectionUrl,
-      });
-    }
-  }
-}
-
 async function parseReleasePage(html, pagePath, debugDir = null) {
   const entries = [];
 
@@ -300,14 +206,13 @@ async function parseReleasePage(html, pagePath, debugDir = null) {
   const pageVersion = pageVersionMatch ? pageVersionMatch[1] : "";
 
   let currentVersion = "";
-  let currentCategory = "";
   let currentAnchor = "";
 
   // Split content by heading tags to process sequentially
   const parts = content.split(/(?=<h[23][^>]*>)/i);
 
   // First pass: group parts by version
-  const versionSections = []; // { version, anchor, html, parts: [{ category, content, url }] }
+  const versionSections = []; // { version, anchor, html }
   let currentSection = null;
 
   for (const part of parts) {
@@ -320,42 +225,18 @@ async function parseReleasePage(html, pagePath, debugDir = null) {
       if (vMatch) {
         currentVersion = vMatch[1];
         currentAnchor = idMatch ? idMatch[1] : "";
-        currentCategory = "";
-        currentSection = { version: currentVersion, anchor: currentAnchor, html: "", parts: [] };
+        currentSection = { version: currentVersion, anchor: currentAnchor, html: "" };
         versionSections.push(currentSection);
       } else {
         if (!currentVersion && pageVersion) currentVersion = pageVersion;
-        currentCategory = rawText;
       }
     }
-
-    // Check for h3 (category heading)
-    const h3Match = part.match(/<h3[^>]*>([\s\S]*?)<\/h3>/i);
-    if (h3Match) {
-      currentCategory = decodeEntities(h3Match[1].replace(/<[^>]+>/g, "")).trim();
-    }
-
-    const sectionContent = part.replace(/<h[23][^>]*>[\s\S]*?<\/h[23]>/i, "");
-    const sectionUrl = `${BASE_URL}${pagePath}${currentAnchor ? "#" + currentAnchor : ""}`;
-    const hasListContent = /<(ul|ol|li)[\s>]/i.test(sectionContent);
 
     if (currentSection) {
-      // Accumulate all HTML for this version (metadata, h3 headings, lists)
       currentSection.html += part;
-      if (hasListContent) {
-        currentSection.parts.push({ category: currentCategory, content: sectionContent, url: sectionUrl });
-      }
-    } else if (currentVersion && hasListContent) {
-      // Content before first versioned h2 — use page-level version
-      currentSection = { version: currentVersion, anchor: currentAnchor, html: "", parts: [] };
+    } else if (currentVersion) {
+      currentSection = { version: currentVersion, anchor: currentAnchor, html: part };
       versionSections.push(currentSection);
-      currentSection.html += part;
-      currentSection.parts.push({ category: currentCategory, content: sectionContent, url: sectionUrl });
-    }
-
-    // Regex fallback still processes per-section
-    if (!USE_AI && (!ONLY_VERSION || currentVersion.toLowerCase() === ONLY_VERSION)) {
-      extractWithRegex(sectionContent, currentVersion, currentCategory, sectionUrl, entries);
     }
   }
 
@@ -369,101 +250,171 @@ async function parseReleasePage(html, pagePath, debugDir = null) {
 
   // Filter to specific version when --version is used
   const sections = ONLY_VERSION
-    ? versionSections.filter(s => s.version.toLowerCase() === ONLY_VERSION)
+    ? versionSections.filter(s => matchesVersion(s.version))
     : versionSections;
 
-  // --- AI extraction path: one call per version ---
-  if (USE_AI) {
-    for (const sec of sections) {
-      if (!sec.html) continue;
-      const sectionUrl = `${BASE_URL}${pagePath}${sec.anchor ? "#" + sec.anchor : ""}`;
-      try {
-        const aiResult = await extractWithAI(sec.html, sec.version);
-        const { build, starter_build, released, entries: aiEntries } = aiResult;
-        for (const e of aiEntries) {
-          if (!e.description) continue;
-          entries.push({
-            version: sec.version,
-            category: e.category || "",
-            dsof: e.dsof || "",
-            description: e.description,
-            build: build || "",
-            starter_build: starter_build || "",
-            released: released || "",
-            url: sectionUrl,
-          });
-        }
-      } catch (err) {
-        console.warn(`    [AI fallback] ${sec.version}: ${err.message}`);
-        // Fall back to regex for each sub-section
-        for (const p of sec.parts) {
-          extractWithRegex(p.content, sec.version, p.category, p.url, entries);
-        }
+  // AI extraction: one call per version
+  for (const sec of sections) {
+    if (!sec.html) continue;
+    const sectionUrl = `${BASE_URL}${pagePath}${sec.anchor ? "#" + sec.anchor : ""}`;
+    try {
+      const aiResult = await extractWithAI(sec.html, sec.version, sectionUrl);
+      const { build, starter_build, released, entries: aiEntries } = aiResult;
+      for (const e of aiEntries) {
+        if (!e.description) continue;
+        entries.push({
+          version: sec.version,
+          category: e.category || "",
+          dsof: e.dsof || "",
+          description: e.description,
+          build: build || "",
+          starter_build: starter_build || "",
+          released: released || "",
+          url: sectionUrl,
+        });
       }
+    } catch (err) {
+      console.warn(`    [AI error] ${sec.version}: ${err.message}`);
     }
-  }
-
-  if (!USE_AI) {
-    // Merge orphan entries (no DSOF) into their nearest preceding DSOF sibling
-    const merged = [];
-    for (const entry of entries) {
-      if (entry.dsof || merged.length === 0) {
-        merged.push(entry);
-      } else {
-        let parent = null;
-        for (let i = merged.length - 1; i >= 0; i--) {
-          if (merged[i].dsof && merged[i].version === entry.version && merged[i].category === entry.category) {
-            parent = merged[i];
-            break;
-          }
-        }
-        if (parent) {
-          parent.description += "\n" + entry.description;
-        } else {
-          merged.push(entry);
-        }
-      }
-    }
-    return merged;
   }
 
   return entries;
 }
 
-async function main() {
-  console.log("Fetching release notes index...");
+// Reshape flat entries into tree: { version, build, starter_build, released, url, changes[] }
+function buildTree(flatEntries) {
+  const map = new Map();
+  for (const e of flatEntries) {
+    if (!map.has(e.version)) {
+      map.set(e.version, {
+        version: e.version,
+        build: e.build || "",
+        starter_build: e.starter_build || "",
+        released: e.released || "",
+        url: e.url || "",
+        changes: [],
+      });
+    }
+    const ver = map.get(e.version);
+    ver.changes.push({
+      dsof: e.dsof || "",
+      category: e.category || "",
+      description: e.description,
+    });
+  }
+  return [...map.values()];
+}
+
+// Build releases.json from AI cache only (no fetching)
+function buildFromCache() {
+  const allEntries = [];
+  for (const [, cached] of Object.entries(aiCache)) {
+    if (!cached.version || !cached.entries) continue;
+    if (!matchesVersion(cached.version)) continue;
+    const { version, build, starter_build, released, entries: cEntries } = cached;
+    const majorMatch = version.match(/^(r\d+)/i);
+    const url = cached.url || (majorMatch ? `${BASE_URL}/designer/release-notes/${majorMatch[1]}` : "");
+    for (const e of cEntries) {
+      if (!e.description) continue;
+      allEntries.push({
+        version,
+        category: e.category || "",
+        dsof: e.dsof || "",
+        description: e.description,
+        build: build || "",
+        starter_build: starter_build || "",
+        released: released || "",
+        url: url || "",
+      });
+    }
+  }
+  return allEntries;
+}
+
+// Fetch all pages and patch cached entries with correct anchor URLs
+async function fixCacheUrls() {
+  console.log("Fetching pages to fix cached URLs...");
   let indexHtml;
-  try {
-    indexHtml = await fetchText(INDEX_URL);
-  } catch (e) {
-    console.warn(`Could not fetch index page: ${e.message}`);
-    console.warn("Using fallback release page list.");
-    indexHtml = "";
+  try { indexHtml = await fetchText(INDEX_URL); } catch { indexHtml = ""; }
+  const paths = indexHtml ? discoverReleaseLinks(indexHtml) : FALLBACK_PATHS;
+
+  // Build version → full URL map from h2 ids
+  const versionUrlMap = {};
+  for (const path of paths) {
+    const url = `${BASE_URL}${path}`;
+    console.log(`  Fetching ${url}...`);
+    try {
+      const html = await fetchText(url);
+      const re = /<h2\s+id="([^"]+)"[^>]*>([\s\S]*?)<\/h2>/gi;
+      let m;
+      while ((m = re.exec(html))) {
+        const anchor = m[1];
+        const text = m[2].replace(/<[^>]+>/g, "").replace(/&[^;]+;/g, " ").trim();
+        const vMatch = text.match(/(r\d+(?:\.\d+)*)/i);
+        if (vMatch) {
+          versionUrlMap[vMatch[1].toLowerCase()] = `${url}#${anchor}`;
+        }
+      }
+    } catch (err) {
+      console.warn(`  Failed: ${err.message}`);
+    }
   }
 
-  let paths = indexHtml ? discoverReleaseLinks(indexHtml) : FALLBACK_PATHS;
-
-  // Filter to specific release page when --version is used (e.g. --version r30.0.1 → /designer/release-notes/r30)
-  if (ONLY_VERSION) {
-    const majorMatch = ONLY_VERSION.match(/^(r\d+)/i);
-    if (majorMatch) {
-      const major = majorMatch[1].toLowerCase();
-      paths = paths.filter(p => p.toLowerCase().endsWith(`/${major}`));
-    }
-    if (paths.length === 0) {
-      console.error(`No release page found for version ${ONLY_VERSION}`);
-      process.exit(1);
+  // Patch cache entries
+  let patched = 0;
+  for (const [key, cached] of Object.entries(aiCache)) {
+    if (!cached.version) continue;
+    const newUrl = versionUrlMap[cached.version.toLowerCase()];
+    if (newUrl && cached.url !== newUrl) {
+      aiCache[key].url = newUrl;
+      patched++;
     }
   }
+  saveCacheSync();
+  console.log(`\nPatched ${patched} cache entries with anchor URLs.`);
+}
 
-  console.log(`Found ${paths.length} release page(s).`);
+async function main() {
+  if (FIX_URLS) {
+    await fixCacheUrls();
+    return;
+  }
 
   const allEntries = [];
   const debugDir = join(__dirname, "data", "debug");
   mkdirSync(debugDir, { recursive: true });
 
-  if (USE_AI) {
-    // Sequential processing — AI calls are rate-limited
+  if (CACHE_ONLY) {
+    console.log("Building from AI cache...");
+    allEntries.push(...buildFromCache());
+  } else {
+    console.log("Fetching release notes index...");
+    let indexHtml;
+    try {
+      indexHtml = await fetchText(INDEX_URL);
+    } catch (e) {
+      console.warn(`Could not fetch index page: ${e.message}`);
+      console.warn("Using fallback release page list.");
+      indexHtml = "";
+    }
+
+    let paths = indexHtml ? discoverReleaseLinks(indexHtml) : FALLBACK_PATHS;
+
+    // Filter to specific release page when --version is used
+    if (ONLY_VERSION) {
+      const majorMatch = ONLY_VERSION.match(/^(r\d+)/i);
+      if (majorMatch) {
+        const major = majorMatch[1].toLowerCase();
+        paths = paths.filter(p => p.toLowerCase().endsWith(`/${major}`));
+      }
+      if (paths.length === 0) {
+        console.error(`No release page found for version ${ONLY_VERSION}`);
+        process.exit(1);
+      }
+    }
+
+    console.log(`Found ${paths.length} release page(s).`);
+
     for (const path of paths) {
       const url = `${BASE_URL}${path}`;
       console.log(`  Fetching ${url}...`);
@@ -476,26 +427,6 @@ async function main() {
         console.warn(`  Failed: ${err.message}`);
       }
     }
-  } else {
-    // Parallel fetching — regex parsing is instant
-    const results = await Promise.allSettled(
-      paths.map(async (path) => {
-        const url = `${BASE_URL}${path}`;
-        console.log(`  Fetching ${url}...`);
-        const html = await fetchText(url);
-        return { path, entries: await parseReleasePage(html, path, debugDir) };
-      })
-    );
-
-    for (const result of results) {
-      if (result.status === "fulfilled") {
-        const { path, entries } = result.value;
-        console.log(`  ${path}: ${entries.length} entries`);
-        allEntries.push(...entries);
-      } else {
-        console.warn(`  Failed: ${result.reason.message}`);
-      }
-    }
   }
 
   const outDir = join(__dirname, "data");
@@ -506,13 +437,14 @@ async function main() {
   if (ONLY_VERSION && existsSync(outPath)) {
     let existing = [];
     try { existing = JSON.parse(readFileSync(outPath, "utf-8")); } catch {}
-    const filtered = existing.filter(e => e.version.toLowerCase() !== ONLY_VERSION);
-    filtered.push(...allEntries);
+    const filtered = existing.filter(v => !matchesVersion(v.version));
+    filtered.push(...buildTree(allEntries));
     writeFileSync(outPath, JSON.stringify(filtered, null, 2));
-    console.log(`\nReplaced ${ONLY_VERSION} entries (${allEntries.length} new) in ${outPath}`);
+    console.log(`\nReplaced ${ONLY_VERSION} entries (${allEntries.length} changes) in ${outPath}`);
   } else {
-    writeFileSync(outPath, JSON.stringify(allEntries, null, 2));
-    console.log(`\nTotal entries: ${allEntries.length}`);
+    const tree = buildTree(allEntries);
+    writeFileSync(outPath, JSON.stringify(tree, null, 2));
+    console.log(`\nTotal: ${tree.length} versions, ${allEntries.length} changes`);
     console.log(`Written to ${outPath}`);
   }
 
