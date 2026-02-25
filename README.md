@@ -6,17 +6,20 @@ Searchable, filterable table of [disguise designer](https://disguise.one) releas
 
 ## Disclaimer
 
-This site is **unofficial** and scrapes release notes from help.disguise.one using fragile HTML parsing. Entries may be missing, miscategorised, or inaccurate. Always refer to the [official release notes](https://help.disguise.one/designer/release-notes/release-notes) as the source of truth.
-
-It aims to be superfluous with information over missing or misrepresenting it, so there will be some entries that are not actually bug fixes or features, and some that are miscategorised.
-
-Probably should be using AI to parse the release notes and categorise them.
+This site is **unofficial** and uses AI (via GitHub Models) to extract and categorise release notes from help.disguise.one. AI-extracted content may be inaccurate, missing, or miscategorised. Always refer to the [official release notes](https://help.disguise.one/designer/release-notes/release-notes) as the source of truth.
 
 ## Usage
 
 ```sh
-node scrape.mjs        # re-scrape and regenerate data/releases.json
-npx serve .            # serve locally
+# Requires AI_TOKEN environment variable (GitHub PAT with Models access)
+node scrape.mjs                          # scrape all pages and extract with AI
+node scrape.mjs --version r32            # scrape a specific major version
+node scrape.mjs --version r32.2 --force  # re-extract a version, ignoring cache
+node scrape.mjs --cache-only             # rebuild releases.json from AI cache
+node scrape.mjs --fix-urls               # patch cached entries with anchor URLs
+npx serve .                              # serve locally
 ```
 
-No npm dependencies required -- the scraper uses only Node built-ins.
+### Dependencies
+
+- [turndown](https://github.com/mixmark-io/turndown) — HTML to markdown conversion for cleaner AI input
