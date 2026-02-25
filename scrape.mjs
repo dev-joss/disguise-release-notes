@@ -67,7 +67,7 @@ function cacheKey(html) {
 let lastAiCall = 0;
 async function rateLimitDelay() {
   const elapsed = Date.now() - lastAiCall;
-  const wait = Math.max(0, 6000 - elapsed);
+  const wait = Math.max(0, 1000 - elapsed);
   if (wait > 0) await new Promise((r) => setTimeout(r, wait));
   lastAiCall = Date.now();
 }
