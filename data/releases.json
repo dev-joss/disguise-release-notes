@@ -1,5 +1,34 @@
 [
   {
+    "version": "r32.3.3",
+    "build": "240388",
+    "starter_build": "240389",
+    "released": "February 25th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3233---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32130",
+        "category": "Bug Fixes",
+        "description": "Notch blocks configured with an SRGBLinear output colour space with Designer in Gamma mode will now display the correct colour."
+      },
+      {
+        "dsof": "DSOF-31917,DSOF-31916",
+        "category": "Bug Fixes",
+        "description": "Upgrading a project with Sockpuppet patches from any release prior to r31.0 will no longer result in inconsistencies between the old and upgraded Sockpuppet patches."
+      },
+      {
+        "dsof": "DSOF-32120",
+        "category": "Bug Fixes",
+        "description": "Configuring an IPV6 address alongside an IPV4 address on your NIC will no longer occasionally cause that NIC to be un-selectable as the d3net adapter (The adapter still requires an IPV4 address to be set)."
+      },
+      {
+        "dsof": "DSOF-32149",
+        "category": "Bug Fixes",
+        "description": "Timeline tags can now be created with `;` separators again."
+      }
+    ]
+  },
+  {
     "version": "r32.3.2",
     "build": "239442",
     "starter_build": "239443",
