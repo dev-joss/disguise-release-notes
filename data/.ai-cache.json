@@ -14067,5 +14067,34 @@
     "released": "May 29th 2018",
     "starter_build": "",
     "url": "https://help.disguise.one/designer/release-notes/r14#r1447"
+  },
+  "a2f31e33407be0bde8958f428285695c531a964ecfbb64a68c7d9ec886772a59": {
+    "version": "r32.3.3",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3233---hotfixes",
+    "build": "240388",
+    "entries": [
+      {
+        "category": "Bug Fixes",
+        "description": "Notch blocks configured with an SRGBLinear output colour space with Designer in Gamma mode will now display the correct colour.",
+        "dsof": "DSOF-32130"
+      },
+      {
+        "category": "Bug Fixes",
+        "description": "Upgrading a project with Sockpuppet patches from any release prior to r31.0 will no longer result in inconsistencies between the old and upgraded Sockpuppet patches.",
+        "dsof": "DSOF-31917,DSOF-31916"
+      },
+      {
+        "category": "Bug Fixes",
+        "description": "Configuring an IPV6 address alongside an IPV4 address on your NIC will no longer occasionally cause that NIC to be un-selectable as the d3net adapter (The adapter still requires an IPV4 address to be set).",
+        "dsof": "DSOF-32120"
+      },
+      {
+        "category": "Bug Fixes",
+        "description": "Timeline tags can now be created with `;` separators again.",
+        "dsof": "DSOF-32149"
+      }
+    ],
+    "released": "February 25th 2026",
+    "starter_build": "240389"
   }
 }
