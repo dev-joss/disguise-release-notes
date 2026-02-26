@@ -260,12 +260,17 @@ async function parseReleasePage(html, pagePath, debugDir = null, knownVersions =
   }
 
   // AI extraction: one call per version
+  const emptyVersions = [];
   for (const sec of sections) {
     if (!sec.html) continue;
     const sectionUrl = `${BASE_URL}${pagePath}${sec.anchor ? "#" + sec.anchor : ""}`;
     try {
       const aiResult = await extractWithAI(sec.html, sec.version, sectionUrl);
       const { build, starter_build, released, entries: aiEntries } = aiResult;
+      if (aiEntries.length === 0) {
+        emptyVersions.push({ version: sec.version, build: build || "", starter_build: starter_build || "", released: released || "", url: sectionUrl });
+        continue;
+      }
       for (const e of aiEntries) {
         if (!e.description) continue;
         entries.push({
@@ -284,12 +289,41 @@ async function parseReleasePage(html, pagePath, debugDir = null, knownVersions =
     }
   }
 
-  return entries;
+  return { entries, emptyVersions };
+}
+
+// Version comparison for sorting (r32.3.2 > r32.3.1 > r32 > r31)
+function parseVersion(v) {
+  const m = v.match(/r?(\d+(?:\.\d+)*)/i);
+  if (!m) return [0];
+  return m[1].split(".").map(Number);
+}
+
+function cmpVersion(a, b) {
+  const pa = parseVersion(a), pb = parseVersion(b);
+  for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+    const na = pa[i] || 0, nb = pb[i] || 0;
+    if (na !== nb) return na - nb;
+  }
+  return 0;
 }
 
 // Reshape flat entries into tree: { version, build, starter_build, released, url, changes[] }
-function buildTree(flatEntries) {
+function buildTree(flatEntries, emptyVersions = []) {
   const map = new Map();
+  // Add empty versions first so they appear in the output
+  for (const v of emptyVersions) {
+    if (!map.has(v.version)) {
+      map.set(v.version, {
+        version: v.version,
+        build: v.build || "",
+        starter_build: v.starter_build || "",
+        released: v.released || "",
+        url: v.url || "",
+        changes: [],
+      });
+    }
+  }
   for (const e of flatEntries) {
     if (!map.has(e.version)) {
       map.set(e.version, {
@@ -308,18 +342,24 @@ function buildTree(flatEntries) {
       description: e.description,
     });
   }
-  return [...map.values()];
+  // Sort by version descending (newest first)
+  return [...map.values()].sort((a, b) => cmpVersion(b.version, a.version));
 }
 
 // Build releases.json from AI cache only (no fetching)
 function buildFromCache() {
   const allEntries = [];
+  const emptyVersions = [];
   for (const [, cached] of Object.entries(aiCache)) {
     if (!cached.version || !cached.entries) continue;
     if (!matchesVersion(cached.version)) continue;
     const { version, build, starter_build, released, entries: cEntries } = cached;
     const majorMatch = version.match(/^(r\d+)/i);
     const url = cached.url || (majorMatch ? `${BASE_URL}/designer/release-notes/${majorMatch[1]}` : "");
+    if (cEntries.length === 0) {
+      emptyVersions.push({ version, build: build || "", starter_build: starter_build || "", released: released || "", url: url || "" });
+      continue;
+    }
     for (const e of cEntries) {
       if (!e.description) continue;
       allEntries.push({
@@ -334,7 +374,7 @@ function buildFromCache() {
       });
     }
   }
-  return allEntries;
+  return { allEntries, emptyVersions };
 }
 
 // Fetch all pages and patch cached entries with correct anchor URLs
@@ -387,6 +427,7 @@ async function main() {
   }
 
   const allEntries = [];
+  const allEmptyVersions = [];
   const debugDir = join(__dirname, "data", "debug");
   mkdirSync(debugDir, { recursive: true });
 
@@ -407,7 +448,9 @@ async function main() {
 
   if (CACHE_ONLY) {
     console.log("Building from AI cache...");
-    allEntries.push(...buildFromCache());
+    const { allEntries: cached, emptyVersions } = buildFromCache();
+    allEntries.push(...cached);
+    allEmptyVersions.push(...emptyVersions);
   } else {
     console.log("Fetching release notes index...");
     let indexHtml;
@@ -441,9 +484,10 @@ async function main() {
       console.log(`  Fetching ${url}...`);
       try {
         const html = await fetchText(url);
-        const entries = await parseReleasePage(html, path, debugDir, knownVersions);
+        const { entries, emptyVersions } = await parseReleasePage(html, path, debugDir, knownVersions);
         console.log(`  ${path}: ${entries.length} entries`);
         allEntries.push(...entries);
+        allEmptyVersions.push(...emptyVersions);
       } catch (err) {
         console.warn(`  Failed: ${err.message}`);
       }
@@ -459,7 +503,8 @@ async function main() {
     let existing = [];
     try { existing = JSON.parse(readFileSync(outPath, "utf-8")); } catch {}
     const filtered = existing.filter(v => !matchesVersion(v.version));
-    filtered.push(...buildTree(allEntries));
+    filtered.push(...buildTree(allEntries, allEmptyVersions));
+    filtered.sort((a, b) => cmpVersion(b.version, a.version));
     writeFileSync(outPath, JSON.stringify(filtered, null, 2));
     console.log(`\nReplaced ${ONLY_VERSION} entries (${allEntries.length} changes) in ${outPath}`);
   } else if (NEW_ONLY && existsSync(outPath)) {
@@ -470,12 +515,13 @@ async function main() {
       try { existing = JSON.parse(readFileSync(outPath, "utf-8")); } catch {}
       const newVersions = new Set(allEntries.map(e => e.version));
       const filtered = existing.filter(v => !newVersions.has(v.version));
-      filtered.push(...buildTree(allEntries));
+      filtered.push(...buildTree(allEntries, allEmptyVersions));
+      filtered.sort((a, b) => cmpVersion(b.version, a.version));
       writeFileSync(outPath, JSON.stringify(filtered, null, 2));
       console.log(`\nAdded ${newVersions.size} new version(s) (${allEntries.length} changes) to ${outPath}`);
     }
   } else {
-    const tree = buildTree(allEntries);
+    const tree = buildTree(allEntries, allEmptyVersions);
     writeFileSync(outPath, JSON.stringify(tree, null, 2));
     console.log(`\nTotal: ${tree.length} versions, ${allEntries.length} changes`);
     console.log(`Written to ${outPath}`);

@@ -23,22 +23,36 @@
   .controls input { flex: 1 1 250px; min-width: 200px; }
   .controls select { min-width: 140px; }
   .status { font-size: 0.85rem; color: #666; margin-left: auto; white-space: nowrap; }
-  .table-wrap { overflow-x: auto; background: #fff; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-  table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
-  thead { position: sticky; top: 0; z-index: 1; }
-  th {
-    background: #2c3e50; color: #fff; padding: 0.6rem 0.8rem;
-    text-align: left; cursor: pointer; user-select: none; white-space: nowrap;
+
+  .version-group {
+    background: #fff; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    margin-bottom: 1rem; overflow: hidden;
   }
-  th:hover { background: #34495e; }
-  th .arrow { font-size: 0.7rem; margin-left: 4px; }
-  td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #e4e4e4; vertical-align: top; }
-  tbody tr { cursor: pointer; }
-  tbody tr:hover td { background: #e3edfa !important; }
-  .col-version { width: 100px; }
+  .version-header {
+    background: #2c3e50; color: #fff; padding: 0.6rem 0.8rem;
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1.5rem;
+    cursor: pointer;
+  }
+  .version-header:hover { background: #34495e; }
+  .version-header a { color: #fff; text-decoration: none; }
+  .version-header a:hover { text-decoration: underline; }
+  .version-name { font-weight: 700; font-size: 1rem; }
+  .version-meta { font-size: 0.8rem; opacity: 0.85; }
+  .version-meta span { margin-right: 1rem; }
+
+  .version-group table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+  .version-group th {
+    background: #3d5266; color: #fff; padding: 0.5rem 0.8rem;
+    text-align: left; font-weight: 600; font-size: 0.8rem;
+    text-transform: uppercase; letter-spacing: 0.03em;
+  }
+  .version-group td { padding: 0.5rem 0.8rem; border-bottom: 1px solid #e4e4e4; vertical-align: top; }
+  .version-group tbody tr { cursor: pointer; }
+  .version-group tbody tr:hover td { background: #e3edfa; }
+  .version-group tbody tr:last-child td { border-bottom: none; }
   .col-category { width: 130px; }
   .col-dsof { width: 130px; font-family: monospace; font-size: 0.82rem; }
-  .col-desc { }
+  .no-changes { padding: 0.6rem 0.8rem; font-size: 0.85rem; color: #888; font-style: italic; }
   mark { background: #fff3a8; padding: 0 1px; border-radius: 2px; }
   .loading { text-align: center; padding: 3rem; color: #999; }
   .error { text-align: center; padding: 3rem; color: #c0392b; }
@@ -46,6 +60,7 @@
     .controls { flex-direction: column; }
     .controls input, .controls select { width: 100%; }
     .status { margin-left: 0; }
+    .version-header { flex-direction: column; gap: 0.2rem; }
     td, th { padding: 0.4rem; font-size: 0.8rem; }
   }
 </style>
@@ -60,30 +75,17 @@
     <select id="categoryFilter"><option value="">All Categories</option></select>
     <span class="status" id="status"></span>
   </div>
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th class="col-version" data-col="version">Version <span class="arrow"></span></th>
-          <th class="col-category" data-col="category">Category <span class="arrow"></span></th>
-          <th class="col-dsof" data-col="dsof">DSOF <span class="arrow"></span></th>
-          <th class="col-desc" data-col="description">Description <span class="arrow"></span></th>
-        </tr>
-      </thead>
-      <tbody id="tbody"></tbody>
-    </table>
-  </div>
+  <div id="groups"></div>
   <div class="loading" id="loading">Loading release data...</div>
   <div class="error" id="error" hidden></div>
 </div>
 <script>
 (function () {
-  let allData = [];
-  let filtered = [];
-  let sortCol = "version";
-  let sortAsc = false;
+  let releases = [];
+  let sortCol = "category";
+  let sortAsc = true;
 
-  const tbody = document.getElementById("tbody");
+  const groupsEl = document.getElementById("groups");
   const searchEl = document.getElementById("search");
   const versionEl = document.getElementById("versionFilter");
   const categoryEl = document.getElementById("categoryFilter");
@@ -91,7 +93,6 @@
   const loadingEl = document.getElementById("loading");
   const errorEl = document.getElementById("error");
 
-  // Version comparison for sorting (r32.3.2 > r32.3.1 > r32 > r31)
   function parseVersion(v) {
     const m = v.match(/r?(\d+(?:\.\d+)*)/i);
     if (!m) return [0];
@@ -107,70 +108,69 @@
     return 0;
   }
 
-  function compare(a, b) {
-    const va = a[sortCol] || "", vb = b[sortCol] || "";
-    let c;
-    if (sortCol === "version") {
-      c = cmpVersion(va, vb);
-    } else {
-      c = va.localeCompare(vb, undefined, { sensitivity: "base" });
-    }
-    return sortAsc ? c : -c;
-  }
-
   function applyFilters() {
     const q = searchEl.value.toLowerCase();
     const vf = versionEl.value;
     const cf = categoryEl.value;
 
-    filtered = allData.filter(row => {
-      if (vf && row.version !== vf) return false;
-      if (cf && row.category !== cf) return false;
-      if (q) {
-        const hay = `${row.version} ${row.category} ${row.dsof} ${row.description}`.toLowerCase();
-        if (!hay.includes(q)) return false;
-      }
-      return true;
-    });
-
-    filtered.sort(compare);
-    render();
-  }
-
-  // Neutral palette for alternating version groups
-  const VERSION_COLORS = [
-    "#ffffff", "#f7f7f7", "#f0f4f8", "#f8f6f0",
-    "#f4f0f8", "#f0f8f4", "#f8f0f0", "#f0f0f8",
-  ];
-  const versionColorMap = {};
-  let nextColorIdx = 0;
-
-  function versionColor(version) {
-    if (!version) return VERSION_COLORS[0];
-    if (!(version in versionColorMap)) {
-      versionColorMap[version] = VERSION_COLORS[nextColorIdx % VERSION_COLORS.length];
-      nextColorIdx++;
-    }
-    return versionColorMap[version];
-  }
-
-  function render() {
-    const q = searchEl.value;
-    statusEl.textContent = `${filtered.length} of ${allData.length} entries`;
-    // Build HTML in chunks for performance
+    let totalChanges = 0;
+    let shownChanges = 0;
     const parts = [];
-    for (const row of filtered) {
-      parts.push(
-        '<tr data-url="', esc(row.url || ""),
-        '" style="background:', versionColor(row.version),
-        '"><td>', highlight(row.version, q),
-        "</td><td>", highlight(row.category, q),
-        "</td><td>", highlight(row.dsof, q),
-        "</td><td>", highlight(row.description, q),
-        "</td></tr>"
-      );
+
+    for (const rel of releases) {
+      totalChanges += rel.changes.length;
+
+      if (vf && rel.version !== vf) continue;
+
+      const matchedChanges = rel.changes.filter(c => {
+        if (cf && c.category !== cf) return false;
+        if (q) {
+          const hay = `${rel.version} ${c.category} ${c.dsof} ${c.description}`.toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      // If searching/filtering by category, skip versions with no matching changes
+      if ((q || cf) && matchedChanges.length === 0) continue;
+
+      shownChanges += matchedChanges.length;
+
+      parts.push('<div class="version-group">');
+      parts.push('<div class="version-header" data-url="', esc(rel.url || ''), '">');
+      parts.push('<span class="version-name">', esc(rel.version), '</span>');
+      parts.push('<span class="version-meta">');
+      if (rel.released) parts.push('<span>Released: ', esc(rel.released), '</span>');
+      if (rel.build) parts.push('<span>Build: ', esc(rel.build), '</span>');
+      if (rel.starter_build) parts.push('<span>Starter: ', esc(rel.starter_build), '</span>');
+      parts.push('</span>');
+      parts.push('</div>');
+
+      if (matchedChanges.length > 0) {
+        parts.push('<table><thead><tr>');
+        parts.push('<th class="col-category">Category</th>');
+        parts.push('<th class="col-dsof">DSOF</th>');
+        parts.push('<th>Description</th>');
+        parts.push('</tr></thead><tbody>');
+        for (const c of matchedChanges) {
+          parts.push(
+            '<tr data-url="', esc(rel.url || ''), '">',
+            '<td>', highlight(c.category, q),
+            '</td><td>', highlight(c.dsof, q),
+            '</td><td>', highlight(c.description, q),
+            '</td></tr>'
+          );
+        }
+        parts.push('</tbody></table>');
+      } else {
+        parts.push('<div class="no-changes">No documented changes for this release.</div>');
+      }
+
+      parts.push('</div>');
     }
-    tbody.innerHTML = parts.join("");
+
+    statusEl.textContent = `${shownChanges} changes across ${releases.length} releases`;
+    groupsEl.innerHTML = parts.join("");
   }
 
   function esc(s) {
@@ -186,15 +186,14 @@
   }
 
   function populateFilters() {
-    const versions = [...new Set(allData.map(r => r.version))].filter(Boolean);
-    versions.sort(cmpVersion).reverse();
+    const versions = releases.map(r => r.version).filter(Boolean);
     for (const v of versions) {
       const opt = document.createElement("option");
       opt.value = v; opt.textContent = v;
       versionEl.appendChild(opt);
     }
 
-    const categories = [...new Set(allData.map(r => r.category))].filter(Boolean).sort();
+    const categories = [...new Set(releases.flatMap(r => r.changes.map(c => c.category)))].filter(Boolean).sort();
     for (const c of categories) {
       const opt = document.createElement("option");
       opt.value = c; opt.textContent = c;
@@ -202,28 +201,17 @@
     }
   }
 
-  function updateSortArrows() {
-    document.querySelectorAll("th .arrow").forEach(el => el.textContent = "");
-    const th = document.querySelector(`th[data-col="${sortCol}"] .arrow`);
-    if (th) th.textContent = sortAsc ? " \u25B2" : " \u25BC";
-  }
-
   // Event listeners
   searchEl.addEventListener("input", applyFilters);
   versionEl.addEventListener("change", applyFilters);
   categoryEl.addEventListener("change", applyFilters);
 
-  document.querySelectorAll("th[data-col]").forEach(th => {
-    th.addEventListener("click", () => {
-      const col = th.dataset.col;
-      if (sortCol === col) { sortAsc = !sortAsc; }
-      else { sortCol = col; sortAsc = true; }
-      updateSortArrows();
-      applyFilters();
-    });
-  });
-
-  tbody.addEventListener("click", (e) => {
+  groupsEl.addEventListener("click", (e) => {
+    const header = e.target.closest(".version-header[data-url]");
+    if (header && header.dataset.url) {
+      window.open(header.dataset.url, "_blank");
+      return;
+    }
     const tr = e.target.closest("tr[data-url]");
     if (tr && tr.dataset.url) window.open(tr.dataset.url, "_blank");
   });
@@ -233,21 +221,9 @@
     .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
     .then(data => {
       loadingEl.hidden = true;
-      // Flatten tree structure into rows for the table
-      allData = data.flatMap(v =>
-        v.changes.map(c => ({
-          version: v.version,
-          build: v.build || "",
-          starter_build: v.starter_build || "",
-          released: v.released || "",
-          url: v.url || "",
-          category: c.category || "",
-          dsof: c.dsof || "",
-          description: c.description,
-        }))
-      );
+      // Data is already sorted newest-first in releases.json; preserve that order
+      releases = data;
       populateFilters();
-      updateSortArrows();
       applyFilters();
     })
     .catch(err => {

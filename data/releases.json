@@ -1032,6 +1032,14 @@
     ]
   },
   {
+    "version": "r32.0.1",
+    "build": "228975",
+    "starter_build": "228976",
+    "released": "September 25th 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3201---hotfixes",
+    "changes": []
+  },
+  {
     "version": "r32.0",
     "build": "228570",
     "starter_build": "228571",
@@ -8041,6 +8049,14 @@
     ]
   },
   {
+    "version": "r25.3.1",
+    "build": "168878",
+    "starter_build": "",
+    "released": "20 September 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2531",
+    "changes": []
+  },
+  {
     "version": "r25.3",
     "build": "167949",
     "starter_build": "",
@@ -8100,6 +8116,22 @@
     ]
   },
   {
+    "version": "r25.2.3",
+    "build": "167492",
+    "starter_build": "",
+    "released": "30 August 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2523",
+    "changes": []
+  },
+  {
+    "version": "r25.2.1",
+    "build": "166280",
+    "starter_build": "",
+    "released": "16 August 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2521",
+    "changes": []
+  },
+  {
     "version": "r25.2",
     "build": "165620",
     "starter_build": "",
@@ -8149,6 +8181,38 @@
     ]
   },
   {
+    "version": "r25.1.4",
+    "build": "164520",
+    "starter_build": "",
+    "released": "26 July 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2514",
+    "changes": []
+  },
+  {
+    "version": "r25.1.3",
+    "build": "164135",
+    "starter_build": "",
+    "released": "19 July 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2513",
+    "changes": []
+  },
+  {
+    "version": "r25.1.2",
+    "build": "163502",
+    "starter_build": "",
+    "released": "12 July 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2512",
+    "changes": []
+  },
+  {
+    "version": "r25.1.1",
+    "build": "162852",
+    "starter_build": "",
+    "released": "05 July 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2511",
+    "changes": []
+  },
+  {
     "version": "r25.1",
     "build": "162408",
     "starter_build": "",
@@ -8186,6 +8250,30 @@
         "description": "Fixed an Access Violation when using the ‘Removing Virtual Head’ option in the FeedHead widget"
       }
     ]
+  },
+  {
+    "version": "r25.0.3",
+    "build": "161701",
+    "starter_build": "",
+    "released": "21 June 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2503",
+    "changes": []
+  },
+  {
+    "version": "r25.0.2",
+    "build": "161015",
+    "starter_build": "",
+    "released": "14 June 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2502",
+    "changes": []
+  },
+  {
+    "version": "r25.0.1",
+    "build": "160825",
+    "starter_build": "",
+    "released": "07 June 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r25#r2501",
+    "changes": []
   },
   {
     "version": "r25",
@@ -8670,6 +8758,14 @@
     ]
   },
   {
+    "version": "r24.3.1",
+    "build": "158605",
+    "starter_build": "",
+    "released": "10 May 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2431",
+    "changes": []
+  },
+  {
     "version": "r24.3",
     "build": "",
     "starter_build": "",
@@ -8709,6 +8805,22 @@
     ]
   },
   {
+    "version": "r24.2.2",
+    "build": "157795",
+    "starter_build": "",
+    "released": "26 April 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2422",
+    "changes": []
+  },
+  {
+    "version": "r24.2.1",
+    "build": "157444",
+    "starter_build": "",
+    "released": "19 April 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2421",
+    "changes": []
+  },
+  {
     "version": "r24.2",
     "build": "",
     "starter_build": "",
@@ -8721,6 +8833,14 @@
         "description": "Added EX 3 Support. Learn more about the EX 3 here."
       }
     ]
+  },
+  {
+    "version": "r24.1.1",
+    "build": "156889",
+    "starter_build": "",
+    "released": "05 April 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2411",
+    "changes": []
   },
   {
     "version": "r24.1",
@@ -8740,6 +8860,38 @@
         "description": "AV in Upload assets test case in test_cloudserver."
       }
     ]
+  },
+  {
+    "version": "r24.0.4",
+    "build": "156441",
+    "starter_build": "",
+    "released": "29 March 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2404",
+    "changes": []
+  },
+  {
+    "version": "r24.0.3",
+    "build": "155917",
+    "starter_build": "",
+    "released": "22 March 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2403",
+    "changes": []
+  },
+  {
+    "version": "r24.0.2",
+    "build": "155361",
+    "starter_build": "",
+    "released": "15 March 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2402",
+    "changes": []
+  },
+  {
+    "version": "r24.0.1",
+    "build": "154927",
+    "starter_build": "",
+    "released": "8 March 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r24#r2401",
+    "changes": []
   },
   {
     "version": "r24",
@@ -8876,6 +9028,22 @@
     ]
   },
   {
+    "version": "r23.4.2",
+    "build": "154174",
+    "starter_build": "",
+    "released": "22 February 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2342",
+    "changes": []
+  },
+  {
+    "version": "r23.4.1",
+    "build": "153580",
+    "starter_build": "",
+    "released": "15 February 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2341",
+    "changes": []
+  },
+  {
     "version": "r23.4",
     "build": "",
     "starter_build": "",
@@ -8964,6 +9132,14 @@
     ]
   },
   {
+    "version": "r23.2.1",
+    "build": "152551",
+    "starter_build": "",
+    "released": "01 February 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2321",
+    "changes": []
+  },
+  {
     "version": "r23.2",
     "build": "",
     "starter_build": "",
@@ -8998,6 +9174,30 @@
     ]
   },
   {
+    "version": "r23.1.3",
+    "build": "97965",
+    "starter_build": "",
+    "released": "25 January 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2313",
+    "changes": []
+  },
+  {
+    "version": "r23.1.2",
+    "build": "97610",
+    "starter_build": "",
+    "released": "18 January 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2312",
+    "changes": []
+  },
+  {
+    "version": "r23.1.1",
+    "build": "97354",
+    "starter_build": "",
+    "released": "11 January 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2311",
+    "changes": []
+  },
+  {
     "version": "r23.1",
     "build": "",
     "starter_build": "",
@@ -9010,6 +9210,22 @@
         "description": "RenderStream project upgrading fix to prevent removal of scene keyframes."
       }
     ]
+  },
+  {
+    "version": "r23.0.2",
+    "build": "96975",
+    "starter_build": "",
+    "released": "04 January 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2302",
+    "changes": []
+  },
+  {
+    "version": "r23.0.1",
+    "build": "96894",
+    "starter_build": "",
+    "released": "15 December 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r23#r2301",
+    "changes": []
   },
   {
     "version": "r23",
@@ -9076,10 +9292,98 @@
     ]
   },
   {
-    "version": "r22.1",
-    "build": "",
+    "version": "r22.3.1",
+    "build": "97919",
     "starter_build": "",
-    "released": "",
+    "released": "27 January 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2231",
+    "changes": []
+  },
+  {
+    "version": "r22.3",
+    "build": "96094",
+    "starter_build": "",
+    "released": "30 November 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r223",
+    "changes": []
+  },
+  {
+    "version": "r22.2.2",
+    "build": "95980",
+    "starter_build": "",
+    "released": "23 November 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2222",
+    "changes": []
+  },
+  {
+    "version": "r22.2.1",
+    "build": "95741",
+    "starter_build": "",
+    "released": "16 November 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2221",
+    "changes": []
+  },
+  {
+    "version": "r22.2",
+    "build": "95501",
+    "starter_build": "",
+    "released": "09 November 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r222",
+    "changes": []
+  },
+  {
+    "version": "r22.1.6",
+    "build": "95051",
+    "starter_build": "",
+    "released": "02 November 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2216",
+    "changes": []
+  },
+  {
+    "version": "r22.1.5",
+    "build": "94724",
+    "starter_build": "",
+    "released": "26 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2215",
+    "changes": []
+  },
+  {
+    "version": "r22.1.4",
+    "build": "94488",
+    "starter_build": "",
+    "released": "19 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2214",
+    "changes": []
+  },
+  {
+    "version": "r22.1.3",
+    "build": "94288",
+    "starter_build": "",
+    "released": "12 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2213",
+    "changes": []
+  },
+  {
+    "version": "r22.1.2",
+    "build": "94124",
+    "starter_build": "",
+    "released": "06 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2212",
+    "changes": []
+  },
+  {
+    "version": "r22.1.1",
+    "build": "93827",
+    "starter_build": "",
+    "released": "28 September 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r22#r2211",
+    "changes": []
+  },
+  {
+    "version": "r22.1",
+    "build": "93749",
+    "starter_build": "",
+    "released": "21 September 2022",
     "url": "https://help.disguise.one/designer/release-notes/r22#r221-cloud-integration",
     "changes": [
       {
@@ -9179,6 +9483,86 @@
     ]
   },
   {
+    "version": "r21.4.10",
+    "build": "",
+    "starter_build": "",
+    "released": "",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r21410",
+    "changes": []
+  },
+  {
+    "version": "r21.4.9",
+    "build": "95025",
+    "starter_build": "",
+    "released": "02 November 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2149",
+    "changes": []
+  },
+  {
+    "version": "r21.4.8",
+    "build": "94723",
+    "starter_build": "",
+    "released": "26 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2148",
+    "changes": []
+  },
+  {
+    "version": "r21.4.7",
+    "build": "94485",
+    "starter_build": "",
+    "released": "19 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2147",
+    "changes": []
+  },
+  {
+    "version": "r21.4.6",
+    "build": "94285",
+    "starter_build": "",
+    "released": "12 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2146",
+    "changes": []
+  },
+  {
+    "version": "r21.4.5",
+    "build": "94042",
+    "starter_build": "",
+    "released": "05 October 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2145",
+    "changes": []
+  },
+  {
+    "version": "r21.4.4",
+    "build": "93597",
+    "starter_build": "",
+    "released": "28 September 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2144",
+    "changes": []
+  },
+  {
+    "version": "r21.4.3",
+    "build": "92787",
+    "starter_build": "",
+    "released": "24 August 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2143",
+    "changes": []
+  },
+  {
+    "version": "r21.4.2",
+    "build": "92384",
+    "starter_build": "",
+    "released": "17 August 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2142",
+    "changes": []
+  },
+  {
+    "version": "r21.4.1",
+    "build": "92179",
+    "starter_build": "",
+    "released": "10 August 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2141",
+    "changes": []
+  },
+  {
     "version": "r21.4",
     "build": "",
     "starter_build": "",
@@ -9198,6 +9582,38 @@
     ]
   },
   {
+    "version": "r21.3.3",
+    "build": "91490",
+    "starter_build": "",
+    "released": "13 July 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2133",
+    "changes": []
+  },
+  {
+    "version": "r21.3.2",
+    "build": "91210",
+    "starter_build": "",
+    "released": "06 July 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2132",
+    "changes": []
+  },
+  {
+    "version": "r21.3.1",
+    "build": "90991",
+    "starter_build": "",
+    "released": "29 June 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2131",
+    "changes": []
+  },
+  {
+    "version": "r21.3",
+    "build": "",
+    "starter_build": "",
+    "released": "",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r213",
+    "changes": []
+  },
+  {
     "version": "r21.2",
     "build": "",
     "starter_build": "",
@@ -9210,6 +9626,14 @@
         "description": "vx4+ Support"
       }
     ]
+  },
+  {
+    "version": "r21.1.2",
+    "build": "90068",
+    "starter_build": "",
+    "released": "01 June 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2112",
+    "changes": []
   },
   {
     "version": "r21.1",
@@ -9229,6 +9653,46 @@
         "description": "Virtual Camera workflow improvements"
       }
     ]
+  },
+  {
+    "version": "r21.0.5",
+    "build": "89440",
+    "starter_build": "",
+    "released": "11 May 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2105",
+    "changes": []
+  },
+  {
+    "version": "r21.0.4",
+    "build": "89205",
+    "starter_build": "",
+    "released": "4 May 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2104",
+    "changes": []
+  },
+  {
+    "version": "r21.0.3",
+    "build": "88904",
+    "starter_build": "",
+    "released": "27 April 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2103",
+    "changes": []
+  },
+  {
+    "version": "r21.0.2",
+    "build": "88695",
+    "starter_build": "",
+    "released": "20 April 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2102",
+    "changes": []
+  },
+  {
+    "version": "r21.0.1",
+    "build": "88204",
+    "starter_build": "",
+    "released": "06 April 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r21#r2101",
+    "changes": []
   },
   {
     "version": "r21",
@@ -9395,6 +9859,30 @@
     ]
   },
   {
+    "version": "r20.1.3",
+    "build": "87272",
+    "starter_build": "",
+    "released": "09 March 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2013",
+    "changes": []
+  },
+  {
+    "version": "r20.1.2",
+    "build": "86992",
+    "starter_build": "",
+    "released": "02 March 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2012",
+    "changes": []
+  },
+  {
+    "version": "r20.1.1",
+    "build": "86719",
+    "starter_build": "",
+    "released": "23 February 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2011",
+    "changes": []
+  },
+  {
     "version": "r20.1",
     "build": "234682",
     "starter_build": "234683",
@@ -9417,6 +9905,62 @@
         "description": "Improved performance of data processing algorithms."
       }
     ]
+  },
+  {
+    "version": "r20.0.8",
+    "build": "86261",
+    "starter_build": "",
+    "released": "9 February 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2008",
+    "changes": []
+  },
+  {
+    "version": "r20.0.7",
+    "build": "85926",
+    "starter_build": "",
+    "released": "02 February 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2007",
+    "changes": []
+  },
+  {
+    "version": "r20.0.6",
+    "build": "85620",
+    "starter_build": "",
+    "released": "26 January 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2006",
+    "changes": []
+  },
+  {
+    "version": "r20.0.5",
+    "build": "85280",
+    "starter_build": "",
+    "released": "19 January 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2005",
+    "changes": []
+  },
+  {
+    "version": "r20.0.4",
+    "build": "85036",
+    "starter_build": "",
+    "released": "12 January 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2004",
+    "changes": []
+  },
+  {
+    "version": "r20.0.3",
+    "build": "84705",
+    "starter_build": "",
+    "released": "22 December 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2003",
+    "changes": []
+  },
+  {
+    "version": "r20.0.2",
+    "build": "84533",
+    "starter_build": "",
+    "released": "15 December 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r20#r2002",
+    "changes": []
   },
   {
     "version": "r20.0.1",
@@ -9487,6 +10031,86 @@
     ]
   },
   {
+    "version": "r19.1.8",
+    "build": "83616",
+    "starter_build": "",
+    "released": "17 November 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1918",
+    "changes": []
+  },
+  {
+    "version": "r19.1.7",
+    "build": "83172",
+    "starter_build": "",
+    "released": "03 November 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1917",
+    "changes": []
+  },
+  {
+    "version": "r19.1.6",
+    "build": "82952",
+    "starter_build": "",
+    "released": "27 October 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1916",
+    "changes": []
+  },
+  {
+    "version": "r19.1.5",
+    "build": "82618",
+    "starter_build": "",
+    "released": "13 October 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1915",
+    "changes": []
+  },
+  {
+    "version": "r19.1.4",
+    "build": "82282",
+    "starter_build": "",
+    "released": "6 October 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1914",
+    "changes": []
+  },
+  {
+    "version": "r19.1.3",
+    "build": "82053",
+    "starter_build": "",
+    "released": "29 September 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1913",
+    "changes": []
+  },
+  {
+    "version": "r19.1.2",
+    "build": "81665",
+    "starter_build": "",
+    "released": "15 September 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1912",
+    "changes": []
+  },
+  {
+    "version": "r19.1.1",
+    "build": "81488",
+    "starter_build": "",
+    "released": "08 September 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1911",
+    "changes": []
+  },
+  {
+    "version": "r19.1",
+    "build": "81382",
+    "starter_build": "",
+    "released": "01 September 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r191",
+    "changes": []
+  },
+  {
+    "version": "r19.0.1",
+    "build": "80825",
+    "starter_build": "",
+    "released": "11 August 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r19#r1901",
+    "changes": []
+  },
+  {
     "version": "r19",
     "build": "",
     "starter_build": "",
@@ -9521,6 +10145,174 @@
     ]
   },
   {
+    "version": "r18.1.15",
+    "build": "186467",
+    "starter_build": "",
+    "released": "2 May 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r18115",
+    "changes": []
+  },
+  {
+    "version": "r18.1.14",
+    "build": "179736",
+    "starter_build": "",
+    "released": "14 February 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r18114",
+    "changes": []
+  },
+  {
+    "version": "r18.1.13",
+    "build": "175640",
+    "starter_build": "",
+    "released": "13 December 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r18113",
+    "changes": []
+  },
+  {
+    "version": "r18.1.12",
+    "build": "171491",
+    "starter_build": "",
+    "released": "25 October 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r18112",
+    "changes": []
+  },
+  {
+    "version": "r18.1.11",
+    "build": "91447",
+    "starter_build": "",
+    "released": "22 July 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r18111",
+    "changes": []
+  },
+  {
+    "version": "r18.1.10",
+    "build": "84524",
+    "starter_build": "",
+    "released": "15 December 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r18110",
+    "changes": []
+  },
+  {
+    "version": "r18.1.9",
+    "build": "81046",
+    "starter_build": "",
+    "released": "18 August 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1819",
+    "changes": []
+  },
+  {
+    "version": "r18.1.8",
+    "build": "80867",
+    "starter_build": "",
+    "released": "11 August 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1818",
+    "changes": []
+  },
+  {
+    "version": "r18.1.7",
+    "build": "80540",
+    "starter_build": "",
+    "released": "23 July 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1817",
+    "changes": []
+  },
+  {
+    "version": "r18.1.6",
+    "build": "",
+    "starter_build": "",
+    "released": "",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1816",
+    "changes": []
+  },
+  {
+    "version": "r18.1.5",
+    "build": "186467",
+    "starter_build": "",
+    "released": "02 May 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1815",
+    "changes": []
+  },
+  {
+    "version": "r18.1.4",
+    "build": "179736",
+    "starter_build": "",
+    "released": "14 February 2024",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1814",
+    "changes": []
+  },
+  {
+    "version": "r18.1.3",
+    "build": "175640",
+    "starter_build": "",
+    "released": "11 December 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1813",
+    "changes": []
+  },
+  {
+    "version": "r18.1.2",
+    "build": "171491",
+    "starter_build": "",
+    "released": "25 October 2023",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1812",
+    "changes": []
+  },
+  {
+    "version": "r18.1.1",
+    "build": "91447",
+    "starter_build": "",
+    "released": "22 July 2022",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1811",
+    "changes": []
+  },
+  {
+    "version": "r18.1",
+    "build": "79263",
+    "starter_build": "",
+    "released": "03 June 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r181",
+    "changes": []
+  },
+  {
+    "version": "r18.0.6",
+    "build": "79127",
+    "starter_build": "",
+    "released": "26 May 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1806",
+    "changes": []
+  },
+  {
+    "version": "r18.0.5",
+    "build": "78770",
+    "starter_build": "",
+    "released": "19 May 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1805",
+    "changes": []
+  },
+  {
+    "version": "r18.0.4",
+    "build": "78631",
+    "starter_build": "",
+    "released": "12 May 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1804",
+    "changes": []
+  },
+  {
+    "version": "r18.0.3",
+    "build": "78354",
+    "starter_build": "",
+    "released": "05 May 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1803",
+    "changes": []
+  },
+  {
+    "version": "r18.0.2",
+    "build": "78115",
+    "starter_build": "",
+    "released": "28 April 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r1802",
+    "changes": []
+  },
+  {
     "version": "r18.0.1",
     "build": "66257",
     "starter_build": "",
@@ -9533,6 +10325,278 @@
         "description": "MultiEventTransportRemote - requesting player list results in an exception"
       }
     ]
+  },
+  {
+    "version": "r18",
+    "build": "",
+    "starter_build": "",
+    "released": "August 8, 2025",
+    "url": "https://help.disguise.one/designer/release-notes/r18#r18",
+    "changes": []
+  },
+  {
+    "version": "r17.6.2",
+    "build": "76600",
+    "starter_build": "",
+    "released": "17 March 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1762",
+    "changes": []
+  },
+  {
+    "version": "r17.6.1",
+    "build": "76523",
+    "starter_build": "",
+    "released": "10 March 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1761",
+    "changes": []
+  },
+  {
+    "version": "r17.6",
+    "build": "76148",
+    "starter_build": "",
+    "released": "03 March 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r176",
+    "changes": []
+  },
+  {
+    "version": "r17.5.4",
+    "build": "75519",
+    "starter_build": "",
+    "released": "17 February 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1754",
+    "changes": []
+  },
+  {
+    "version": "r17.5.3",
+    "build": "75233",
+    "starter_build": "",
+    "released": "10 February 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1753",
+    "changes": []
+  },
+  {
+    "version": "r17.5.2",
+    "build": "74924",
+    "starter_build": "",
+    "released": "03 February 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1752",
+    "changes": []
+  },
+  {
+    "version": "r17.5.1",
+    "build": "74716",
+    "starter_build": "",
+    "released": "27 January 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1751",
+    "changes": []
+  },
+  {
+    "version": "r17.5",
+    "build": "74443",
+    "starter_build": "",
+    "released": "20 January 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r175",
+    "changes": []
+  },
+  {
+    "version": "r17.4.12",
+    "build": "74208",
+    "starter_build": "",
+    "released": "06 January 2021",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r17412",
+    "changes": []
+  },
+  {
+    "version": "r17.4.11",
+    "build": "73764",
+    "starter_build": "",
+    "released": "16 December 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r17411",
+    "changes": []
+  },
+  {
+    "version": "r17.4.10",
+    "build": "73706",
+    "starter_build": "",
+    "released": "09 December 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r17410",
+    "changes": []
+  },
+  {
+    "version": "r17.4.9",
+    "build": "73274",
+    "starter_build": "",
+    "released": "02 December 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1749",
+    "changes": []
+  },
+  {
+    "version": "r17.4.8",
+    "build": "73155",
+    "starter_build": "",
+    "released": "25 November 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1748",
+    "changes": []
+  },
+  {
+    "version": "r17.4.7",
+    "build": "72936",
+    "starter_build": "",
+    "released": "18 November 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1747",
+    "changes": []
+  },
+  {
+    "version": "r17.4.6",
+    "build": "72761",
+    "starter_build": "",
+    "released": "11 November 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1746",
+    "changes": []
+  },
+  {
+    "version": "r17.4.5",
+    "build": "72537",
+    "starter_build": "",
+    "released": "04 November 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1745",
+    "changes": []
+  },
+  {
+    "version": "r17.4.4",
+    "build": "72309",
+    "starter_build": "",
+    "released": "28 October 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1744",
+    "changes": []
+  },
+  {
+    "version": "r17.4.3",
+    "build": "72113",
+    "starter_build": "",
+    "released": "21 October 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1743",
+    "changes": []
+  },
+  {
+    "version": "r17.4.2",
+    "build": "72073",
+    "starter_build": "",
+    "released": "14 October 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1742",
+    "changes": []
+  },
+  {
+    "version": "r17.4.1",
+    "build": "71907",
+    "starter_build": "",
+    "released": "07 October 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1741",
+    "changes": []
+  },
+  {
+    "version": "r17.4",
+    "build": "71881",
+    "starter_build": "",
+    "released": "30 September 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r174",
+    "changes": []
+  },
+  {
+    "version": "r17.3.8",
+    "build": "70918",
+    "starter_build": "",
+    "released": "26 August 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1738",
+    "changes": []
+  },
+  {
+    "version": "r17.3.7",
+    "build": "70725",
+    "starter_build": "",
+    "released": "19 August 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1737",
+    "changes": []
+  },
+  {
+    "version": "r17.3.6",
+    "build": "70419",
+    "starter_build": "",
+    "released": "12 August 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1736",
+    "changes": []
+  },
+  {
+    "version": "r17.3.5",
+    "build": "70175",
+    "starter_build": "",
+    "released": "5 August 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1735",
+    "changes": []
+  },
+  {
+    "version": "r17.3.4",
+    "build": "69881",
+    "starter_build": "",
+    "released": "29 July 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1734",
+    "changes": []
+  },
+  {
+    "version": "r17.3.3",
+    "build": "69651",
+    "starter_build": "",
+    "released": "22 July 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1733",
+    "changes": []
+  },
+  {
+    "version": "r17.3.2",
+    "build": "69521",
+    "starter_build": "",
+    "released": "15 July 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1732",
+    "changes": []
+  },
+  {
+    "version": "r17.3.1",
+    "build": "69370",
+    "starter_build": "",
+    "released": "9 July 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1731",
+    "changes": []
+  },
+  {
+    "version": "r17.3",
+    "build": "69078",
+    "starter_build": "",
+    "released": "30 June 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r173",
+    "changes": []
+  },
+  {
+    "version": "r17.2.2",
+    "build": "67496",
+    "starter_build": "",
+    "released": "20 May 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1722",
+    "changes": []
+  },
+  {
+    "version": "r17.2.1",
+    "build": "66882",
+    "starter_build": "",
+    "released": "06 May 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1721",
+    "changes": []
+  },
+  {
+    "version": "r17.2",
+    "build": "66731",
+    "starter_build": "",
+    "released": "29 April 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r172",
+    "changes": []
   },
   {
     "version": "r17.1.3",
@@ -10224,6 +11288,158 @@
         "description": "Fixed an issue where notes could sometimes span two lines"
       }
     ]
+  },
+  {
+    "version": "r17.0.7",
+    "build": "64872",
+    "starter_build": "",
+    "released": "11 March 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1707",
+    "changes": []
+  },
+  {
+    "version": "r17.0.6",
+    "build": "64572",
+    "starter_build": "",
+    "released": "04 March 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1706",
+    "changes": []
+  },
+  {
+    "version": "r17.0.5",
+    "build": "64458",
+    "starter_build": "",
+    "released": "26 February 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1705",
+    "changes": []
+  },
+  {
+    "version": "r17.0.4",
+    "build": "64319",
+    "starter_build": "",
+    "released": "19 February 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1704",
+    "changes": []
+  },
+  {
+    "version": "r17.0.3",
+    "build": "63775",
+    "starter_build": "",
+    "released": "29 January 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1703",
+    "changes": []
+  },
+  {
+    "version": "r17.0.2",
+    "build": "63572",
+    "starter_build": "",
+    "released": "22 January 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1702",
+    "changes": []
+  },
+  {
+    "version": "r17.0.1",
+    "build": "63540",
+    "starter_build": "",
+    "released": "16 January 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r1701",
+    "changes": []
+  },
+  {
+    "version": "r17",
+    "build": "63364",
+    "starter_build": "",
+    "released": "8 January 2020",
+    "url": "https://help.disguise.one/designer/release-notes/r17#r17",
+    "changes": []
+  },
+  {
+    "version": "r16.1.2",
+    "build": "62867",
+    "starter_build": "",
+    "released": "4 December 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1612",
+    "changes": []
+  },
+  {
+    "version": "r16.1.1",
+    "build": "62240",
+    "starter_build": "",
+    "released": "13 November 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1611",
+    "changes": []
+  },
+  {
+    "version": "r16.1",
+    "build": "61826",
+    "starter_build": "",
+    "released": "06 November 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r161",
+    "changes": []
+  },
+  {
+    "version": "r16.0.8",
+    "build": "61473",
+    "starter_build": "",
+    "released": "23 October 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1608",
+    "changes": []
+  },
+  {
+    "version": "r16.0.7",
+    "build": "61298",
+    "starter_build": "",
+    "released": "16 October 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1607",
+    "changes": []
+  },
+  {
+    "version": "r16.0.6",
+    "build": "61009",
+    "starter_build": "",
+    "released": "02 October 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1606",
+    "changes": []
+  },
+  {
+    "version": "r16.0.5",
+    "build": "60932",
+    "starter_build": "",
+    "released": "25 September 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1605",
+    "changes": []
+  },
+  {
+    "version": "r16.0.4",
+    "build": "60742",
+    "starter_build": "",
+    "released": "18 September 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1604",
+    "changes": []
+  },
+  {
+    "version": "r16.0.3",
+    "build": "60516",
+    "starter_build": "",
+    "released": "04 September 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1603",
+    "changes": []
+  },
+  {
+    "version": "r16.0.2",
+    "build": "60384",
+    "starter_build": "",
+    "released": "28 August 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1602",
+    "changes": []
+  },
+  {
+    "version": "r16.0.1",
+    "build": "60308",
+    "starter_build": "",
+    "released": "20 August 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r16#r1601",
+    "changes": []
   },
   {
     "version": "r16",
@@ -11947,6 +13163,30 @@
         "description": "Audio does not start again when encountering a new keyframe of the same audio track when the same audio track is sequenced multiple times in the audio layer."
       }
     ]
+  },
+  {
+    "version": "r15.2.5",
+    "build": "56254",
+    "starter_build": "",
+    "released": "March 11th 2019",
+    "url": "https://help.disguise.one/designer/release-notes/r15#r1525",
+    "changes": []
+  },
+  {
+    "version": "r15.1.8",
+    "build": "54682",
+    "starter_build": "",
+    "released": "December 11th 2018",
+    "url": "https://help.disguise.one/designer/release-notes/r15#r1518",
+    "changes": []
+  },
+  {
+    "version": "r15.0.6",
+    "build": "52148",
+    "starter_build": "",
+    "released": "August 5th, 2018",
+    "url": "https://help.disguise.one/designer/release-notes/r15#r1506",
+    "changes": []
   },
   {
     "version": "r15",
