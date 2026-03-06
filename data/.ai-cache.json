@@ -14096,5 +14096,49 @@
     ],
     "released": "February 25th 2026",
     "starter_build": "240389"
+  },
+  "52fd0249d86fcdd0cf2f66cbcf4769ed888543859db30a33a0965ca283b33584": {
+    "version": "r32.3.4",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3234---hotfixes",
+    "build": "241332",
+    "entries": [
+      {
+        "category": "Bug Fixes",
+        "description": "Resolved an issue where Designer could occasionally CTD while using Precomps.",
+        "dsof": "DSOF-31665"
+      },
+      {
+        "category": "Bug Fixes",
+        "description": "Setting the Render Node of an RenderStream Local layer to a machine that is not in the session now works as expected.",
+        "dsof": "DSOF-32045"
+      },
+      {
+        "category": "Bug Fixes",
+        "description": "Actors that fail over but then are restored now receive tracking and DMX data correctly.",
+        "dsof": "DSOF-32015"
+      },
+      {
+        "category": "Bug Fixes",
+        "description": "The Receive Health widget in the RenderStream Local layer now works correctly.",
+        "dsof": "DSOF-31123"
+      },
+      {
+        "category": "Bug Fixes",
+        "description": "Tags and Notes will no longer sometimes move position after resizing the timeline.",
+        "dsof": "DSOF-32219"
+      },
+      {
+        "category": "Bug Fixes",
+        "description": "Stopping and starting video capture rapidly will no longer sometimes report spurious errors.",
+        "dsof": "DSOF-32056"
+      },
+      {
+        "category": "Bug Fixes",
+        "description": "RenderStream workloads with clusters of more than 1 machine will no longer sometimes get stuck on “Stopping” during workload shutdown.",
+        "dsof": "DSOF-32293"
+      }
+    ],
+    "released": "March 5th 2026",
+    "starter_build": "241333"
   }
 }
