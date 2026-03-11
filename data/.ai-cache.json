@@ -14140,5 +14140,213 @@
     ],
     "released": "March 5th 2026",
     "starter_build": "241333"
+  },
+  "cd549c0a46d6ba3bcace9d87026b1435829d65c1495f717c1f63ffc2c24b89a2": {
+    "version": "r32.4",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r324---omnical-workflow-improvements",
+    "build": "240856",
+    "entries": [
+      {
+        "category": "New Features",
+        "description": "With r32.4, we have introduced a range of improvements to OmniCal, including new API endpoints for the RigCheck workflow, QuickAlign improvements and image checks during capture.",
+        "dsof": ""
+      },
+      {
+        "category": "New Features",
+        "description": "Designer now also supports FBX animations loaded from meshes. These can be controlled using the new Scene Animation Layer, which also handles Alembic animations.",
+        "dsof": ""
+      },
+      {
+        "category": "New Features",
+        "description": "We have introduced the new OCIO Layer, enabling you to apply OCIO transforms to generic content.",
+        "dsof": ""
+      },
+      {
+        "category": "OmniCal Enhancements",
+        "description": "New OmniCal API endpoints allow users to programmatically trigger RigChecks, monitor their progress, retrieve result data and more.",
+        "dsof": "DSOF-29245"
+      },
+      {
+        "category": "OmniCal Enhancements",
+        "description": "A streamlined metric makes it easy to assess and compare calibration quality across different Plans and RigChecks.",
+        "dsof": ""
+      },
+      {
+        "category": "OmniCal Enhancements",
+        "description": "New post-capture processes automatically detect out-of-focus camera lenses and identify potential shifting of cameras, projectors, or surfaces by comparing RigCheck blobs against the original Plan.",
+        "dsof": ""
+      },
+      {
+        "category": "OmniCal Enhancements",
+        "description": "Usability has been upgraded with a new AlignmentPoint list editor. This provides a clear overview of the current alignment state and allows for rapid point editing, such as easily toggling the “reshape” function.",
+        "dsof": ""
+      },
+      {
+        "category": "OmniCal Enhancements",
+        "description": "You can now easily clear old unused RigCheck results directly via the UI or API to free up storage.",
+        "dsof": ""
+      },
+      {
+        "category": "Animation Enhancements",
+        "description": "Designer now supports FBX animations loaded directly from meshes. Learn more about it here.",
+        "dsof": ""
+      },
+      {
+        "category": "Animation Enhancements",
+        "description": "This newly introduced Scene Animation Layer provides centralised, intuitive control over both FBX and Alembic animations.",
+        "dsof": ""
+      },
+      {
+        "category": "Improvements",
+        "description": "Support new Vimba X SDK / driver version 2025-3.",
+        "dsof": "DSOF-29245,DSOF-30626,DSOF-32147"
+      },
+      {
+        "category": "Improvements",
+        "description": "Better network camera error checking and logging.",
+        "dsof": "DSOF-27178,DSOF-29108,DSOF-30373"
+      },
+      {
+        "category": "Improvements",
+        "description": "Automatic camera discovery management during GUI and API use.",
+        "dsof": "DSOF-27259,DSOF-27307"
+      },
+      {
+        "category": "Improvements",
+        "description": "Camera Stats window now shows camera temperature and effective network packet size, e.g. to confirm Jumbo Packet configuration.",
+        "dsof": "DSOF-30773"
+      },
+      {
+        "category": "Improvements",
+        "description": "Performance improvements for QuickAlign and Bundle Adjustment.",
+        "dsof": "DSOF-27967,DSOF-27978,DSOF-28278,DSOF-31150"
+      },
+      {
+        "category": "Improvements",
+        "description": "Alignment Point editor now shows vertex and world position to help identify what part of the mesh a vertex is from.",
+        "dsof": "DSOF-26342"
+      },
+      {
+        "category": "Improvements",
+        "description": "For better visibility during alignment QuickAlign now allows customising the wireframe colour.",
+        "dsof": "DSOF-27669"
+      },
+      {
+        "category": "Improvements",
+        "description": "Add information regarding percentages in the Blob Detection Stats table.",
+        "dsof": "DSOF-17906,DSOF-17907"
+      },
+      {
+        "category": "Improvements",
+        "description": "Cleaned up and reorganised several GUI elements. Most importantly, RigCheck has now its own collapsible section.",
+        "dsof": "DSOF-27615,DSOF-27874,DSOF-32012"
+      },
+      {
+        "category": "Improvements",
+        "description": "OmniCal settings now use checkboxes instead of Yes/No or On/Off drop-down selections for quicker editing.",
+        "dsof": "DSOF-13495,DSOF-32086"
+      },
+      {
+        "category": "Improvements",
+        "description": "Add tooltips to many options, buttons and windows.",
+        "dsof": "DSOF-26221,DSOF-26226"
+      },
+      {
+        "category": "Improvements",
+        "description": "Minor performance improvements to Feed view and VideoIn scope views.",
+        "dsof": "DSOF-27968"
+      },
+      {
+        "category": "Improvements",
+        "description": "The mesh centroid calculation is now more accurate for large scale meshes.",
+        "dsof": "DSOF-31706"
+      },
+      {
+        "category": "Improvements",
+        "description": "Expressions now support casting String objects to Integer objects with the `int()` function. More information can be found here.",
+        "dsof": "DSOF-32076"
+      },
+      {
+        "category": "Improvements",
+        "description": "The `getContentViewpoints` API endpoint now returns more useful data for Plugin developers.",
+        "dsof": "DSOF-31874"
+      },
+      {
+        "category": "Improvements",
+        "description": "Device monitors for monitoring incoming data (OSC, DMX, Tracking etc.) now has a “Last Received” column which shows the machine timestamp the last command was received. This is to improve troubleshooting.",
+        "dsof": "DSOF-30266"
+      },
+      {
+        "category": "Improvements",
+        "description": "Designer can now export Sockpuppet personalities in MA2 XML format again.",
+        "dsof": "DSOF-32084"
+      },
+      {
+        "category": "Improvements",
+        "description": "Users can now access the SMC API endpoints with NGINX the same way they do with Designer endpoints by sending commands to `api/smc`.",
+        "dsof": "DSOF-31625"
+      },
+      {
+        "category": "Improvements",
+        "description": "Downloads initiated via Web Plugins now display a useful progress bar.",
+        "dsof": "DSOF-25454"
+      },
+      {
+        "category": "Improvements",
+        "description": "Sending RenderStream texture parameters is now more performant, lower latency, and we have exposed additional graphs to display their latency in real-time.",
+        "dsof": "DSOF-32025,DSOF-32024,DSOF-31999"
+      },
+      {
+        "category": "Fixes",
+        "description": "Prevent session conflicts during QuickAlign reshape in multi-machine sessions.",
+        "dsof": "DSOF-19711"
+      },
+      {
+        "category": "Fixes",
+        "description": "When opening Capture Setup, all projectors are now correctly selected, so that switching from BlackLevel image to e.g. Alignment image works without issues.",
+        "dsof": "DSOF-31997"
+      },
+      {
+        "category": "Fixes",
+        "description": "If a camera times out during capture, this will now cause the whole OmniCal process to abort, as expected.",
+        "dsof": "DSOF-27452"
+      },
+      {
+        "category": "Fixes",
+        "description": "Disable Vimba X setting “Auto Adjust Packet Size” whenever OmniCal cameras are used in Designer. It can also be manually disabled in Vimba X Viewer. This setting is enabled by default by the Vimba X driver, but it was found to cause network problems for OmniCal captures.",
+        "dsof": "DSOF-31161"
+      },
+      {
+        "category": "Fixes",
+        "description": "Loading a Plan or RigCheck result no longer shows a “Could not open capture.txt” error, if the capture folder is empty.",
+        "dsof": "DSOF-27258"
+      },
+      {
+        "category": "Fixes",
+        "description": "Exporting Sockpuppet Personalities that have unicode characters now works properly.",
+        "dsof": "DSOF-25454"
+      },
+      {
+        "category": "Fixes",
+        "description": "Playing the timeline from the start of a Video Layer with embedded audio will no longer skip the first few frames of audio if the Playhead was previously stopped at the start of the Video Layer.",
+        "dsof": "DSOF-32062"
+      }
+    ],
+    "released": "March 11th 2026",
+    "starter_build": "240857"
+  },
+  "d69558d04b7deb669b9a195f093ecbdd61b47b58bbc97075a4ccba18b6605674": {
+    "version": "r32.3.5",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3235---hotfixes",
+    "build": "241471",
+    "entries": [
+      {
+        "category": "Fixes",
+        "description": "DMX Sockpuppet patched fields no longer change to the default value defined in the personality when a DMX device is lost, but instead retain the last-sent value.",
+        "dsof": "DSOF-32236"
+      }
+    ],
+    "released": "March 11th 2026",
+    "starter_build": "241472"
   }
 }
