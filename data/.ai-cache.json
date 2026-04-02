@@ -14348,5 +14348,34 @@
     ],
     "released": "March 11th 2026",
     "starter_build": "241472"
+  },
+  "e57d275e90fda61ff0ef5683362f96b15ea63ae6d24f3eaa4a1f5954ba15c8f8": {
+    "version": "r33.0",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r330---machine-deprecation",
+    "build": "244214",
+    "entries": [
+      {
+        "category": "Changes",
+        "description": "Moving a range of media servers from End of Production to End of Support.",
+        "dsof": ""
+      },
+      {
+        "category": "Changes",
+        "description": "The servers being deprecated include: 2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N.",
+        "dsof": ""
+      },
+      {
+        "category": "Changes",
+        "description": "These servers will require a software license to use with normal restrictions on versions of r33.0 and above.",
+        "dsof": ""
+      },
+      {
+        "category": "Changes",
+        "description": "These servers will still function normally as d3 Media Servers on all supported releases up to and including r32 and will receive critical bugfix updates in the r32 branch.",
+        "dsof": ""
+      }
+    ],
+    "released": "April 1st 2026",
+    "starter_build": "244213"
   }
 }
