@@ -1,5 +1,129 @@
 [
   {
+    "version": "r33.0.1",
+    "build": "244994",
+    "starter_build": "244995",
+    "released": "April 8th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r3301---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32385",
+        "category": "Improvements",
+        "description": "Experimental HDR output options have been removed from d3manager and the user guide, as these were unsupported and could cause unexpected display behaviour."
+      },
+      {
+        "dsof": "DSOF-32357",
+        "category": "Improvements",
+        "description": "The Python execution API now automatically rolls back project changes when a script raises an exception, preventing partial modifications from persisting."
+      },
+      {
+        "dsof": "DSOF-31636",
+        "category": "Fixes",
+        "description": "Projection masks now update correctly without needing to enter the display settings first."
+      },
+      {
+        "dsof": "DSOF-32358",
+        "category": "Fixes",
+        "description": "RenderStream workload processes (including Unreal Engine, Notch, and TouchDesigner) are now correctly terminated when a workload is stopped, preventing ghost processes from remaining on render nodes."
+      },
+      {
+        "dsof": "DSOF-31668",
+        "category": "Fixes",
+        "description": "Resolved an issue where Designer could hang indefinitely when losing focus while running in fullscreen mode with video outputs on GX 3+."
+      },
+      {
+        "dsof": "DSOF-32405",
+        "category": "Fixes",
+        "description": "Designer no longer crashes on startup after downgrading from r32.4 to an older build."
+      },
+      {
+        "dsof": "DSOF-32395",
+        "category": "Fixes",
+        "description": "The Python execution API no longer throws an exception when a script creates a layer."
+      },
+      {
+        "dsof": "DSOF-32387",
+        "category": "Fixes",
+        "description": "Editing an Expression Variables layer, undoing changes, then switching tracks no longer reports an error."
+      },
+      {
+        "dsof": "DSOF-32364",
+        "category": "Fixes",
+        "description": "Inserting or deleting time on large projects no longer causes Designer to hang for an extended period."
+      },
+      {
+        "dsof": "DSOF-32352",
+        "category": "Fixes",
+        "description": "Notch instances are now correctly released for layers with excluded mappings, preventing long hangs when entering Notch Layers."
+      },
+      {
+        "dsof": "DSOF-32339",
+        "category": "Fixes",
+        "description": "Removing the last transform from an OCIO layer’s transform list now correctly clears the colour effect."
+      },
+      {
+        "dsof": "DSOF-32320",
+        "category": "Fixes",
+        "description": "Keyframe carets and layer colours now update live when editing layers inside a group, as they did before r32.3."
+      },
+      {
+        "dsof": "DSOF-31688,DSOF-32377",
+        "category": "Fixes",
+        "description": "Modifying RenderStream parameters (including OCIO Input Transform and texture parameters) while a workload is running now works correctly."
+      },
+      {
+        "dsof": "DSOF-32376",
+        "category": "Fixes",
+        "description": "Cross-origin browser requests to the auth0 API endpoint now work correctly."
+      },
+      {
+        "dsof": "DSOF-32328",
+        "category": "Fixes",
+        "description": "OmniCal no longer generates repeated error notifications when an alignment filename exceeds the Windows path length limit."
+      },
+      {
+        "dsof": "DSOF-32220",
+        "category": "Fixes",
+        "description": "Bidirectional SockPuppet output patches now correctly send values over DMX, as they did before r32.2."
+      },
+      {
+        "dsof": "DSOF-32182",
+        "category": "Fixes",
+        "description": "The media provisioning API no longer incorrectly lowercases folder names for the first transfer entry."
+      },
+      {
+        "dsof": "DSOF-31189",
+        "category": "Fixes",
+        "description": "The multitransport preview widget no longer fails to display all timeline sections in some rare circumstances."
+      },
+      {
+        "dsof": "DSOF-28762",
+        "category": "Fixes",
+        "description": "Designer no longer unexpectedly enters a test mode if a file named `test.txt` exists in the projects folder."
+      },
+      {
+        "dsof": "DSOF-32388",
+        "category": "Fixes",
+        "description": "Skeletal mesh animations now correctly play back animated bone ends with no children in FBX files."
+      },
+      {
+        "dsof": "DSOF-32323",
+        "category": "Fixes",
+        "description": "Resolved an intermittent grey screen on startup on machines with IP-VFC cards installed and configured to lock to PTP."
+      },
+      {
+        "dsof": "DSOF-32256",
+        "category": "Fixes",
+        "description": "RenderStream remote texture parameters no longer appear over-exposed when using gamma colour space, particularly with Unreal Engine uncompressed transport."
+      },
+      {
+        "dsof": "DSOF-32046",
+        "category": "Fixes",
+        "description": "RenderStream exposed parameters are now correctly applied when the controller is set to an Actor rather than the Director, as they did before r32.2."
+      }
+    ]
+  },
+  {
     "version": "r33.0",
     "build": "244214",
     "starter_build": "244213",
@@ -10,6 +134,125 @@
         "dsof": "",
         "category": "Changes",
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.1",
+    "build": "244992",
+    "starter_build": "244993",
+    "released": "April 8th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3241---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32385",
+        "category": "Improvements",
+        "description": "Experimental HDR output options have been removed from d3manager and the user guide, as these were unsupported and could cause unexpected display behaviour."
+      },
+      {
+        "dsof": "DSOF-32357",
+        "category": "Improvements",
+        "description": "The Python execution API now automatically rolls back project changes when a script raises an exception, preventing partial modifications from persisting."
+      },
+      {
+        "dsof": "DSOF-32358",
+        "category": "Fixes",
+        "description": "RenderStream workload processes (including Unreal Engine, Notch, and TouchDesigner) are now correctly terminated when a workload is stopped, preventing ghost processes from remaining on render nodes."
+      },
+      {
+        "dsof": "DSOF-31668",
+        "category": "Fixes",
+        "description": "Resolved an issue where Designer could hang indefinitely when losing focus while running in fullscreen mode with video outputs on GX 3+."
+      },
+      {
+        "dsof": "DSOF-32405",
+        "category": "Fixes",
+        "description": "Designer no longer crashes on startup after downgrading from r32.4 to an older build."
+      },
+      {
+        "dsof": "DSOF-32395",
+        "category": "Fixes",
+        "description": "The Python execution API no longer throws an exception when a script creates a layer."
+      },
+      {
+        "dsof": "DSOF-32387",
+        "category": "Fixes",
+        "description": "Editing an Expression Variables layer, undoing changes, then switching tracks no longer reports an error."
+      },
+      {
+        "dsof": "DSOF-32364",
+        "category": "Fixes",
+        "description": "Inserting or deleting time on large projects no longer causes Designer to hang for an extended period."
+      },
+      {
+        "dsof": "DSOF-32352",
+        "category": "Fixes",
+        "description": "Notch instances are now correctly released for layers with excluded mappings, preventing long hangs when entering Notch Layers."
+      },
+      {
+        "dsof": "DSOF-32339",
+        "category": "Fixes",
+        "description": "Removing the last transform from an OCIO layer’s transform list now correctly clears the colour effect."
+      },
+      {
+        "dsof": "DSOF-32320",
+        "category": "Fixes",
+        "description": "Keyframe carets and layer colours now update live when editing layers inside a group, as they did before r32.3."
+      },
+      {
+        "dsof": "DSOF-31688,DSOF-32377",
+        "category": "Fixes",
+        "description": "Modifying RenderStream parameters (including OCIO Input Transform and texture parameters) while a workload is running now works correctly."
+      },
+      {
+        "dsof": "DSOF-32376",
+        "category": "Fixes",
+        "description": "Cross-origin browser requests to the auth0 API endpoint now work correctly."
+      },
+      {
+        "dsof": "DSOF-32328",
+        "category": "Fixes",
+        "description": "OmniCal no longer generates repeated error notifications when an alignment filename exceeds the Windows path length limit."
+      },
+      {
+        "dsof": "DSOF-32220",
+        "category": "Fixes",
+        "description": "Bidirectional SockPuppet output patches now correctly send values over DMX, as they did before r32.2."
+      },
+      {
+        "dsof": "DSOF-32182",
+        "category": "Fixes",
+        "description": "The media provisioning API no longer incorrectly lowercases folder names for the first transfer entry."
+      },
+      {
+        "dsof": "DSOF-31189",
+        "category": "Fixes",
+        "description": "The multitransport preview widget no longer fails to display all timeline sections in some rare circumstances."
+      },
+      {
+        "dsof": "DSOF-28762",
+        "category": "Fixes",
+        "description": "Designer no longer unexpectedly enters a test mode if a file named `test.txt` exists in the projects folder."
+      },
+      {
+        "dsof": "DSOF-32388",
+        "category": "Fixes",
+        "description": "Skeletal mesh animations now correctly play back animated bone ends with no children in FBX files."
+      },
+      {
+        "dsof": "DSOF-32323",
+        "category": "Fixes",
+        "description": "Resolved an intermittent grey screen on startup on machines with IP-VFC cards installed and configured to lock to PTP."
+      },
+      {
+        "dsof": "DSOF-32256",
+        "category": "Fixes",
+        "description": "RenderStream remote texture parameters no longer appear over-exposed when using gamma colour space, particularly with Unreal Engine uncompressed transport."
+      },
+      {
+        "dsof": "DSOF-32046",
+        "category": "Fixes",
+        "description": "RenderStream exposed parameters are now correctly applied when the controller is set to an Actor rather than the Director, as they did before r32.2."
       }
     ]
   },
