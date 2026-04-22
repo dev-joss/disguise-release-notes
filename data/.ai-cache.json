@@ -14620,5 +14620,148 @@
     ],
     "released": "April 8th 2026",
     "starter_build": "244993"
+  },
+  "8416d5b34f547dd599d1fe1d54cea67178c92854c0fb68c36164cc51e450f986": {
+    "version": "r33.0.2",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r3302---hotfixes",
+    "build": "246160",
+    "entries": [
+      {
+        "category": "Fixes",
+        "description": "Hold mode (Alt+P) now correctly freezes the last rendered frame on physical outputs, as it did before r32.4.1 and r33.0.1, rather than stretching the top row of pixels across the entire frame.",
+        "dsof": "DSOF-32538"
+      },
+      {
+        "category": "Fixes",
+        "description": "Resolved an issue where Designer’s interface elements were rendered approximately 11% larger than intended. Interface sizing now matches its behaviour before r32.3.",
+        "dsof": "DSOF-32545"
+      },
+      {
+        "category": "Fixes",
+        "description": "Resolved an issue where d3service could intermittently crash when checking for internet connectivity after Designer had shut down, which previously required a server reboot to recover.",
+        "dsof": "DSOF-32535"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer now pre-rolls and chases timecode correctly when using a 29.97 drop-frame source with the Custom Timeline FPS set to Global or Custom. Previously the pre-roll started late and the playhead remained permanently offset from the timecode source.",
+        "dsof": "DSOF-32423"
+      },
+      {
+        "category": "Fixes",
+        "description": "Looping FBX animations now play for their full duration before restarting, rather than pausing shortly before the loop point.",
+        "dsof": "DSOF-32481"
+      },
+      {
+        "category": "Fixes",
+        "description": "Colour Inspector RGB error values are now calculated correctly regardless of the active output colour space. Previously the 2014 Macbeth colour chart produced very high error values when a non-sRGB output transform was in use.",
+        "dsof": "DSOF-31802"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer intermittently launch in to a Live Update Blocked state with certain video in formats present.",
+        "dsof": "DSOF-32374"
+      },
+      {
+        "category": "Fixes",
+        "description": "Removing an OSC output expression while its ‘Expression’ field is selected now works correctly and no longer reports an error.",
+        "dsof": "DSOF-32521"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer now has improved logging for identifying frame drops.",
+        "dsof": "DSOF-32549"
+      },
+      {
+        "category": "Fixes",
+        "description": "The Transport Manager timecode dropdown now uses short property labels, restoring the expected dropdown width.",
+        "dsof": "DSOF-32539"
+      },
+      {
+        "category": "Fixes",
+        "description": "d3service now correctly logs any licences that have been removed during an automatic licence update.",
+        "dsof": "DSOF-32525"
+      },
+      {
+        "category": "Fixes",
+        "description": "Improved logging about the Designer shutdown process to make troubleshooting shutdown issues easier.",
+        "dsof": "DSOF-32523"
+      }
+    ],
+    "released": "April 22nd 2026",
+    "starter_build": "246161"
+  },
+  "f444f9d71b28c2be0619e9b30aa88533ef89674ca0b33ed5608fcc2d9a11c7b2": {
+    "version": "r32.4.2",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3242---hotfixes",
+    "build": "246100",
+    "entries": [
+      {
+        "category": "Fixes",
+        "description": "Projection masks now update correctly without needing to enter the display settings first.",
+        "dsof": "DSOF-31636"
+      },
+      {
+        "category": "Fixes",
+        "description": "Hold mode (Alt+P) now correctly freezes the last rendered frame on physical outputs, as it did before r32.4.1 and r33.0.1, rather than stretching the top row of pixels across the entire frame.",
+        "dsof": "DSOF-32538"
+      },
+      {
+        "category": "Fixes",
+        "description": "Resolved an issue where Designer’s interface elements were rendered approximately 11% larger than intended. Interface sizing now matches its behaviour before r32.3.",
+        "dsof": "DSOF-32545"
+      },
+      {
+        "category": "Fixes",
+        "description": "Resolved an issue where d3service could intermittently crash when checking for internet connectivity after Designer had shut down, which previously required a server reboot to recover.",
+        "dsof": "DSOF-32535"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer now pre-rolls and chases timecode correctly when using a 29.97 drop-frame source with the Custom Timeline FPS set to Global or Custom. Previously the pre-roll started late and the playhead remained permanently offset from the timecode source.",
+        "dsof": "DSOF-32423"
+      },
+      {
+        "category": "Fixes",
+        "description": "Looping FBX animations now play for their full duration before restarting, rather than pausing shortly before the loop point.",
+        "dsof": "DSOF-32481"
+      },
+      {
+        "category": "Fixes",
+        "description": "Colour Inspector RGB error values are now calculated correctly regardless of the active output colour space. Previously the 2014 Macbeth colour chart produced very high error values when a non-sRGB output transform was in use.",
+        "dsof": "DSOF-31802"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer intermittently launch in to a Live Update Blocked state with certain video in formats present.",
+        "dsof": "DSOF-32374"
+      },
+      {
+        "category": "Fixes",
+        "description": "Removing an OSC output expression while its ‘Expression’ field is selected now works correctly and no longer reports an error.",
+        "dsof": "DSOF-32521"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer now has improved logging for identifying frame drops.",
+        "dsof": "DSOF-32549"
+      },
+      {
+        "category": "Fixes",
+        "description": "The Transport Manager timecode dropdown now uses short property labels, restoring the expected dropdown width.",
+        "dsof": "DSOF-32539"
+      },
+      {
+        "category": "Fixes",
+        "description": "d3service now correctly logs any licences that have been removed during an automatic licence update.",
+        "dsof": "DSOF-32525"
+      },
+      {
+        "category": "Fixes",
+        "description": "Improved logging about the Designer shutdown process to make troubleshooting shutdown issues easier.",
+        "dsof": "DSOF-32523"
+      }
+    ],
+    "released": "April 22nd 2026",
+    "starter_build": "246101"
   }
 }
