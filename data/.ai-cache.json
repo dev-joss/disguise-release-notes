@@ -14763,5 +14763,247 @@
     ],
     "released": "April 22nd 2026",
     "starter_build": "246101"
+  },
+  "4132a864cdcc9485dc878ac038fa9bd76c1b6608ec3e784240964029f2c57734": {
+    "version": "r33.1",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r331---quality-of-life-improvements",
+    "build": "247072",
+    "entries": [
+      {
+        "category": "Improvements",
+        "description": "Mesh Mappings have received a comprehensive update: New methods to control resolution (Scaling, Fixed, or Pixels-per-Degree), independent of the projected screen. An optional No Warp mode that sends the stream without warping content to UVs, so screen-space effects from RenderStream sources render cleanly without seams. Per-axis Overscan X and Overscan Y fields for additional pixels of render area on the seams between meshes. New cross-projection blend modes. Performance improvements.",
+        "dsof": "DSOF-28802,DSOF-28801,DSOF-28447,DSOF-32365,DSOF-32496"
+      },
+      {
+        "category": "Improvements",
+        "description": "Three new option switches (renderstreamActiveLatencyPercentile, renderstreamActiveLatencyOffset and renderstreamBufferSize) let users tune RenderStream active latency to address intermittent dropped frames caused by variable RenderStream sync timing. See Tuning RenderStream Active Latency for guidance.",
+        "dsof": "DSOF-29986"
+      },
+      {
+        "category": "Improvements",
+        "description": "The Receive Health widget now lists incoming RenderStream texture parameter streams alongside frame streams, with sent and received rates available per stream.",
+        "dsof": "DSOF-31998"
+      },
+      {
+        "category": "Improvements",
+        "description": "RenderStream workloads no longer intermittently crash when texture parameters are switched between sources (e.g. between a precomp and another texture) while the workload is running.",
+        "dsof": "DSOF-31948"
+      },
+      {
+        "category": "Improvements",
+        "description": "The Bandwidth Estimation widget now reports outgoing RenderStream texture parameter bandwidth against the network adaptor that will actually be used (instead of an “Automatic” category), and reports incoming bandwidth for subscribed RenderStream streams.",
+        "dsof": "DSOF-31834,DSOF-31719"
+      },
+      {
+        "category": "Improvements",
+        "description": "RenderStream asset sync tasks now display progress feedback, indicate when a task has stalled, and can be interrupted with a confirmation prompt.",
+        "dsof": "DSOF-32190"
+      },
+      {
+        "category": "Improvements",
+        "description": "The RenderStream asset list now distinguishes between assets of the same name in different folders by surfacing the full project path.",
+        "dsof": "DSOF-32188"
+      },
+      {
+        "category": "Improvements",
+        "description": "The OpenVPCal Plugin now disables the Designer GUI during capture to reduce the chance of dropped frames during the calibration process.",
+        "dsof": "DSOF-32263"
+      },
+      {
+        "category": "Improvements",
+        "description": "The OmniCal Plan Camera Stats window has been reorganised — bandwidth is now reported in Mbit/s for easier comparison against configured network bandwidth, and the columns most useful for troubleshooting (such as missed packets and packet errors) are visible by default.",
+        "dsof": "DSOF-32451"
+      },
+      {
+        "category": "Improvements",
+        "description": "The Live Update API has been extended to expose the same data points found in the Proof of Play .csv file in real time, enabling integration with content management systems. Note that Proof of Play currently only supports Video Layers.",
+        "dsof": "DSOF-32243"
+      },
+      {
+        "category": "Improvements",
+        "description": "The Designer Plugins API now provides scoped authentication tokens for cloud-aware plugins instead of giving them access to the master Auth0 token, improving security in multi-plugin environments.",
+        "dsof": "DSOF-32570"
+      },
+      {
+        "category": "Improvements",
+        "description": "Designer now displays a helpful notification when an audio input device (e.g. a USB device used for timecode) is unplugged.",
+        "dsof": "DSOF-31949"
+      },
+      {
+        "category": "Improvements",
+        "description": "The audio waveform view now supports the audio of video clips on Video Layers, in addition to Audio Layer tracks.",
+        "dsof": "DSOF-23055"
+      },
+      {
+        "category": "Improvements",
+        "description": "DMX screens now support 8-bit and 16-bit CMY drivers in addition to RGB.",
+        "dsof": "DSOF-29318"
+      },
+      {
+        "category": "Improvements",
+        "description": "You can now force-break references when importing packages, allowing imports to skip dependencies you know aren’t needed.",
+        "dsof": "DSOF-30285"
+      },
+      {
+        "category": "Improvements",
+        "description": "Layers now have a project-level Disable option that persists across track jumps and saves, replacing the legacy allowPersistentMute debug option. Disabled layers display dimmed with a [DISABLED] label and are excluded from sequencing, rendering, and prefetch. Mute remains a per-machine session-level toggle that resets on track jumps.",
+        "dsof": "DSOF-25386"
+      },
+      {
+        "category": "Improvements",
+        "description": "Pressing SHIFT + ESC now also closes all the layer widgets on the track, not just the currently visible ones.",
+        "dsof": "DSOF-30338"
+      },
+      {
+        "category": "Fixes",
+        "description": "Mesh Mapping resolution and the resulting RenderStream stream resolution no longer change with local LOD when zooming in or out of the stage on the projected screen on Dedicated Director Machines.",
+        "dsof": "DSOF-28848"
+      },
+      {
+        "category": "Fixes",
+        "description": "Render nodes no longer occasionally fail to render the scene (with receive health dropping to 0) when using compressed RenderStream texture parameters in setups with mixed controllers.",
+        "dsof": "DSOF-32351"
+      },
+      {
+        "category": "Fixes",
+        "description": "RenderStream texture parameter bandwidth is no longer counted multiple times when several texture parameters on the same asset share a single arrowed-in stream.",
+        "dsof": "DSOF-31723"
+      },
+      {
+        "category": "Fixes",
+        "description": "The Python plugin API’s loadOrCreate on Display subclasses (e.g. LedScreen, Screen2) now creates a default DirectProjection automatically, matching the result of creating displays through the UI.",
+        "dsof": "DSOF-32274"
+      },
+      {
+        "category": "Fixes",
+        "description": "ObjectView widgets can no longer be resized smaller than their content on higher-DPI screens.",
+        "dsof": "DSOF-32459"
+      },
+      {
+        "category": "Fixes",
+        "description": "The Surface masks menu now scrolls when there are more options than fit on screen, allowing access to all entries on HD monitors.",
+        "dsof": "DSOF-32290"
+      },
+      {
+        "category": "Fixes",
+        "description": "List Editor improvements: Custom columns now respect Separator Groups and only appear in the Default group, instead of being shown in every group. The Default Category is now always the initially opened category, including in the Projector List Editor. Importing CSVs exported from non-default categories now works correctly. Importing a CSV no longer creates a duplicate title row.",
+        "dsof": "DSOF-27478,DSOF-31969,DSOF-31968,DSOF-17067"
+      },
+      {
+        "category": "Fixes",
+        "description": "The OSC Event Transport field order has been restored to OSC Device → Input → Output → Behaviour, matching its order before r31.0.",
+        "dsof": "DSOF-32037"
+      },
+      {
+        "category": "Fixes",
+        "description": "The Join Session prompt in d3 Manager now reappears after the second time of joining a session from the same Editor.",
+        "dsof": "DSOF-30252"
+      },
+      {
+        "category": "Fixes",
+        "description": "The Designer installer no longer reports timeout errors when network shares take longer than 20 seconds to respond.",
+        "dsof": "DSOF-32288"
+      }
+    ],
+    "released": "April 29th 2026",
+    "starter_build": "247073"
+  },
+  "feee941cf571e6dc46f44808b8a8668c2929d33e5f340b9fec414b7d219a91f8": {
+    "version": "r33.0.3",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r3303---hotfixes",
+    "build": "247066",
+    "entries": [
+      {
+        "category": "Improvements",
+        "description": "The `GuiSystem` is no longer marked as Internal, so its functions are now available to plugin developers via the Designer Plugins API.",
+        "dsof": "DSOF-32580"
+      },
+      {
+        "category": "Fixes",
+        "description": "Projects with the `enableSLC` Option Switch enabled and using SLC-sized precomps no longer fail to upgrade properly to the latest gold from r20.0.3 or earlier.",
+        "dsof": "DSOF-32581"
+      },
+      {
+        "category": "Fixes",
+        "description": "Crossfading between sections that use a Precomp Mapping no longer fades through black. Precomp crossfades now match the behaviour of direct mappings.",
+        "dsof": "DSOF-32428"
+      },
+      {
+        "category": "Fixes",
+        "description": "Video content no longer skips or jumps when a speed keyframe lands on a section break, restoring the behaviour from before r32.2.",
+        "dsof": "DSOF-32099"
+      },
+      {
+        "category": "Fixes",
+        "description": "RenderStream Local layers no longer suffer latency spikes of up to 6 frames when the **Frame Fraction** field is set below 1. Latency now stays consistently at 1-2 frames as expected.",
+        "dsof": "DSOF-32610"
+      },
+      {
+        "category": "Fixes",
+        "description": "Users can now set Min and Max metafields on exposed Unreal Engine parameters on RenderStream Local layers without the value of the field reverting back to the default once these have been edited.",
+        "dsof": "DSOF-32611"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer no longer reports a spurious error and prevents the user from selecting assets in the RenderStream workload editor under rare circumstances.",
+        "dsof": "DSOF-25822"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer and d3service now correctly report when their HTTP servers fail to bind their configured ports - for example when WSL2 with mirrored networking ghost-reserves them - rather than continuing to run with a silently unreachable API.",
+        "dsof": "DSOF-32540"
+      }
+    ],
+    "released": "April 29th 2026",
+    "starter_build": "247067"
+  },
+  "d574c88f8f7b206023572e0a1b6bd969bab4c474e780b84e3b87df5b1819a16a": {
+    "version": "r32.4.3",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3243---hotfixes",
+    "build": "247061",
+    "entries": [
+      {
+        "category": "Improvements",
+        "description": "The `GuiSystem` is no longer marked as Internal, so its functions are now available to plugin developers via the Designer Plugins API.",
+        "dsof": "DSOF-32580"
+      },
+      {
+        "category": "Fixes",
+        "description": "Projects with the `enableSLC` Option Switch enabled and using SLC-sized precomps no longer fail to upgrade properly to the latest gold from r20.0.3 or earlier.",
+        "dsof": "DSOF-32581"
+      },
+      {
+        "category": "Fixes",
+        "description": "Crossfading between sections that use a Precomp Mapping no longer fades through black. Precomp crossfades now match the behaviour of direct mappings.",
+        "dsof": "DSOF-32428"
+      },
+      {
+        "category": "Fixes",
+        "description": "Video content no longer skips or jumps when a speed keyframe lands on a section break, restoring the behaviour from before r32.2.",
+        "dsof": "DSOF-32099"
+      },
+      {
+        "category": "Fixes",
+        "description": "RenderStream Local layers no longer suffer latency spikes of up to 6 frames when the **Frame Fraction** field is set below 1. Latency now stays consistently at 1-2 frames as expected.",
+        "dsof": "DSOF-32610"
+      },
+      {
+        "category": "Fixes",
+        "description": "Users can now set Min and Max metafields on exposed Unreal Engine parameters on RenderStream Local layers without the value of the field reverting back to the default once these have been edited.",
+        "dsof": "DSOF-32611"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer no longer reports a spurious error and prevents the user from selecting assets in the RenderStream workload editor under rare circumstances.",
+        "dsof": "DSOF-25822"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer and d3service now correctly report when their HTTP servers fail to bind their configured ports - for example when WSL2 with mirrored networking ghost-reserves them - rather than continuing to run with a silently unreachable API.",
+        "dsof": "DSOF-32540"
+      }
+    ],
+    "released": "April 29th 2026",
+    "starter_build": "247062"
   }
 }
