@@ -1,5 +1,39 @@
 [
   {
+    "version": "r33.1.1",
+    "build": "247780",
+    "starter_build": "247781",
+    "released": "May 6th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r3311---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32605,DSOF-32592",
+        "category": "Fixes",
+        "description": "Editing keyframes on very large projects no longer causes the director machine to drop frames."
+      },
+      {
+        "dsof": "DSOF-32643",
+        "category": "Fixes",
+        "description": "When saving a section of a Track as a new Track, Cues, Notes, and Tags on the new Track are no longer linked to the old track as well."
+      },
+      {
+        "dsof": "DSOF-32620,DSOF-32621",
+        "category": "Fixes",
+        "description": "Loading Alembic files is now more robust: meshes containing unsupported elements (such as `FaceSet` material grouping metadata) now load with the unsupported elements ignored, rather than failing the whole file, and projects containing multiple large Alembic files no longer crash to desktop on startup."
+      },
+      {
+        "dsof": "DSOF-32348,DSOF-32355,DSOF-32356,DSOF-32372,DSOF-32331",
+        "category": "Fixes",
+        "description": "A range of IP-VFC reliability fixes: IP-VFC cards appear more reliably after a cold reboot, adding or swapping IP-VFC cards between machine restarts is now more reliable, failure to lock to PTP is now reported as `PTP Not Locked`, instead of the misleading `PTP Domain Number is different` or `PTP Profile is different`, NMOS connection requests that include a primary or secondary multicast address update now apply correctly to the IP-VFC port, as expected when running ST 2110 with out-of-band NMOS."
+      },
+      {
+        "dsof": "DSOF-32587",
+        "category": "Fixes",
+        "description": "When an OmniCal Plan contains cameras with no OmniCal camera assigned and is not set to simulate capture, the Plan camera background now correctly shows red instead of green."
+      }
+    ]
+  },
+  {
     "version": "r33.1",
     "build": "247072",
     "starter_build": "247073",
@@ -396,6 +430,40 @@
         "dsof": "",
         "category": "Changes",
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.4",
+    "build": "247775",
+    "starter_build": "247776",
+    "released": "May 6th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3244---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32605,DSOF-32592",
+        "category": "Fixes",
+        "description": "Editing keyframes on very large projects no longer causes the director machine to drop frames."
+      },
+      {
+        "dsof": "DSOF-32643",
+        "category": "Fixes",
+        "description": "When saving a section of a Track as a new Track, Cues, Notes, and Tags on the new Track are no longer linked to the old track as well."
+      },
+      {
+        "dsof": "DSOF-32620,DSOF-32621",
+        "category": "Fixes",
+        "description": "Loading Alembic files is now more robust: meshes containing unsupported elements now load with the unsupported elements ignored, rather than failing the whole file, and projects containing multiple large Alembic files no longer crash to desktop on startup."
+      },
+      {
+        "dsof": "DSOF-32348,DSOF-32355,DSOF-32356,DSOF-32372,DSOF-32331",
+        "category": "Fixes",
+        "description": "A range of IP-VFC reliability fixes: IP-VFC cards appear more reliably after a cold reboot, adding or swapping IP-VFC cards between machine restarts is now more reliable, failure to lock to PTP is now reported as 'PTP Not Locked', NMOS connection requests that include a primary or secondary multicast address update now apply correctly to the IP-VFC port."
+      },
+      {
+        "dsof": "DSOF-32587",
+        "category": "Fixes",
+        "description": "When an OmniCal Plan contains cameras with no OmniCal camera assigned and is not set to simulate capture, the Plan camera background now correctly shows red instead of green."
       }
     ]
   },
