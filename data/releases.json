@@ -1,5 +1,54 @@
 [
   {
+    "version": "r33.1.2",
+    "build": "248549",
+    "starter_build": "248550",
+    "released": "May 13th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r3312---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32723",
+        "category": "Fixes",
+        "description": "When upgrading projects from r33.0 or earlier to r33.1 or above, only layers that were muted while the editor was set to Locked to Director are now converted to Disabled. Layers muted on editors while in Independent transport mode are no longer disabled on upgrade."
+      },
+      {
+        "dsof": "DSOF-32489",
+        "category": "Fixes",
+        "description": "RenderStream workloads no longer occasionally display an INVALID scene and fail to load all remote parameters when they are first detected."
+      },
+      {
+        "dsof": "DSOF-32670",
+        "category": "Fixes",
+        "description": "Launching RenderStream Local workloads no longer significantly degrades Designer performance while the project is launching in projects with arrows and mesh projections."
+      },
+      {
+        "dsof": "DSOF-32595",
+        "category": "Improvements",
+        "description": "Track rendering performance is improved, especially for large projects."
+      },
+      {
+        "dsof": "DSOF-32676",
+        "category": "Fixes",
+        "description": "Pressing Enter to stop the track now works correctly after the playhead has reached the end of the track. See Transport Player Controls."
+      },
+      {
+        "dsof": "DSOF-32693",
+        "category": "Fixes",
+        "description": "System diagnostics generated through d3manager now correctly include the Mellanox Mlx5_Dump_Me_Now-* dump folders, which are useful when troubleshooting network adaptor faults."
+      },
+      {
+        "dsof": "DSOF-32550",
+        "category": "Improvements",
+        "description": "The profileGPUPoolFromLaunch option switch now produces more detailed and accurate output, with properly balanced events and correctly labelled buffer entries."
+      },
+      {
+        "dsof": "DSOF-32651",
+        "category": "Fixes",
+        "description": "Projects that used the legacy virtual camera workflow prior to r25.0 no longer fail to upgrade when opened in a newer version of Designer."
+      }
+    ]
+  },
+  {
     "version": "r33.1.1",
     "build": "247780",
     "starter_build": "247781",
@@ -430,6 +479,50 @@
         "dsof": "",
         "category": "Changes",
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.5",
+    "build": "248487",
+    "starter_build": "248488",
+    "released": "May 13th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3245---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32489",
+        "category": "Fixes",
+        "description": "RenderStream workloads no longer occasionally display an INVALID scene and fail to load all remote parameters when they are first detected."
+      },
+      {
+        "dsof": "DSOF-32670",
+        "category": "Fixes",
+        "description": "Launching RenderStream Local workloads no longer significantly degrades Designer performance while the project is launching in projects with arrows and mesh projections."
+      },
+      {
+        "dsof": "DSOF-32595",
+        "category": "Fixes",
+        "description": "Track rendering performance is improved, especially for large projects."
+      },
+      {
+        "dsof": "DSOF-32676",
+        "category": "Fixes",
+        "description": "Pressing Enter to stop the track now works correctly after the playhead has reached the end of the track. See Transport Player Controls."
+      },
+      {
+        "dsof": "DSOF-32693",
+        "category": "Fixes",
+        "description": "System diagnostics generated through d3manager now correctly include the Mellanox Mlx5_Dump_Me_Now-* dump folders, which are useful when troubleshooting network adaptor faults."
+      },
+      {
+        "dsof": "DSOF-32550",
+        "category": "Fixes",
+        "description": "The profileGPUPoolFromLaunch option switch now produces more detailed and accurate output, with properly balanced events and correctly labelled buffer entries."
+      },
+      {
+        "dsof": "DSOF-32651",
+        "category": "Fixes",
+        "description": "Projects that used the legacy virtual camera workflow prior to r25.0 no longer fail to upgrade when opened in a newer version of Designer."
       }
     ]
   },
