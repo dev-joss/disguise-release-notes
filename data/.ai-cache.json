@@ -15074,6 +15074,100 @@
     "released": "May 6th 2026",
     "starter_build": "247776"
   },
+  "a39ae6036c9b0a3df7dfa3bb666f1c6728d73bf97ef45406f20ef1b30db52d2c": {
+    "version": "r33.1.3",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r3313---hotfixes",
+    "build": "249736",
+    "entries": [
+      {
+        "category": "Improvements",
+        "description": "Changing the project refresh rate now better aligns layers, cues and keyframes to the new framerate.",
+        "dsof": "DSOF-32061"
+      },
+      {
+        "category": "Improvements",
+        "description": "The `Null handle when setting texture parameter` console message is now rate-limited and includes the affected texture’s path, description, status, and rendering context.",
+        "dsof": "DSOF-32858"
+      },
+      {
+        "category": "Fixes",
+        "description": "Switching between versions of a video file no longer prevents the clip from rendering when the new version has a different duration to the previous one.",
+        "dsof": "DSOF-32747"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer no longer fires audio device notifications on startup for installed ASIO and Dante drivers that have no hardware connected.",
+        "dsof": "DSOF-32439"
+      },
+      {
+        "category": "Fixes",
+        "description": "Active IP Video Capture sources are now preserved across Designer project restarts.",
+        "dsof": "DSOF-31070"
+      },
+      {
+        "category": "Fixes",
+        "description": "The video delay calibration widget now reports realistic values for **ST 2110** video inputs.",
+        "dsof": "DSOF-30503"
+      },
+      {
+        "category": "Fixes",
+        "description": "HDMI capture inputs reporting RGB Limited now produce an image instead of a black screen.",
+        "dsof": "DSOF-32434"
+      },
+      {
+        "category": "Fixes",
+        "description": "TransportControl Layers now reliably issue timeline jumps on other tracks when their containing track is jumped to via timecode.",
+        "dsof": "DSOF-32814"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer no longer logs `The given index isn't a section; please check your logic!` when dragging keyframes on a track that also contains note or tag cues.",
+        "dsof": "DSOF-32370"
+      },
+      {
+        "category": "Fixes",
+        "description": "RenderStream streams no longer stop after a secondary render machine is marked as failed using the Mark as Failed failover method.",
+        "dsof": "DSOF-32448"
+      },
+      {
+        "category": "Fixes",
+        "description": "When the d3Net connection to a peer briefly drops and recovers, the Director now automatically re-admits the peer to the session.",
+        "dsof": "DSOF-32688"
+      },
+      {
+        "category": "Fixes",
+        "description": "The Network Status widget on Editor machines no longer randomly reports remote machines as `---` or “not present”.",
+        "dsof": "DSOF-32271"
+      },
+      {
+        "category": "Fixes",
+        "description": "Machines will no longer occasionally fail to launch when launched remotely from the director.",
+        "dsof": "DSOF-32686"
+      },
+      {
+        "category": "Fixes",
+        "description": "When Designer fails to start due to a subsystem exception, the startup-failure dialog now includes the originating exception’s message and any context-aware remediation steps.",
+        "dsof": "DSOF-32857"
+      },
+      {
+        "category": "Fixes",
+        "description": "The console on an Editor running in **Solo** mode is no longer spammed with `updateDirectorBlockedState()` messages.",
+        "dsof": "DSOF-30200"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer no longer logs `New resource actions haven't been unsubscribed` and `Remove resource actions haven't been unsubscribed` warnings during shutdown.",
+        "dsof": "DSOF-31218"
+      },
+      {
+        "category": "Fixes",
+        "description": "Driver-update notifications in the console now link to the correct download pages on the Disguise website.",
+        "dsof": "DSOF-30782"
+      }
+    ],
+    "released": "May 20th 2026",
+    "starter_build": "249737"
+  },
   "a4cd5d8198d71f9fe94e20f2ca4e6b052908306883a4456bc10299efa3070a44": {
     "version": "r33.1.2",
     "url": "https://help.disguise.one/designer/release-notes/r33#r3312---hotfixes",
@@ -15122,6 +15216,90 @@
     ],
     "released": "May 13th 2026",
     "starter_build": "248550"
+  },
+  "7638d7165b1d20f71bd2b5f4a30e8f7e8e5541e8a7d62115fd91d77c79c816be": {
+    "version": "r32.4.6",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3246---hotfixes",
+    "build": "249734",
+    "entries": [
+      {
+        "category": "Improvements",
+        "description": "Changing the project refresh rate now better aligns layers, cues and keyframes to the new framerate.",
+        "dsof": "DSOF-32061"
+      },
+      {
+        "category": "Improvements",
+        "description": "The `Null handle when setting texture parameter` console message is now rate-limited and includes the affected texture’s path, description, status, and rendering context.",
+        "dsof": "DSOF-32858"
+      },
+      {
+        "category": "Fixes",
+        "description": "Active IP Video Capture sources are now preserved across Designer project restarts.",
+        "dsof": "DSOF-31070"
+      },
+      {
+        "category": "Fixes",
+        "description": "The video delay calibration widget now reports realistic values for **ST 2110** video inputs.",
+        "dsof": "DSOF-30503"
+      },
+      {
+        "category": "Fixes",
+        "description": "HDMI capture inputs reporting RGB Limited now produce an image instead of a black screen.",
+        "dsof": "DSOF-32434"
+      },
+      {
+        "category": "Fixes",
+        "description": "TransportControl Layers now reliably issue timeline jumps on other tracks when their containing track is jumped to via timecode.",
+        "dsof": "DSOF-32814"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer no longer logs `The given index isn't a section; please check your logic!` to the console when dragging keyframes on a track that also contains note or tag cues.",
+        "dsof": "DSOF-32370"
+      },
+      {
+        "category": "Fixes",
+        "description": "RenderStream streams no longer stop after a secondary render machine is marked as failed.",
+        "dsof": "DSOF-32448"
+      },
+      {
+        "category": "Fixes",
+        "description": "When the d3Net connection to a peer briefly drops and recovers, the Director now automatically re-admits the peer to the session.",
+        "dsof": "DSOF-32688"
+      },
+      {
+        "category": "Fixes",
+        "description": "The Network Status widget on Editor machines no longer randomly reports remote machines as `---` or “not present”.",
+        "dsof": "DSOF-32271"
+      },
+      {
+        "category": "Fixes",
+        "description": "Machines will no longer occasionally fail to launch when launched remotely from the director.",
+        "dsof": "DSOF-32686"
+      },
+      {
+        "category": "Fixes",
+        "description": "When Designer fails to start due to a subsystem exception, the startup-failure dialog now includes the originating exception’s message and any context-aware remediation steps.",
+        "dsof": "DSOF-32857"
+      },
+      {
+        "category": "Fixes",
+        "description": "The console on an Editor running in **Solo** mode is no longer spammed with `updateDirectorBlockedState()` messages.",
+        "dsof": "DSOF-30200"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer no longer logs `New resource actions haven't been unsubscribed` and `Remove resource actions haven't been unsubscribed` warnings during shutdown.",
+        "dsof": "DSOF-31218"
+      },
+      {
+        "category": "Fixes",
+        "description": "Driver-update notifications in the console now link to the correct download pages on the Disguise website.",
+        "dsof": "DSOF-30782"
+      }
+    ],
+    "released": "May 20th 2026",
+    "starter_build": "249735"
   },
   "25d9e2e476decd90dac163f331ea7c4f9349189d629993702ea8cae256e998b8": {
     "version": "r32.4.5",
