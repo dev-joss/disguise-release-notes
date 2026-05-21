@@ -16,26 +16,44 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+      - name: Seed data from open rolling PR branch
+        run: |
+          BRANCH="auto/update-releases"
+          if git fetch origin "$BRANCH" 2>/dev/null; then
+            git checkout "origin/$BRANCH" -- data/releases.json data/.ai-cache.json
+            echo "Seeded data/ from origin/$BRANCH"
+          else
+            echo "No existing $BRANCH; starting from master state"
+          fi
       - run: node scrape.mjs --new-only
         env:
           AI_TOKEN: ${{ secrets.AI_TOKEN }}
-      - name: Check for changes
+      - name: Check for changes vs master
         id: diff
         run: |
-          git diff --quiet data/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
-      - name: Create PR
+          git diff --quiet origin/master -- data/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+      - name: Create or update PR
         if: steps.diff.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          BRANCH="auto/update-releases-$(date +%Y-%m-%d)"
+          BRANCH="auto/update-releases"
+          TODAY="$(date +%Y-%m-%d)"
           git checkout -b "$BRANCH"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/releases.json data/.ai-cache.json
-          git commit -m "chore: update release notes $(date +%Y-%m-%d)"
-          git push origin "$BRANCH"
-          gh pr create \
-            --title "Update release notes $(date +%Y-%m-%d)" \
-            --body "Automated daily update — new release versions detected." \
-            --base master
+          git commit -m "chore: update release notes $TODAY"
+          git push --force origin "$BRANCH"
+          EXISTING_PR=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number')
+          if [ -n "$EXISTING_PR" ]; then
+            gh pr edit "$EXISTING_PR" \
+              --title "Update release notes $TODAY" \
+              --body "Automated update — new release versions detected. Last refreshed $TODAY."
+          else
+            gh pr create \
+              --title "Update release notes $TODAY" \
+              --body "Automated update — new release versions detected. Last refreshed $TODAY." \
+              --base master \
+              --head "$BRANCH"
+          fi
