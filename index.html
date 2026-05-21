@@ -54,6 +54,14 @@
   .col-dsof { width: 130px; font-family: monospace; font-size: 0.82rem; }
   .no-changes { padding: 0.6rem 0.8rem; font-size: 0.85rem; color: #888; font-style: italic; }
   mark { background: #fff3a8; padding: 0 1px; border-radius: 2px; }
+  td code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.85em; background: #f0f0f0; color: #333;
+    padding: 0.05em 0.35em; border-radius: 3px;
+    border: 1px solid #e4e4e4;
+  }
+  td strong { font-weight: 600; }
+  td em { font-style: italic; }
   .loading { text-align: center; padding: 3rem; color: #999; }
   .error { text-align: center; padding: 3rem; color: #c0392b; }
   @media (max-width: 700px) {
@@ -157,7 +165,7 @@
             '<tr data-url="', esc(rel.url || ''), '">',
             '<td>', highlight(c.category, q),
             '</td><td>', highlight(c.dsof, q),
-            '</td><td>', highlight(c.description, q),
+            '</td><td>', highlightHtml(renderMarkdown(esc(c.description)), q),
             '</td></tr>'
           );
         }
@@ -183,6 +191,25 @@
     const escaped = esc(s);
     const qEsc = esc(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     return escaped.replace(new RegExp(qEsc, "gi"), m => `<mark>${m}</mark>`);
+  }
+
+  // Inline markdown: `code`, **bold**, _italic_. Input must already be HTML-escaped.
+  function renderMarkdown(escaped) {
+    if (!escaped) return "";
+    return escaped
+      .replace(/`([^`\n]+)`/g, (_, c) => `<code>${c}</code>`)
+      .replace(/\*\*([^*\n]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/(^|[\s(\[])_([^_\n]+)_(?=[\s.,;:!?)\]]|$)/g, "$1<em>$2</em>");
+  }
+
+  // Highlight q matches in already-rendered HTML, leaving tags untouched.
+  function highlightHtml(html, q) {
+    if (!q || !html) return html;
+    const qEsc = esc(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp(qEsc, "gi");
+    return html.split(/(<[^>]+>)/).map(part =>
+      part.startsWith("<") ? part : part.replace(re, m => `<mark>${m}</mark>`)
+    ).join("");
   }
 
   function populateFilters() {
