@@ -1,5 +1,34 @@
 [
   {
+    "version": "r33.1.4",
+    "build": "250397",
+    "starter_build": "250398",
+    "released": "May 27th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r3314---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32763",
+        "category": "Fixes",
+        "description": "Using **Insert Track** to insert one Track into another no longer links Cues, MIDI, Notes, and timecode between the source and destination tracks."
+      },
+      {
+        "dsof": "DSOF-32875",
+        "category": "Fixes",
+        "description": "Locked Layers that sit entirely after a region targeted by the **Remove Bars** timeline action now shift backwards along with the rest of the track, instead of staying at their original position and desyncing from surrounding layers."
+      },
+      {
+        "dsof": "DSOF-32816",
+        "category": "Fixes",
+        "description": "Pasting a group of layers into a new Track no longer extends the destination track’s duration by the time offset that the group held in its source track."
+      },
+      {
+        "dsof": "DSOF-32629",
+        "category": "Fixes",
+        "description": "Changing the palette of a Radar Layer to a solid colour gradient now updates the Layer’s output immediately. Previously, the radar continued to display as black until you switched tracks and back."
+      }
+    ]
+  },
+  {
     "version": "r33.1.3",
     "build": "249736",
     "starter_build": "249737",
@@ -573,6 +602,35 @@
         "dsof": "",
         "category": "Changes",
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.7",
+    "build": "250391",
+    "starter_build": "250392",
+    "released": "May 27th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3247---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32763",
+        "category": "Fixes",
+        "description": "Using **Insert Track** to insert one Track into another no longer links Cues, MIDI, Notes, and timecode between the source and destination tracks."
+      },
+      {
+        "dsof": "DSOF-32875",
+        "category": "Fixes",
+        "description": "Locked Layers that sit entirely after a region targeted by the **Remove Bars** timeline action now shift backwards along with the rest of the track, instead of staying at their original position and desyncing from surrounding layers."
+      },
+      {
+        "dsof": "DSOF-32816",
+        "category": "Fixes",
+        "description": "Pasting a group of layers into a new Track no longer extends the destination track’s duration by the time offset that the group held in its source track."
+      },
+      {
+        "dsof": "DSOF-32629",
+        "category": "Fixes",
+        "description": "Changing the palette of a Radar Layer to a solid colour gradient now updates the Layer’s output immediately. Previously, the radar continued to display as black until you switched tracks and back."
       }
     ]
   },
