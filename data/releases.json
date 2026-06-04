@@ -1,5 +1,198 @@
 [
   {
+    "version": "r33.2",
+    "build": "250407",
+    "starter_build": "250408",
+    "released": "May 27th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r332---nmos-and-st2110-improvements",
+    "changes": [
+      {
+        "dsof": "DSOF-31347,DSOF-20828,DSOF-32890",
+        "category": "Improvements",
+        "description": "NMOS support has been extended across the IP video capture workflow: Persistent IP Video inputs configured as ST 2110 or NMOS are now registered as NMOS receivers, so they can be discovered and connected to from an NMOS registry. Incoming ST 2110 streams that aren’t from RenderStream are now detected and listed in the video input source dropdown, with their SDP downloaded from the registry automatically. The enableOutOfBandNMOS option switch has been removed — out-of-band NMOS now runs by default."
+      },
+      {
+        "dsof": "DSOF-32837",
+        "category": "Improvements",
+        "description": "Holding D and clicking a layer in the track view now toggles its disabled state, matching the existing M + click shortcut for mute."
+      },
+      {
+        "dsof": "DSOF-32740",
+        "category": "Improvements",
+        "description": "The MIDI and OSC monitor view now supports clearing, filtering, and sorting, making it easier to find the most recently received messages or focus on a particular channel during long sessions."
+      },
+      {
+        "dsof": "DSOF-32764",
+        "category": "Improvements",
+        "description": "OSC devices can now send to multiple IP addresses and ports from a single device, removing the need to duplicate programming across multiple devices to address several destinations."
+      },
+      {
+        "dsof": "DSOF-32329",
+        "category": "Improvements",
+        "description": "The Colour Shift layer property now includes a linear brightness control that works independently of the alpha channel, so brightness can be faded without affecting transparency. Layer types that bake Colour Shift into their main property panel — such as Video and Bitmap layers — expose the new control directly; other layers can access it via the Colour Shift property. Previously, fading brightness without affecting opacity required placing a solid black layer above the content or driving the Colour Shift contrast via an expression."
+      },
+      {
+        "dsof": "DSOF-30330",
+        "category": "Improvements",
+        "description": "The fade time used by the Backspace fade-down action is now configurable in seconds."
+      },
+      {
+        "dsof": "DSOF-32681",
+        "category": "Improvements",
+        "description": "Layer Colour Rules now include a Not Equals comparison operator, making it easier to colour layers based on whether a property has been modified from its default."
+      },
+      {
+        "dsof": "DSOF-32645",
+        "category": "Improvements",
+        "description": "The Timecode widget tooltip now clearly describes the direction of positive and negative offsets, so the value entered matches the observed behaviour."
+      },
+      {
+        "dsof": "DSOF-20072",
+        "category": "Improvements",
+        "description": "Mesh Mapping gains a new Combine screens option that can merge multiple active screens on a machine into a single viewpoint render. This is useful for setups with many screens where rendering each screen separately would be expensive. The available modes are: None — each screen has its own separate frustum (the existing behaviour). All — all screens share a single combined frustum. Non-Output — screens are combined on non-output machines, but kept separate on output machines. All Active — active screens are combined locally only. Combining only works when the total field of view across the combined screens is under 180 degrees."
+      },
+      {
+        "dsof": "DSOF-31631",
+        "category": "Improvements",
+        "description": "The RenderStream protocol now supports float-array parameters. The Notch integration uses this to receive OSC float arrays piped into a Notch block running as a RenderStream workload; support in the RenderStream UE plugin is coming in a future release, and other render workloads can implement the protocol’s float-array support themselves."
+      },
+      {
+        "dsof": "DSOF-32482",
+        "category": "Improvements",
+        "description": "SceneAnimation layers can now be added to Layer Stacks and play back as part of the stack, allowing FBX and Alembic animations to be packaged into a single asset alongside their associated 2.5D plate content."
+      },
+      {
+        "dsof": "DSOF-32368",
+        "category": "Improvements",
+        "description": "IP-VFC cards running newer firmware now report detected PTP grandmasters to the Designer UI, making it easier to verify that an ST 2110 sender can see a PTP clock. Cards on older firmware are unaffected and continue to show no grandmaster information."
+      },
+      {
+        "dsof": "DSOF-32609",
+        "category": "Improvements",
+        "description": "A new GUI capture REST API endpoint (GET /api/internal/gui/capture) renders an offscreen screenshot of Designer’s 3D viewport to a PNG under the project’s thumbnails/ folder. Output dimensions and whether to include widget panels are controllable via query parameters."
+      },
+      {
+        "dsof": "DSOF-29318",
+        "category": "Improvements",
+        "description": "DMX screens now support 8-bit and 16-bit CMY drivers in addition to RGB."
+      },
+      {
+        "dsof": "DSOF-32879",
+        "category": "Improvements",
+        "description": "Expressions can now be toggled on or off while preserving the formula by clicking on the = sign next to the expression. This applies to fields, list indirection index fields, etc."
+      },
+      {
+        "dsof": "DSOF-32897",
+        "category": "Improvements",
+        "description": "Disabled Expressions and Sockpuppeted fields on Layers suppressed by “Isolate Sockpuppet” now appear a dark green (or dark brown for expressions with errors) to more easily distinguish them from fields that are fully Sockpuppet Disabled or have no expression assigned."
+      },
+      {
+        "dsof": "DSOF-32694",
+        "category": "Improvements",
+        "description": "A new global minimum proxy level setting clamps how high-resolution displays appear in the visualiser, editors and visualiser cameras regardless of zoom level. This avoids the frame-drop risk on large-scale shows where accidentally zooming in close to a screen would otherwise force full-resolution rendering. Mapped feeds are unaffected, so output content is never proxied."
+      },
+      {
+        "dsof": "DSOF-32273",
+        "category": "Improvements",
+        "description": "3D LUTs now use tetrahedral interpolation by default, bringing the non-OCIO LUT path into line with the OCIO path and producing smoother colour transitions, particularly for hue rotations. An Interpolation dropdown has been added to the LUT resource properties; select Trilinear to restore the previous behaviour for legacy pipeline matching."
+      },
+      {
+        "dsof": "DSOF-30256",
+        "category": "Improvements",
+        "description": "When Apply Feeds or genlock configuration is running on a remote server, the feed view now displays a clear overlay on that machine’s feeds showing the progress, matching what the server reports on its splash screen."
+      },
+      {
+        "dsof": "DSOF-27947",
+        "category": "Improvements",
+        "description": "The RigidBody tracking source editor has been tidied up to match other object-tracking source editors. Greyed-out controls now include suggestion text explaining why they’re unavailable, and the live position/rotation indicators in the Values section remain available for troubleshooting."
+      },
+      {
+        "dsof": "DSOF-32838",
+        "category": "Fixes",
+        "description": "Disabled layers now correctly display their assigned media and mapping in the layer property panel and track view, instead of showing “none” or an incorrect mapping. Disabling a layer affects playback and rendering only, not the displayed configuration."
+      },
+      {
+        "dsof": "DSOF-32835",
+        "category": "Fixes",
+        "description": "The TransportControl layer’s Transport Jump Command now retains its track reference if tracks are renamed by a remote editor."
+      },
+      {
+        "dsof": "DSOF-32687",
+        "category": "Fixes",
+        "description": "The NMOS SDP served by the NMOS node is now refreshed when a sender’s colour format or other SDP-relevant properties change. Previously the served SDP described the prior parameters until Designer was restarted."
+      },
+      {
+        "dsof": "DSOF-32640",
+        "category": "Fixes",
+        "description": "Hot-reloading a Notch block — for example by copying it into a project that is already running — no longer sometimes causes Designer to hang when entering new notch layers."
+      },
+      {
+        "dsof": "DSOF-32591",
+        "category": "Fixes",
+        "description": "The HUD widget no longer splits and overlaps the playback controls and track scroll bar in projects with many machines."
+      },
+      {
+        "dsof": "DSOF-26810",
+        "category": "Fixes",
+        "description": "The remote diagnostic gathering process in d3 Manager no longer steals fullscreen on the target machine, preventing disruption to live show output during rehearsals."
+      },
+      {
+        "dsof": "DSOF-30153",
+        "category": "Fixes",
+        "description": "When duplicating a parallel mapping and then editing the original’s settings, the white border in the layer’s mapping selection now follows the active mapping instead of remaining attached to the duplicate."
+      },
+      {
+        "dsof": "DSOF-32608",
+        "category": "Fixes",
+        "description": "Opening the track widget on large projects is generally more performant, especially on very large projects."
+      },
+      {
+        "dsof": "DSOF-32833",
+        "category": "Fixes",
+        "description": "Calling field-evaluation APIs on non-numeric fields (such as text fields) no longer triggers an access violation. The evaluation path now validates the field type and returns a clear error for unsupported types instead of producing undefined behaviour."
+      }
+    ]
+  },
+  {
+    "version": "r33.1.5",
+    "build": "251218",
+    "starter_build": "251219",
+    "released": "June 3rd 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r3315---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32691",
+        "category": "Improvements",
+        "description": "Drawing the timeline is now more performant on Tracks that contain a large number of notes and tags, reducing the per-frame cost on every machine that displays the timeline."
+      },
+      {
+        "dsof": "DSOF-32433",
+        "category": "Fixes",
+        "description": "Editors no longer intermittently report media as missing on Actor and Understudy machines when that media is actually present."
+      },
+      {
+        "dsof": "DSOF-32437",
+        "category": "Fixes",
+        "description": "The OpenVPCal Plugin can now capture calibration patterns in a Director and Actor setup. Previously, pattern generation and patching worked but the capture step failed — the screen went black and the capture never completed — on anything other than a solo machine."
+      },
+      {
+        "dsof": "DSOF-32457",
+        "category": "Fixes",
+        "description": "Upgrading specific projects created in r18.1 to versions above r30.8 no longer opens to an unresponsive interface with a blank grey background."
+      },
+      {
+        "dsof": "DSOF-32652",
+        "category": "Fixes",
+        "description": "Designer machines no longer show a false “Display settings do not match project configuration. Did you remember to Apply Feed Settings?” warning when a GUI head is set to a custom resolution. The warning now appears only when the display configuration genuinely needs feed settings to be applied."
+      },
+      {
+        "dsof": "DSOF-32749,DSOF-32778",
+        "category": "Fixes",
+        "description": "Editing Track notes with the Ctrl+N note dialog now behaves correctly. Editing a note at a different zoom level to the one it was created at no longer creates a duplicate note at the nearest second, and clearing a note’s contents and confirming with Enter now reliably deletes it."
+      }
+    ]
+  },
+  {
     "version": "r33.1.4",
     "build": "250397",
     "starter_build": "250398",
@@ -602,6 +795,45 @@
         "dsof": "",
         "category": "Changes",
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.8",
+    "build": "251212",
+    "starter_build": "251213",
+    "released": "June 3rd 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3248---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32691",
+        "category": "Improvements",
+        "description": "Drawing the timeline is now more performant on Tracks that contain a large number of notes and tags, reducing the per-frame cost on every machine that displays the timeline."
+      },
+      {
+        "dsof": "DSOF-32433",
+        "category": "Fixes",
+        "description": "Editors no longer intermittently report media as missing on Actor and Understudy machines when that media is actually present."
+      },
+      {
+        "dsof": "DSOF-32437",
+        "category": "Fixes",
+        "description": "The OpenVPCal Plugin can now capture calibration patterns in a Director and Actor setup. Previously, pattern generation and patching worked but the capture step failed — the screen went black and the capture never completed — on anything other than a solo machine."
+      },
+      {
+        "dsof": "DSOF-32457",
+        "category": "Fixes",
+        "description": "Upgrading specific projects created in r18.1 to versions above r30.8 no longer opens to an unresponsive interface with a blank grey background."
+      },
+      {
+        "dsof": "DSOF-32652",
+        "category": "Fixes",
+        "description": "Designer machines no longer show a false “Display settings do not match project configuration. Did you remember to Apply Feed Settings?” warning when a GUI head is set to a custom resolution. The warning now appears only when the display configuration genuinely needs feed settings to be applied."
+      },
+      {
+        "dsof": "DSOF-32749,DSOF-32778",
+        "category": "Fixes",
+        "description": "Editing Track notes with the Ctrl+N note dialog now behaves correctly. Editing a note at a different zoom level to the one it was created at no longer creates a duplicate note at the nearest second, and clearing a note’s contents and confirming with Enter now reliably deletes it."
       }
     ]
   },
