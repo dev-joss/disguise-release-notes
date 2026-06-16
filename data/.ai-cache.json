@@ -15634,5 +15634,83 @@
     ],
     "released": "June 3rd 2026",
     "starter_build": "251213"
+  },
+  "70681e9be7d165b4920e70c6c6d50d2f8065fa76c42be67f73b1b0fcdd76b485": {
+    "version": "r33.2.1",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r3321---hotfixes",
+    "build": "251962",
+    "entries": [
+      {
+        "category": "Fixes",
+        "description": "Matrox video capture inputs are now more stable. Designer no longer rebuilds an input’s capture topology — which produced a brief black frame — when only colour space, transfer characteristic, aspect ratio or audio metadata in the incoming SDI signal changes. Changes that genuinely affect the signal (resolution, frame rate, scan mode or 3G level) still rebuild the topology as before. In addition, when one input on a Matrox card restarts, the other inputs on that card are no longer disrupted.",
+        "dsof": "DSOF-30798,DSOF-32367,DSOF-32851"
+      },
+      {
+        "category": "Fixes",
+        "description": "The Director no longer hangs when opening the Notch layer editor after hot-reloading a Notch block, and no longer hangs repeatedly after exposable parameters have been removed from a block and the block reloaded into a running project.",
+        "dsof": "DSOF-32697,DSOF-32753"
+      },
+      {
+        "category": "Fixes",
+        "description": "Sequencing the same video clip at two keyframes on a single Video Layer now correctly restarts the clip from its first frame when the second keyframe is reached, instead of continuing to play uninterrupted — restoring the behaviour from before r30.8.",
+        "dsof": "DSOF-32809"
+      },
+      {
+        "category": "Fixes",
+        "description": "A Video Layer with its Speed set to 0 and its At end point set to Pause now correctly holds on the first frame when played from the start of its section, instead of displaying the last frame.",
+        "dsof": "DSOF-32836"
+      },
+      {
+        "category": "Fixes",
+        "description": "Copying and pasting layers on a Track now behaves correctly. Pasting an expanded group no longer creates duplicate child layers outside the group, and pasting multiple layers now preserves the time offsets between them — the earliest layer lands at the playhead and the rest keep their original spacing — instead of stacking every layer at the playhead.",
+        "dsof": "DSOF-32861,DSOF-32870"
+      },
+      {
+        "category": "Fixes",
+        "description": "Moving a Video Layer with the Ctrl+Alt+< and Ctrl+Alt+> keyboard shortcuts now moves the layer’s keyframes along with it, matching the behaviour when the layer is dragged with the mouse.",
+        "dsof": "DSOF-32954"
+      }
+    ],
+    "released": "June 10th 2026",
+    "starter_build": "251963"
+  },
+  "01e0d056239fca18aa723277228ce30c2adf1cb405cfe65ec0972944a0f2ac08": {
+    "version": "r32.4.9",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r3249---hotfixes",
+    "build": "251951",
+    "entries": [
+      {
+        "category": "Fixes",
+        "description": "Matrox video capture inputs are now more stable. Designer no longer rebuilds an input’s capture topology — which produced a brief black frame — when only colour space, transfer characteristic, aspect ratio or audio metadata in the incoming SDI signal changes. Changes that genuinely affect the signal (resolution, frame rate, scan mode or 3G level) still rebuild the topology as before. In addition, when one input on a Matrox card restarts, the other inputs on that card are no longer disrupted.",
+        "dsof": "DSOF-30798,DSOF-32367,DSOF-32851"
+      },
+      {
+        "category": "Fixes",
+        "description": "The Director no longer hangs when opening the Notch layer editor after hot-reloading a Notch block, and no longer hangs repeatedly after exposable parameters have been removed from a block and the block reloaded into a running project.",
+        "dsof": "DSOF-32697,DSOF-32753"
+      },
+      {
+        "category": "Fixes",
+        "description": "Sequencing the same video clip at two keyframes on a single Video Layer now correctly restarts the clip from its first frame when the second keyframe is reached, instead of continuing to play uninterrupted — restoring the behaviour from before r30.8.",
+        "dsof": "DSOF-32809"
+      },
+      {
+        "category": "Fixes",
+        "description": "A Video Layer with its Speed set to 0 and its At end point set to Pause now correctly holds on the first frame when played from the start of its section, instead of displaying the last frame.",
+        "dsof": "DSOF-32836"
+      },
+      {
+        "category": "Fixes",
+        "description": "Copying and pasting layers on a Track now behaves correctly. Pasting an expanded group no longer creates duplicate child layers outside the group, and pasting multiple layers now preserves the time offsets between them — the earliest layer lands at the playhead and the rest keep their original spacing — instead of stacking every layer at the playhead.",
+        "dsof": "DSOF-32861,DSOF-32870"
+      },
+      {
+        "category": "Fixes",
+        "description": "Moving a Video Layer with the Ctrl+Alt+< and Ctrl+Alt+> keyboard shortcuts now moves the layer’s keyframes along with it, matching the behaviour when the layer is dragged with the mouse.",
+        "dsof": "DSOF-32954"
+      }
+    ],
+    "released": "June 10th 2026",
+    "starter_build": "251952"
   }
 }
