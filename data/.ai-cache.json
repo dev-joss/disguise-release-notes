@@ -15712,5 +15712,198 @@
     ],
     "released": "June 10th 2026",
     "starter_build": "251952"
+  },
+  "4d4795da29378070b4ca3ed247ae3b7ae494d116de3531b9a6fa72e5a436a38c": {
+    "version": "r33.2.2",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r3322---hotfixes",
+    "build": "253427",
+    "entries": [
+      {
+        "category": "Improvements",
+        "description": "Improved the reliability of timeline playback selecting the correct frames to display.",
+        "dsof": "DSOF-32501"
+      },
+      {
+        "category": "Improvements",
+        "description": "Reduced the Designer installer size by removing redundant files from the bundled web component (libcef).",
+        "dsof": "DSOF-32935"
+      },
+      {
+        "category": "Improvements",
+        "description": "d3 now warns you when more than 12 projectors are in use in a single dynamic blend, after taking the DynamicBlend exclude list into account.",
+        "dsof": "DSOF-32520"
+      },
+      {
+        "category": "Fixes",
+        "description": "Expressions now recover automatically once the cause of a runtime evaluation error is resolved (for example, OSC array indexing), without needing to be re-edited.",
+        "dsof": "DSOF-33085"
+      },
+      {
+        "category": "Fixes",
+        "description": "The RenderStream JSON file is now created when saving from Unreal Engine on machines without a Designer Pro license.",
+        "dsof": "DSOF-32949"
+      },
+      {
+        "category": "Fixes",
+        "description": "Fixed an intermittent crash that could occur shortly after reopening a project and starting an RSUC workload.",
+        "dsof": "DSOF-32716"
+      },
+      {
+        "category": "Fixes",
+        "description": "RSUC output now stays correct when the mesh mapping render scale is changed.",
+        "dsof": "DSOF-33049"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer take a long time to launch on projects with lots of RenderStream layers.",
+        "dsof": "DSOF-32743"
+      },
+      {
+        "category": "Fixes",
+        "description": "d3 no longer crashes to desktop when an API client disconnects while unsubscribing from live updates.",
+        "dsof": "DSOF-33068"
+      },
+      {
+        "category": "Fixes",
+        "description": "Project files are now kept compact during auto and manual saving, so they no longer bloat in size to the point of becoming un-openable in very long editing sessions.",
+        "dsof": "DSOF-32776"
+      },
+      {
+        "category": "Fixes",
+        "description": "The `GET detectsystems` API endpoint now returns the accessing machine’s real IP address instead of `127.0.0.1`.",
+        "dsof": "DSOF-29827"
+      },
+      {
+        "category": "Fixes",
+        "description": "Projector View Blending now no longer renders mask objects that are behind surfaces, as it did before r32.4.2.",
+        "dsof": "DSOF-32760"
+      },
+      {
+        "category": "Fixes",
+        "description": "The OmniCal report now explains why an OmniCal score was penalised and what can be done about it.",
+        "dsof": "DSOF-27583"
+      },
+      {
+        "category": "Fixes",
+        "description": "d3 no longer reports a spurious error when using Mesh Projection on project shutdown.",
+        "dsof": "DSOF-32941"
+      },
+      {
+        "category": "Fixes",
+        "description": "Moving vertices of a “Mesh Deform” feed warp no longer raises spurious notifications.",
+        "dsof": "DSOF-32965"
+      },
+      {
+        "category": "Fixes",
+        "description": "OCIO input transforms for Logical VideoIns can now be edited while in Quick Edit mode.",
+        "dsof": "DSOF-32565"
+      },
+      {
+        "category": "Fixes",
+        "description": "Project snapshots whose names contain spaces can now be recalled correctly.",
+        "dsof": "DSOF-32961"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer intermittently open to a grey screen and require a restart on rare occasions.",
+        "dsof": "DSOF-32942"
+      },
+      {
+        "category": "Fixes",
+        "description": "The OCIO transforms list now refreshes automatically when undoing or redoing transform deletions.",
+        "dsof": "DSOF-32574"
+      },
+      {
+        "category": "Fixes",
+        "description": "In OCIO mode, ”- Curve” working space transforms no longer throw errors.",
+        "dsof": "DSOF-31786"
+      }
+    ],
+    "released": "June 24th 2026",
+    "starter_build": "253428"
+  },
+  "dbacc18c7d3fff742c5ed13727666b626f17e6da0b716e641bfc98b3ab1e1909": {
+    "version": "r32.4.10",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32410---hotfixes",
+    "build": "253404",
+    "entries": [
+      {
+        "category": "Improvements",
+        "description": "Improved the reliability of timeline playback selecting the correct frames to display.",
+        "dsof": "DSOF-32501"
+      },
+      {
+        "category": "Improvements",
+        "description": "Reduced the Designer installer size by removing redundant files from the bundled web component (libcef).",
+        "dsof": "DSOF-32935"
+      },
+      {
+        "category": "Improvements",
+        "description": "d3 now warns you when more than 12 projectors are in use in a single dynamic blend, after taking the DynamicBlend exclude list into account.",
+        "dsof": "DSOF-32520"
+      },
+      {
+        "category": "Fixes",
+        "description": "d3 no longer crashes to desktop when an API client disconnects while unsubscribing from live updates.",
+        "dsof": "DSOF-33068"
+      },
+      {
+        "category": "Fixes",
+        "description": "Project files are now kept compact during auto and manual saving, so they no longer bloat in size to the point of becoming un-openable in very long editing sessions.",
+        "dsof": "DSOF-32776"
+      },
+      {
+        "category": "Fixes",
+        "description": "The `GET detectsystems` API endpoint now returns the accessing machine’s real IP address instead of `127.0.0.1`.",
+        "dsof": "DSOF-29827"
+      },
+      {
+        "category": "Fixes",
+        "description": "Projector View Blending now no longer renders mask objects that are behind surfaces, as it did before r32.4.2.",
+        "dsof": "DSOF-32760"
+      },
+      {
+        "category": "Fixes",
+        "description": "The OmniCal report now explains why an OmniCal score was penalised and what can be done about it.",
+        "dsof": "DSOF-27583"
+      },
+      {
+        "category": "Fixes",
+        "description": "d3 no longer reports a spurious error when using Mesh Projection on project shutdown.",
+        "dsof": "DSOF-32941"
+      },
+      {
+        "category": "Fixes",
+        "description": "Moving vertices of a “Mesh Deform” feed warp no longer raises spurious notifications.",
+        "dsof": "DSOF-32965"
+      },
+      {
+        "category": "Fixes",
+        "description": "OCIO input transforms for Logical VideoIns can now be edited while in Quick Edit mode.",
+        "dsof": "DSOF-32565"
+      },
+      {
+        "category": "Fixes",
+        "description": "Project snapshots whose names contain spaces can now be recalled correctly.",
+        "dsof": "DSOF-32961"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer intermittently open to a grey screen and require a restart on rare occasions.",
+        "dsof": "DSOF-32942"
+      },
+      {
+        "category": "Fixes",
+        "description": "The OCIO transforms list now refreshes automatically when undoing or redoing transform deletions.",
+        "dsof": "DSOF-32574"
+      },
+      {
+        "category": "Fixes",
+        "description": "In OCIO mode, ”- Curve” working space transforms no longer throw errors.",
+        "dsof": "DSOF-31786"
+      }
+    ],
+    "released": "June 24th 2026",
+    "starter_build": "253405"
   }
 }
