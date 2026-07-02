@@ -1,5 +1,29 @@
 [
   {
+    "version": "r33.2.3",
+    "build": "254006",
+    "starter_build": "254007",
+    "released": "July 1st 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r3323---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-33130",
+        "category": "Improvements",
+        "description": "Both Project Diagnostics and System Diagnostics now include console log files from the last 30 days, rather than only the last seven, so diagnostics collected some time after an issue occurred still capture the relevant logs."
+      },
+      {
+        "dsof": "DSOF-33027",
+        "category": "Fixes",
+        "description": "Resolved an issue where a RenderStream workload using a Mesh Mapping with **Enable Warp** disabled could report a CUDA error, preventing playback at reduced render resolution scales."
+      },
+      {
+        "dsof": "DSOF-32563",
+        "category": "Fixes",
+        "description": "Resolved an issue where Designer could not identify Rivermax network adapters by their PCI path, preventing the correct ConnectX-5 or ConnectX-6 licence from being selected for IP video."
+      }
+    ]
+  },
+  {
     "version": "r33.2.2",
     "build": "253427",
     "starter_build": "253428",
@@ -943,6 +967,25 @@
         "dsof": "",
         "category": "Changes",
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.11",
+    "build": "253994",
+    "starter_build": "253995",
+    "released": "July 1st 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32411---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-33130",
+        "category": "Improvements",
+        "description": "Both Project Diagnostics and System Diagnostics now include console log files from the last 30 days, rather than only the last seven, so diagnostics collected some time after an issue occurred still capture the relevant logs."
+      },
+      {
+        "dsof": "DSOF-32563",
+        "category": "Fixes",
+        "description": "Resolved an issue where Designer could not identify Rivermax network adapters by their PCI path, preventing the correct ConnectX-5 or ConnectX-6 licence from being selected for IP video."
       }
     ]
   },
