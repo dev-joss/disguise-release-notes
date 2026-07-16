@@ -1,5 +1,148 @@
 [
   {
+    "version": "r34.0",
+    "build": "256372",
+    "starter_build": "256373",
+    "released": "July 15th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r340---colour-lighting-and-workflow-improvements",
+    "changes": [
+      {
+        "dsof": "DSOF-27510",
+        "category": "Improvements",
+        "description": "Added support for viewing the GUI on non-sRGB / HDR monitors when working in OCIO colour-managed mode."
+      },
+      {
+        "dsof": "DSOF-7641",
+        "category": "Improvements",
+        "description": "DMX Screens now support custom fixture types built from any combination of supported channels, so you can match arbitrary fixture personalities."
+      },
+      {
+        "dsof": "DSOF-32343",
+        "category": "Improvements",
+        "description": "Added 16-bit monochrome (maximum and weighted-sum) channel types for DMX Screens, so all channel types now support both 8- and 16-bit output."
+      },
+      {
+        "dsof": "DSOF-32714",
+        "category": "Improvements",
+        "description": "Added Anchor Layers: lock a layer’s position on the timeline so it can’t be dragged, while still allowing its parameters to be edited."
+      },
+      {
+        "dsof": "DSOF-28790",
+        "category": "Improvements",
+        "description": "When you insert time before the playhead, the playhead now moves with it so the output stays on the same content."
+      },
+      {
+        "dsof": "DSOF-33087",
+        "category": "Improvements",
+        "description": "Expressions now support string comparison equality and inequality (`==`, `!=`) as well as lexicographic ordering (`<`, `>`, `<=`, `>=`)."
+      },
+      {
+        "dsof": "DSOF-32846",
+        "category": "Improvements",
+        "description": "Create System Diagnostics on remote machines can now download each machine’s diagnostic zip straight to a folder you choose, instead of collecting them by hand."
+      },
+      {
+        "dsof": "DSOF-32738",
+        "category": "Improvements",
+        "description": "Added MSAA anti-aliasing options to the 2.5D and Stage Render modules."
+      },
+      {
+        "dsof": "DSOF-30790",
+        "category": "Improvements",
+        "description": "Reduced RenderStream Layer (RSL) latency when texture parameters are in use."
+      },
+      {
+        "dsof": "DSOF-33168",
+        "category": "Improvements",
+        "description": "Genlock gain/loss on NVIDIA GPUs (GX 3 and GX 3+) is now detected automatically and reflected in Designer without a manual refresh."
+      },
+      {
+        "dsof": "DSOF-20229",
+        "category": "Improvements",
+        "description": "Timeline Transport Speed Control (Prerelease) change a track’s playback speed via the Transport Manager, MIDI/OSC/DMX event transports, and the `/transport/speed` API. Enable it by turning on the `enableTransportSpeedControl` option in the d3Manager Preview tab (requires a restart)."
+      },
+      {
+        "dsof": "DSOF-33095",
+        "category": "Fixes",
+        "description": "Designer will no longer report a cascade of errors when rendering the Layer Stack GUI (for example, the 2.5D plate editor)."
+      },
+      {
+        "dsof": "DSOF-31154",
+        "category": "Fixes",
+        "description": "Luma matte blend modes will no longer affect the entire layer stack above them."
+      },
+      {
+        "dsof": "DSOF-31741",
+        "category": "Fixes",
+        "description": "Designer will no longer report an error during resource transport."
+      },
+      {
+        "dsof": "DSOF-32969",
+        "category": "Fixes",
+        "description": "Designer will no longer report an error during sequence evaluation."
+      },
+      {
+        "dsof": "DSOF-32705",
+        "category": "Fixes",
+        "description": "RenderStream Layer (RSL) streams will no longer jitter when multiple streams are running."
+      },
+      {
+        "dsof": "DSOF-32532",
+        "category": "Fixes",
+        "description": "The HDMI RGB Full/Limited override is now available as a Video Input Patch Editor setting rather than a hidden option switch."
+      },
+      {
+        "dsof": "DSOF-32674",
+        "category": "Fixes",
+        "description": "Saving a layer to the library will no longer flood the console with 'Failed to get bandwidth estimation' warnings."
+      },
+      {
+        "dsof": "DSOF-32868",
+        "category": "Fixes",
+        "description": "Bandwidth estimation for arrow texture parameters will now work when the playhead is outside the layer’s range."
+      }
+    ]
+  },
+  {
+    "version": "r33.2.4",
+    "build": "255895",
+    "starter_build": "255896",
+    "released": "July 15th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r33#r3324---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32989",
+        "category": "Improvements",
+        "description": "OmniCal now logs the projector name during RANSAC calibration, making calibration reports easier to understand."
+      },
+      {
+        "dsof": "DSOF-32825",
+        "category": "Fixes",
+        "description": "SDI VFC outputs will no longer occasionally lose their configuration when feed settings are applied."
+      },
+      {
+        "dsof": "DSOF-31902",
+        "category": "Fixes",
+        "description": "Projects with a track jump module that references a tag will no longer take a long time to close."
+      },
+      {
+        "dsof": "DSOF-32537",
+        "category": "Fixes",
+        "description": "RenderStream texture parameters are now properly rendered when they are arrowed for another layer and the RenderStream Controller machine is an Actor."
+      },
+      {
+        "dsof": "DSOF-33071",
+        "category": "Fixes",
+        "description": "Designer will no longer raise a spurious error when a layer inside a Notch Block is invalid."
+      },
+      {
+        "dsof": "DSOF-32813",
+        "category": "Fixes",
+        "description": "Inserting time on a timeline set to ‘Custom’ FPS will add the expected amount of time."
+      }
+    ]
+  },
+  {
     "version": "r33.2.3",
     "build": "254006",
     "starter_build": "254007",
@@ -967,6 +1110,45 @@
         "dsof": "",
         "category": "Changes",
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.12",
+    "build": "255893",
+    "starter_build": "255894",
+    "released": "July 15th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32412---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-32989",
+        "category": "Improvements",
+        "description": "OmniCal now logs the projector name during RANSAC calibration, making calibration reports easier to understand."
+      },
+      {
+        "dsof": "DSOF-32825",
+        "category": "Fixes",
+        "description": "SDI VFC outputs will no longer occasionally lose their configuration when feed settings are applied."
+      },
+      {
+        "dsof": "DSOF-31902",
+        "category": "Fixes",
+        "description": "Projects with a track jump module that references a tag will no longer take a long time to close."
+      },
+      {
+        "dsof": "DSOF-32537",
+        "category": "Fixes",
+        "description": "RenderStream texture parameters are now properly rendered when they are arrowed for another layer and the RenderStream Controller machine is an Actor."
+      },
+      {
+        "dsof": "DSOF-33071",
+        "category": "Fixes",
+        "description": "Designer will no longer raise a spurious error when a layer inside a Notch Block is invalid."
+      },
+      {
+        "dsof": "DSOF-32813",
+        "category": "Fixes",
+        "description": "Inserting time on a timeline set to ‘Custom’ FPS will add the expected amount of time."
       }
     ]
   },
