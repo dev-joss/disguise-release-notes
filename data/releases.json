@@ -1,5 +1,39 @@
 [
   {
+    "version": "r34.0.1",
+    "build": "256615",
+    "starter_build": "256616",
+    "released": "July 22nd 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3401---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-33316",
+        "category": "Improvements",
+        "description": "CSV projector study exports now include throw ratio, to match PDF exports."
+      },
+      {
+        "dsof": "DSOF-33331",
+        "category": "Fixes",
+        "description": "Designer UI translations omitted from version r32.4.10 onwards have been restored."
+      },
+      {
+        "dsof": "DSOF-33257",
+        "category": "Fixes",
+        "description": "RenderStream will no longer occasionally fail claiming a plugin is version ‘r0.0’."
+      },
+      {
+        "dsof": "DSOF-33115",
+        "category": "Fixes",
+        "description": "Texture parameter latency graph will now appear when a new TransportManager is used."
+      },
+      {
+        "dsof": "DSOF-33016",
+        "category": "Fixes",
+        "description": "Mask creation in mrset color calibration will now work with multiple cameras."
+      }
+    ]
+  },
+  {
     "version": "r34.0",
     "build": "256372",
     "starter_build": "256373",
@@ -1110,6 +1144,40 @@
         "dsof": "",
         "category": "Changes",
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.13",
+    "build": "256612",
+    "starter_build": "256613",
+    "released": "July 22nd 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32413---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-33316",
+        "category": "Improvements",
+        "description": "CSV projector study exports now include throw ratio, to match PDF exports."
+      },
+      {
+        "dsof": "DSOF-33331",
+        "category": "Fixes",
+        "description": "Designer UI translations omitted from version r32.4.10 onwards have been restored."
+      },
+      {
+        "dsof": "DSOF-33257",
+        "category": "Fixes",
+        "description": "RenderStream will no longer occasionally fail claiming a plugin is version ‘r0.0’."
+      },
+      {
+        "dsof": "DSOF-33115",
+        "category": "Fixes",
+        "description": "Texture parameter latency graph will now appear when a new TransportManager is used."
+      },
+      {
+        "dsof": "DSOF-33016",
+        "category": "Fixes",
+        "description": "Mask creation in mrset color calibration will now work with multiple cameras."
       }
     ]
   },
