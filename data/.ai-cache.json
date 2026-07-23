@@ -16130,5 +16130,73 @@
     ],
     "released": "July 15th 2026",
     "starter_build": "255894"
+  },
+  "5c9d7736bcd62e4bbe6a6b9138a47218cbe4005ef5b207ff0c95ed442bbc0ee3": {
+    "version": "r34.0.1",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3401---hotfixes",
+    "build": "256615",
+    "entries": [
+      {
+        "category": "Improvements",
+        "description": "CSV projector study exports now include throw ratio, to match PDF exports.",
+        "dsof": "DSOF-33316"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer UI translations omitted from version r32.4.10 onwards have been restored.",
+        "dsof": "DSOF-33331"
+      },
+      {
+        "category": "Fixes",
+        "description": "RenderStream will no longer occasionally fail claiming a plugin is version ‘r0.0’.",
+        "dsof": "DSOF-33257"
+      },
+      {
+        "category": "Fixes",
+        "description": "Texture parameter latency graph will now appear when a new TransportManager is used.",
+        "dsof": "DSOF-33115"
+      },
+      {
+        "category": "Fixes",
+        "description": "Mask creation in mrset color calibration will now work with multiple cameras.",
+        "dsof": "DSOF-33016"
+      }
+    ],
+    "released": "July 22nd 2026",
+    "starter_build": "256616"
+  },
+  "c0dbcec3befe819e1841691171878555d95a905609abc1c6ce51eb81dafb59e4": {
+    "version": "r32.4.13",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32413---hotfixes",
+    "build": "256612",
+    "entries": [
+      {
+        "category": "Improvements",
+        "description": "CSV projector study exports now include throw ratio, to match PDF exports.",
+        "dsof": "DSOF-33316"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer UI translations omitted from version r32.4.10 onwards have been restored.",
+        "dsof": "DSOF-33331"
+      },
+      {
+        "category": "Fixes",
+        "description": "RenderStream will no longer occasionally fail claiming a plugin is version ‘r0.0’.",
+        "dsof": "DSOF-33257"
+      },
+      {
+        "category": "Fixes",
+        "description": "Texture parameter latency graph will now appear when a new TransportManager is used.",
+        "dsof": "DSOF-33115"
+      },
+      {
+        "category": "Fixes",
+        "description": "Mask creation in mrset color calibration will now work with multiple cameras.",
+        "dsof": "DSOF-33016"
+      }
+    ],
+    "released": "July 22nd 2026",
+    "starter_build": "256613"
   }
 }
