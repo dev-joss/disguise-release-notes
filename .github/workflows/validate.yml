@@ -1,0 +1,22 @@
+name: Validate data
+on:
+  # Deliberately unfiltered. This is a required status check, and a
+  # path-filtered required check never reports on PRs that miss the filter,
+  # blocking them permanently. It is cheap; just always run it.
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    # Must match the commit-status context posted by update-releases.yml so a
+    # single required check covers both human PRs and the bot's rolling PR.
+    name: data-validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node validate.mjs --base "origin/${{ github.base_ref || github.ref_name }}"

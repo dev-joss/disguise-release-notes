@@ -10,8 +10,11 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      statuses: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -32,28 +35,122 @@ jobs:
         id: diff
         run: |
           git diff --quiet origin/master -- data/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      # Sets valid= and additive= for the gate below. Never fails the step —
+      # a bad scrape must still surface as a PR a human can look at.
+      - name: Validate extracted data
+        id: validate
+        if: steps.diff.outputs.changed == 'true'
+        continue-on-error: true
+        run: node validate.mjs --base origin/master
+
+      # Only data/ may change. Anything else means the run did something
+      # unexpected and must not merge itself.
+      - name: Check diff is confined to data/
+        id: scope
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          OUTSIDE=$(git diff --name-only origin/master -- . ':(exclude)data/')
+          if [ -n "$OUTSIDE" ]; then
+            echo "Changes outside data/:"; echo "$OUTSIDE"
+            echo "confined=false" >> $GITHUB_OUTPUT
+          else
+            echo "confined=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Create or update PR
+        id: pr
         if: steps.diff.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           BRANCH="auto/update-releases"
           TODAY="$(date +%Y-%m-%d)"
-          git checkout -b "$BRANCH"
+          ADDED="${{ steps.validate.outputs.added }}"
+          if [ "${{ steps.validate.outcome }}" = "success" ]; then
+            VERDICT="Validation passed."
+          else
+            VERDICT="**Validation failed — review before merging.** See the workflow log."
+          fi
+          BODY=$(printf '%s\n' \
+            "Automated update — new release versions detected. Last refreshed $TODAY." \
+            "" \
+            "Added: ${ADDED:-none}" \
+            "" \
+            "$VERDICT")
+
+          git checkout -B "$BRANCH"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/releases.json data/.ai-cache.json
           git commit -m "chore: update release notes $TODAY"
           git push --force origin "$BRANCH"
+          echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+
           EXISTING_PR=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number')
           if [ -n "$EXISTING_PR" ]; then
-            gh pr edit "$EXISTING_PR" \
-              --title "Update release notes $TODAY" \
-              --body "Automated update — new release versions detected. Last refreshed $TODAY."
+            gh pr edit "$EXISTING_PR" --title "Update release notes $TODAY" --body "$BODY"
+            echo "number=$EXISTING_PR" >> $GITHUB_OUTPUT
           else
             gh pr create \
               --title "Update release notes $TODAY" \
-              --body "Automated update — new release versions detected. Last refreshed $TODAY." \
+              --body "$BODY" \
               --base master \
               --head "$BRANCH"
+            echo "number=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number')" >> $GITHUB_OUTPUT
           fi
+
+      # Armed while "data-validation" is still pending, so the merge queues
+      # behind the required check rather than being rejected as already-clean.
+      # master requires "data-validation", so this cannot merge on its own.
+      - name: Enable auto-merge
+        id: merge
+        if: |
+          steps.diff.outputs.changed == 'true' &&
+          steps.validate.outcome == 'success' &&
+          steps.validate.outputs.additive == 'true' &&
+          steps.scope.outputs.confined == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr merge --auto --squash "${{ steps.pr.outputs.number }}"
+
+      # PRs opened by GITHUB_TOKEN do not trigger pull_request workflows, so the
+      # inline validation result is published as a commit status instead. This
+      # is what satisfies (or blocks) the required "data-validation" check, and
+      # posting it last is what releases the auto-merge armed above.
+      - name: Publish validation status
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ steps.validate.outcome }}" = "success" ]; then
+            STATE=success; DESC="Schema, quality and regression checks passed"
+          else
+            STATE=failure; DESC="Validation failed — see workflow log"
+          fi
+          gh api "repos/${{ github.repository }}/statuses/${{ steps.pr.outputs.sha }}" \
+            -f state="$STATE" \
+            -f context="data-validation" \
+            -f description="$DESC" \
+            -f target_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "| | |"
+            echo "|---|---|"
+            echo "| Data changed | ${{ steps.diff.outputs.changed || 'false' }} |"
+            echo "| Validation | ${{ steps.validate.outcome || 'skipped' }} |"
+            echo "| Purely additive | ${{ steps.validate.outputs.additive || 'n/a' }} |"
+            echo "| Confined to data/ | ${{ steps.scope.outputs.confined || 'n/a' }} |"
+            echo "| Added versions | ${{ steps.validate.outputs.added || 'none' }} |"
+            echo "| Auto-merge | ${{ steps.merge.outcome || 'not attempted' }} |"
+          } >> $GITHUB_STEP_SUMMARY
+
+      # Surface a bad scrape as a red run; the PR is still open for review.
+      - name: Fail if validation failed
+        if: steps.diff.outputs.changed == 'true' && steps.validate.outcome != 'success'
+        run: |
+          echo "::error::Data validation failed — PR left open for manual review."
+          exit 1
