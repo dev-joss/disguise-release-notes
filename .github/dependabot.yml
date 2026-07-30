@@ -6,6 +6,9 @@ updates:
       interval: weekly
       day: monday
     open-pull-requests-limit: 5
+    # Let a release settle for two weeks before we pick it up.
+    cooldown:
+      default-days: 14
     commit-message:
       prefix: chore
       include: scope
@@ -20,6 +23,8 @@ updates:
       interval: weekly
       day: monday
     open-pull-requests-limit: 5
+    cooldown:
+      default-days: 14
     commit-message:
       prefix: ci
       include: scope
