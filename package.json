@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/dev-joss/disguise-release-notes#readme",
   "dependencies": {
-    "turndown": "^7.2.2"
+    "turndown": "^7.2.4"
   }
 }
