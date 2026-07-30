@@ -1,5 +1,44 @@
 [
   {
+    "version": "r34.0.2",
+    "build": "257237",
+    "starter_build": "257238",
+    "released": "July 29th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3402---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-33353",
+        "category": "Fixes",
+        "description": "QSDI VFC cards in quad mode now correctly restore screen configuration after applying feed settings."
+      },
+      {
+        "dsof": "DSOF-33254,DSOF-30914",
+        "category": "Fixes",
+        "description": "Sources of superfluous logging relating to Notch blocks and the Proof of Play feature have been removed."
+      },
+      {
+        "dsof": "DSOF-33140",
+        "category": "Fixes",
+        "description": "DMX indirection patches can now be removed."
+      },
+      {
+        "dsof": "DSOF-32463",
+        "category": "Fixes",
+        "description": "Keyframes may now be placed close to the start of a layer."
+      },
+      {
+        "dsof": "DSOF-31896",
+        "category": "Fixes",
+        "description": "Designer will no longer intermittently crash to desktop on some machines."
+      },
+      {
+        "dsof": "DSOF-33250",
+        "category": "Fixes",
+        "description": "Diagnostic graphs relating to display management now display correctly in half speed mode."
+      }
+    ]
+  },
+  {
     "version": "r34.0.1",
     "build": "256615",
     "starter_build": "256616",
@@ -1144,6 +1183,45 @@
         "dsof": "",
         "category": "Changes",
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.14",
+    "build": "257233",
+    "starter_build": "257234",
+    "released": "July 29th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32414---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-33353",
+        "category": "Fixes",
+        "description": "QSDI VFC cards in quad mode now correctly restore screen configuration after applying feed settings."
+      },
+      {
+        "dsof": "DSOF-33254,DSOF-30914",
+        "category": "Fixes",
+        "description": "Sources of superfluous logging relating to Notch blocks and the Proof of Play feature have been removed."
+      },
+      {
+        "dsof": "DSOF-33140",
+        "category": "Fixes",
+        "description": "DMX indirection patches can now be removed."
+      },
+      {
+        "dsof": "DSOF-32463",
+        "category": "Fixes",
+        "description": "Keyframes may now be placed close to the start of a layer."
+      },
+      {
+        "dsof": "DSOF-31896",
+        "category": "Fixes",
+        "description": "Designer will no longer intermittently crash to desktop on some machines."
+      },
+      {
+        "dsof": "DSOF-33250",
+        "category": "Fixes",
+        "description": "Diagnostic graphs relating to display management now display correctly in half speed mode."
       }
     ]
   },
