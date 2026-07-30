@@ -16198,5 +16198,83 @@
     ],
     "released": "July 22nd 2026",
     "starter_build": "256613"
+  },
+  "1e17ac77221149e6eb4d6717ed779dd50a6f9f63ac6e7c817b45fb5e71608cd7": {
+    "version": "r34.0.2",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3402---hotfixes",
+    "build": "257237",
+    "entries": [
+      {
+        "category": "Fixes",
+        "description": "QSDI VFC cards in quad mode now correctly restore screen configuration after applying feed settings.",
+        "dsof": "DSOF-33353"
+      },
+      {
+        "category": "Fixes",
+        "description": "Sources of superfluous logging relating to Notch blocks and the Proof of Play feature have been removed.",
+        "dsof": "DSOF-33254,DSOF-30914"
+      },
+      {
+        "category": "Fixes",
+        "description": "DMX indirection patches can now be removed.",
+        "dsof": "DSOF-33140"
+      },
+      {
+        "category": "Fixes",
+        "description": "Keyframes may now be placed close to the start of a layer.",
+        "dsof": "DSOF-32463"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer intermittently crash to desktop on some machines.",
+        "dsof": "DSOF-31896"
+      },
+      {
+        "category": "Fixes",
+        "description": "Diagnostic graphs relating to display management now display correctly in half speed mode.",
+        "dsof": "DSOF-33250"
+      }
+    ],
+    "released": "July 29th 2026",
+    "starter_build": "257238"
+  },
+  "d27909291b4e76850d670748769fe1d8a1d95775fb04a101b6258a7f17aa4bb5": {
+    "version": "r32.4.14",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32414---hotfixes",
+    "build": "257233",
+    "entries": [
+      {
+        "category": "Fixes",
+        "description": "QSDI VFC cards in quad mode now correctly restore screen configuration after applying feed settings.",
+        "dsof": "DSOF-33353"
+      },
+      {
+        "category": "Fixes",
+        "description": "Sources of superfluous logging relating to Notch blocks and the Proof of Play feature have been removed.",
+        "dsof": "DSOF-33254,DSOF-30914"
+      },
+      {
+        "category": "Fixes",
+        "description": "DMX indirection patches can now be removed.",
+        "dsof": "DSOF-33140"
+      },
+      {
+        "category": "Fixes",
+        "description": "Keyframes may now be placed close to the start of a layer.",
+        "dsof": "DSOF-32463"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer intermittently crash to desktop on some machines.",
+        "dsof": "DSOF-31896"
+      },
+      {
+        "category": "Fixes",
+        "description": "Diagnostic graphs relating to display management now display correctly in half speed mode.",
+        "dsof": "DSOF-33250"
+      }
+    ],
+    "released": "July 29th 2026",
+    "starter_build": "257234"
   }
 }
