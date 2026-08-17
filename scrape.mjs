@@ -67,6 +67,7 @@ function saveCacheSync() {
   mkdirSync(dirname(CACHE_PATH), { recursive: true });
   writeFileSync(CACHE_PATH, JSON.stringify(aiCache, null, 2));
 }
+let extractionFailures = [];
 function cacheKey(html) {
   return createHash("sha256").update(html).digest("hex");
 }
@@ -286,6 +287,7 @@ async function parseReleasePage(html, pagePath, debugDir = null, knownVersions =
       }
     } catch (err) {
       console.warn(`    [AI error] ${sec.version}: ${err.message}`);
+      extractionFailures.push(`${sec.version}: ${err.message}`);
     }
   }
 
@@ -492,6 +494,10 @@ async function main() {
         console.warn(`  Failed: ${err.message}`);
       }
     }
+  }
+
+  if (extractionFailures.length > 0) {
+    throw new Error(`AI extraction failed for ${extractionFailures.length} version(s): ${extractionFailures.join("; ")}`);
   }
 
   const outDir = join(__dirname, "data");
