@@ -158,7 +158,11 @@ async function extractWithAI(versionHtml, version, url) {
   const content = data.choices?.[0]?.message?.content;
   if (!content) throw new Error("AI returned empty content");
 
-  const parsed = JSON.parse(content);
+  // Some compatible models wrap otherwise-valid JSON in a Markdown fence.
+  // Remove only a complete outer fence; preserve all content inside it.
+  const trimmed = content.trim();
+  const fenced = trimmed.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
+  const parsed = JSON.parse(fenced ? fenced[1].trim() : trimmed);
 
   // Cache and persist (include version and url for easier inspection)
   aiCache[key] = { version, url, ...parsed };
