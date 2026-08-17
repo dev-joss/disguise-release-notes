@@ -33,8 +33,8 @@ const INDEX_URL =
   "https://help.disguise.one/designer/release-notes/release-notes";
 const BASE_URL = "https://help.disguise.one";
 
-const AI_API_URL = "https://models.github.ai/inference/chat/completions";
-const AI_MODEL = "openai/gpt-4o-mini";
+const AI_API_URL = "https://openrouter.ai/api/v1/chat/completions";
+const AI_MODEL = process.env.AI_MODEL || "deepseek/deepseek-v4-flash-0731";
 const AI_TOKEN = process.env.AI_TOKEN;
 const FORCE = process.argv.includes("--force");
 const CACHE_ONLY = process.argv.includes("--cache-only");
@@ -46,7 +46,7 @@ const ONLY_VERSION = (() => {
 })();
 
 if (!AI_TOKEN && !CACHE_ONLY && !FIX_URLS) {
-  console.error("Error: AI_TOKEN not set. Set AI_TOKEN to a GitHub PAT or use --cache-only.");
+  console.error("Error: AI_TOKEN not set. Set AI_TOKEN to an OpenRouter API key or use --cache-only.");
   process.exit(1);
 }
 
@@ -72,7 +72,7 @@ function cacheKey(html) {
   return createHash("sha256").update(html).digest("hex");
 }
 
-// Rate limiter: ~10 RPM → 1 request per 6s (GitHub Models allows 15 RPM)
+// Keep requests spaced out to avoid provider rate limits.
 let lastAiCall = 0;
 async function rateLimitDelay() {
   const elapsed = Date.now() - lastAiCall;
@@ -130,6 +130,7 @@ async function extractWithAI(versionHtml, version, url) {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${AI_TOKEN}`,
+      "X-OpenRouter-Title": "Disguise Release Notes",
     },
     body: JSON.stringify({
       model: AI_MODEL,
@@ -143,6 +144,7 @@ async function extractWithAI(versionHtml, version, url) {
         type: "json_schema",
         json_schema: { name: "release_entries", strict: true, schema: AI_JSON_SCHEMA },
       },
+      provider: { require_parameters: true },
       temperature: 0,
     }),
   });

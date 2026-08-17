@@ -1,7 +1,7 @@
 # Disguise Release Notes Aggregator
 
 ## Project Overview
-Static site that aggregates disguise designer release notes (r14–r32) into a single searchable table. Uses AI (via GitHub Models) to extract and categorise changes from HTML release pages. AI-extracted content may be inaccurate — always refer to the official release notes.
+Static site that aggregates disguise designer release notes (r14–r32) into a single searchable table. Uses AI (via OpenRouter) to extract and categorise changes from HTML release pages. AI-extracted content may be inaccurate — always refer to the official release notes.
 
 ## Architecture
 - `scrape.mjs` — Node CLI script. Fetches release pages from `help.disguise.one`, converts HTML to markdown via turndown, sends to AI for structured extraction, outputs `data/releases.json`.
