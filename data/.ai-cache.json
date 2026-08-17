@@ -16276,5 +16276,63 @@
     ],
     "released": "July 29th 2026",
     "starter_build": "257234"
+  },
+  "3cc3e114a6a3082f3d28c720581bb5e03614bc3b59138441db0c8a26ade8545d": {
+    "version": "r34.0.3",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3403---hotfixes",
+    "build": "r34.0.3",
+    "entries": [
+      {
+        "category": "Fixes",
+        "description": "Projector warps exported from Designer as Christie Twist (`.twistx`) files now include a default full-frame mask, so they load and apply correctly in Christie Twist. Previously a stacked projector showed no output, and adding a point in Twist’s mask editor caused Twist to crash. Soft-edge blending continues to be handled inside Designer, so no mask configuration is needed.",
+        "dsof": "DSOF-33324"
+      },
+      {
+        "category": "Fixes",
+        "description": "Editing a projector’s warp stack now works correctly. Toggling a warp layer’s enabled state, or adding, removing or renaming a technique, no longer reports an error.",
+        "dsof": "DSOF-33322"
+      },
+      {
+        "category": "Fixes",
+        "description": "When a video’s frame rate matches the project refresh rate, Designer now advances to the next video frame when hitting a section break instead of rendering the final frame before the section break twice.",
+        "dsof": "DSOF-32704, DSOF-30934"
+      },
+      {
+        "category": "Fixes",
+        "description": "Pressing `Ctrl+D` with nothing selected no longer reports a spurious error after a previous duplicate has been undone and the selection cleared.",
+        "dsof": "DSOF-33195"
+      }
+    ],
+    "released": "August 5th 2026",
+    "starter_build": "258250"
+  },
+  "f94eccc4084c833340ba3a424264e70a4f8493585c203d1d0ef06c9eab093270": {
+    "version": "r32.4.15",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32415---hotfixes",
+    "build": "r32.4.15",
+    "starter_build": "258232",
+    "released": "August 5th 2026",
+    "entries": [
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33324",
+        "description": "Projector warps exported from Designer as Christie Twist (`.twistx`) files now include a default full-frame mask, so they load and apply correctly in Christie Twist. Previously a stacked projector showed no output, and adding a point in Twist’s mask editor caused Twist to crash. Soft-edge blending continues to be handled inside Designer, so no mask configuration is needed."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33322",
+        "description": "Editing a projector’s warp stack now works correctly. Toggling a warp layer’s enabled state, or adding, removing or renaming a technique, no longer reports an error."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-32704, DSOF-30934",
+        "description": "When a video’s frame rate matches the project refresh rate, Designer now advances to the next video frame when hitting a section break instead of rendering the final frame before the section break twice."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33195",
+        "description": "Pressing `Ctrl+D` with nothing selected no longer reports a spurious error after a previous duplicate has been undone and the selection cleared."
+      }
+    ]
   }
 }
