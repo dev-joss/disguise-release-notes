@@ -1,5 +1,104 @@
 [
   {
+    "version": "r34.1",
+    "build": "259192",
+    "starter_build": "259193",
+    "released": "August 12th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r341---camera-tracking-localisation-and-licensing",
+    "changes": [
+      {
+        "dsof": "DSOF-32669",
+        "category": "Improvements",
+        "description": "Added OpenTrackIO camera tracking. Designer can now receive camera position, rotation and lens data from any OpenTrackIO-compatible source over multicast, including segmented packets and full transform handling."
+      },
+      {
+        "dsof": "DSOF-33253",
+        "category": "Improvements",
+        "description": "Added a Japanese translation of the Designer interface, selected from the **Language** menu in d3manager and applied to both d3manager and Designer."
+      },
+      {
+        "dsof": "DSOF-32244",
+        "category": "Improvements",
+        "description": "Added a Captury MoCap driver, so Captury skeleton tracking can drive Designer content."
+      },
+      {
+        "dsof": "DSOF-9640",
+        "category": "Improvements",
+        "description": "Added transport shortcuts to jump to the previous and next keyframe."
+      },
+      {
+        "dsof": "DSOF-21440",
+        "category": "Improvements",
+        "description": "Test pattern labels can now be resized, so identifiers stay readable on large or high-resolution surfaces."
+      },
+      {
+        "dsof": "DSOF-32414",
+        "category": "Improvements",
+        "description": "IP VFC ethernet link status is now shown in the UI, so you can see at a glance whether a port has a live connection."
+      },
+      {
+        "dsof": "DSOF-32956",
+        "category": "Improvements",
+        "description": "When applying feeds with VFC ports in **Auto** timing mode, Designer now matches every **Auto** output to the timing mode already in use elsewhere where bandwidth allows, rather than choosing one per output. Mixed timings across outputs could previously cause genlock to fail. The timing chosen for each output is logged to the console when feeds are applied."
+      },
+      {
+        "dsof": "DSOF-33159",
+        "category": "Improvements",
+        "description": "Session configuration errors are now more helpful and reported in the licence violation overlay, rather than only in the console."
+      },
+      {
+        "dsof": "DSOF-32926",
+        "category": "Improvements",
+        "description": "RenderStream workload logging can now be quickly enabled and disabled. Each Unreal Engine asset has a logging level in its settings — **Off**, **Default** or **Verbose** — which is remembered per asset, so you can capture workload detail only when you need it instead of editing the engine config and relaunching the project."
+      },
+      {
+        "dsof": "DSOF-33093",
+        "category": "Improvements",
+        "description": "OmniCal now uses a more accurate method for pose averaging, improving calibration consistency."
+      },
+      {
+        "dsof": "DSOF-33019",
+        "category": "Fixes",
+        "description": "OmniCal will now keep a projection surface aligned to its parent object when that parent has moved between capture and alignment. The parent’s pose is recorded during capture and used when the alignment is applied, so a tracked or automated screen no longer jumps to its absolute capture position. Where the parent moves too far during capture, OmniCal now warns that the images cannot be used."
+      },
+      {
+        "dsof": "DSOF-32955",
+        "category": "Fixes",
+        "description": "VFC cards that fail to initialise will no longer overwrite the configuration saved for them in the project. Designer now keeps the card type whenever it can be read from the device, and distinguishes in the feed view between a card that failed to initialise — which can be reset in place — and a communication error, which needs a restart."
+      },
+      {
+        "dsof": "DSOF-33055",
+        "category": "Fixes",
+        "description": "Designer will now report genlock as active on GX 3 hardware whenever NVIDIA reports the external sync signal and frame lock pulse as present, rather than only updating the feed view once it regains focus."
+      },
+      {
+        "dsof": "DSOF-32808",
+        "category": "Fixes",
+        "description": "Bit depth will now be reported correctly in **Current Output** for an NVIDIA Mosaic surface mapped in Designer on X-range hardware, rather than as 0."
+      },
+      {
+        "dsof": "DSOF-30633",
+        "category": "Fixes",
+        "description": "The `enableColourFormat` option switch has been removed, and the **Colour Format** field is now always available in the VFC editor. Its **Auto** setting uses RGB where the output has the bandwidth for it and YCbCr 4:2:2 where it does not, so 10-bit UHD 60Hz now applies without needing the option switch."
+      },
+      {
+        "dsof": "DSOF-33113",
+        "category": "Fixes",
+        "description": "1GB network adapters will now be recognised in the Bandwidth Monitor."
+      },
+      {
+        "dsof": "DSOF-32928",
+        "category": "Fixes",
+        "description": "A long string mapped to a RenderStream parameter will no longer break the workload UI."
+      },
+      {
+        "dsof": "DSOF-32733",
+        "category": "Fixes",
+        "description": "Notch layers with a large number of fields will no longer slow down the interface."
+      }
+    ]
+  },
+  {
     "version": "r34.0.3",
     "build": "258249",
     "starter_build": "258250",
