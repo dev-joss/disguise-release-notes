@@ -16433,5 +16433,168 @@
     ],
     "released": "August 12th 2026",
     "starter_build": "259193"
+  },
+  "634cfc4ffedd8139a0e3ecc1bd998fa469ec42d021f4050664c1af6b58a0920f": {
+    "version": "r34.0.4",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3404---hotfixes",
+    "build": "438",
+    "entries": [
+      {
+        "category": "Improvements",
+        "description": "The installer now offers a choice to create the ‘d3 Projects’ and ‘RenderStream Projects’ folder shortcuts on the user’s Desktop. Previously it would always create them.",
+        "dsof": "DSOF-33356"
+      },
+      {
+        "category": "Fixes",
+        "description": "Notch blocks outside the current transport’s set list are now preloaded, so Designer will no longer freeze when playback first reaches them. Preloading can still be turned off with the `notchLazyLoading` option switch, in which case blocks continue to load on demand.",
+        "dsof": "DSOF-33452"
+      },
+      {
+        "category": "Fixes",
+        "description": "Disabling or enabling a layer by holding `D` and left-clicking it, or from the layer’s right-click menu, can now be undone with `Ctrl+Z`. Neither route previously created an undo point, unlike the equivalent **Mute** toggle.",
+        "dsof": "DSOF-33580"
+      },
+      {
+        "category": "Fixes",
+        "description": "Keyframed and arrowed layer fields will now stay in sync across a cluster when the timeline holds, loops or jumps, rather than drifting further out the longer it runs and skewing which media is prefetched.",
+        "dsof": "DSOF-33396"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer occasionally crash to desktop when a camera-visible SLC-scale screen is deleted.",
+        "dsof": "DSOF-33137"
+      },
+      {
+        "category": "Fixes",
+        "description": "Holding and looping video layers will now stay in sync across a cluster, rather than drifting further apart the longer they play.",
+        "dsof": "DSOF-33393"
+      },
+      {
+        "category": "Fixes",
+        "description": "A video layer with **At Endpoint** keyframed from Loop to Pause will now play on after hitting the “Pause” keyframe until it gets to the end of the clip, rather than immediately pausing.",
+        "dsof": "DSOF-33470"
+      },
+      {
+        "category": "Fixes",
+        "description": "Dynamic Blend will now correctly update when a tracked skeleton moves the projection surface, rather than leaving blend artefacts behind.",
+        "dsof": "DSOF-33319"
+      },
+      {
+        "category": "Fixes",
+        "description": "A failing Python plugin will no longer revert an unrelated edit made by the operator.",
+        "dsof": "DSOF-33483"
+      },
+      {
+        "category": "Fixes",
+        "description": "Saving a layer or group to the layer library under a name that already exists will now give a clear warning.",
+        "dsof": "DSOF-32673"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will now always start correctly when upgrading a project that contains certain Projections from r33.1 to r33.2 and above versions.",
+        "dsof": "DSOF-33101"
+      },
+      {
+        "category": "Fixes",
+        "description": "The service and session APIs on a Director or Understudy will now stay responsive under heavy I/O.",
+        "dsof": "DSOF-33126"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will now more consistently genlock on AMD machines fitted with a mix of SDI and HDMI VFC cards, especially at 29.97Hz and 59.94Hz.",
+        "dsof": "DSOF-33263"
+      },
+      {
+        "category": "Fixes",
+        "description": "RenderStream Uncompressed license updating is now more resilient to server-side failure.",
+        "dsof": "DSOF-33371"
+      },
+      {
+        "category": "Fixes",
+        "description": "Opening the warp editor or deformation editor will no longer cause an access violation.",
+        "dsof": "DSOF-33398"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer occasionally crash while shutting down.",
+        "dsof": "DSOF-33476"
+      }
+    ],
+    "released": "September 9th 2026",
+    "starter_build": "439"
+  },
+  "e2139c79d76483b4ba3fe28c1fe55c3a1a241e963a432e83c0e47f400e04aa96": {
+    "version": "r32.4.16",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32416---hotfixes",
+    "build": "436",
+    "entries": [
+      {
+        "category": "Improvements",
+        "description": "The installer now offers a choice to create the ‘d3 Projects’ and ‘RenderStream Projects’ folder shortcuts on the user’s Desktop. Previously it would always create them.",
+        "dsof": "DSOF-33356"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer occasionally crash to desktop when a camera-visible SLC-scale screen is deleted.",
+        "dsof": "DSOF-33137"
+      },
+      {
+        "category": "Fixes",
+        "description": "Holding and looping video layers will now stay in sync across a cluster, rather than drifting further apart the longer they play.",
+        "dsof": "DSOF-33393"
+      },
+      {
+        "category": "Fixes",
+        "description": "A video layer with **At Endpoint** keyframed from Loop to Pause will now play on after hitting the “Pause” keyframe until it gets to the end of the clip, rather than immediately pausing.",
+        "dsof": "DSOF-33470"
+      },
+      {
+        "category": "Fixes",
+        "description": "Dynamic Blend will now correctly update when a tracked skeleton moves the projection surface, rather than leaving blend artefacts behind.",
+        "dsof": "DSOF-33319"
+      },
+      {
+        "category": "Fixes",
+        "description": "A failing Python plugin will no longer revert an unrelated edit made by the operator.",
+        "dsof": "DSOF-33483"
+      },
+      {
+        "category": "Fixes",
+        "description": "Saving a layer or group to the layer library under a name that already exists will now give a clear warning.",
+        "dsof": "DSOF-32673"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will now always start correctly when upgrading a project that contains certain Projections from r33.1 to r33.2 and above versions.",
+        "dsof": "DSOF-33101"
+      },
+      {
+        "category": "Fixes",
+        "description": "The service and session APIs on a Director or Understudy will now stay responsive under heavy I/O.",
+        "dsof": "DSOF-33126"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will now more consistently genlock on AMD machines fitted with a mix of SDI and HDMI VFC cards, especially at 29.97Hz and 59.94Hz.",
+        "dsof": "DSOF-33263"
+      },
+      {
+        "category": "Fixes",
+        "description": "RenderStream Uncompressed license updating is now more resilient to server-side failure.",
+        "dsof": "DSOF-33371"
+      },
+      {
+        "category": "Fixes",
+        "description": "Opening the warp editor or deformation editor will no longer cause an access violation.",
+        "dsof": "DSOF-33398"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer occasionally crash while shutting down.",
+        "dsof": "DSOF-33476"
+      }
+    ],
+    "released": "September 9th 2026",
+    "starter_build": "437"
   }
 }
