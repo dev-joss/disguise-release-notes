@@ -16596,5 +16596,188 @@
     ],
     "released": "September 9th 2026",
     "starter_build": "437"
+  },
+  "9dbfd28d1a75257acd9768e5cea87045776f27375d4d80d45306798253e367e1": {
+    "version": "r34.1.1",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3411---hotfixes",
+    "build": "934",
+    "starter_build": "935",
+    "released": "September 16th 2026",
+    "entries": [
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33599",
+        "description": "Upgrading a project from before r30.8 will no longer produce black-on-black layers the first time it loads."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33579",
+        "description": "The Feed view will now show each output’s own background colour on a multi-output VFC, rather than repeating the first output’s."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33457",
+        "description": "A DirectShow capture input will now recover after an unavailable format is selected, rather than staying dead until Designer is restarted."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-32345",
+        "description": "An ST 2110 capture input will no longer collide with another input over its identifier while Designer scans the file system, which could leave an input unusable."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33673",
+        "description": "Designer will no longer occasionally crash to desktop while shutting down a project that uses OCIO colour management."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33203",
+        "description": "A Matrox capture input will now be picked up when its video signal is connected after Designer has started, rather than staying black until Designer is restarted."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33444",
+        "description": "Deltacast capture channels will now keep running normally after an SDI signal is lost and restored, rather than dropping frames on the other channels of the same card."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33730",
+        "description": "A video layer that spans a section break will now show the correct frame when you click back into an earlier section, rather than jumping backwards."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33620",
+        "description": "The Legacy Video Layer will now hold the last decoded frame when a frame arrives too late, rather than showing black."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33510",
+        "description": "Video prefetch now looks ahead by a fixed length of time, rather than by a window that grew and shrank with the project tempo."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33626",
+        "description": "HTTPSockpuppet will now only adjust layers that are under Sockpuppet control, even if layers with the same name exist elsewhere on the timeline."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-23825",
+        "description": "Restoring a Snapshot that uses different tracks will now display the correct layers for those tracks, rather than reporting an ‘m_track’ error."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33628",
+        "description": "The Cue List will no longer repeatedly report “list index out of range” after you change set list and resize it."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33728",
+        "description": "The **Get Pro Version** button in the About Designer Starter dialogue now links to the correct page."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33721",
+        "description": "Multi-machine sessions will no longer build up increasingly long frame stalls as the media registry grows."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33515",
+        "description": "Rendering a text layer will no longer report an access violation under rare circumstances."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33199",
+        "description": "Designer is now less likely to report errors when hot plugging monitors after start up when not in Application Mode."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-32491",
+        "description": "Feed detection and configuration are now more reliable."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33348",
+        "description": "Designer will no longer fill the console with “Invalid target to resolveAt” messages when using an Undistorted Frontplate spatial map."
+      }
+    ]
+  },
+  "9518f12afde7f0832b26711f0cdbc7314c2dd86423972db4d6bac85ccdeb7d70": {
+    "version": "r32.4.17",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32417---hotfixes",
+    "build": "932",
+    "starter_build": "933",
+    "released": "September 16th 2026",
+    "entries": [
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33203",
+        "description": "A Matrox capture input will now be picked up when its video signal is connected after Designer has started, rather than staying black until Designer is restarted."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33444",
+        "description": "Deltacast capture channels will now keep running normally after an SDI signal is lost and restored, rather than dropping frames on the other channels of the same card."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33730",
+        "description": "A video layer that spans a section break will now show the correct frame when you click back into an earlier section, rather than jumping backwards."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33620",
+        "description": "The Legacy Video Layer will now hold the last decoded frame when a frame arrives too late, rather than showing black."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33510",
+        "description": "Video prefetch now looks ahead by a fixed length of time, rather than by a window that grew and shrank with the project tempo."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33626",
+        "description": "HTTPSockpuppet will now only adjust layers that are under Sockpuppet control, even if layers with the same name exist elsewhere on the timeline."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-23825",
+        "description": "Restoring a Snapshot that uses different tracks will now display the correct layers for those tracks, rather than reporting an ‘m_track’ error."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33628",
+        "description": "The Cue List will no longer repeatedly report “list index out of range” after you change set list and resize it."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33728",
+        "description": "The **Get Pro Version** button in the About Designer Starter dialogue now links to the correct page."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33721",
+        "description": "Multi-machine sessions will no longer build up increasingly long frame stalls as the media registry grows."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33515",
+        "description": "Rendering a text layer will no longer report an access violation under rare circumstances."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33199",
+        "description": "Designer is now less likely to report errors when hot plugging monitors after start up when not in Application Mode."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-32491",
+        "description": "Feed detection and configuration are now more reliable."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33348",
+        "description": "Designer will no longer fill the console with “Invalid target to resolveAt” messages when using an Undistorted Frontplate spatial map."
+      }
+    ]
   }
 }
