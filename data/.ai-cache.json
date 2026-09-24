@@ -16779,5 +16779,93 @@
         "description": "Designer will no longer fill the console with “Invalid target to resolveAt” messages when using an Undistorted Frontplate spatial map."
       }
     ]
+  },
+  "d082135a221182ced255f4c6ff3641f26bb561ef59e7b73df35a64bc0c1b336f": {
+    "version": "r34.1.2",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3412---hotfixes",
+    "build": "263189",
+    "entries": [
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer lose performance while it has a DMX device that cannot be reached on the network.",
+        "dsof": "DSOF-30108"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will now interpret timecode correctly when a timeline’s frame rate differs from the project clock’s native rate, such as a 30 fps timeline in a 59.94 fps project.",
+        "dsof": "DSOF-33652"
+      },
+      {
+        "category": "Fixes",
+        "description": "Video inputs will no longer go black when GPU compute is unavailable. This typically would only happen on X Series machines.",
+        "dsof": "DSOF-33793"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer log excessively when an SDI input’s geometry is not supported by the installed Deltacast hardware.",
+        "dsof": "DSOF-33703"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will now discover RenderStream shortcut (.lnk) assets when an Unreal project is also present in the RenderStream Projects folder.",
+        "dsof": "DSOF-33643"
+      },
+      {
+        "category": "Fixes",
+        "description": "The RenderStream RTC license now correctly removes the RenderStream watermark on X Series machines running RenderStream Local.",
+        "dsof": "DSOF-33204"
+      },
+      {
+        "category": "Fixes",
+        "description": "Designer will no longer crash to desktop intermittently in rare circumstances.",
+        "dsof": "DSOF-33810"
+      }
+    ],
+    "released": "September 23rd 2026",
+    "starter_build": "263190"
+  },
+  "3193f3f667d8fc56327af06b98fe524fd82f2e391c081f3cf01da690c29a5962": {
+    "version": "r32.4.18",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32418---hotfixes",
+    "build": "263185",
+    "starter_build": "263186",
+    "released": "September 23rd 2026",
+    "entries": [
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-30108",
+        "description": "Designer will no longer lose performance while it has a DMX device that cannot be reached on the network."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33652",
+        "description": "Designer will now interpret timecode correctly when a timeline’s frame rate differs from the project clock’s native rate, such as a 30 fps timeline in a 59.94 fps project."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33793",
+        "description": "Video inputs will no longer go black when GPU compute is unavailable. This typically would only happen on X Series machines."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33703",
+        "description": "Designer will no longer log excessively when an SDI input’s geometry is not supported by the installed Deltacast hardware."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33643",
+        "description": "Designer will now discover RenderStream shortcut (.lnk) assets when an Unreal project is also present in the RenderStream Projects folder."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33204",
+        "description": "The RenderStream RTC license now correctly removes the RenderStream watermark on X Series machines running RenderStream Local."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33810",
+        "description": "Designer will no longer crash to desktop intermittently in rare circumstances."
+      }
+    ]
   }
 }

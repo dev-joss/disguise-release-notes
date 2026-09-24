@@ -1,5 +1,49 @@
 [
   {
+    "version": "r34.1.2",
+    "build": "263189",
+    "starter_build": "263190",
+    "released": "September 23rd 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3412---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-30108",
+        "category": "Fixes",
+        "description": "Designer will no longer lose performance while it has a DMX device that cannot be reached on the network."
+      },
+      {
+        "dsof": "DSOF-33652",
+        "category": "Fixes",
+        "description": "Designer will now interpret timecode correctly when a timeline’s frame rate differs from the project clock’s native rate, such as a 30 fps timeline in a 59.94 fps project."
+      },
+      {
+        "dsof": "DSOF-33793",
+        "category": "Fixes",
+        "description": "Video inputs will no longer go black when GPU compute is unavailable. This typically would only happen on X Series machines."
+      },
+      {
+        "dsof": "DSOF-33703",
+        "category": "Fixes",
+        "description": "Designer will no longer log excessively when an SDI input’s geometry is not supported by the installed Deltacast hardware."
+      },
+      {
+        "dsof": "DSOF-33643",
+        "category": "Fixes",
+        "description": "Designer will now discover RenderStream shortcut (.lnk) assets when an Unreal project is also present in the RenderStream Projects folder."
+      },
+      {
+        "dsof": "DSOF-33204",
+        "category": "Fixes",
+        "description": "The RenderStream RTC license now correctly removes the RenderStream watermark on X Series machines running RenderStream Local."
+      },
+      {
+        "dsof": "DSOF-33810",
+        "category": "Fixes",
+        "description": "Designer will no longer crash to desktop intermittently in rare circumstances."
+      }
+    ]
+  },
+  {
     "version": "r34.1.1",
     "build": "934",
     "starter_build": "935",
@@ -1504,6 +1548,50 @@
         "dsof": "",
         "category": "Changes",
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.18",
+    "build": "263185",
+    "starter_build": "263186",
+    "released": "September 23rd 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32418---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-30108",
+        "category": "Fixes",
+        "description": "Designer will no longer lose performance while it has a DMX device that cannot be reached on the network."
+      },
+      {
+        "dsof": "DSOF-33652",
+        "category": "Fixes",
+        "description": "Designer will now interpret timecode correctly when a timeline’s frame rate differs from the project clock’s native rate, such as a 30 fps timeline in a 59.94 fps project."
+      },
+      {
+        "dsof": "DSOF-33793",
+        "category": "Fixes",
+        "description": "Video inputs will no longer go black when GPU compute is unavailable. This typically would only happen on X Series machines."
+      },
+      {
+        "dsof": "DSOF-33703",
+        "category": "Fixes",
+        "description": "Designer will no longer log excessively when an SDI input’s geometry is not supported by the installed Deltacast hardware."
+      },
+      {
+        "dsof": "DSOF-33643",
+        "category": "Fixes",
+        "description": "Designer will now discover RenderStream shortcut (.lnk) assets when an Unreal project is also present in the RenderStream Projects folder."
+      },
+      {
+        "dsof": "DSOF-33204",
+        "category": "Fixes",
+        "description": "The RenderStream RTC license now correctly removes the RenderStream watermark on X Series machines running RenderStream Local."
+      },
+      {
+        "dsof": "DSOF-33810",
+        "category": "Fixes",
+        "description": "Designer will no longer crash to desktop intermittently in rare circumstances."
       }
     ]
   },
