@@ -16867,5 +16867,142 @@
         "description": "Designer will no longer crash to desktop intermittently in rare circumstances."
       }
     ]
+  },
+  "3922b35c2bb02ec35cd08d33be27b3b279dc91e79de71151f5b6832d6ddaa8cd": {
+    "version": "r34.1.3",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3413---hotfixes",
+    "build": "266395",
+    "starter_build": "266396",
+    "released": "October 7th 2026",
+    "entries": [
+      {
+        "category": "Improvements",
+        "dsof": "DSOF-33644",
+        "description": "OmniCal now reports when a projector contributes no light to a simulated capture, for example because it has no content assigned."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33754",
+        "description": "Designer will no longer freeze for tens of seconds when RenderStream uncompressed metadata stops arriving."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33949",
+        "description": "Re-entering a RenderStream uncompressed layer will now show the render node’s image straight away, however long the layer was inactive."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33654",
+        "description": "Designer will no longer report “Received image data before the corresponding metadata”, or drop frames, when a RenderStream workload starts."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33520",
+        "description": "Large shows will no longer lose frame time to prefetch work on layers that do not need it."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34005",
+        "description": "Applying feed settings on GX 3 and GX 3+ machines can once again correctly configure outputs at 3840x2400, 60 Hz in 10 bit."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33323",
+        "description": "OmniCal projector stacking simulation will now capture data for secondary projectors, so stacking warps are calculated correctly."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33756",
+        "description": "Pinned windows will now stay pinned after rejoining a project that uses OCIO colour management."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-27948",
+        "description": "RenderStream texture parameters will now always correctly pass every frame to the render engine, instead of skipping frames when in certain FPS configurations."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33026",
+        "description": "Layers, keyframes and cues that sit on the frame grid will now stay on it when the project refresh rate is changed between full frame and drop frame framerates."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33861",
+        "description": "Section breaks and video layer boundaries on NTSC-rate timelines, such as 29.97, 59.94 and 23.976 fps, will now fall more reliably on the project’s frame grid, so the correct frame is shown when you expect it to, especially in very long timelines."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33723",
+        "description": "RenderStream will no longer black out an uncompressed video input for several seconds when a render engine briefly reports an empty scene list."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34084",
+        "description": "Designer will now handle large numbers of media changes across a multi-machine session much faster, reducing long hangs."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33129",
+        "description": "Designer will no longer occasionally show a “d3 service not responding” notification while feed settings are being applied."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34018",
+        "description": "The Feed view will now lay out empty VFC slots correctly in a new project on a GX 3+ with no VFC cards fitted."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34087",
+        "description": "The Feed view will now grey out **Export Compositor Frame** for displays that do not need content."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33084",
+        "description": "Designer will no longer raise an error when a geometric mapping, such as spherical or cylindrical, is created on a Blur layer."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-31398",
+        "description": "Designer will no longer raise an error when a DMX screen is created."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33698",
+        "description": "Removing a duplicated secondary projector from a projector stack will no longer detach the original secondary projector from its main projector."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33936",
+        "description": "OmniCal will now warn when its camera graph is disconnected because cameras do not overlap enough."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34080",
+        "description": "The OmniCal Plan Camera Stats list will now update as soon as a camera is renamed."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33960",
+        "description": "OmniCal camera discovery will now ignore Allied Vision Camera Simulators, so they no longer fill the VimbaCamServer log with errors."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33995",
+        "description": "VimbaCamServer will no longer log false errors when OmniCal cameras stop streaming."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33999",
+        "description": "VimbaCamServer will now clearly warn when an OmniCal camera is connected at 100 Mbit/s."
+      }
+    ]
+  },
+  "bc52ba800c3e49f286caf3689481ebd55325887302317958fe6bf24d9a73a9b0": {
+    "version": "r32.4.19",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32419---hotfixes",
+    "build": "266362",
+    "entries": [],
+    "released": "October 7th 2026",
+    "starter_build": "266363"
   }
 }
