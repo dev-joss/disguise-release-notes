@@ -1,5 +1,257 @@
 [
   {
+    "version": "r34.2.1",
+    "build": "268185",
+    "starter_build": "268186",
+    "released": "October 14th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3421---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-34127",
+        "category": "Fixes",
+        "description": "When using the prerelease Transport Speed Control feature, actors will no longer jump ahead of or behind the director while the transport speed input is changing."
+      },
+      {
+        "dsof": "DSOF-33811",
+        "category": "Fixes",
+        "description": "When using the prerelease Transport Speed Control feature, actors will now hold at the end of a section with the director."
+      },
+      {
+        "dsof": "DSOF-33406",
+        "category": "Fixes",
+        "description": "Notes and Cues will no longer occasionally disappear when you merge and split the timeline."
+      },
+      {
+        "dsof": "DSOF-34135",
+        "category": "Fixes",
+        "description": "Changing a video input’s OCIO input transform in Quick Edit mode on the director will now update the actors too."
+      },
+      {
+        "dsof": "DSOF-34034",
+        "category": "Fixes",
+        "description": "Timeline jumps via remote and local transports now more reliably pre-roll content when using a multitransport."
+      },
+      {
+        "dsof": "DSOF-33072",
+        "category": "Fixes",
+        "description": "The UV Lookup layer will no longer introduce artifacts in RGB Packed and RGBA UV maps that arrive through a precomp or an arrow, or that are applied to a scaled surface."
+      },
+      {
+        "dsof": "DSOF-32675",
+        "category": "Fixes",
+        "description": "An IP-VFC card with an unprogrammed EEPROM MAC address will now advertise an NMOS sender ID based on the MAC address it actually uses on the network."
+      },
+      {
+        "dsof": "DSOF-33672",
+        "category": "Fixes",
+        "description": "Designer will no longer on rare occasions fail to detect VFC outputs immediately after applying feed settings."
+      }
+    ]
+  },
+  {
+    "version": "r34.2",
+    "build": "266739",
+    "starter_build": "266740",
+    "released": "October 14th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r342---looks",
+    "changes": [
+      {
+        "dsof": "DSOF-27169",
+        "category": "Improvements",
+        "description": "Added Looks. A Look is a self-contained composition of layers, built once on its own Look track and reused by placing a Look Layer on any track. Expose the layer fields you want to control to the Look and they appear on every Look Layer that plays it, organised by group in the Look Builder, ready to keyframe, drive with an expression or patch to Sockpuppet. Existing layers can be converted into a Look in one step, Look Layers have their own playback mode, end-point behaviour, render mode and keyframeable brightness, and the available Looks and their exposed fields can be listed with the `/api/session/looks` endpoint."
+      },
+      {
+        "dsof": "DSOF-32430",
+        "category": "Improvements",
+        "description": "A Prerelease Upgrade for Rivermax to 1.90.18 for ST 2110 video capture and RenderStream is available to test. This improves performance and adds some additional features when enabled. See the details here."
+      },
+      {
+        "dsof": "DSOF-33233",
+        "category": "Improvements",
+        "description": "Video prefetch is now aware of changing play modes and at-endpoint behaviour of the layer."
+      },
+      {
+        "dsof": "DSOF-33608",
+        "category": "Improvements",
+        "description": "Fisheye mapping now shows the diagonal field of view alongside the horizontal one, so you can match the figure quoted on a fisheye lens spec sheet."
+      },
+      {
+        "dsof": "DSOF-28248",
+        "category": "Improvements",
+        "description": "The Tennis layer now has an option to reset the score."
+      },
+      {
+        "dsof": "DSOF-31608",
+        "category": "Improvements",
+        "description": "Matrix routing strings now accept spaces anywhere, not only around the `|` separator."
+      },
+      {
+        "dsof": "DSOF-31907",
+        "category": "Improvements",
+        "description": "The Cue List has a new **Shift focus to timeline on jump** tick box. Leave it ticked to move focus to the timeline when you jump to a cue, for editing, or untick it to keep focus in the Cue List, so you can step through and fire cues from the keyboard."
+      },
+      {
+        "dsof": "DSOF-33989",
+        "category": "Fixes",
+        "description": "Unreal RenderStream workloads using a compressed transport which also have NVCodecs enabled via another plugin will now produce an image in Designer, rather than no usable output and a CUDA peer-access error every other frame."
+      },
+      {
+        "dsof": "DSOF-33763",
+        "category": "Fixes",
+        "description": "When using the prerelease Transport Speed Control feature, the speed channel will now stay on the DMX Transport personality in projects made before r34.0, so timeline speed can be patched to DMX."
+      },
+      {
+        "dsof": "DSOF-34020",
+        "category": "Fixes",
+        "description": "Setting a Red, Green or Blue **Min** value to 1 in Colour Shift’s **Separate** mode will once again isolate that channel instead of blacking out the whole layer."
+      },
+      {
+        "dsof": "DSOF-33747",
+        "category": "Fixes",
+        "description": "OmniCal will now warn you if you start a capture before applying pending feed settings."
+      },
+      {
+        "dsof": "DSOF-33605",
+        "category": "Fixes",
+        "description": "Fisheye mapping will no longer improperly stretch content whose aspect ratio is not square."
+      },
+      {
+        "dsof": "DSOF-32996",
+        "category": "Fixes",
+        "description": "An IP video input will now accept NMOS sender connections and disconnections from control systems more gracefully."
+      }
+    ]
+  },
+  {
+    "version": "r34.1.3",
+    "build": "266395",
+    "starter_build": "266396",
+    "released": "October 7th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3413---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-33644",
+        "category": "Improvements",
+        "description": "OmniCal now reports when a projector contributes no light to a simulated capture, for example because it has no content assigned."
+      },
+      {
+        "dsof": "DSOF-33754",
+        "category": "Fixes",
+        "description": "Designer will no longer freeze for tens of seconds when RenderStream uncompressed metadata stops arriving."
+      },
+      {
+        "dsof": "DSOF-33949",
+        "category": "Fixes",
+        "description": "Re-entering a RenderStream uncompressed layer will now show the render node’s image straight away, however long the layer was inactive."
+      },
+      {
+        "dsof": "DSOF-33654",
+        "category": "Fixes",
+        "description": "Designer will no longer report “Received image data before the corresponding metadata”, or drop frames, when a RenderStream workload starts."
+      },
+      {
+        "dsof": "DSOF-33520",
+        "category": "Fixes",
+        "description": "Large shows will no longer lose frame time to prefetch work on layers that do not need it."
+      },
+      {
+        "dsof": "DSOF-34005",
+        "category": "Fixes",
+        "description": "Applying feed settings on GX 3 and GX 3+ machines can once again correctly configure outputs at 3840x2400, 60 Hz in 10 bit."
+      },
+      {
+        "dsof": "DSOF-33323",
+        "category": "Fixes",
+        "description": "OmniCal projector stacking simulation will now capture data for secondary projectors, so stacking warps are calculated correctly."
+      },
+      {
+        "dsof": "DSOF-33756",
+        "category": "Fixes",
+        "description": "Pinned windows will now stay pinned after rejoining a project that uses OCIO colour management."
+      },
+      {
+        "dsof": "DSOF-27948",
+        "category": "Fixes",
+        "description": "RenderStream texture parameters will now always correctly pass every frame to the render engine, instead of skipping frames when in certain FPS configurations."
+      },
+      {
+        "dsof": "DSOF-33026",
+        "category": "Fixes",
+        "description": "Layers, keyframes and cues that sit on the frame grid will now stay on it when the project refresh rate is changed between full frame and drop frame framerates."
+      },
+      {
+        "dsof": "DSOF-33861",
+        "category": "Fixes",
+        "description": "Section breaks and video layer boundaries on NTSC-rate timelines, such as 29.97, 59.94 and 23.976 fps, will now fall more reliably on the project’s frame grid, so the correct frame is shown when you expect it to, especially in very long timelines."
+      },
+      {
+        "dsof": "DSOF-33723",
+        "category": "Fixes",
+        "description": "RenderStream will no longer black out an uncompressed video input for several seconds when a render engine briefly reports an empty scene list."
+      },
+      {
+        "dsof": "DSOF-34084",
+        "category": "Fixes",
+        "description": "Designer will now handle large numbers of media changes across a multi-machine session much faster, reducing long hangs."
+      },
+      {
+        "dsof": "DSOF-33129",
+        "category": "Fixes",
+        "description": "Designer will no longer occasionally show a “d3 service not responding” notification while feed settings are being applied."
+      },
+      {
+        "dsof": "DSOF-34018",
+        "category": "Fixes",
+        "description": "The Feed view will now lay out empty VFC slots correctly in a new project on a GX 3+ with no VFC cards fitted."
+      },
+      {
+        "dsof": "DSOF-34087",
+        "category": "Fixes",
+        "description": "The Feed view will now grey out **Export Compositor Frame** for displays that do not need content."
+      },
+      {
+        "dsof": "DSOF-33084",
+        "category": "Fixes",
+        "description": "Designer will no longer raise an error when a geometric mapping, such as spherical or cylindrical, is created on a Blur layer."
+      },
+      {
+        "dsof": "DSOF-31398",
+        "category": "Fixes",
+        "description": "Designer will no longer raise an error when a DMX screen is created."
+      },
+      {
+        "dsof": "DSOF-33698",
+        "category": "Fixes",
+        "description": "Removing a duplicated secondary projector from a projector stack will no longer detach the original secondary projector from its main projector."
+      },
+      {
+        "dsof": "DSOF-33936",
+        "category": "Fixes",
+        "description": "OmniCal will now warn when its camera graph is disconnected because cameras do not overlap enough."
+      },
+      {
+        "dsof": "DSOF-34080",
+        "category": "Fixes",
+        "description": "The OmniCal Plan Camera Stats list will now update as soon as a camera is renamed."
+      },
+      {
+        "dsof": "DSOF-33960",
+        "category": "Fixes",
+        "description": "OmniCal camera discovery will now ignore Allied Vision Camera Simulators, so they no longer fill the VimbaCamServer log with errors."
+      },
+      {
+        "dsof": "DSOF-33995",
+        "category": "Fixes",
+        "description": "VimbaCamServer will no longer log false errors when OmniCal cameras stop streaming."
+      },
+      {
+        "dsof": "DSOF-33999",
+        "category": "Fixes",
+        "description": "VimbaCamServer will now clearly warn when an OmniCal camera is connected at 100 Mbit/s."
+      }
+    ]
+  },
+  {
     "version": "r34.1.2",
     "build": "263189",
     "starter_build": "263190",
@@ -1550,6 +1802,63 @@
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
       }
     ]
+  },
+  {
+    "version": "r32.4.20",
+    "build": "268128",
+    "starter_build": "268129",
+    "released": "October 14th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32420---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-33406",
+        "category": "Fixes",
+        "description": "Notes and Cues will no longer occasionally disappear when you merge and split the timeline."
+      },
+      {
+        "dsof": "DSOF-34135",
+        "category": "Fixes",
+        "description": "Changing a video input’s OCIO input transform in Quick Edit mode on the director will now update the actors too."
+      },
+      {
+        "dsof": "DSOF-34034",
+        "category": "Fixes",
+        "description": "Timeline jumps via remote and local transports now more reliably pre-roll content when using a multitransport."
+      },
+      {
+        "dsof": "DSOF-33072",
+        "category": "Fixes",
+        "description": "The UV Lookup layer will no longer introduce artifacts in RGB Packed and RGBA UV maps that arrive through a precomp or an arrow, or that are applied to a scaled surface."
+      },
+      {
+        "dsof": "DSOF-32675",
+        "category": "Fixes",
+        "description": "An IP-VFC card with an unprogrammed EEPROM MAC address will now advertise an NMOS sender ID based on the MAC address it actually uses on the network."
+      },
+      {
+        "dsof": "DSOF-33672",
+        "category": "Fixes",
+        "description": "Designer will no longer on rare occasions fail to detect VFC outputs immediately after applying feed settings."
+      },
+      {
+        "dsof": "DSOF-33747",
+        "category": "Fixes",
+        "description": "OmniCal will now warn you if you start a capture before applying pending feed settings."
+      },
+      {
+        "dsof": "DSOF-33605",
+        "category": "Fixes",
+        "description": "Fisheye mapping will no longer improperly stretch content whose aspect ratio is not square."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.19",
+    "build": "266362",
+    "starter_build": "266363",
+    "released": "October 7th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32419---hotfixes",
+    "changes": []
   },
   {
     "version": "r32.4.18",
