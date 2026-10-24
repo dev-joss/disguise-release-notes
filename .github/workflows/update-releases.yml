@@ -2,7 +2,12 @@ name: Update Release Notes
 on:
   schedule:
     - cron: '0 6 * * *' # Daily at 06:00 UTC
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Release version to re-extract; leave empty to find new versions
+        type: string
+        required: false
 
 jobs:
   update:
@@ -14,6 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
+          ref: master
           fetch-depth: 0
       - uses: actions/setup-node@v7
         with:
@@ -28,9 +34,16 @@ jobs:
           else
             echo "No existing $BRANCH; starting from master state"
           fi
-      - run: node scrape.mjs --new-only
+      - name: Scrape release notes
+        run: |
+          if [ -n "$VERSION" ]; then
+            node scrape.mjs --version "$VERSION" --force
+          else
+            node scrape.mjs --new-only
+          fi
         env:
           AI_TOKEN: ${{ secrets.AI_TOKEN }}
+          VERSION: ${{ inputs.version }}
       - name: Check for changes vs master
         id: diff
         run: |
@@ -106,6 +119,7 @@ jobs:
       - name: Enable auto-merge
         id: merge
         if: |
+          inputs.version == '' &&
           steps.diff.outputs.changed == 'true' &&
           steps.validate.outcome == 'success' &&
           steps.validate.outputs.additive == 'true' &&
