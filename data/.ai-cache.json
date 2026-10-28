@@ -17395,5 +17395,39 @@
         "description": "The third-party license acknowledgements shipped with Designer are now complete and up to date."
       }
     ]
+  },
+  "33f01f743abd0dfea0c5edb1ca0bf8aa81e94705e66f38a041393d7ddcd49ca5": {
+    "version": "r32.4.22",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32422---hotfixes",
+    "build": "271499",
+    "starter_build": "271500",
+    "released": "October 28th 2026",
+    "entries": [
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33722",
+        "description": "RenderStream layers with a Mask, Luma Matte Mask or Inverse Luma Matte Mask blend mode will now render correctly, instead of leaving grey or black frames on the output."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-31446",
+        "description": "Resizing a layer from the left will no longer extend the track’s length if the layer extends the entire width of the track."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33531",
+        "description": "The media list API will now list folders that contain a file path longer than 260 characters, instead of returning an error for the whole folder."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-27292",
+        "description": "The debug output window (`Alt+D`) and the console window (`Alt+C`) will no longer intermittently fail to open."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33647",
+        "description": "Designer telemetry will now include which RenderStream licenses are installed."
+      }
+    ]
   }
 }
