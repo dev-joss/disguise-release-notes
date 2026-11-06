@@ -1,5 +1,119 @@
 [
   {
+    "version": "r34.2.3",
+    "build": "273280",
+    "starter_build": "273281",
+    "released": "November 4th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3423---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-26636",
+        "category": "Improvements",
+        "description": "Project diagnostics will now include OmniCal Plan settings, calibration results and alignment data, so we have more information when we help you with OmniCal issues. Captured images are still not included, so diagnostics for OmniCal projects will only be slightly larger."
+      },
+      {
+        "dsof": "DSOF-34121",
+        "category": "Improvements",
+        "description": "Designer now uses CodeMeter v9.10a, and the installer includes CodeMeter Runtime v9.10a."
+      },
+      {
+        "dsof": "DSOF-34315",
+        "category": "Fixes",
+        "description": "Lowering the transport volume will now also lower audio playing inside a Look."
+      },
+      {
+        "dsof": "DSOF-34272",
+        "category": "Fixes",
+        "description": "Editing a keyframed exposed field on a Look Layer will no longer flood the console with “tRender set to invalid t” messages."
+      },
+      {
+        "dsof": "DSOF-34201",
+        "category": "Fixes",
+        "description": "Exposed Brightness and Volume fields in the Look Builder will now show their names, so fields exposed from different layers can be told apart."
+      },
+      {
+        "dsof": "DSOF-34354",
+        "category": "Fixes",
+        "description": "With **Padding (Pixels)** set on a RenderStream Cluster Assigner, RenderStream Uncompressed tiles will now be cropped instead of scaled, so content from neighbouring tiles no longer appears at the seams."
+      },
+      {
+        "dsof": "DSOF-34355",
+        "category": "Fixes",
+        "description": "With **Padding (Pixels)** set on a RenderStream Cluster Assigner, RenderStream Compressed tiles will no longer be doubled at the seams."
+      },
+      {
+        "dsof": "DSOF-34029",
+        "category": "Fixes",
+        "description": "Moving the playhead out of a running RenderStream layer that uses mesh mapping across several render nodes will no longer raise an “iFragment == 0” error notification."
+      },
+      {
+        "dsof": "DSOF-34124",
+        "category": "Fixes",
+        "description": "An Actor that is also the RenderStream controller will no longer occasionally freeze while RenderStream is running."
+      },
+      {
+        "dsof": "DSOF-34270",
+        "category": "Fixes",
+        "description": "The redundant stream fields of an IP video input will now show or hide as soon as **Enable Redundant Stream** is changed, instead of only after the editor is reopened."
+      },
+      {
+        "dsof": "DSOF-34317",
+        "category": "Fixes",
+        "description": "Swapping the min and max values of Colour Shift will now invert colours as described in the user guide, instead of turning the layer black."
+      },
+      {
+        "dsof": "DSOF-34050",
+        "category": "Fixes",
+        "description": "PreComps will no longer fade faster than other content when the transport brightness is lowered."
+      },
+      {
+        "dsof": "DSOF-32446",
+        "category": "Fixes",
+        "description": "HDMI video capture will no longer occasionally look pixelated at some input resolutions when the source sends RGB."
+      },
+      {
+        "dsof": "DSOF-26895",
+        "category": "Fixes",
+        "description": "The active OmniCal Plan will no longer stay greyed out after startup when another Plan’s name is the active Plan’s name followed by a ”.” suffix, for example `Plan` and `Plan.v2`."
+      },
+      {
+        "dsof": "DSOF-24524",
+        "category": "Fixes",
+        "description": "Designer will no longer repeatedly log “Network settings changed” when nothing has changed on a machine with a wireless network adapter."
+      },
+      {
+        "dsof": "DSOF-34382",
+        "category": "Fixes",
+        "description": "On a machine with two Rivermax network cards on different networks, RenderStream Uncompressed streams will now be received on the card on the render node’s network, instead of occasionally showing “No frames received yet”."
+      },
+      {
+        "dsof": "DSOF-33722",
+        "category": "Fixes",
+        "description": "RenderStream layers with a Mask, Luma Matte Mask or Inverse Luma Matte Mask blend mode will now render correctly, instead of leaving grey or black frames on the output."
+      },
+      {
+        "dsof": "DSOF-31446",
+        "category": "Fixes",
+        "description": "Resizing a layer from the left will no longer extend the track’s length if the layer spans the entire width of the track."
+      },
+      {
+        "dsof": "DSOF-33531",
+        "category": "Fixes",
+        "description": "The Media API list endpoint will now include folders that contain a file path longer than 260 characters, instead of returning an error for the whole folder."
+      },
+      {
+        "dsof": "DSOF-27292",
+        "category": "Fixes",
+        "description": "The debug output window (`Alt+D`) and the console window (`Alt+C`) will no longer intermittently fail to open."
+      },
+      {
+        "dsof": "DSOF-33647",
+        "category": "Fixes",
+        "description": "Designer telemetry will now include which RenderStream licenses are installed."
+      }
+    ]
+  },
+  {
     "version": "r34.2.2",
     "build": "270781",
     "starter_build": "270782",
@@ -1884,6 +1998,50 @@
         "dsof": "",
         "category": "Changes",
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.23",
+    "build": "273273",
+    "starter_build": "273274",
+    "released": "November 4th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32423---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-26636",
+        "category": "Improvements",
+        "description": "Project diagnostics will now include OmniCal Plan settings, calibration results and alignment data, so we have more information when we help you with OmniCal issues. Captured images are still not included, so diagnostics for OmniCal projects will only be slightly larger."
+      },
+      {
+        "dsof": "DSOF-34121",
+        "category": "Improvements",
+        "description": "Designer now uses CodeMeter v9.10a, and the installer includes CodeMeter Runtime v9.10a."
+      },
+      {
+        "dsof": "DSOF-34050",
+        "category": "Fixes",
+        "description": "PreComps will no longer fade faster than other content when the transport brightness is lowered."
+      },
+      {
+        "dsof": "DSOF-32446",
+        "category": "Fixes",
+        "description": "HDMI video capture will no longer occasionally look pixelated at some input resolutions when the source sends RGB."
+      },
+      {
+        "dsof": "DSOF-26895",
+        "category": "Fixes",
+        "description": "The active OmniCal Plan will no longer stay greyed out after startup when another Plan’s name is the active Plan’s name followed by a ”.” suffix, for example `Plan` and `Plan.v2`."
+      },
+      {
+        "dsof": "DSOF-24524",
+        "category": "Fixes",
+        "description": "Designer will no longer repeatedly log “Network settings changed” when nothing has changed on a machine with a wireless network adapter."
+      },
+      {
+        "dsof": "DSOF-34382",
+        "category": "Fixes",
+        "description": "On a machine with two Rivermax network cards on different networks, RenderStream Uncompressed streams will now be received on the card on the render node’s network, instead of occasionally showing “No frames received yet”."
       }
     ]
   },
