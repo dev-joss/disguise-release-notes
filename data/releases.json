@@ -1,5 +1,119 @@
 [
   {
+    "version": "r34.2.4",
+    "build": "275092",
+    "starter_build": "275093",
+    "released": "November 11th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3424---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-33408",
+        "category": "Improvements",
+        "description": "Designer now ships 7-Zip 26.05, which addresses CVE-2026-14266."
+      },
+      {
+        "dsof": "DSOF-34451",
+        "category": "Fixes",
+        "description": "During playback, when a jump lands on a keyframe that changes the **Video Clip** of a Video layer, the first frame after the jump will now show the new clip."
+      },
+      {
+        "dsof": "DSOF-34385",
+        "category": "Fixes",
+        "description": "Pausing a Video layer whose speed is keyframed between 0 and 1 will now show the correct frame instead of jumping."
+      },
+      {
+        "dsof": "DSOF-34372",
+        "category": "Fixes",
+        "description": "Video will no longer occasionally flash black when jumping to the next section from a hold after Designer has been running for several hours."
+      },
+      {
+        "dsof": "DSOF-34525",
+        "category": "Fixes",
+        "description": "Designer will no longer freeze drawing the timeline audio waveform of a video clip with embedded audio when the drawn range ends a tiny fraction of a frame into the clip, which could happen when copying and pasting layers inside a group or keyframing a video layer’s media."
+      },
+      {
+        "dsof": "DSOF-34359",
+        "category": "Fixes",
+        "description": "A RenderStream texture-parameter controller will no longer lag and crash when a texture parameter with a keyframe sequence plays and the playhead is moved."
+      },
+      {
+        "dsof": "DSOF-34377",
+        "category": "Fixes",
+        "description": "Designer will no longer occasionally freeze when a RenderStream Local stream is recreated while the workload keeps running."
+      },
+      {
+        "dsof": "DSOF-34262",
+        "category": "Fixes",
+        "description": "The saved layer library will now list only layers that a Look supports, even when it was opened on a Track and left open while moving into a Look."
+      },
+      {
+        "dsof": "DSOF-34242",
+        "category": "Fixes",
+        "description": "Designer now logs more detail about Looks, to help diagnose issues with them."
+      },
+      {
+        "dsof": "DSOF-34203, DSOF-34062",
+        "category": "Fixes",
+        "description": "On machines with an RME HDSPe AIO audio card, such as VX 4 and VX 4+, audio from Audio layers and from video with embedded audio now plays correctly. It will no longer start late, keep playing after the transport is stopped or paused, or the playhead leaves the layer, or cut out repeatedly (audio underruns)."
+      },
+      {
+        "dsof": "DSOF-34362",
+        "category": "Fixes",
+        "description": "In some projects with grouped layers, Designer will now correctly create an arrow from one layer to another instead of reporting an access violation error."
+      },
+      {
+        "dsof": "DSOF-32873",
+        "category": "Fixes",
+        "description": "A Python plugin that calls a restricted function will now receive an error it can handle, and will no longer cause Designer to hang."
+      },
+      {
+        "dsof": "DSOF-33758, DSOF-34210",
+        "category": "Fixes",
+        "description": "An open Live Update subscription will no longer add a fixed CPU cost on the Director, regardless of its update frequency, and each value it updates now costs less main-thread time."
+      },
+      {
+        "dsof": "DSOF-34489",
+        "category": "Fixes",
+        "description": "Position Receiver smoothing and prediction will now apply on Actors, not only on the Director, when the receiver is driven by an OSC Driver."
+      },
+      {
+        "dsof": "DSOF-34054",
+        "category": "Fixes",
+        "description": "The Colour Inspector will now report correct pixel values for Notch layers."
+      },
+      {
+        "dsof": "DSOF-31401",
+        "category": "Fixes",
+        "description": "Restarting a running RenderStream workload will no longer report a spurious “Processing local frame receipt event” error in notifications."
+      },
+      {
+        "dsof": "DSOF-33988",
+        "category": "Fixes",
+        "description": "Designer will no longer occasionally crash on shutdown while a GPU resource is still in use."
+      },
+      {
+        "dsof": "DSOF-34342",
+        "category": "Fixes",
+        "description": "List editors will now show each column’s help text on mouse-over, for example in the OmniCal Plan Cameras list."
+      },
+      {
+        "dsof": "DSOF-34348",
+        "category": "Fixes",
+        "description": "The OmniCal Plan Camera Stats window will now show help text for all of its buttons and columns."
+      },
+      {
+        "dsof": "DSOF-34327",
+        "category": "Fixes",
+        "description": "The third-party license acknowledgements shipped with Designer will now correctly list OpenCV under the Apache 2.0 license, with its license text and notice."
+      },
+      {
+        "dsof": "DSOF-34522",
+        "category": "Fixes",
+        "description": "The third-party license acknowledgements shipped with Designer will now correctly list libwebsockets under the MIT license."
+      }
+    ]
+  },
+  {
     "version": "r34.2.3",
     "build": "273280",
     "starter_build": "273281",
@@ -1998,6 +2112,80 @@
         "dsof": "",
         "category": "Changes",
         "description": "Moving a range of media servers (2x4pro, GX 1, GX 2, GX 2C, VX1, VX 2, VX 4, VX 4N) from End of Production to End of Support. These servers will require a software license to use with r33.0 and above, but will continue to function normally on all supported releases up to and including r32 with critical bugfix updates."
+      }
+    ]
+  },
+  {
+    "version": "r32.4.24",
+    "build": "275085",
+    "starter_build": "275086",
+    "released": "November 11th 2026",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32424---hotfixes",
+    "changes": [
+      {
+        "dsof": "DSOF-33408",
+        "category": "Improvements",
+        "description": "Designer now ships 7-Zip 26.05, which addresses CVE-2026-14266."
+      },
+      {
+        "dsof": "DSOF-34203,DSOF-34062",
+        "category": "Fixes",
+        "description": "On machines with an RME HDSPe AIO audio card, such as VX 4 and VX 4+, audio from Audio layers and from video with embedded audio now plays correctly. It will no longer start late, keep playing after the transport is stopped or paused, or the playhead leaves the layer, or cut out repeatedly (audio underruns)."
+      },
+      {
+        "dsof": "DSOF-34362",
+        "category": "Fixes",
+        "description": "In some projects with grouped layers, Designer will now correctly create an arrow from one layer to another instead of reporting an access violation error."
+      },
+      {
+        "dsof": "DSOF-32873",
+        "category": "Fixes",
+        "description": "A Python plugin that calls a restricted function will now receive an error it can handle, and will no longer cause Designer to hang."
+      },
+      {
+        "dsof": "DSOF-33758,DSOF-34210",
+        "category": "Fixes",
+        "description": "An open Live Update subscription will no longer add a fixed CPU cost on the Director, regardless of its update frequency, and each value it updates now costs less main-thread time."
+      },
+      {
+        "dsof": "DSOF-34489",
+        "category": "Fixes",
+        "description": "Position Receiver smoothing and prediction will now apply on Actors, not only on the Director, when the receiver is driven by an OSC Driver."
+      },
+      {
+        "dsof": "DSOF-34054",
+        "category": "Fixes",
+        "description": "The Colour Inspector will now report correct pixel values for Notch layers."
+      },
+      {
+        "dsof": "DSOF-31401",
+        "category": "Fixes",
+        "description": "Restarting a running RenderStream workload will no longer report a spurious “Processing local frame receipt event” error in notifications."
+      },
+      {
+        "dsof": "DSOF-33988",
+        "category": "Fixes",
+        "description": "Designer will no longer occasionally crash on shutdown while a GPU resource is still in use."
+      },
+      {
+        "dsof": "DSOF-34342",
+        "category": "Fixes",
+        "description": "List editors will now show each column’s help text on mouse-over, for example in the OmniCal Plan Cameras list."
+      },
+      {
+        "dsof": "DSOF-34348",
+        "category": "Fixes",
+        "description": "The OmniCal Plan Camera Stats window will now show help text for all of its buttons and columns."
+      },
+      {
+        "dsof": "DSOF-34327",
+        "category": "Fixes",
+        "description": "The third-party license acknowledgements shipped with Designer will now correctly list OpenCV under the Apache 2.0 license, with its license text and notice."
+      },
+      {
+        "dsof": "DSOF-34522",
+        "category": "Fixes",
+        "description": "The third-party license acknowledgements shipped with Designer will now correctly list libwebsockets under the MIT license."
       }
     ]
   },
