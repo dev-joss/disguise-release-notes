@@ -17775,5 +17775,103 @@
         "description": "The third-party license acknowledgements shipped with Designer will now correctly list libwebsockets under the MIT license."
       }
     ]
+  },
+  "777f0ebf4e5da0cc8a697ee2a04744bc94e217262cb1cef8935bbf77fa3be147": {
+    "version": "r34.2.5",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r3425---hotfixes",
+    "build": "276483",
+    "starter_build": "276484",
+    "released": "November 18th 2026",
+    "entries": [
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34534",
+        "description": "Splitting a group layer inside a Look will no longer lose the right-hand half of the group and the layers in it."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34470",
+        "description": "In a multi-machine session, duplicating a layer inside a group will no longer stop the track updating on the Director and other machines."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34107",
+        "description": "A Look layer’s Playback mode or At end point driven externally to a value beyond its options will no longer log an error every frame."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34460",
+        "description": "A running RenderStream layer will no longer log a “not part of the track” error every frame while the current transport is playing a different track."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34608",
+        "description": "When usage sharing is turned off, d3service will no longer send small heartbeat messages to Disguise Cloud."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33274",
+        "description": "Designer will now correctly attribute third-party errors to third-party code in some rare cases where diagnostics would point incorrectly to Designer code. This should ease debugging certain rare problems."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34241",
+        "description": "Designer now has improved performance in projects that use reference points and QuickCal."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34100",
+        "description": "Designer now exchanges colour spaces with Notch correctly when Notch uses different layers with different colour spaces."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34305",
+        "description": "In d3Net Manager, an Understudy added when there is no Director or Actor will now report that there is no valid machine for it to take over, instead of a licensing restrictions error."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34588",
+        "description": "The third-party license acknowledgements shipped with Designer will now link to the source of the modified Zyre, CZMQ and ZeroMQ libraries that Designer ships."
+      }
+    ]
+  },
+  "3d24ed4062c19cc6b4cabc38d39e10d3a210a48313f5b3f74255946960209b21": {
+    "version": "r32.4.25",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r32425---hotfixes",
+    "build": "276477",
+    "starter_build": "276478",
+    "released": "November 18th 2026",
+    "entries": [
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34608",
+        "description": "When usage sharing is turned off, d3service will no longer send small heartbeat messages to Disguise Cloud."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33274",
+        "description": "Designer will now correctly attribute third-party errors to third-party code in some rare cases where diagnostics would point incorrectly to Designer code. This should ease debugging certain rare problems."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34241",
+        "description": "Designer now has improved performance in projects that use reference points and QuickCal."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34100",
+        "description": "Designer now exchanges colour spaces with Notch correctly when Notch uses different layers with different colour spaces."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34305",
+        "description": "In d3Net Manager, an Understudy added when there is no Director or Actor will now report that there is no valid machine for it to take over, instead of a licensing restrictions error."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34588",
+        "description": "The third-party license acknowledgements shipped with Designer will now link to the source of the modified Zyre, CZMQ and ZeroMQ libraries that Designer ships."
+      }
+    ]
   }
 }
