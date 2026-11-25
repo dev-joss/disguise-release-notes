@@ -17873,5 +17873,123 @@
         "description": "The third-party license acknowledgements shipped with Designer will now link to the source of the modified Zyre, CZMQ and ZeroMQ libraries that Designer ships."
       }
     ]
+  },
+  "8aa871c499c8cfb7ed11644574b5b1bcf12d2303e227d1a287ef42c8dcd94c30": {
+    "version": "r34.3",
+    "url": "https://help.disguise.one/designer/release-notes/r34#r343---remote-transport-latency-improvements",
+    "build": "278604",
+    "starter_build": "278605",
+    "released": "November 25th 2026",
+    "entries": [
+      {
+        "category": "Remote transport command latency",
+        "dsof": "",
+        "description": "Remote transport commands (OSC, DMX and MIDI) no longer wait for the Redistribution Delay, so they respond sooner. They are still synchronised across machines by the additionalCommandLatency option switch. To keep the same command timing, add the Redistribution Delay to additionalCommandLatency; with both at their defaults, set additionalCommandLatency to 6."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33792",
+        "description": "Apply Matrix Feed Routing will now work in sessions with more than 10 servers."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34240",
+        "description": "With IP-VFC, removing the Eth0 SFP will no longer stop the redundant stream, and the redundant stream will now restart when its SFP is refitted."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34244",
+        "description": "Muting or disabling a Look Layer will now mute the audio layers inside the Look."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34279",
+        "description": "Disabling a Look Layer will now stop the embedded audio of videos inside the Look."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34330",
+        "description": "Removing time across a group inside a Look will no longer cause errors and Access Violations."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34393",
+        "description": "Cutting and pasting layers connected by arrows will no longer cause Access Violations."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-30597",
+        "description": "Designer will no longer add the Redistribution Delay to transport commands received over OSC, DMX or MIDI, so remote transport control responds sooner."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33401",
+        "description": "OSC Sockpuppet patches will now list only legal OSC addresses and respond to messages sent to them."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33839",
+        "description": "Designer will now prefetch the content inside a TrackSection crossfade before the jump, so the crossfade plays smoothly."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34052",
+        "description": "Designer will no longer re-apply VFC target modes on every project launch when the cards already match the project."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34357",
+        "description": "A faulty audio file will no longer hang Designer with repeated audio error messages."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34456",
+        "description": "ACES 2.0 OCIO output views will now show content correctly instead of grey."
+      }
+    ]
+  },
+  "438d102c58d40dc99601b1d47a3d7793da67b059d79b1b1e00e1d2f2fdc971c2": {
+    "version": "r32.5",
+    "url": "https://help.disguise.one/designer/release-notes/r32#r325---remote-transport-latency-improvements",
+    "build": "278583",
+    "starter_build": "278584",
+    "released": "November 25th 2026",
+    "entries": [
+      {
+        "category": "Remote transport command latency",
+        "dsof": "",
+        "description": "Remote transport commands (OSC, DMX, MIDI) no longer wait for the Redistribution Delay, so they respond sooner; they are still synchronized across machines by the additionalCommandLatency option."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-30597",
+        "description": "Designer will no longer add the Redistribution Delay to transport commands received over OSC, DMX or MIDI, so remote transport control responds sooner."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33401",
+        "description": "OSC Sockpuppet patches will now list only legal OSC addresses and respond to messages sent to them."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-33839",
+        "description": "Designer will now prefetch the content inside a TrackSection crossfade before the jump, so the crossfade plays smoothly."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34052",
+        "description": "Designer will no longer re-apply VFC target modes on every project launch when the cards already match the project."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34357",
+        "description": "A faulty audio file will no longer hang Designer with repeated audio error messages."
+      },
+      {
+        "category": "Fixes",
+        "dsof": "DSOF-34456",
+        "description": "ACES 2.0 OCIO output views will now show content correctly instead of grey."
+      }
+    ]
   }
 }
